@@ -1,0 +1,3 @@
+Primeira execução em 2026-04-23T16:52:23.568838+00:00.
+Base criada com 1028 links.
+Nenhum link 'novo' acusado (todos são a base inicial).
