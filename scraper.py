@@ -57,9 +57,13 @@ URLS_ALVO = [
     "https://cj.estrategia.com/portal/procuradoria/page/10/",
 ]
 
+GOOGLE_QUERY = "residencia jurídica estágio de pós graduação"
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
+GOOGLE_CX = os.environ.get("GOOGLE_CX", "")
+
 DATABASE_FILE = "database.json"
 OUTPUT_FILE = "novos_links.txt"
-MAX_AUSENCIAS = 3  # apaga da base após 3 verificações sem aparecer
+MAX_AUSENCIAS = 3
 
 HEADERS = {
     "User-Agent": (
@@ -71,7 +75,6 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
-# Domínios relevantes: só links internos de cada site-alvo são coletados
 DOMINIOS_ALVO = {
     "pciconcursos.com.br",
     "jcconcursos.com.br",
@@ -79,7 +82,6 @@ DOMINIOS_ALVO = {
     "cj.estrategia.com",
 }
 
-# Padrões de URL que indicam conteúdo (artigos, concursos, notícias)
 PADROES_RELEVANTES = [
     r"/concurso",
     r"/noticia",
@@ -92,11 +94,10 @@ PADROES_RELEVANTES = [
     r"/cronograma",
     r"/ultimas",
     r"/noticias",
-    r"/portal/\d{4}/",   # cj.estrategia: posts com ano
-    r"/portal/[a-z0-9-]+/$",  # cj.estrategia: slugs de artigos
+    r"/portal/\d{4}/",
+    r"/portal/[a-z0-9-]+/$",
 ]
 
-# Padrões a ignorar (páginas de navegação, categorias genéricas, etc.)
 PADROES_IGNORAR = [
     r"/(login|cadastro|conta|assinar|assine|newsletter)",
     r"\.(jpg|jpeg|png|gif|pdf|zip|rar|mp4|svg|css|js)$",
@@ -116,7 +117,6 @@ def dominio(url: str) -> str:
 
 
 def eh_relevante(url: str) -> bool:
-    """Retorna True se a URL é de conteúdo relevante (artigo/concurso)."""
     dom = dominio(url)
     if not any(d in dom for d in DOMINIOS_ALVO):
         return False
@@ -130,16 +130,14 @@ def eh_relevante(url: str) -> bool:
 
 
 def normalizar(url: str) -> str:
-    """Remove trailing slash duplicada e fragmentos."""
     url = url.split("#")[0].strip()
     parsed = urlparse(url)
-    # reconstrói sem fragmento
     return parsed._replace(fragment="").geturl()
 
 
 # ─── Scraping ─────────────────────────────────────────────────────────────────
 
-def coletar_links_pagina(url: str, sessao: requests.Session) -> set[str]:
+def coletar_links_pagina(url: str, sessao: requests.Session) -> set:
     try:
         resp = sessao.get(url, timeout=20, headers=HEADERS)
         resp.raise_for_status()
@@ -149,7 +147,6 @@ def coletar_links_pagina(url: str, sessao: requests.Session) -> set[str]:
 
     soup = BeautifulSoup(resp.text, "html.parser")
     links = set()
-
     for tag in soup.find_all("a", href=True):
         href = tag["href"].strip()
         absoluto = urljoin(url, href)
@@ -157,33 +154,72 @@ def coletar_links_pagina(url: str, sessao: requests.Session) -> set[str]:
         if eh_relevante(absoluto):
             links.add(absoluto)
 
-    print(f"  [OK] {url} → {len(links)} links relevantes")
+    print(f"  [OK] {url} → {len(links)} links")
     return links
 
 
-def coletar_todos_links() -> set[str]:
+def coletar_todos_links() -> set:
     sessao = requests.Session()
     todos = set()
     for url in URLS_ALVO:
         links = coletar_links_pagina(url, sessao)
         todos.update(links)
-        time.sleep(1.5)  # pausa entre requests para não sobrecarregar
+        time.sleep(1.5)
     return todos
+
+
+# ─── Busca Google ─────────────────────────────────────────────────────────────
+
+def buscar_google() -> list:
+    """
+    Retorna até 20 resultados das últimas 24h, ordenados por data, com duplicações.
+    Cada item: {url, title, snippet}
+    """
+    if not GOOGLE_API_KEY or not GOOGLE_CX:
+        print("  [AVISO] Credenciais Google ausentes. Pulando busca.")
+        return []
+
+    endpoint = "https://www.googleapis.com/customsearch/v1"
+    resultados = []
+
+    for start in [1, 11]:
+        params = {
+            "key": GOOGLE_API_KEY,
+            "cx": GOOGLE_CX,
+            "q": GOOGLE_QUERY,
+            "dateRestrict": "d1",
+            "sort": "date",
+            "filter": "0",
+            "num": 10,
+            "start": start,
+            "lr": "lang_pt",
+            "gl": "br",
+        }
+        try:
+            resp = requests.get(endpoint, params=params, timeout=15)
+            resp.raise_for_status()
+            data = resp.json()
+            items = data.get("items", [])
+            for item in items:
+                resultados.append({
+                    "url": item.get("link", ""),
+                    "title": item.get("title", ""),
+                    "snippet": item.get("snippet", ""),
+                })
+            print(f"  [Google] start={start} → {len(items)} resultados")
+            if len(items) < 10:
+                break
+        except Exception as e:
+            print(f"  [ERRO Google] start={start} → {e}")
+            break
+        time.sleep(1)
+
+    return resultados
 
 
 # ─── Base de dados ────────────────────────────────────────────────────────────
 
 def carregar_base() -> dict:
-    """
-    Estrutura da base:
-    {
-        "url": {
-            "primeira_vez": "ISO8601",
-            "ultima_vez_visto": "ISO8601",
-            "ausencias_consecutivas": 0
-        }
-    }
-    """
     if not os.path.exists(DATABASE_FILE):
         return {}
     with open(DATABASE_FILE, "r", encoding="utf-8") as f:
@@ -195,7 +231,7 @@ def salvar_base(base: dict) -> None:
         json.dump(base, f, ensure_ascii=False, indent=2)
 
 
-# ─── Lógica principal ─────────────────────────────────────────────────────────
+# ─── Principal ────────────────────────────────────────────────────────────────
 
 def main():
     agora = datetime.now(timezone.utc).isoformat()
@@ -205,46 +241,61 @@ def main():
     primeira_execucao = len(base) == 0
 
     print("Coletando links das páginas-alvo...")
-    links_encontrados = coletar_todos_links()
-    print(f"\nTotal de links coletados nesta execução: {len(links_encontrados)}\n")
+    links_scraping = coletar_todos_links()
+    print(f"Total scraping: {len(links_scraping)}\n")
+
+    print("Buscando no Google...")
+    resultados_google = buscar_google()
+    links_google = {r["url"] for r in resultados_google if r["url"]}
+    print(f"Total Google: {len(links_google)}\n")
+
+    todos_links = links_scraping | links_google
 
     if primeira_execucao:
         print("Primeira execução: populando a base de dados.")
-        for url in links_encontrados:
+        for url in todos_links:
             base[url] = {
                 "primeira_vez": agora,
                 "ultima_vez_visto": agora,
                 "ausencias_consecutivas": 0,
+                "fonte": "google" if url in links_google else "scraping",
             }
         salvar_base(base)
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write(
                 f"Primeira execução em {agora}.\n"
-                f"Base criada com {len(base)} links.\n"
+                f"Base criada com {len(base)} links "
+                f"({len(links_scraping)} scraping + {len(links_google)} Google).\n"
                 "Nenhum link 'novo' acusado (todos são a base inicial).\n"
             )
-        print(f"Base criada com {len(base)} links. Arquivo '{OUTPUT_FILE}' registrado.")
+        print(f"Base criada com {len(base)} links.")
         return
 
-    # ── Verificação normal ────────────────────────────────────────────────────
-    novos = []
+    # Verificação normal
+    novos_scraping = []
+    novos_google = []
 
-    for url in links_encontrados:
+    for url in todos_links:
+        fonte = "google" if url in links_google else "scraping"
         if url not in base:
-            novos.append(url)
+            if fonte == "google":
+                info = next((r for r in resultados_google if r["url"] == url), {})
+                novos_google.append(info if info else {"url": url, "title": "", "snippet": ""})
+            else:
+                novos_scraping.append(url)
             base[url] = {
                 "primeira_vez": agora,
                 "ultima_vez_visto": agora,
                 "ausencias_consecutivas": 0,
+                "fonte": fonte,
             }
         else:
             base[url]["ultima_vez_visto"] = agora
             base[url]["ausencias_consecutivas"] = 0
 
-    # Incrementa ausências para links não encontrados nesta rodada
     removidos = []
     for url in list(base.keys()):
-        if url not in links_encontrados:
+        if url not in todos_links:
             base[url]["ausencias_consecutivas"] += 1
             if base[url]["ausencias_consecutivas"] >= MAX_AUSENCIAS:
                 removidos.append(url)
@@ -252,23 +303,37 @@ def main():
 
     salvar_base(base)
 
-    # ── Saída ─────────────────────────────────────────────────────────────────
+    total_novos = len(novos_scraping) + len(novos_google)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(f"Verificação: {agora}\n")
-        f.write(f"Links novos encontrados: {len(novos)}\n")
-        f.write(f"Links removidos da base (3 ausências): {len(removidos)}\n")
-        f.write(f"Total na base após atualização: {len(base)}\n")
+        f.write(f"Links novos encontrados: {total_novos}\n")
+        f.write(f"  Scraping: {len(novos_scraping)}\n")
+        f.write(f"  Google:   {len(novos_google)}\n")
+        f.write(f"Removidos da base: {len(removidos)}\n")
+        f.write(f"Total na base: {len(base)}\n")
         f.write("=" * 60 + "\n\n")
-        if novos:
-            for url in sorted(novos):
+
+        if novos_scraping:
+            f.write("── NOVOS (scraping) ──\n\n")
+            for url in sorted(novos_scraping):
                 f.write(url + "\n")
-        else:
+            f.write("\n")
+
+        if novos_google:
+            f.write("── NOVOS (Google: residencia jurídica estágio pós-graduação) ──\n\n")
+            for item in novos_google:
+                f.write(f"Título:  {item.get('title', '')}\n")
+                f.write(f"URL:     {item.get('url', '')}\n")
+                f.write(f"Trecho:  {item.get('snippet', '')}\n\n")
+
+        if total_novos == 0:
             f.write("Nenhum link novo encontrado.\n")
 
-    print(f"Novos links: {len(novos)}")
-    print(f"Removidos da base: {len(removidos)}")
+    print(f"Novos scraping: {len(novos_scraping)}")
+    print(f"Novos Google:   {len(novos_google)}")
+    print(f"Removidos: {len(removidos)}")
     print(f"Total na base: {len(base)}")
-    print(f"Resultado salvo em '{OUTPUT_FILE}'.")
+    print(f"Salvo em '{OUTPUT_FILE}'.")
 
 
 if __name__ == "__main__":
