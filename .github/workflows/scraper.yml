@@ -2,7 +2,12 @@ name: Coletor de Links de Concursos
 
 on:
   schedule:
-    - cron: "0 7 * * *"  # 4h de Brasília (UTC-3)
+    # Toda dia às 4h (horário UTC = 1h a menos que Brasília no horário de verão,
+    # ou 3h a menos no horário padrão). Ajuste abaixo se quiser outro horário.
+    # Para 4h de Brasília (UTC-3): use "0 7 * * *"
+    - cron: "0 7 * * *"
+
+  # Permite rodar manualmente pelo botão na interface do GitHub
   workflow_dispatch:
 
 jobs:
@@ -10,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write
+      contents: write  # necessário para commitar de volta ao repositório
 
     steps:
       - name: Baixar o repositório
@@ -25,9 +30,6 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Executar o scraper
-        env:
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          GOOGLE_CX: ${{ secrets.GOOGLE_CX }}
         run: python scraper.py
 
       - name: Commitar resultados
@@ -35,5 +37,6 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add database.json novos_links.txt
+          # Só commita se houver mudança real
           git diff --cached --quiet || git commit -m "auto: atualização $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
