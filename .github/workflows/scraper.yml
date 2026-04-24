@@ -27,7 +27,7 @@ jobs:
       - name: Executar o scraper
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python teste_extracao.py
+        run: python teste_gemini.py
         
       - name: Commitar resultados
         run: |
