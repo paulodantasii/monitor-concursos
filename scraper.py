@@ -4,7 +4,7 @@ import re
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
-from urllib.parse import urljoin, urlparse, parse_qs, unquote
+from urllib.parse import urljoin, urlparse, parse_qs, unquote, quote
 
 import requests
 from bs4 import BeautifulSoup
@@ -69,12 +69,15 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = "gemini-3.1-flash-lite-preview"
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
+CALLMEBOT_PHONE = "558699252617"
+CALLMEBOT_APIKEY = os.environ.get("CALLMEBOT_APIKEY", "")
+
 DATABASE_FILE = "database.json"
 OUTPUT_NOVOS = "novos_links.txt"
 OUTPUT_RELEVANTES = "novos_relevantes.txt"
 MAX_AUSENCIAS = 3
 MAX_CHARS_PAGINA = 6000
-PAUSA_GEMINI = 4.5  # segundos entre chamadas (respeita 15 RPM)
+PAUSA_GEMINI = 4.5
 
 HEADERS = {
     "User-Agent": (
@@ -256,21 +259,33 @@ def coletar_todos_alertas() -> list:
     return todos
 
 
-# ─── Extração de texto ────────────────────────────────────────────────────────
+# ─── Extração de texto e título ───────────────────────────────────────────────
 
-def extrair_texto_pagina(url: str) -> str:
+def extrair_pagina(url: str) -> tuple:
+    """Retorna (titulo, texto) da página."""
     try:
         resp = requests.get(url, timeout=20, headers=HEADERS)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Extrai título
+        titulo = ""
+        if soup.title and soup.title.string:
+            titulo = soup.title.string.strip()
+        if not titulo:
+            h1 = soup.find("h1")
+            if h1:
+                titulo = h1.get_text(strip=True)
+
+        # Extrai texto
         for tag in soup(["script", "style", "nav", "footer", "header"]):
             tag.decompose()
         texto = soup.get_text(separator=" ", strip=True)
         texto = re.sub(r"\s+", " ", texto).strip()
-        return texto[:MAX_CHARS_PAGINA]
+        return titulo, texto[:MAX_CHARS_PAGINA]
     except Exception as e:
-        print(f"    [ERRO texto] {url} → {e}")
-        return ""
+        print(f"    [ERRO página] {url} → {e}")
+        return "", ""
 
 
 # ─── Gemini ───────────────────────────────────────────────────────────────────
@@ -278,16 +293,14 @@ def extrair_texto_pagina(url: str) -> str:
 def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
     if not GEMINI_API_KEY:
         return {"relevante": False, "motivo": "GEMINI_API_KEY não configurada"}
-
     if not texto or len(texto) < 50:
-        return {"relevante": False, "motivo": "texto insuficiente para avaliar"}
+        return {"relevante": False, "motivo": "texto insuficiente"}
 
     conteudo = f"URL: {url}\nTítulo: {titulo}\n\nTexto:\n{texto}"
     payload = {
         "contents": [{"parts": [{"text": PROMPT_RELEVANCIA + conteudo}]}],
         "generationConfig": {"temperature": 0, "maxOutputTokens": 200},
     }
-
     try:
         resp = requests.post(
             GEMINI_URL,
@@ -304,6 +317,61 @@ def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
     except Exception as e:
         print(f"    [ERRO Gemini] {url} → {e}")
         return {"relevante": False, "motivo": f"erro: {e}"}
+
+
+# ─── WhatsApp via CallMeBot ───────────────────────────────────────────────────
+
+def enviar_whatsapp(mensagem: str) -> None:
+    if not CALLMEBOT_APIKEY:
+        print("  [AVISO] CALLMEBOT_APIKEY não configurada. Pulando envio.")
+        return
+    try:
+        url = (
+            f"https://api.callmebot.com/whatsapp.php"
+            f"?phone={CALLMEBOT_PHONE}"
+            f"&text={quote(mensagem)}"
+            f"&apikey={CALLMEBOT_APIKEY}"
+        )
+        resp = requests.get(url, timeout=15)
+        if resp.status_code == 200:
+            print("  [WhatsApp] Mensagem enviada com sucesso.")
+        else:
+            print(f"  [WhatsApp] Erro {resp.status_code}: {resp.text[:200]}")
+    except Exception as e:
+        print(f"  [WhatsApp] Erro ao enviar: {e}")
+
+
+def formatar_mensagem_whatsapp(agora: str, total_novos: int, relevantes: list) -> str:
+    # Formata data legível
+    dt = datetime.fromisoformat(agora)
+    data_str = dt.strftime("%d/%m/%Y às %Hh%M")
+
+    if not relevantes:
+        return (
+            f"Monitor de Concursos - {data_str}\n"
+            f"Verificação concluída. {total_novos} links novos analisados.\n"
+            f"Nenhuma oportunidade relevante encontrada hoje."
+        )
+
+    linhas = [
+        f"Monitor de Concursos - {data_str}",
+        f"{len(relevantes)} oportunidade(s) relevante(s) encontrada(s):",
+        "",
+    ]
+    for i, item in enumerate(relevantes, 1):
+        titulo = item.get("titulo_real") or item.get("title") or ""
+        # Limpa sufixos de site do título
+        titulo = re.sub(r"\s*[|\-–]\s*.{3,40}$", "", titulo).strip()
+        if not titulo:
+            titulo = "Ver link"
+        motivo = item.get("motivo", "")
+        url = item.get("url", "")
+        linhas.append(f"{i}. {titulo}")
+        linhas.append(f"   {motivo}")
+        linhas.append(f"   {url}")
+        linhas.append("")
+
+    return "\n".join(linhas).strip()
 
 
 # ─── Base de dados ────────────────────────────────────────────────────────────
@@ -420,31 +488,38 @@ def main():
             f.write("Nenhum link novo encontrado.\n")
 
     # ── Análise Gemini ────────────────────────────────────────────────────────
-    print(f"\nAnalisando {total_novos} links novos via Gemini ({GEMINI_MODEL})...\n")
+    print(f"\nAnalisando {total_novos} links novos via Gemini...\n")
     relevantes = []
 
     todos_novos = []
     for url in novos_scraping:
-        todos_novos.append({"url": url, "title": "", "snippet": "", "fonte": "scraping"})
+        todos_novos.append({"url": url, "title": "", "fonte": "scraping"})
     for item in novos_alertas:
         todos_novos.append({**item, "fonte": "alerta"})
 
     for i, item in enumerate(todos_novos, 1):
         url = item["url"]
-        titulo = item.get("title", "")
         print(f"  [{i}/{total_novos}] {url}")
 
-        texto = extrair_texto_pagina(url)
+        titulo_real, texto = extrair_pagina(url)
+
         if not texto or len(texto) < 50:
             print("    Sem texto extraído, pulando.")
             time.sleep(PAUSA_GEMINI)
             continue
 
+        # Usa título do feed de alertas se a página não retornou título
+        titulo = titulo_real or item.get("title", "")
+
         avaliacao = avaliar_relevancia(url, titulo, texto)
         print(f"    → relevante: {avaliacao.get('relevante')} | {avaliacao.get('motivo', '')}")
 
         if avaliacao.get("relevante"):
-            relevantes.append({**item, "motivo": avaliacao.get("motivo", "")})
+            relevantes.append({
+                **item,
+                "titulo_real": titulo_real,
+                "motivo": avaliacao.get("motivo", ""),
+            })
 
         time.sleep(PAUSA_GEMINI)
 
@@ -456,12 +531,17 @@ def main():
         f.write("=" * 60 + "\n\n")
         if relevantes:
             for item in relevantes:
-                f.write(f"Fonte:   {item.get('fonte', '')}\n")
-                f.write(f"Título:  {item.get('title', '') or '(ver link)'}\n")
+                titulo = item.get("titulo_real") or item.get("title") or "(ver link)"
+                f.write(f"Título:  {titulo}\n")
                 f.write(f"URL:     {item.get('url', '')}\n")
                 f.write(f"Motivo:  {item.get('motivo', '')}\n\n")
         else:
             f.write("Nenhum link relevante encontrado.\n")
+
+    # ── WhatsApp ──────────────────────────────────────────────────────────────
+    print("\nEnviando resumo para WhatsApp...")
+    mensagem = formatar_mensagem_whatsapp(agora, total_novos, relevantes)
+    enviar_whatsapp(mensagem)
 
     print(f"\nRelevantes: {len(relevantes)}/{total_novos}")
     print(f"Salvo em '{OUTPUT_RELEVANTES}'.")
