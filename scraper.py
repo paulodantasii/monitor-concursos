@@ -58,7 +58,6 @@ URLS_ALVO = [
     "https://cj.estrategia.com/portal/procuradoria/page/10/",
 ]
 
-# Feed RSS do Google Alertas
 GOOGLE_ALERTAS_FEEDS = [
     {
         "url": "https://www.google.com/alerts/feeds/05883152892408713569/13784085206058947900",
@@ -66,9 +65,14 @@ GOOGLE_ALERTAS_FEEDS = [
     },
 ]
 
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+
 DATABASE_FILE = "database.json"
-OUTPUT_FILE = "novos_links.txt"
+OUTPUT_NOVOS = "novos_links.txt"
+OUTPUT_RELEVANTES = "novos_relevantes.txt"
 MAX_AUSENCIAS = 3
+MAX_CHARS_PAGINA = 6000  # limite de texto enviado ao Gemini por página
 
 HEADERS = {
     "User-Agent": (
@@ -113,6 +117,35 @@ PADROES_IGNORAR = [
     r"whatsapp:",
 ]
 
+PROMPT_RELEVANCIA = """Você é um assistente especializado em concursos públicos brasileiros. Sua tarefa é avaliar se o conteúdo abaixo é relevante para um bacharel em Direito que estuda para concursos públicos nas seguintes áreas:
+
+RELEVANTE — incluir:
+- Procurador (em qualquer órgão do executivo ou legislativo: AGU, PGFN, PGF, PGE, PGM, câmaras municipais, assembleias legislativas, TCU, TCE, TCM, agências reguladoras federais como ANATEL, ANEEL, ANVISA, ANAC, ANS, ANA, ANTAQ, ANTT, ANP, CADE, Banco Central, conselhos profissionais como OAB, CRM, CREA, CFM etc.)
+- Advogado público (Caixa Econômica Federal, Banco do Brasil, Petrobras, BNDES, Correios, EBSERH, Embrapa, Serpro, DATAPREV, autarquias e fundações federais, estaduais e municipais)
+- Analista Jurídico ou Assessor Jurídico em órgãos do executivo federal, estadual ou municipal, secretarias, ministérios, autarquias, agências reguladoras, empresas públicas
+- Analista Jurídico de Tribunal de Contas (TCU, TCE, TCM) — esses são relevantes
+- Cargos que exijam bacharelado em Direito e cujo conteúdo programático envolva direito administrativo, constitucional, tributário, financeiro, licitações, contratos públicos, execução fiscal
+- Residência Jurídica em qualquer órgão público
+- Estágio de pós-graduação em Direito em órgãos públicos
+- Programas de formação jurídica remunerada em órgãos públicos
+
+NÃO RELEVANTE — excluir:
+- Cargos do Poder Judiciário (TJ, TRF, TRT, STJ, STF, juízes, servidores de vara)
+- Ministério Público (federal ou estadual)
+- Defensoria Pública
+- Delegado, escrivão, perito, agente policial
+- Cargos que não exijam formação em Direito (professores, médicos, engenheiros, enfermeiros, técnicos de outras áreas)
+- Cargos militares ou de formação militar
+- Cargos de nível médio ou técnico sem requisito jurídico
+
+Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
+{"relevante": true, "motivo": "explicação em uma linha"}
+ou
+{"relevante": false, "motivo": "explicação em uma linha"}
+
+Conteúdo para avaliar:
+"""
+
 
 # ─── Utilitários ──────────────────────────────────────────────────────────────
 
@@ -121,7 +154,7 @@ def dominio(url: str) -> str:
     return host.replace("www.", "")
 
 
-def eh_relevante(url: str) -> bool:
+def eh_relevante_url(url: str) -> bool:
     dom = dominio(url)
     if not any(d in dom for d in DOMINIOS_ALVO):
         return False
@@ -141,11 +174,6 @@ def normalizar(url: str) -> str:
 
 
 def extrair_url_real(href: str) -> str:
-    """
-    Links do Google Alertas chegam encapsulados como:
-    https://www.google.com/url?rct=j&sa=t&url=https://site.com/artigo&...
-    Esta função extrai a URL real do parâmetro 'url'.
-    """
     parsed = urlparse(href)
     if "google.com" in parsed.netloc and parsed.path == "/url":
         qs = parse_qs(parsed.query)
@@ -170,7 +198,7 @@ def coletar_links_pagina(url: str, sessao: requests.Session) -> set:
         href = tag["href"].strip()
         absoluto = urljoin(url, href)
         absoluto = normalizar(absoluto)
-        if eh_relevante(absoluto):
+        if eh_relevante_url(absoluto):
             links.add(absoluto)
 
     print(f"  [OK] {url} → {len(links)} links")
@@ -190,10 +218,6 @@ def coletar_todos_links() -> set:
 # ─── Google Alertas RSS ───────────────────────────────────────────────────────
 
 def ler_feed_alerta(feed_url: str, termo: str) -> list:
-    """
-    Lê um feed RSS do Google Alertas e retorna lista de:
-    {url, title, snippet, termo}
-    """
     try:
         resp = requests.get(feed_url, timeout=15, headers=HEADERS)
         resp.raise_for_status()
@@ -205,25 +229,17 @@ def ler_feed_alerta(feed_url: str, termo: str) -> list:
     try:
         root = ET.fromstring(resp.content)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
-
         for entry in root.findall("atom:entry", ns):
-            # Título
             title_el = entry.find("atom:title", ns)
             title = title_el.text if title_el is not None else ""
-
-            # URL real (dentro do link encapsulado do Google)
             link_el = entry.find("atom:link", ns)
             href = link_el.attrib.get("href", "") if link_el is not None else ""
             url_real = extrair_url_real(href)
-
-            # Trecho/resumo
             summary_el = entry.find("atom:summary", ns)
             snippet = ""
             if summary_el is not None and summary_el.text:
-                # Remove tags HTML do snippet
                 soup = BeautifulSoup(summary_el.text, "html.parser")
                 snippet = soup.get_text(separator=" ").strip()
-
             if url_real:
                 resultados.append({
                     "url": url_real,
@@ -231,11 +247,9 @@ def ler_feed_alerta(feed_url: str, termo: str) -> list:
                     "snippet": snippet,
                     "termo": termo,
                 })
-
         print(f"  [Alerta] '{termo}' → {len(resultados)} resultados")
     except Exception as e:
         print(f"  [ERRO parse] {feed_url} → {e}")
-
     return resultados
 
 
@@ -246,6 +260,61 @@ def coletar_todos_alertas() -> list:
         todos.extend(resultados)
         time.sleep(1)
     return todos
+
+
+# ─── Extração de texto da página ─────────────────────────────────────────────
+
+def extrair_texto_pagina(url: str) -> str:
+    try:
+        resp = requests.get(url, timeout=20, headers=HEADERS)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        # Remove scripts e estilos
+        for tag in soup(["script", "style", "nav", "footer", "header"]):
+            tag.decompose()
+        texto = soup.get_text(separator=" ", strip=True)
+        # Limpa espaços excessivos
+        texto = re.sub(r"\s+", " ", texto).strip()
+        return texto[:MAX_CHARS_PAGINA]
+    except Exception as e:
+        print(f"    [ERRO texto] {url} → {e}")
+        return ""
+
+
+# ─── Análise de relevância via Gemini ────────────────────────────────────────
+
+def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
+    """
+    Retorna {"relevante": bool, "motivo": str}
+    Em caso de erro, retorna {"relevante": False, "motivo": "erro na API"}
+    """
+    if not GEMINI_API_KEY:
+        return {"relevante": False, "motivo": "GEMINI_API_KEY não configurada"}
+
+    conteudo = f"URL: {url}\nTítulo: {titulo}\n\nTexto:\n{texto}"
+    payload = {
+        "contents": [{"parts": [{"text": PROMPT_RELEVANCIA + conteudo}]}],
+        "generationConfig": {"temperature": 0, "maxOutputTokens": 200},
+    }
+
+    try:
+        resp = requests.post(
+            GEMINI_URL,
+            headers={"Content-Type": "application/json"},
+            params={"key": GEMINI_API_KEY},
+            json=payload,
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        texto_resposta = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        # Remove possíveis blocos markdown ```json ... ```
+        texto_resposta = re.sub(r"```json|```", "", texto_resposta).strip()
+        resultado = json.loads(texto_resposta)
+        return resultado
+    except Exception as e:
+        print(f"    [ERRO Gemini] {url} → {e}")
+        return {"relevante": False, "motivo": f"erro: {e}"}
 
 
 # ─── Base de dados ────────────────────────────────────────────────────────────
@@ -292,17 +361,19 @@ def main():
                 "fonte": "alerta" if url in links_alertas else "scraping",
             }
         salvar_base(base)
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(OUTPUT_NOVOS, "w", encoding="utf-8") as f:
             f.write(
                 f"Primeira execução em {agora}.\n"
                 f"Base criada com {len(base)} links "
                 f"({len(links_scraping)} scraping + {len(links_alertas)} alertas).\n"
                 "Nenhum link 'novo' acusado (todos são a base inicial).\n"
             )
+        with open(OUTPUT_RELEVANTES, "w", encoding="utf-8") as f:
+            f.write(f"Primeira execução em {agora}.\nNenhum link relevante acusado.\n")
         print(f"Base criada com {len(base)} links.")
         return
 
-    # Verificação normal
+    # ── Verificação normal ────────────────────────────────────────────────────
     novos_scraping = []
     novos_alertas = []
 
@@ -334,8 +405,9 @@ def main():
 
     salvar_base(base)
 
+    # ── Salva novos_links.txt ─────────────────────────────────────────────────
     total_novos = len(novos_scraping) + len(novos_alertas)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    with open(OUTPUT_NOVOS, "w", encoding="utf-8") as f:
         f.write(f"Verificação: {agora}\n")
         f.write(f"Links novos encontrados: {total_novos}\n")
         f.write(f"  Scraping: {len(novos_scraping)}\n")
@@ -343,13 +415,11 @@ def main():
         f.write(f"Removidos da base: {len(removidos)}\n")
         f.write(f"Total na base: {len(base)}\n")
         f.write("=" * 60 + "\n\n")
-
         if novos_scraping:
             f.write("── NOVOS (scraping) ──\n\n")
             for url in sorted(novos_scraping):
                 f.write(url + "\n")
             f.write("\n")
-
         if novos_alertas:
             f.write("── NOVOS (Google Alertas) ──\n\n")
             for item in novos_alertas:
@@ -357,15 +427,60 @@ def main():
                 f.write(f"Título:  {item.get('title', '')}\n")
                 f.write(f"URL:     {item.get('url', '')}\n")
                 f.write(f"Trecho:  {item.get('snippet', '')}\n\n")
-
         if total_novos == 0:
             f.write("Nenhum link novo encontrado.\n")
 
-    print(f"Novos scraping: {len(novos_scraping)}")
-    print(f"Novos alertas:  {len(novos_alertas)}")
-    print(f"Removidos: {len(removidos)}")
-    print(f"Total na base: {len(base)}")
-    print(f"Salvo em '{OUTPUT_FILE}'.")
+    # ── Análise de relevância via Gemini ──────────────────────────────────────
+    print(f"\nAnalisando relevância de {total_novos} links novos via Gemini...\n")
+    relevantes = []
+
+    todos_novos = []
+    for url in novos_scraping:
+        todos_novos.append({"url": url, "title": "", "snippet": "", "fonte": "scraping"})
+    for item in novos_alertas:
+        todos_novos.append({**item, "fonte": "alerta"})
+
+    for i, item in enumerate(todos_novos, 1):
+        url = item["url"]
+        titulo = item.get("title", "")
+        print(f"  [{i}/{total_novos}] {url}")
+
+        texto = extrair_texto_pagina(url)
+        if not texto:
+            print("    Sem texto extraído, pulando.")
+            time.sleep(1)
+            continue
+
+        # Usa título da matéria extraído da página se não vier do alerta
+        if not titulo:
+            soup_titulo = BeautifulSoup(texto[:500], "html.parser")
+            titulo = url  # fallback
+
+        avaliacao = avaliar_relevancia(url, titulo, texto)
+        print(f"    → relevante: {avaliacao.get('relevante')} | {avaliacao.get('motivo', '')}")
+
+        if avaliacao.get("relevante"):
+            relevantes.append({**item, "motivo": avaliacao.get("motivo", "")})
+
+        time.sleep(1.5)  # respeita rate limit do Gemini
+
+    # ── Salva novos_relevantes.txt ────────────────────────────────────────────
+    with open(OUTPUT_RELEVANTES, "w", encoding="utf-8") as f:
+        f.write(f"Verificação: {agora}\n")
+        f.write(f"Links novos analisados: {total_novos}\n")
+        f.write(f"Links relevantes encontrados: {len(relevantes)}\n")
+        f.write("=" * 60 + "\n\n")
+        if relevantes:
+            for item in relevantes:
+                f.write(f"Fonte:   {item.get('fonte', '')}\n")
+                f.write(f"Título:  {item.get('title', '') or '(ver link)'}\n")
+                f.write(f"URL:     {item.get('url', '')}\n")
+                f.write(f"Motivo:  {item.get('motivo', '')}\n\n")
+        else:
+            f.write("Nenhum link relevante encontrado.\n")
+
+    print(f"\nRelevantes: {len(relevantes)}/{total_novos}")
+    print(f"Salvo em '{OUTPUT_RELEVANTES}'.")
 
 
 if __name__ == "__main__":
