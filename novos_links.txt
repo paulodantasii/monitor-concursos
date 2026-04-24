@@ -1,14 +1,13 @@
 Verificação: 2026-04-24T10:56:24.998375+00:00
-Links novos encontrados: 4
-  Scraping: 4
+Links novos encontrados: 3
+  Scraping: 3
   Alertas:  0
 Removidos da base: 0
-Total na base: 1133
+Total na base: 1132
 ============================================================
 
 ── NOVOS (scraping) ──
 
-https://cj.estrategia.com/portal/concurso-delegado-ce/
 https://cj.estrategia.com/portal/prova-subjetiva-mpgo-como-funciona/
 https://cj.estrategia.com/portal/simulado-discursivo-pge-al-procurador-pos-edital/
 https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-cau-sp-2026-edital-inscricao-89656
