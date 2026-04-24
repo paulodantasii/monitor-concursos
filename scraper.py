@@ -70,8 +70,8 @@ DATABASE_FILE = "database.json"
 OUTPUT_NOVOS = "novos_links.txt"
 OUTPUT_RELEVANTES = "novos_relevantes.txt"
 MAX_AUSENCIAS = 3
-MAX_CHARS_PAGINA = 6000
-PAUSA_GEMINI = 4.5
+MAX_CHARS_PAGINA = 12000
+PAUSA_GEMINI = 5
 
 HEADERS = {
     "User-Agent": (
@@ -115,7 +115,7 @@ PADROES_IGNORAR = [
 ]
 
 PROMPT_RELEVANCIA = """Sua tarefa é avaliar se o conteúdo abaixo é uma notícia de atualização, novidade ou divulgação de edital, concurso, processo seletivo, certame, e similares, que sejam relevantes para um bacharel em Direito que estuda para concursos públicos nas seguintes áreas:
-RELEVANTE — incluir sempre que o conteúdo tiver:
+RELEVANTE — sempre que o conteúdo tiver:
 - Procurador ou Advogado em qualquer órgão do executivo ou legislativo: AGU, PGFN, PGF, PGE, PGM, câmaras municipais, assembleias legislativas, TCU, TCE, TCM, agências reguladoras federais como ANATEL, ANEEL, ANVISA, ANAC, ANS, ANA, ANTAQ, ANTT, ANP, CADE, Banco Central, conselhos profissionais como OAB, CRM, CREA, CFM, etc
 - Procurador ou Advogado da Caixa Econômica Federal, Banco do Brasil, Petrobras, BNDES, Correios, EBSERH, Embrapa, Serpro, DATAPREV, autarquias e fundações federais, estaduais e municipais, etc
 - Analista ou Assessor de matéria jurídica ou correlatas em órgãos do executivo federal, estadual ou municipal, secretarias, ministérios, autarquias, agências reguladoras, empresas públicas, etc
@@ -125,8 +125,8 @@ RELEVANTE — incluir sempre que o conteúdo tiver:
 - Estágio de pós-graduação em Direito em qualquer órgão público
 - Programas de formação jurídica remunerada em órgãos públicos
 - Todos os cargos que, por algum dos motivos acima, pareçam relevantes mas não estejam incluídos nessa lista
-NÃO RELEVANTE — excluir se o conteúdo for apenas:
-- Cargos que não exijam formação em Direito (professores de ensino básico, médicos, engenheiros, enfermeiros, técnicos de outras áreas, etc)
+NÃO RELEVANTE — se o conteúdo for apenas:
+- Cargos que NÃO exijam formação em Direito (professores de ensino básico, médicos, engenheiros, enfermeiros, motoristas, técnicos de outras áreas, etc)
 - Cargos de nível médio ou técnico sem relevância jurídica
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
 {"relevante": true, "motivo": "explicação em uma linha"}
