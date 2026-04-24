@@ -1,13 +1,15 @@
-Verificação: 2026-04-24T12:19:08.021152+00:00
-Links novos encontrados: 2
-  Scraping: 2
+Verificação: 2026-04-24T12:34:12.807055+00:00
+Links novos encontrados: 4
+  Scraping: 4
   Alertas:  0
-Removidos da base: 0
-Total na base: 1046
+Removidos da base: 4
+Total na base: 1044
 ============================================================
 
 ── NOVOS (scraping) ──
 
+https://www.acheconcursos.com.br/concursos-minas-gerais/processo-seletivo-unifei-mg-selecao-edital-31-2026-professor-substituto-89659
+https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-publico-camara-santa-isabel-sp-abre-4-cargos-89660
 https://www.pciconcursos.com.br/noticias/ale-rr-publica-editais-de-concursos-com-salarios-de-ate-39589
 https://www.pciconcursos.com.br/noticias/funpresp-jud-df-abre-concurso-publico-com-salarios-de-ate-11-4-mil
 
