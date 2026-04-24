@@ -1,20 +1,13 @@
-Verificação: 2026-04-24T11:26:40.171404+00:00
-Links novos encontrados: 9
-  Scraping: 9
+Verificação: 2026-04-24T12:19:08.021152+00:00
+Links novos encontrados: 2
+  Scraping: 2
   Alertas:  0
-Removidos da base: 25
+Removidos da base: 0
 Total na base: 1046
 ============================================================
 
 ── NOVOS (scraping) ──
 
-https://cj.estrategia.com/portal/curso-pgms-o-caminho-mais-rapido-para-o-seu-cargo-juridico/
-https://cj.estrategia.com/portal/curso-temas-quentes-para-a-fase-escrita-do-mp-sp-promotor/
-https://cj.estrategia.com/portal/hora-da-verdade-mpdft-promotor/
-https://cj.estrategia.com/portal/investigacao-social-mutilou-prova-delegado/
-https://cj.estrategia.com/portal/mp-rj-promotor-contagem-regressiva/
-https://cj.estrategia.com/portal/regime-separacao-obrigatoria-bens/
-https://www.acheconcursos.com.br/concursos-minas-gerais/concurso-unifal-mg-professores-89658
 https://www.pciconcursos.com.br/noticias/ale-rr-publica-editais-de-concursos-com-salarios-de-ate-39589
 https://www.pciconcursos.com.br/noticias/funpresp-jud-df-abre-concurso-publico-com-salarios-de-ate-11-4-mil
 
