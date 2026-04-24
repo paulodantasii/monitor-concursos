@@ -18,21 +18,6 @@ URLS_ALVO = [
     "https://www.acheconcursos.com.br/concursos-atualizados-recentemente",
     "https://www.acheconcursos.com.br/concursos-previstos",
     "https://www.acheconcursos.com.br/concursos-abertos",
-    "https://cj.estrategia.com/portal/",
-    "https://cj.estrategia.com/portal/page/2/",
-    "https://cj.estrategia.com/portal/page/3/",
-    "https://cj.estrategia.com/portal/page/4/",
-    "https://cj.estrategia.com/portal/page/5/",
-    "https://cj.estrategia.com/portal/carreiras-juridicas/",
-    "https://cj.estrategia.com/portal/carreiras-juridicas/page/2/",
-    "https://cj.estrategia.com/portal/carreiras-juridicas/page/3/",
-    "https://cj.estrategia.com/portal/carreiras-juridicas/page/4/",
-    "https://cj.estrategia.com/portal/carreiras-juridicas/page/5/",
-    "https://cj.estrategia.com/portal/procuradoria/",
-    "https://cj.estrategia.com/portal/procuradoria/page/2/",
-    "https://cj.estrategia.com/portal/procuradoria/page/3/",
-    "https://cj.estrategia.com/portal/procuradoria/page/4/",
-    "https://cj.estrategia.com/portal/procuradoria/page/5/",
 ]
 
 GOOGLE_ALERTAS_FEEDS = [
@@ -101,7 +86,6 @@ HEADERS = {
 DOMINIOS_ALVO = {
     "pciconcursos.com.br",
     "acheconcursos.com.br",
-    "cj.estrategia.com",
 }
 
 PADROES_RELEVANTES = [
