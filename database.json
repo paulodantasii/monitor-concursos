@@ -4579,11 +4579,6 @@
     "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
     "ausencias_consecutivas": 0
   },
-  "https://cj.estrategia.com/portal/concurso-advogado-cfbm/": {
-    "primeira_vez": "2026-04-23T16:52:23.568838+00:00",
-    "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
-    "ausencias_consecutivas": 0
-  },
   "https://www.acheconcursos.com.br/concursos-rio-grande-do-sul/concurso-prefeitura-caibate-rs-2026-inscricao-18-vagas-89183": {
     "primeira_vez": "2026-04-23T16:52:23.568838+00:00",
     "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
@@ -5207,12 +5202,6 @@
     "ausencias_consecutivas": 0,
     "fonte": "scraping"
   },
-  "https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-cau-sp-2026-edital-inscricao-89656": {
-    "primeira_vez": "2026-04-24T10:56:24.998375+00:00",
-    "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
-    "ausencias_consecutivas": 0,
-    "fonte": "scraping"
-  },
   "https://cj.estrategia.com/portal/prova-subjetiva-mpgo-como-funciona/": {
     "primeira_vez": "2026-04-24T10:56:24.998375+00:00",
     "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
@@ -5315,19 +5304,7 @@
     "ausencias_consecutivas": 0,
     "fonte": "scraping"
   },
-  "https://www.pciconcursos.com.br/noticias/ale-rr-publica-editais-de-concursos-com-salarios-de-ate-39589": {
-    "primeira_vez": "2026-04-24T12:34:12.807055+00:00",
-    "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
-    "ausencias_consecutivas": 0,
-    "fonte": "scraping"
-  },
   "https://www.acheconcursos.com.br/concursos-minas-gerais/processo-seletivo-unifei-mg-selecao-edital-31-2026-professor-substituto-89659": {
-    "primeira_vez": "2026-04-24T12:34:12.807055+00:00",
-    "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
-    "ausencias_consecutivas": 0,
-    "fonte": "scraping"
-  },
-  "https://www.pciconcursos.com.br/noticias/funpresp-jud-df-abre-concurso-publico-com-salarios-de-ate-11-4-mil": {
     "primeira_vez": "2026-04-24T12:34:12.807055+00:00",
     "ultima_vez_visto": "2026-04-24T12:34:12.807055+00:00",
     "ausencias_consecutivas": 0,
