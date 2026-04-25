@@ -2,7 +2,7 @@ name: Coletor de Links de Concursos
 
 on:
   schedule:
-    - cron: "0 7 * * *"  # 4h de Brasília (UTC-3)
+    - cron: "0 5 * * *"  # 2h de Brasília (UTC-3)
   workflow_dispatch:
 
 jobs:
