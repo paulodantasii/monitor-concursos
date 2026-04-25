@@ -66,7 +66,7 @@ GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_M
 CALLMEBOT_PHONE = "558699252617"
 CALLMEBOT_APIKEY = os.environ.get("CALLMEBOT_APIKEY", "")
 GITHUB_USER = "paulodantasii"
-GITHUB_REPO = "alerta-concursos-juridicos"
+GITHUB_REPO = "monitor-concursos"
 URL_RELATORIO = f"https://{GITHUB_USER}.github.io/{GITHUB_REPO}/relatorio.html"
 
 DATABASE_FILE = "database.json"
@@ -541,15 +541,19 @@ def enviar_whatsapp(mensagem: str) -> None:
         print(f"  [WhatsApp] Erro ao enviar: {e}")
 
 
-def formatar_mensagem_whatsapp(data_str: str, total_novos: int, relevantes: list, resumo: str) -> str:
+def formatar_mensagem_whatsapp(data_str: str, total_novos: int, relevantes: list, resumo: str, erros_gemini: int = 0) -> str:
     cabecalho = (
         f"Alertas de Concursos - {data_str}\n"
         f"{len(relevantes)} oportunidade(s) relevante(s) encontrada(s).\n\n"
     )
     if not relevantes:
-        return cabecalho + "Nenhuma oportunidade relevante encontrada hoje."
+        msg = cabecalho + "Nenhuma oportunidade relevante encontrada hoje."
+        if erros_gemini > 0:
+            msg += f"\n\n⚠️ {erros_gemini} link(s) não analisado(s) por erro na API."
+        return msg
 
-    rodape = f"\n\n🔗 {URL_RELATORIO}"
+    aviso_erros = f"\n\n⚠️ {erros_gemini} link(s) não analisado(s) por erro na API." if erros_gemini > 0 else ""
+    rodape = f"\n\n🔗 {URL_RELATORIO}{aviso_erros}"
     corpo = resumo if resumo else "Veja o relatório completo no link abaixo."
 
     mensagem = cabecalho + corpo + rodape
@@ -682,6 +686,7 @@ def main():
     # ── Análise Gemini ────────────────────────────────────────────────────────
     print(f"\nAnalisando {total_novos} links novos via Gemini...\n")
     relevantes = []
+    erros_gemini = 0
 
     todos_novos = []
     for url in novos_scraping:
@@ -703,6 +708,9 @@ def main():
         titulo = titulo_real or item.get("title", "")
         avaliacao = avaliar_relevancia(url, titulo, texto)
         print(f"    → relevante: {avaliacao.get('relevante')} | {avaliacao.get('motivo', '')}")
+
+        if avaliacao.get("motivo") == "erro após 3 tentativas":
+            erros_gemini += 1
 
         if avaliacao.get("relevante"):
             relevantes.append({
@@ -744,7 +752,7 @@ def main():
 
     # ── WhatsApp ──────────────────────────────────────────────────────────────
     print("\nEnviando mensagem para WhatsApp...")
-    mensagem = formatar_mensagem_whatsapp(data_str, total_novos, relevantes, resumo)
+    mensagem = formatar_mensagem_whatsapp(data_str, total_novos, relevantes, resumo, erros_gemini)
     print(f"  Mensagem ({len(mensagem)} chars):\n{mensagem}")
     enviar_whatsapp(mensagem)
 
