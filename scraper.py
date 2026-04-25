@@ -3,7 +3,7 @@ import os
 import re
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin, urlparse, parse_qs, unquote, quote
 
 import requests
@@ -65,10 +65,14 @@ GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_M
 
 CALLMEBOT_PHONE = "558699252617"
 CALLMEBOT_APIKEY = os.environ.get("CALLMEBOT_APIKEY", "")
+GITHUB_USER = "paulodantasii"
+GITHUB_REPO = "monitor-concursos"
+URL_RELATORIO = f"https://{GITHUB_USER}.github.io/{GITHUB_REPO}/relatorio.html"
 
 DATABASE_FILE = "database.json"
 OUTPUT_NOVOS = "novos_links.txt"
 OUTPUT_RELEVANTES = "novos_relevantes.txt"
+OUTPUT_HTML = "relatorio.html"
 MAX_AUSENCIAS = 3
 MAX_CHARS_PAGINA = 6000
 PAUSA_GEMINI = 4.5
@@ -135,8 +139,17 @@ ou
 Conteúdo para avaliar:
 """
 
+PROMPT_RESUMO = """Com base nos resultados abaixo, escreva um resumo MUITO CURTO (máximo 300 caracteres) das oportunidades encontradas, mencionando os tipos de cargo e órgãos principais. Seja direto e objetivo, sem introdução. Exemplo: "Vagas para Procurador (PGM-SP, ALE-RR), Advogado (FUNPRESP, NAV Brasil) e Residência Jurídica (MPMG). Inscrições abertas."
+
+Resultados:
+"""
+
 
 # ─── Utilitários ──────────────────────────────────────────────────────────────
+
+def agora_brasilia() -> datetime:
+    return datetime.now(timezone(timedelta(hours=-3)))
+
 
 def dominio(url: str) -> str:
     host = urlparse(url).netloc
@@ -277,20 +290,13 @@ def extrair_pagina(url: str) -> tuple:
         return "", ""
 
 
-# ─── Gemini com retry ─────────────────────────────────────────────────────────
+# ─── Gemini ───────────────────────────────────────────────────────────────────
 
-def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
-    if not GEMINI_API_KEY:
-        return {"relevante": False, "motivo": "GEMINI_API_KEY não configurada"}
-    if not texto or len(texto) < 50:
-        return {"relevante": False, "motivo": "texto insuficiente"}
-
-    conteudo = f"URL: {url}\nTítulo: {titulo}\n\nTexto:\n{texto}"
+def chamar_gemini(prompt: str) -> str:
     payload = {
-        "contents": [{"parts": [{"text": PROMPT_RELEVANCIA + conteudo}]}],
-        "generationConfig": {"temperature": 0, "maxOutputTokens": 200},
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0, "maxOutputTokens": 400},
     }
-
     for tentativa in range(3):
         try:
             resp = requests.post(
@@ -302,15 +308,192 @@ def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
             )
             resp.raise_for_status()
             data = resp.json()
-            texto_resposta = data["candidates"][0]["content"]["parts"][0]["text"].strip()
-            texto_resposta = re.sub(r"```json|```", "", texto_resposta).strip()
-            return json.loads(texto_resposta)
+            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
         except Exception as e:
-            print(f"    [ERRO Gemini tentativa {tentativa+1}/3] {url} → {e}")
+            print(f"    [ERRO Gemini tentativa {tentativa+1}/3] → {e}")
             if tentativa < 2:
-                time.sleep(15 * (tentativa + 1))  # 15s na 1ª, 30s na 2ª
+                time.sleep(15 * (tentativa + 1))
+    return ""
 
-    return {"relevante": False, "motivo": "erro após 3 tentativas"}
+
+def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
+    if not GEMINI_API_KEY:
+        return {"relevante": False, "motivo": "GEMINI_API_KEY não configurada"}
+    if not texto or len(texto) < 50:
+        return {"relevante": False, "motivo": "texto insuficiente"}
+
+    conteudo = f"URL: {url}\nTítulo: {titulo}\n\nTexto:\n{texto}"
+    resposta = chamar_gemini(PROMPT_RELEVANCIA + conteudo)
+    if not resposta:
+        return {"relevante": False, "motivo": "erro após 3 tentativas"}
+    try:
+        resposta = re.sub(r"```json|```", "", resposta).strip()
+        return json.loads(resposta)
+    except Exception:
+        return {"relevante": False, "motivo": "erro ao interpretar resposta"}
+
+
+def gerar_resumo_whatsapp(relevantes: list) -> str:
+    if not GEMINI_API_KEY or not relevantes:
+        return ""
+    lista = "\n".join(
+        f"- {item.get('titulo_real') or item.get('title') or item.get('url')} | {item.get('motivo', '')}"
+        for item in relevantes
+    )
+    resposta = chamar_gemini(PROMPT_RESUMO + lista)
+    return resposta[:300] if resposta else ""
+
+
+# ─── Relatório HTML ───────────────────────────────────────────────────────────
+
+def gerar_html(relevantes: list, data_str: str, total_analisados: int) -> str:
+    cards = ""
+    for item in relevantes:
+        titulo = item.get("titulo_real") or item.get("title") or "Ver link"
+        titulo = re.sub(r"\s*[|\-–]\s*.{3,40}$", "", titulo).strip()
+        url = item.get("url", "")
+        motivo = item.get("motivo", "")
+        fonte = item.get("fonte", "")
+        termo = item.get("termo", "")
+        tag = f'<span class="tag">{termo}</span>' if termo else f'<span class="tag">{fonte}</span>'
+
+        cards += f"""
+        <div class="card">
+            {tag}
+            <h2><a href="{url}" target="_blank">{titulo}</a></h2>
+            <p class="motivo">{motivo}</p>
+            <a href="{url}" target="_blank" class="btn">Acessar matéria →</a>
+        </div>
+        """
+
+    if not relevantes:
+        cards = '<div class="vazio">Nenhuma oportunidade relevante encontrada nesta verificação.</div>'
+
+    return f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Concursos Jurídicos</title>
+    <style>
+        * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f2f5;
+            color: #1a1a2e;
+            min-height: 100vh;
+        }}
+        header {{
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 2rem 1.5rem 1.5rem;
+            text-align: center;
+        }}
+        header h1 {{
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.4rem;
+        }}
+        header p {{
+            font-size: 0.85rem;
+            opacity: 0.75;
+        }}
+        .badge {{
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-top: 0.8rem;
+        }}
+        .container {{
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }}
+        .card {{
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem 1.3rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            border-left: 4px solid #e94560;
+        }}
+        .tag {{
+            display: inline-block;
+            background: #f0f2f5;
+            color: #555;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 0.6rem;
+        }}
+        .card h2 {{
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+        }}
+        .card h2 a {{
+            color: inherit;
+            text-decoration: none;
+        }}
+        .card h2 a:hover {{
+            color: #e94560;
+        }}
+        .motivo {{
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 0.9rem;
+        }}
+        .btn {{
+            display: inline-block;
+            background: #1a1a2e;
+            color: white;
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 0.45rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }}
+        .btn:hover {{
+            background: #e94560;
+        }}
+        .vazio {{
+            text-align: center;
+            color: #888;
+            padding: 3rem 1rem;
+            font-size: 0.95rem;
+        }}
+        footer {{
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.78rem;
+            color: #aaa;
+        }}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚖️ Monitor de Concursos Jurídicos</h1>
+        <p>Verificação de {data_str} · {total_analisados} links analisados</p>
+        <div class="badge">{len(relevantes)} oportunidade(s) relevante(s)</div>
+    </header>
+    <div class="container">
+        {cards}
+    </div>
+    <footer>Gerado automaticamente · Monitor de Concursos Jurídicos</footer>
+</body>
+</html>"""
 
 
 # ─── WhatsApp via CallMeBot ───────────────────────────────────────────────────
@@ -335,35 +518,25 @@ def enviar_whatsapp(mensagem: str) -> None:
         print(f"  [WhatsApp] Erro ao enviar: {e}")
 
 
-def formatar_mensagem_whatsapp(agora: str, total_novos: int, relevantes: list) -> str:
-    dt = datetime.fromisoformat(agora)
-    data_str = dt.strftime("%d/%m/%Y às %Hh%M")
-
+def formatar_mensagem_whatsapp(data_str: str, total_novos: int, relevantes: list, resumo: str) -> str:
+    cabecalho = (
+        f"Alerta de Concursos - {data_str}\n"
+        f"{len(relevantes)} oportunidade(s) relevante(s) encontrada(s).\n\n"
+    )
     if not relevantes:
-        return (
-            f"Monitor de Concursos - {data_str}\n"
-            f"Verificação concluída. {total_novos} links novos analisados.\n"
-            f"Nenhuma oportunidade relevante encontrada hoje."
-        )
+        return cabecalho + "Nenhuma oportunidade relevante encontrada hoje."
 
-    linhas = [
-        f"Monitor de Concursos - {data_str}",
-        f"{len(relevantes)} oportunidade(s) relevante(s) encontrada(s):",
-        "",
-    ]
-    for i, item in enumerate(relevantes, 1):
-        titulo = item.get("titulo_real") or item.get("title") or ""
-        titulo = re.sub(r"\s*[|\-–]\s*.{3,40}$", "", titulo).strip()
-        if not titulo:
-            titulo = "Ver link"
-        motivo = item.get("motivo", "")
-        url = item.get("url", "")
-        linhas.append(f"{i}. {titulo}")
-        linhas.append(f"   {motivo}")
-        linhas.append(f"   {url}")
-        linhas.append("")
+    rodape = f"\n\n🔗 {URL_RELATORIO}"
+    corpo = resumo if resumo else "Veja o relatório completo no link abaixo."
 
-    return "\n".join(linhas).strip()
+    mensagem = cabecalho + corpo + rodape
+    # Garante que não ultrapasse 768 caracteres
+    if len(mensagem) > 768:
+        espaco = 768 - len(cabecalho) - len(rodape) - 3
+        corpo = corpo[:espaco] + "..."
+        mensagem = cabecalho + corpo + rodape
+
+    return mensagem
 
 
 # ─── Base de dados ────────────────────────────────────────────────────────────
@@ -383,8 +556,11 @@ def salvar_base(base: dict) -> None:
 # ─── Principal ────────────────────────────────────────────────────────────────
 
 def main():
-    agora = datetime.now(timezone.utc).isoformat()
-    print(f"\n=== Execução: {agora} ===\n")
+    agora_utc = datetime.now(timezone.utc).isoformat()
+    agora_br = agora_brasilia()
+    data_str = agora_br.strftime("%d/%m/%Y às %Hh%M")
+
+    print(f"\n=== Execução: {agora_utc} ===\n")
 
     base = carregar_base()
     primeira_execucao = len(base) == 0
@@ -404,21 +580,23 @@ def main():
         print("Primeira execução: populando a base de dados.")
         for url in todos_links:
             base[url] = {
-                "primeira_vez": agora,
-                "ultima_vez_visto": agora,
+                "primeira_vez": agora_utc,
+                "ultima_vez_visto": agora_utc,
                 "ausencias_consecutivas": 0,
                 "fonte": "alerta" if url in links_alertas else "scraping",
             }
         salvar_base(base)
         with open(OUTPUT_NOVOS, "w", encoding="utf-8") as f:
             f.write(
-                f"Primeira execução em {agora}.\n"
+                f"Primeira execução em {agora_utc}.\n"
                 f"Base criada com {len(base)} links "
                 f"({len(links_scraping)} scraping + {len(links_alertas)} alertas).\n"
                 "Nenhum link 'novo' acusado (todos são a base inicial).\n"
             )
         with open(OUTPUT_RELEVANTES, "w", encoding="utf-8") as f:
-            f.write(f"Primeira execução em {agora}.\nNenhum link relevante acusado.\n")
+            f.write(f"Primeira execução em {agora_utc}.\nNenhum link relevante acusado.\n")
+        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+            f.write(gerar_html([], data_str, 0))
         print(f"Base criada com {len(base)} links.")
         return
 
@@ -435,13 +613,13 @@ def main():
             else:
                 novos_scraping.append(url)
             base[url] = {
-                "primeira_vez": agora,
-                "ultima_vez_visto": agora,
+                "primeira_vez": agora_utc,
+                "ultima_vez_visto": agora_utc,
                 "ausencias_consecutivas": 0,
                 "fonte": fonte,
             }
         else:
-            base[url]["ultima_vez_visto"] = agora
+            base[url]["ultima_vez_visto"] = agora_utc
             base[url]["ausencias_consecutivas"] = 0
 
     removidos = []
@@ -457,7 +635,7 @@ def main():
     # ── novos_links.txt ───────────────────────────────────────────────────────
     total_novos = len(novos_scraping) + len(novos_alertas)
     with open(OUTPUT_NOVOS, "w", encoding="utf-8") as f:
-        f.write(f"Verificação: {agora}\n")
+        f.write(f"Verificação: {agora_utc}\n")
         f.write(f"Links novos encontrados: {total_novos}\n")
         f.write(f"  Scraping: {len(novos_scraping)}\n")
         f.write(f"  Alertas:  {len(novos_alertas)}\n")
@@ -501,7 +679,6 @@ def main():
             continue
 
         titulo = titulo_real or item.get("title", "")
-
         avaliacao = avaliar_relevancia(url, titulo, texto)
         print(f"    → relevante: {avaliacao.get('relevante')} | {avaliacao.get('motivo', '')}")
 
@@ -516,7 +693,7 @@ def main():
 
     # ── novos_relevantes.txt ──────────────────────────────────────────────────
     with open(OUTPUT_RELEVANTES, "w", encoding="utf-8") as f:
-        f.write(f"Verificação: {agora}\n")
+        f.write(f"Verificação: {agora_utc}\n")
         f.write(f"Links analisados: {total_novos}\n")
         f.write(f"Links relevantes: {len(relevantes)}\n")
         f.write("=" * 60 + "\n\n")
@@ -529,13 +706,28 @@ def main():
         else:
             f.write("Nenhum link relevante encontrado.\n")
 
+    # ── Relatório HTML ────────────────────────────────────────────────────────
+    print("\nGerando relatório HTML...")
+    html = gerar_html(relevantes, data_str, total_novos)
+    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"  Relatório salvo em '{OUTPUT_HTML}'.")
+
+    # ── Resumo via Gemini para WhatsApp ───────────────────────────────────────
+    resumo = ""
+    if relevantes:
+        print("\nGerando resumo para WhatsApp...")
+        resumo = gerar_resumo_whatsapp(relevantes)
+        print(f"  Resumo: {resumo}")
+
     # ── WhatsApp ──────────────────────────────────────────────────────────────
-    print("\nEnviando resumo para WhatsApp...")
-    mensagem = formatar_mensagem_whatsapp(agora, total_novos, relevantes)
+    print("\nEnviando mensagem para WhatsApp...")
+    mensagem = formatar_mensagem_whatsapp(data_str, total_novos, relevantes, resumo)
+    print(f"  Mensagem ({len(mensagem)} chars):\n{mensagem}")
     enviar_whatsapp(mensagem)
 
     print(f"\nRelevantes: {len(relevantes)}/{total_novos}")
-    print(f"Salvo em '{OUTPUT_RELEVANTES}'.")
+    print(f"Relatório: {URL_RELATORIO}")
 
 
 if __name__ == "__main__":
