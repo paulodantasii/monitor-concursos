@@ -70,8 +70,8 @@ DATABASE_FILE = "database.json"
 OUTPUT_NOVOS = "novos_links.txt"
 OUTPUT_RELEVANTES = "novos_relevantes.txt"
 MAX_AUSENCIAS = 3
-MAX_CHARS_PAGINA = 12000
-PAUSA_GEMINI = 5
+MAX_CHARS_PAGINA = 6000
+PAUSA_GEMINI = 4.5
 
 HEADERS = {
     "User-Agent": (
