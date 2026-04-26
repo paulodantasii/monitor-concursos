@@ -1,9 +1,259 @@
-Verificação: 2026-04-25T15:30:33.608521+00:00
-Links novos encontrados: 0
-  Scraping: 0
-  Alertas:  0
-Removidos da base: 88
-Total na base: 845
+Verificação: 2026-04-26T08:22:06.725909+00:00
+Links novos encontrados: 50
+  Scraping: 1
+  Alertas:  49
+Removidos da base: 0
+Total na base: 895
 ============================================================
 
-Nenhum link novo encontrado.
+── NOVOS (scraping) ──
+
+https://www.acheconcursos.com.br/concursos-ceara/edital-sefaz-ce-2026-abre-concurso-com-300-vagas-89691
+
+── NOVOS (Google Alertas) ──
+
+Termo:   seletivo concurso advogado
+Título:  <b>Concurso</b> público em Xavantina terá salário de até R$ 29 mil - ND Mais
+URL:     https://ndmais.com.br/empregos-e-concursos/concurso-publico-em-xavantina-tera-salario-de-ate-rs-29-mil/
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  Inscrições Abertas: Processo <b>Seletivo</b> para o HPS de Pelotas com salários de até R$ 17.617,95
+URL:     https://setorsaude.com.br/inscricoes-abertas-processo-seletivo-para-o-hps-de-pelotas-com-salarios-de-ate-r-17-61795/
+Trecho:  
+
+Termo:   seletivo concurso consultor legislativo
+Título:  <b>Concurso</b> da Câmara: mais de 31 mil fazem prova neste domingo - Jornal Extra de Alagoas
+URL:     https://ojornalextra.com.br/noticias/brasil/2026/04/126080-concurso-da-camara-mais-de-31-mil-fazem-prova-neste-domingo
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  Florence abre seleção para comissão do VI Meeting de Estética e Cosmética e Feira de ...
+URL:     https://www.florence.edu.br/2026/04/24/florence-abre-selecao-para-comissao-do-vi-meeting-de-estetica-e-cosmetica-e-feira-de-beleza-e-saude/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  MPF em Alagoas altera data da prova discursiva para estágio de Direito
+URL:     https://ojornalextra.com.br/noticias/alagoas/2026/04/126078-mpf-em-alagoas-altera-data-da-prova-discursiva-para-estagio-de-direito
+Trecho:  
+
+Termo:   seletivo concurso consultor legislativo
+Título:  Assembleia Legislativa do Ceará abre 200 vagas em <b>concurso</b> previsto para 2026 - Uniten
+URL:     https://uniten.com.br/concurso-alece-200-vagas-2026/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  MPMG abre seleção para <b>residência jurídica</b> em Passos com bolsa de R$ 4,8 mil
+URL:     https://concursonews.com/2026/04/mpmg-abre-selecao-para-residencia-juridica-em-passos-com-bolsa-de-r-48-mil-inscricoes-vao-ate-30-de-abril/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  <b>Concurso</b> ALE CE confirma 200 vagas para 2026 e movimenta concurseiros de nível médio ...
+URL:     https://academiaconcursos.com.br/concurso-ale-ce-200-vagas-2026/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Cajari-MA abre <b>concurso</b> com 189 vagas e salários de até R$ 4,7 mil
+URL:     https://concursonews.com/2026/04/cajari-ma-abre-concurso-com-189-vagas-e-salarios-de-ate-r-47-mil-inscricoes-seguem-ate-22-de-maio/
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  UNESP Presidente Prudente SP abre processo <b>seletivo</b> para professor substituto
+URL:     https://folha.qconcursos.com/n/unesp-presidente-prudente-sp-abre-processo-seletivo-para-professor-substituto
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  Um dos melhores do país, Programa de <b>Pós</b>-<b>Graduação</b> em <b>Direito</b> Constitucional abre ...
+URL:     https://unifor.br/web/pos-graduacao/-/um-dos-melhores-do-pais-programa-de-pos-graduacao-em-direito-constitucional-abre-selecao-para-novos-alunos
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  <b>Concurso</b> PC BA Delegado: AOCP será a banca; confira os detalhes
+URL:     https://blog.grancursosonline.com.br/concurso-pc-ba-delegado-contratacao-da-banca-em-andamento-2026/amp
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  NAV Brasil abre primeiro <b>concurso</b> com salários acima de R$ 10 mil - ContilNet
+URL:     https://contilnetnoticias.com.br/2026/04/nav-brasil-abre-primeiro-concurso-com-salarios-acima-de-r-10-mil/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  Município de Tarauacá (AC) abre processo <b>seletivo</b> simplificado - Concursos no Brasil
+URL:     https://concursosnobrasil.com/concursos/ac/2026/04/24/municipio-de-tarauaca-ac-abre-processo-seletivo-simplificado/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  TJMG abre seleção de estágio em <b>Direito</b> com bolsa de R$ 2,6 mil em Carmópolis de Minas
+URL:     https://concursonews.com/2026/04/tjmg-abre-selecao-de-estagio-em-direito-com-bolsa-de-r-26-mil-em-carmopolis-de-minas/
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  Trabalhe na EAD: UFMA tem 3 Editais abertos para Contratar Mediadores e Assistentes
+URL:     https://www.pebsp.com/trabalhe-na-ead-ufma-tem-3-editais-abertos-para-contratar-mediadores-e-assistentes/
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  <b>Estágio</b> Prefeitura de São Pedro da União (MG) abre edital com bolsa de R$ 2 mil
+URL:     https://concursosnobrasil.com/concursos/mg/2026/04/24/estagio-prefeitura-de-sao-pedro-da-uniao-mg-abre-edital-com-bolsa-de-r-2-mil/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  TJMG abre seleção para estágio em <b>Direito</b> em Iturama (MG) com bolsa de R$ 2,6 mil
+URL:     https://concursonews.com/2026/04/tjmg-abre-selecao-para-estagio-em-direito-em-iturama-mg-com-bolsa-de-r-26-mil-inscricoes-comecam-dia-27/
+Trecho:  
+
+Termo:   seletivo concurso consultor legislativo
+Título:  Lista <b>concurso</b> - 63 editais e 17.915 vagas - Correio Braziliense
+URL:     https://www.correiobraziliense.com.br/euestudante/trabalho-e-formacao/2026/04/amp/7405313-lista-concurso-63-editais-e-17-915-vagas.html
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  CURSO ENFERMAGEM BACHARELADO, OBJETO DOS EDITAIS N.º 08/2026GR/UEMA, N ...
+URL:     https://www.uema.br/2026/04/resultado-final-da-prova-didatica-referente-ao-concurso-publico-para-atendimento-ao-campus-ze-doca-curso-enfermagem-bacharelado-objeto-dos-editais-n-o-08-2026gr-uema-n-o-78-2026-gr-uema-e-retifica/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Em vez de alívio, limbo profissional ronda concurseiros de MS que esperam convocação
+URL:     https://midiamax.com.br/cotidiano/2026/inves-alivio-limbo-profissional-ronda-concurseiros-ms-esperam-convocacao/
+Trecho:  
+
+Termo:   seletivo concurso consultor legislativo
+Título:  Senasp abre seleção para <b>consultor</b> com remuneração de R$ 120 mil; inscrições vão até 15 de maio
+URL:     https://concursonews.com/2026/04/senasp-abre-selecao-para-consultor-com-remuneracao-de-r-120-mil-inscricoes-vao-ate-15-de-maio/
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  Mais de 800 vagas: FUNAI avança com novo processo <b>seletivo</b> temporário - Roraima na Rede
+URL:     https://www.roraimanarede.com.br/noticia/mais-de-800-vagas-funai-avanca-com-novo-processo-seletivo-temporario
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Edital SEFAZ-CE 2026 abre <b>concurso</b> com 300 vagas
+URL:     https://www.acheconcursos.com.br/concursos-ceara/edital-sefaz-ce-2026-abre-concurso-com-300-vagas-89691.amp
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  Mini Fazendinha e Setor Agro são destaque na festa dos 72 anos de Nova Venécia
+URL:     https://www.novavenecia.es.gov.br/mini-fazendinha-e-setor-agro-sao-destaque-na-festa-dos-72-anos-de-nova-venecia/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Vem <b>concurso</b>! Banco do Brasil avança no processo de seleção da banca organizadora
+URL:     https://noticiasconcursos.com.br/vem-concurso-banco-do-brasil-avanca-no-processo-de-selecao-da-banca-organizadora/
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  Prefeitura realiza <b>Concurso</b> Público e Processo <b>Seletivo</b> para 2026 - Notícias
+URL:     https://www.carlosbarbosa.rs.gov.br/noticias/prefeitura-realiza-concurso-publico-e-processo-seletivo-para-2026
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Quer trabalhar na Educação? Vila Velha tem seleção aberta até quarta-feira - Folha Vitória
+URL:     https://www.folhavitoria.com.br/trabalho/concursos/quer-trabalhar-na-educacao-vila-velha-tem-selecao-aberta-ate-quarta-feira/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Provas do <b>concurso</b> da Prefeitura de Leme (SP) serão aplicadas em 17 de maio - Uniten
+URL:     https://uniten.com.br/provas-concurso-prefeitura-leme-sp-17-maio/
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  TRE-PB abre três editais de <b>estágio</b> 2026 com vagas em <b>Direito</b>, nível superior e <b>pós</b>-<b>graduação</b>
+URL:     https://concursonews.com/2026/04/tre-pb-abre-tres-editais-de-estagio-2026-com-vagas-em-direito-nivel-superior-e-pos-graduacao-bolsas-chegam-a-r-1-800/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  MPMG abre seleção para <b>residência jurídica</b> em Além Paraíba com bolsa de R$ 4,8 mil
+URL:     https://concursonews.com/2026/04/mpmg-abre-selecao-para-residencia-juridica-em-alem-paraiba-com-bolsa-de-r-48-mil/
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  Resultado da homologação das inscrições para especialização em Inteligência Artificial Aplica...
+URL:     https://www.tjma.jus.br/midia/compensacao-financeira/noticia/521448/resultado-da-homologacao-das-inscricoes-para-especializacao-em-inteligencia-artificial-aplicada-ao-direito
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  AGERSA confirma primeiro <b>concurso</b> com 40 vagas; edital é previsto para 2026 - Uniten
+URL:     https://uniten.com.br/agersa-confirma-primeiro-concurso-40-vagas-2026/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  MPMG abre <b>residência jurídica</b> em Três Corações com vaga imediata e bolsa de R$ 4,8 mil
+URL:     https://concursonews.com/2026/04/mpmg-abre-residencia-juridica-em-tres-coracoes-com-vaga-imediata-e-bolsa-de-r-48-mil-inscricoes-ate-4-de-maio/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Trabalho no ES: seleção oferece oportunidades em mais de 60 cidades - Folha Vitória
+URL:     https://www.folhavitoria.com.br/trabalho/concursos/trabalho-no-es-selecao-oferece-oportunidades-em-mais-de-60-cidades/
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  Assembleia Legislativa abre <b>concurso</b> público de nível médio e superior com salário de R$ 40 mil
+URL:     https://www.portaltemponovo.com.br/assembleia-legislativa-abre-concurso-publico-de-nivel-medio-e-superior/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  <b>Concurso</b> PGE BA: Edital confirmado para julho! VEJA - Blog Gran Cursos Online
+URL:     https://blog.grancursosonline.com.br/concurso-pge-ba-edital-confirmado-para-julho-veja/
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  <b>Concurso</b> Câmara de Rio das Ostras (RJ) paga até R$ 5,7 mil em edital
+URL:     https://concursosnobrasil.com/concursos/rj/2026/04/24/concurso-camara-de-rio-das-ostras-rj-paga-ate-r-57-mil-em-edital/
+Trecho:  
+
+Termo:   seletivo concurso estagio de pos graduacao direito
+Título:  Fiocruz abre 166 vagas de <b>estágio</b> com bolsa de até R$ 2,2 mil - Primeira Página
+URL:     https://primeirapagina.com.br/emprego-e-concursos/fiocruz-abre-166-vagas-de-estagio-com-bolsa-de-ate-r-22-mil/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  MPMG abre dezenas de seleções para <b>residência jurídica</b> em MG com bolsas de R$ 4,8 mil
+URL:     https://concursonews.com/2026/04/mpmg-abre-dezenas-de-selecoes-para-residencia-juridica-em-mg-com-bolsas-de-r-48-mil-veja-prazos-por-cidade/
+Trecho:  
+
+Termo:   seletivo concurso consultor legislativo
+Título:  <b>Concurso</b> Câmara de Rio das Ostras RJ: Saiu edital! 38 vagas!
+URL:     https://www.novaconcursos.com.br/portal/concursos/camara-de-rio-das-ostras-rj/
+Trecho:  
+
+Termo:   seletivo concurso residencia juridica
+Título:  Processo <b>seletivo</b> no Governo do ES com salários de até R$ 4,5 mil e prova em junho
+URL:     https://tribunaonline.com.br/concursos/processo-seletivo-no-governo-do-es-com-salarios-de-ate-r-45-mil-e-prova-em-junho-299956?_=amp
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Sefaz CE publica edital com 300 vagas e salários de até R$ 16,1 mil - Portal N10
+URL:     https://portaln10.com.br/concursos/sefaz-ce-publica-edital-com-300-vagas-e-salarios-de-ate-r-161-mil-330484/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  Provas para Download - PCI Concursos
+URL:     https://www.pciconcursos.com.br/provas/analista-de-fiscalizacao-e-regulacao-administracao-abrangente/57
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  SEE/MG abre inscrições para seleção de mentores e tutores do programa Ser Docente 2.0
+URL:     https://www.educacao.mg.gov.br/see-mg-abre-inscricoes-para-selecao-de-mentores-e-tutores-do-programa-ser-docente-2-0/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  <b>Concurso</b> Prefeitura de Leme SP agenda provas para 17 de maio
+URL:     https://academiaconcursos.com.br/concurso-prefeitura-leme-sp-provas-17-maio/
+Trecho:  
+
+Termo:   seletivo concurso advogado
+Título:  À véspera do <b>concurso</b>, candidato aposta em vaga na Educação de Campos
+URL:     https://campos.rj.gov.br/exibirNoticia.php?id_noticia=103885
+Trecho:  
+
+Termo:   seletivo concurso consultor legislativo
+Título:  <b>Concurso</b> da Câmara de Cianorte PR 2026: Banca definida e edital iminente
+URL:     https://www.proximosconcursos.com/concurso-da-camara-de-cianorte-pr-2026-banca-definida-e-edital-iminente/
+Trecho:  
+
+Termo:   seletivo concurso direito
+Título:  MPDFT Promotor: o que vem agora no <b>concurso</b> que oferta 10 vagas e R$ 37,7 mil?
+URL:     https://cj.estrategia.com/portal/mpdft-promotor-o-que-vem-agora-no-concurso/
+Trecho:  
+
