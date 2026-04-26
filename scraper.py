@@ -157,7 +157,7 @@ RELEVANTE — sempre que o conteúdo tiver:
 - Procurador ou Advogado da Caixa Econômica Federal, Banco do Brasil, Petrobras, BNDES, Correios, EBSERH, Embrapa, Serpro, DATAPREV, autarquias e fundações federais, estaduais e municipais, etc
 - Analista ou Assessor de matéria jurídica ou correlatas em órgãos do executivo federal, estadual ou municipal, secretarias, ministérios, autarquias, agências reguladoras, empresas públicas, etc
 - Analista ou Assessor de matéria jurídica ou correlatas de Tribunal de Contas como TCU, TCE, TCM, etc
-- Cargos que exijam bacharelado em Direito e cujo conteúdo programático envolva direito público, administrativo, constitucional, tributário, civil, financeiro, licitações, contratos públicos, execução fiscal
+- Cargos que exijam bacharelado em Direito e cujo conteúdo programático envolva direito público, como: administrativo, constitucional, tributário, civil, financeiro, licitações, contratos públicos, execução fiscal, etc
 - Residência Jurídica em qualquer órgão público
 - Estágio de pós-graduação em Direito em qualquer órgão público
 - Programas de formação jurídica remunerada em órgãos públicos
@@ -166,13 +166,13 @@ NÃO RELEVANTE — se o conteúdo for apenas:
 - Cargos que NÃO exijam formação em Direito (professores de ensino básico, médicos, engenheiros, enfermeiros, saúde, limpeza, motoristas, técnicos de outras áreas, etc)
 - Cargos de nível médio ou técnico sem relevância jurídica
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevante": true, "motivo": "explicação em uma linha"}
+{"relevante": true, "motivo": "explicação em uma linha, sem precisar reafirmar que é relevante para bacharéis em Direito, se disser o cargo ou o contexto é suficiente para ficar subentendido"}
 ou
 {"relevante": false, "motivo": "explicação em uma linha"}
 Conteúdo para avaliar:
 """
 
-PROMPT_RESUMO = """Com base nos resultados abaixo, escreva um resumo MUITO CURTO (entre 450 e 550 caracteres) das oportunidades encontradas, mencionando os tipos de cargo e órgãos principais. Seja direto e objetivo, sem introdução. Por EXEMPLO: "Vagas para Procurador (abreviação dos órgãos), Advogado (siglas dos orgãos) e Residência Jurídica (orgão/sigla). Inscrições abertas ou Provas próximas, algo nesse sentido."
+PROMPT_RESUMO = """Com base nos resultados abaixo, escreva um resumo MUITO CURTO (entre 450 e 550 caracteres) das oportunidades encontradas, mencionando os tipos de cargo e órgãos principais. Seja direto e objetivo, sem introdução. Por EXEMPLO: "Vagas para Procurador (abreviação ou sigla dos órgãos), Advogado (sigla ou abreviação dos orgãos) e Residência Jurídica (orgão ou sigla). Inscrições abertas ou Provas próximas, algo nesse sentido."
 
 Resultados:
 """
