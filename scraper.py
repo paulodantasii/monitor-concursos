@@ -337,7 +337,7 @@ def extrair_pagina(url: str) -> tuple:
         return "", ""
 
 
-# ─── Gemini ───────────────────────────────────────────────────────────────────
+# ─── IA ───────────────────────────────────────────────────────────────────
 
 def chamar_openai(prompt: str) -> str:
     payload = {
@@ -543,11 +543,11 @@ def gerar_html(relevantes: list, data_str: str, total_analisados: int) -> str:
 </html>"""
 
 
-# ─── WhatsApp via CallMeBot ───────────────────────────────────────────────────
+# ─── WhatsApp ───────────────────────────────────────────────────
 
 def enviar_whatsapp(mensagem: str) -> None:
     if not TWILIO_ACCOUNT_SID or not TWILIO_AUTH_TOKEN:
-        print("  [AVISO] Credenciais Twilio não configuradas. Pulando envio.")
+        print("  [AVISO] Credenciais WhatsApp não configuradas. Pulando envio.")
         return
     url = f"https://api.twilio.com/2010-04-01/Accounts/{TWILIO_ACCOUNT_SID}/Messages.json"
     for tentativa in range(3):
@@ -570,18 +570,18 @@ def enviar_whatsapp(mensagem: str) -> None:
     print("  [WhatsApp] Falha após 3 tentativas.")
 
 
-def formatar_mensagem_whatsapp(data_str: str, total_novos: int, relevantes: list, resumo: str, erros_gemini: int = 0) -> str:
+def formatar_mensagem_whatsapp(data_str: str, total_novos: int, relevantes: list, resumo: str, erros_ia: int = 0) -> str:
     cabecalho = (
         f"Alertas de Concursos - {data_str}\n"
         f"{len(relevantes)} oportunidade(s) relevante(s) encontrada(s).\n\n"
     )
     if not relevantes:
         msg = cabecalho + "Nenhuma oportunidade relevante encontrada hoje."
-        if erros_gemini > 0:
-            msg += f"\n\n⚠️ {erros_gemini} link(s) não analisado(s) por erro na API."
+        if erros_ia > 0:
+            msg += f"\n\n⚠️ {erros_ia} link(s) não analisado(s) por erro na API."
         return msg
 
-    aviso_erros = f"\n\n⚠️ {erros_gemini} link(s) não analisado(s) por erro na API." if erros_gemini > 0 else ""
+    aviso_erros = f"\n\n⚠️ {erros_ia} link(s) não analisado(s) por erro na API." if erros_ia > 0 else ""
     rodape = f"\n\n🔗 {URL_RELATORIO}{aviso_erros}"
     corpo = resumo if resumo else "Veja o relatório completo no link abaixo."
 
@@ -712,10 +712,10 @@ def main():
         if total_novos == 0:
             f.write("Nenhum link novo encontrado.\n")
 
-    # ── Análise Gemini ────────────────────────────────────────────────────────
-    print(f"\nAnalisando {total_novos} links novos via Gemini...\n")
+    # ── Análise IA ────────────────────────────────────────────────────────
+    print(f"\nAnalisando {total_novos} links novos via IA...\n")
     relevantes = []
-    erros_gemini = 0
+    erros_ia = 0
 
     todos_novos = []
     for url in novos_scraping:
@@ -739,7 +739,7 @@ def main():
         print(f"    → relevante: {avaliacao.get('relevante')} | {avaliacao.get('motivo', '')}")
 
         if avaliacao.get("motivo") == "erro após 3 tentativas":
-            erros_gemini += 1
+            erros_ia += 1
 
         if avaliacao.get("relevante"):
             relevantes.append({
@@ -772,7 +772,7 @@ def main():
         f.write(html)
     print(f"  Relatório salvo em '{OUTPUT_HTML}'.")
 
-    # ── Resumo Gemini para WhatsApp ───────────────────────────────────────────
+    # ── Resumo para WhatsApp ───────────────────────────────────────────
     resumo = ""
     if relevantes:
         print("\nGerando resumo para WhatsApp...")
@@ -781,7 +781,7 @@ def main():
 
     # ── WhatsApp ──────────────────────────────────────────────────────────────
     print("\nEnviando mensagem para WhatsApp...")
-    mensagem = formatar_mensagem_whatsapp(data_str, total_novos, relevantes, resumo, erros_gemini)
+    mensagem = formatar_mensagem_whatsapp(data_str, total_novos, relevantes, resumo, erros_ia)
     print(f"  Mensagem ({len(mensagem)} chars):\n{mensagem}")
     enviar_whatsapp(mensagem)
 
