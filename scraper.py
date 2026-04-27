@@ -59,9 +59,9 @@ GOOGLE_ALERTAS_FEEDS = [
     },
 ]
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_MODEL = "gemini-3.1-flash-lite-preview"
-GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+OPENAI_MODEL = "gpt-4o-mini"
+OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 
 CALLMEBOT_PHONE = "558699252617"
 CALLMEBOT_APIKEY = os.environ.get("CALLMEBOT_APIKEY", "")
@@ -75,7 +75,7 @@ OUTPUT_RELEVANTES = "novos_relevantes.txt"
 OUTPUT_HTML = "relatorio.html"
 MAX_AUSENCIAS = 3
 MAX_CHARS_PAGINA = 6000
-PAUSA_GEMINI = 4.5
+PAUSA_API = 2.0
 
 HEADERS = {
     "User-Agent": (
@@ -337,38 +337,42 @@ def extrair_pagina(url: str) -> tuple:
 
 # ─── Gemini ───────────────────────────────────────────────────────────────────
 
-def chamar_gemini(prompt: str) -> str:
+def chamar_openai(prompt: str) -> str:
     payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0, "maxOutputTokens": 400},
+        "model": OPENAI_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+        "max_tokens": 400,
     }
     for tentativa in range(3):
         try:
             resp = requests.post(
-                GEMINI_URL,
-                headers={"Content-Type": "application/json"},
-                params={"key": GEMINI_API_KEY},
+                OPENAI_URL,
+                headers={
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {OPENAI_API_KEY}",
+                },
                 json=payload,
                 timeout=45,
             )
             resp.raise_for_status()
             data = resp.json()
-            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+            return data["choices"][0]["message"]["content"].strip()
         except Exception as e:
-            print(f"    [ERRO Gemini tentativa {tentativa+1}/3] → {e}")
+            print(f"    [ERRO OpenAI tentativa {tentativa+1}/3] → {e}")
             if tentativa < 2:
-                time.sleep(15 * (tentativa + 1))
+                time.sleep(10 * (tentativa + 1))
     return ""
 
 
 def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
-    if not GEMINI_API_KEY:
-        return {"relevante": False, "motivo": "GEMINI_API_KEY não configurada"}
+    if not OPENAI_API_KEY:
+        return {"relevante": False, "motivo": "OPENAI_API_KEY não configurada"}
     if not texto or len(texto) < 50:
         return {"relevante": False, "motivo": "texto insuficiente"}
 
     conteudo = f"URL: {url}\nTítulo: {titulo}\n\nTexto:\n{texto}"
-    resposta = chamar_gemini(PROMPT_RELEVANCIA + conteudo)
+    resposta = chamar_openai(PROMPT_RELEVANCIA + conteudo)
     if not resposta:
         return {"relevante": False, "motivo": "erro após 3 tentativas"}
     try:
@@ -379,13 +383,13 @@ def avaliar_relevancia(url: str, titulo: str, texto: str) -> dict:
 
 
 def gerar_resumo_whatsapp(relevantes: list) -> str:
-    if not GEMINI_API_KEY or not relevantes:
+    if not OPENAI_API_KEY or not relevantes:
         return ""
     lista = "\n".join(
         f"- {item.get('titulo_real') or item.get('title') or item.get('url')} | {item.get('motivo', '')}"
         for item in relevantes
     )
-    resposta = chamar_gemini(PROMPT_RESUMO + lista)
+    resposta = chamar_openai(PROMPT_RESUMO + lista)
     return resposta[:300] if resposta else ""
 
 
@@ -720,7 +724,7 @@ def main():
 
         if not texto or len(texto) < 50:
             print("    Sem texto extraído, pulando.")
-            time.sleep(PAUSA_GEMINI)
+            time.sleep(PAUSA_API)
             continue
 
         titulo = titulo_real or item.get("title", "")
@@ -737,7 +741,7 @@ def main():
                 "motivo": avaliacao.get("motivo", ""),
             })
 
-        time.sleep(PAUSA_GEMINI)
+        time.sleep(PAUSA_API)
 
     # ── novos_relevantes.txt ──────────────────────────────────────────────────
     with open(OUTPUT_RELEVANTES, "w", encoding="utf-8") as f:
