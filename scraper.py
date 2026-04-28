@@ -5,6 +5,7 @@ import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin, urlparse, parse_qs, unquote
+from html import escape
 
 import requests
 from bs4 import BeautifulSoup
@@ -139,7 +140,6 @@ NOMES_SITES = {
     "ojornalextra.com.br": "O JORNAL EXTRA",
     "contilnetnoticias.com.br": "CONTILNET",
     "midiamax.com.br": "MÍDIAMAX",
-    "noticiasconcursos.com.br": "NOTÍCIAS CONCURSOS",
     "primeirapagina.com.br": "PRIMEIRA PÁGINA",
     "portaln10.com.br": "PORTAL N10",
     "novaconcursos.com.br": "NOVA CONCURSOS",
@@ -153,9 +153,9 @@ NOMES_SITES = {
     "proximosconcursos.com": "PRÓXIMOS CONCURSOS",
 }
 
-PROMPT_RELEVANCIA = """Sua tarefa é avaliar se o conteúdo abaixo é uma notícia de atualização, novidade ou divulgação de edital, concurso, processo seletivo, certame, e similares, que sejam relevantes para um bacharel em Direito que estuda para concursos públicos nas seguintes áreas:
+PROMPT_RELEVANCIA = """Sua tarefa é avaliar se o conteúdo abaixo é um artigo de atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, e similares, que sejam relevantes para um bacharel em Direito que estuda para concursos públicos nas seguintes áreas:
 RELEVANTE — sempre que o conteúdo tiver:
-- Procurador ou Advogado em qualquer órgão do executivo ou legislativo: AGU, PGFN, PGF, PGE, PGM, câmaras municipais, assembleias legislativas, TCU, TCE, TCM, agências reguladoras federais como ANATEL, ANEEL, ANVISA, ANAC, ANS, ANA, ANTAQ, ANTT, ANP, CADE, Banco Central, conselhos profissionais como OAB, CRM, CREA, CFM, etc
+- Procurador ou Advogado em qualquer órgão do executivo ou legislativo: AGU, PGFN, PGF, PGE, PGM, câmaras municipais, assembleias legislativas, TCU, TCE, TCM, agências reguladoras federais como ANATEL, ANEEL, ANVISA, ANAC, ANS, ANA, ANTAQ, ANTT, ANP, CADE, Banco Central (BACEN), conselhos profissionais como OAB, CRM, CREA, CFM, CFBM, CRBM, CONFEA, etc
 - Procurador ou Advogado da Caixa Econômica Federal, Banco do Brasil, Petrobras, BNDES, Correios, EBSERH, Embrapa, Serpro, DATAPREV, autarquias e fundações federais, estaduais e municipais, etc
 - Analista ou Assessor de matéria jurídica ou correlatas em órgãos do executivo federal, estadual ou municipal, secretarias, ministérios, autarquias, agências reguladoras, empresas públicas, etc
 - Analista ou Assessor de matéria jurídica ou correlatas de Tribunal de Contas como TCU, TCE, TCM, etc
@@ -163,20 +163,18 @@ RELEVANTE — sempre que o conteúdo tiver:
 - Residência Jurídica em qualquer órgão público
 - Estágio de pós-graduação em Direito em qualquer órgão público
 - Programas de formação jurídica remunerada em órgãos públicos
-- Todos os cargos que, por algum dos motivos acima, pareçam relevantes mas não estejam incluídos nessa lista
-NÃO RELEVANTE — se o conteúdo for apenas:
-- Cargos que NÃO exijam formação em Direito (professores de ensino básico, médicos, engenheiros, enfermeiros, saúde, limpeza, motoristas, técnicos de outras áreas, etc)
+- Todos os cargos que, por algum dos motivos acima, pareçam necessitar de curso superior (diploma) em Direito mas não estejam incluídos nessa lista
+NÃO RELEVANTE — se o conteúdo for integralmente apenas sobre:
+- Cargos que NÃO exijam formação (curso superior/bacharelato/diploma) em Direito, como, por exemplo: professores de ensino básico, médicos, engenheiros, enfermeiros, saúde, limpeza, motoristas, técnicos de outras áreas, etc
 - Cargos de nível médio ou técnico sem relevância jurídica
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevante": true, "motivo": "explicação em duas linha, sem precisar reafirmar que é relevante para bacharéis em Direito, se disser o cargo ou o contexto é suficiente para ficar subentendido"}
+{"relevante": true, "motivo": "explicação em duas linha, não reafirme que é relevante para bacharéis em Direito, diga o cargo ou o contexto suficiente para ficar subentendido"}
 ou
 {"relevante": false, "motivo": "explicação em uma linha"}
 Conteúdo para avaliar:
 """
 
-PROMPT_RESUMO = """Com base nos resultados abaixo, escreva um resumo (entre 900 e 1000 caracteres) das oportunidades encontradas, mencionando os tipos de cargo e órgãos principais. Seja direto e objetivo, sem introdução.
-Resultados:
-"""
+PROMPT_RESUMO = """Com base nos resultados abaixo, escreva um resumo, sem introdução, em texto corrido (entre 900 e 1000 caracteres) dos artigos encontrados, mencionando os cargos e órgãos, ou inscrições, ou provas, etc, priorizando o cargos e carreiras mais importantes no resumo.
 
 
 # ─── Utilitários ──────────────────────────────────────────────────────────────
@@ -401,9 +399,9 @@ def gerar_html(relevantes: list, data_str: str, total_analisados: int) -> str:
     for item in relevantes:
         titulo = item.get("titulo_real") or item.get("title") or "Ver link"
         titulo = re.sub(r"\s*[|\-–]\s*.{3,40}$", "", titulo).strip()
+        titulo = escape(titulo)
         url = item.get("url", "")
-        motivo = item.get("motivo", "")
-        tag = nome_site(url)
+        motivo = escape(item.get("motivo", ""))
 
         cards += f"""
         <div class="card">
@@ -678,6 +676,7 @@ def main():
         else:
             base[url]["ultima_vez_visto"] = agora_utc
             base[url]["ausencias_consecutivas"] = 0
+            base[url]["fonte"] = fonte
 
     removidos = []
     for url in list(base.keys()):
@@ -733,7 +732,6 @@ def main():
 
         if not texto or len(texto) < 50:
             print("    Sem texto extraído, pulando.")
-            time.sleep(PAUSA_API)
             continue
 
         titulo = titulo_real or item.get("title", "")
