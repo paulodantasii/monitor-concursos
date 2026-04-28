@@ -529,7 +529,7 @@ def gerar_html(relevantes: list, data_str: str, total_analisados: int) -> str:
 <body>
     <header>
         <h1>🤖 CuradorIA de Carreiras Jurídicas ⚖️</h1>
-        <p>Verificação de {data_str} · {total_analisados} links analisados</p>
+        <p>Verificação de {data_str} · {total_analisados} artigos analisados</p>
         <div class="badge">{len(relevantes)} oportunidade(s) relevante(s)</div>
     </header>
     <div class="container">
@@ -575,12 +575,12 @@ def formatar_mensagem_whatsapp(data_str: str, total_novos: int, relevantes: list
     if not relevantes:
         msg = cabecalho + "Nenhum artigo relevante encontrado hoje."
         if erros_ia > 0:
-            msg += f"\n\n⚠️ {erros_ia} link(s) não analisado(s) por erro na API."
+            msg += f"\n\n⚠️ {erros_ia} artigo(s) não analisado(s) por erro na API."
         return msg
 
-    aviso_erros = f"\n\n⚠️ {erros_ia} link(s) não analisado(s) por erro na API." if erros_ia > 0 else ""
+    aviso_erros = f"\n\n⚠️ {erros_ia} artigo(s) não analisado(s) por erro na API." if erros_ia > 0 else ""
     rodape = f"\n\n🔗 {URL_RELATORIO}{aviso_erros}"
-    corpo = resumo if resumo else "Veja a curadorIA completa no link abaixo."
+    corpo = resumo if resumo else "Veja a CuradorIA completa no link abaixo."
 
     mensagem = cabecalho + corpo + rodape
     if len(mensagem) > 1500:
