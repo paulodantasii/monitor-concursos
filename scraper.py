@@ -174,7 +174,7 @@ ou
 Conteúdo para avaliar:
 """
 
-PROMPT_RESUMO = """Com base nos resultados abaixo, escreva um resumo, sem introdução, em texto corrido (entre 900 e 1000 caracteres) dos artigos encontrados, mencionando os cargos e órgãos, ou inscrições, ou provas, etc, priorizando o cargos e carreiras mais importantes no resumo.
+PROMPT_RESUMO = """Com base nos resultados abaixo, escreva um resumo, sem introdução, em texto corrido (entre 900 e 1000 caracteres) dos artigos encontrados, mencionando os cargos e órgãos, ou inscrições, ou provas, etc, priorizando o cargos e carreiras mais importantes no resumo."""
 
 
 # ─── Utilitários ──────────────────────────────────────────────────────────────
