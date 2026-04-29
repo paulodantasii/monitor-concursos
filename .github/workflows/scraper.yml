@@ -29,6 +29,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          WHATSAPP_NUMBER: ${{ secrets.WHATSAPP_NUMBER }}
         run: python scraper.py
 
       - name: Commitar resultados
