@@ -340,7 +340,7 @@ def extrair_pagina(url: str, timeout: int = 20) -> tuple:
         return "", "", ""
 
 
-# ─── IA ───────────────────────────────────────────────────────────────────
+# ─── IA ───────────────────────────────────────────────────────────────────────
 
 def chamar_openai(prompt: str) -> str:
     payload = {
@@ -547,7 +547,7 @@ def gerar_html(relevantes: list, data_str: str, total_analisados: int) -> str:
 </html>"""
 
 
-# ─── WhatsApp ───────────────────────────────────────────────────
+# ─── WhatsApp ─────────────────────────────────────────────────────────────────
 
 def enviar_whatsapp(mensagem: str) -> None:
     if not TWILIO_ACCOUNT_SID or not TWILIO_AUTH_TOKEN:
@@ -612,15 +612,17 @@ def salvar_base(base: dict) -> None:
         json.dump(base, f, ensure_ascii=False, indent=2)
 
 
-# ─── Análise de um item (usado na fila principal e no retry) ─────────────────
+# ─── Análise de um item ───────────────────────────────────────────────────────
 
 def analisar_item(item: dict, base: dict, relevantes: list, agora_utc: str) -> str:
     """
     Tenta extrair e avaliar um item. Retorna:
-    - "ok"      → verificado com sucesso (entra na base)
-    - "403"     → bloqueado pelo site
-    - "timeout" → não respondeu no tempo
-    - "erro"    → outro erro sem retry útil
+    - "ok"       → verificado com sucesso (entra na base)
+    - "403"      → bloqueado pelo site
+    - "timeout"  → não respondeu no tempo
+    - "bloqueado"→ domínio já bloqueado por 403 anterior
+    - "erro"     → outro erro sem retry útil
+    - "erro_ia"  → falha na API da IA
     """
     url = item["url"]
 
@@ -668,6 +670,49 @@ def analisar_item(item: dict, base: dict, relevantes: list, agora_utc: str) -> s
     return "ok"
 
 
+def processar_retry(item: dict, base: dict, relevantes: list, agora_utc: str,
+                    timeout: int, numero: int) -> str:
+    """
+    Executa uma tentativa de retry para um item que deu timeout.
+    Retorna "ok", "403", "timeout" ou "erro_ia".
+    """
+    url = item["url"]
+    print(f"  [Retry {numero}/3 | {timeout}s] {url}")
+
+    titulo_real, texto, erro = extrair_pagina(url, timeout=timeout)
+
+    if erro == "403":
+        registrar_bloqueio_403(base, url)
+        return "403"
+
+    if erro == "timeout":
+        return "timeout"
+
+    if not texto or len(texto) < 50:
+        print("    Sem texto extraído, pulando.")
+        return "erro"
+
+    titulo = titulo_real or item.get("title", "")
+    avaliacao = avaliar_relevancia(url, titulo, texto)
+    motivo = avaliacao.get("motivo", "")
+    print(f"    → relevante: {avaliacao.get('relevante')} | {motivo}")
+
+    if motivo == "erro após 3 tentativas":
+        return "erro_ia"
+
+    base[url] = {
+        "primeira_vez": agora_utc,
+        "ultima_vez_visto": agora_utc,
+        "ausencias_consecutivas": 0,
+        "fonte": item.get("fonte", "scraping"),
+    }
+
+    if avaliacao.get("relevante"):
+        relevantes.append({**item, "titulo_real": titulo_real, "motivo": motivo})
+
+    return "ok"
+
+
 # ─── Principal ────────────────────────────────────────────────────────────────
 
 def main():
@@ -683,7 +728,6 @@ def main():
     base = carregar_base()
     primeira_execucao = len(base) == 0
 
-    # Limpa bloqueios 403 cujo prazo já venceu
     limpar_bloqueios_vencidos(base)
 
     print("Coletando links das páginas-alvo...")
@@ -733,7 +777,6 @@ def main():
                 novos_alertas.append(info if info else {"url": url, "title": "", "snippet": "", "termo": ""})
             else:
                 novos_scraping.append(url)
-            # Não insere na base ainda — só insere após verificação bem-sucedida
         else:
             base[url]["ultima_vez_visto"] = agora_utc
             base[url]["ausencias_consecutivas"] = 0
@@ -742,7 +785,7 @@ def main():
     removidos = []
     for url in list(base.keys()):
         if url.startswith("_"):
-            continue  # Pula entradas de controle interno como _bloqueios_403
+            continue
         if url not in todos_links:
             base[url]["ausencias_consecutivas"] += 1
             if base[url]["ausencias_consecutivas"] >= MAX_AUSENCIAS:
@@ -774,11 +817,11 @@ def main():
         if total_novos == 0:
             f.write("Nenhum link novo encontrado.\n")
 
-    # ── Análise IA ────────────────────────────────────────────────────────
+    # ── Análise IA ────────────────────────────────────────────────────────────
     print(f"\nAnalisando {total_novos} links novos via IA...\n")
     relevantes = []
     erros_ia = 0
-    fila_timeout = []  # Links que deram timeout na primeira tentativa
+    fila_timeout = []
 
     todos_novos = []
     for url in novos_scraping:
@@ -797,80 +840,30 @@ def main():
             time.sleep(PAUSA_API)
 
     # ── Retry de timeouts ─────────────────────────────────────────────────────
-    if fila_timeout:
-        print(f"\nRetentando {len(fila_timeout)} link(s) com timeout (2ª tentativa, 10s)...\n")
+    # Tentativas com timeouts progressivamente menores: 10s e 5s
+    RETRY_TIMEOUTS = [10, 5]
+
+    for tentativa_num, timeout_seg in enumerate(RETRY_TIMEOUTS, start=2):
+        if not fila_timeout:
+            break
+        print(f"\nRetentando {len(fila_timeout)} link(s) com timeout ({tentativa_num}ª tentativa, {timeout_seg}s)...\n")
         proxima_fila = []
         for item in fila_timeout:
-            url = item["url"]
-            print(f"  [Retry 2/3 | 10s] {url}")
-            titulo_real, texto, erro = extrair_pagina(url, timeout=10)
-
-            if erro == "403":
-                registrar_bloqueio_403(base, url)
-                continue
-            if erro == "timeout":
-                proxima_fila.append(item)
-                continue
-            if not texto or len(texto) < 50:
-                print("    Sem texto extraído, pulando.")
-                continue
-
-            titulo = titulo_real or item.get("title", "")
-            avaliacao = avaliar_relevancia(url, titulo, texto)
-            motivo = avaliacao.get("motivo", "")
-            print(f"    → relevante: {avaliacao.get('relevante')} | {motivo}")
-
-            if motivo == "erro após 3 tentativas":
+            resultado = processar_retry(item, base, relevantes, agora_utc, timeout_seg, tentativa_num)
+            if resultado == "timeout":
+                if tentativa_num < len(RETRY_TIMEOUTS) + 1:
+                    proxima_fila.append(item)
+                else:
+                    print(f"    [TIMEOUT DEFINITIVO] {item['url']} — não entra na base.")
+            elif resultado == "erro_ia":
                 erros_ia += 1
+            if resultado == "ok":
                 time.sleep(PAUSA_API)
-                continue
+        fila_timeout = proxima_fila
 
-            base[url] = {
-                "primeira_vez": agora_utc,
-                "ultima_vez_visto": agora_utc,
-                "ausencias_consecutivas": 0,
-                "fonte": item.get("fonte", "scraping"),
-            }
-            if avaliacao.get("relevante"):
-                relevantes.append({**item, "titulo_real": titulo_real, "motivo": motivo})
-            time.sleep(PAUSA_API)
-
-        if proxima_fila:
-            print(f"\nRetentando {len(proxima_fila)} link(s) com timeout (3ª tentativa, 5s)...\n")
-            for item in proxima_fila:
-                url = item["url"]
-                print(f"  [Retry 3/3 | 5s] {url}")
-                titulo_real, texto, erro = extrair_pagina(url, timeout=5)
-
-                if erro == "403":
-                    registrar_bloqueio_403(base, url)
-                    continue
-                if erro == "timeout":
-                    print(f"    [TIMEOUT DEFINITIVO] Não entra na base.")
-                    continue
-                if not texto or len(texto) < 50:
-                    print("    Sem texto extraído, pulando.")
-                    continue
-
-                titulo = titulo_real or item.get("title", "")
-                avaliacao = avaliar_relevancia(url, titulo, texto)
-                motivo = avaliacao.get("motivo", "")
-                print(f"    → relevante: {avaliacao.get('relevante')} | {motivo}")
-
-                if motivo == "erro após 3 tentativas":
-                    erros_ia += 1
-                    time.sleep(PAUSA_API)
-                    continue
-
-                base[url] = {
-                    "primeira_vez": agora_utc,
-                    "ultima_vez_visto": agora_utc,
-                    "ausencias_consecutivas": 0,
-                    "fonte": item.get("fonte", "scraping"),
-                }
-                if avaliacao.get("relevante"):
-                    relevantes.append({**item, "titulo_real": titulo_real, "motivo": motivo})
-                time.sleep(PAUSA_API)
+    # Links que esgotaram todas as tentativas
+    for item in fila_timeout:
+        print(f"  [TIMEOUT DEFINITIVO] {item['url']} — não entra na base.")
 
     # Salva a base após todas as análises
     salvar_base(base)
@@ -897,7 +890,7 @@ def main():
         f.write(html)
     print(f"  Relatório salvo em '{OUTPUT_HTML}'.")
 
-    # ── Resumo para WhatsApp ───────────────────────────────────────────
+    # ── Resumo para WhatsApp ──────────────────────────────────────────────────
     resumo = ""
     if relevantes:
         print("\nGerando resumo para WhatsApp...")
