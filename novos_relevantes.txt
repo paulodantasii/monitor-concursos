@@ -1,201 +1,197 @@
-Verificação: 2026-04-29T10:32:31.338513+00:00
-Links analisados: 155
-Links relevantes: 49
+Verificação: 2026-04-30T10:30:14.366711+00:00
+Links analisados: 148
+Links relevantes: 48
 ============================================================
 
-Título:  SEFAZ - CE: Aberto concurso público para Auditor-Fiscal com salário de R$ 16 mil
-URL:     https://www.pciconcursos.com.br/noticias/sefaz-ce-aberto-concurso-publico-para-auditor-fiscal-com-salario-de-16-mil
-Motivo:  O concurso é para Auditor-Fiscal da Fazenda Estadual, cargo que exige nível superior e envolve questões de direito público.
+Título:  Concurso Prefeitura Jardinópolis-SP 2026: Edital e inscrição
+URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-prefeitura-jardinopolis-sp-2026-edital-inscricao-89779
+Motivo:  O concurso inclui a vaga de Advogado no CREAS, que exige formação em Direito e registro na OAB.
 
-Título:  Prefeitura de Jardinópolis - SP abre concurso público para diversos cargos
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-jardinopolis-sp-abre-concurso-publico-para-diversos-cargos
-Motivo:  O concurso inclui a vaga de Procurador Jurídico, que é relevante para bacharéis em Direito.
+Título:  Prefeitura de Cedro - PE abre concurso público com salários de até R$ 6 mil
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-cedro-pe-abre-concurso-publico-com-salarios-de-ate-6-mil
+Motivo:  O concurso inclui a vaga de Assessor Jurídico, que é relevante para bacharéis em Direito.
 
-Título:  Edital Martinópolis-SP 2026 abre concurso e paga até R$ 16 mil para todos os níveis
-URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/edital-martinopolis-sp-2026-abre-concurso-e-paga-ate-r-16-mil-para-todos-os-niveis-89754
-Motivo:  O concurso inclui a vaga para Advogado, que exige graduação em Direito e OAB, relevante para bacharéis em Direito.
+Título:  Prefeitura de Olímpia - SP abre concurso público com salários de até R$ 9 mil
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-olimpia-sp-abre-concurso-publico-com-salarios-de-ate-9-mil
+Motivo:  O concurso inclui a vaga de Procurador Jurídico, que exige formação em Direito e é relevante para bacharéis na área.
 
-Título:  Prefeitura de Palmares Paulista - SP abre concurso para Fiscal Tributário
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-palmares-paulista-sp-abre-concurso-para-fiscal-tributario
-Motivo:  O concurso é para o cargo de Fiscal Tributário, que exige ensino superior em Direito, relevante para bacharéis em Direito.
+Título:  Edital Olímpia-SP 2026: Prefeitura abre concurso com 70 vagas
+URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-edital-olimpia-sp-2026-prefeitura-70-vagas-89797
+Motivo:  O concurso inclui a vaga de Procurador Jurídico, que exige formação em Direito e é relevante para bacharéis na área.
 
-Título:  Core - PI: Concurso público oferece vagas com salários de até R$ 6.500,00
-URL:     https://www.pciconcursos.com.br/noticias/core-pi-concurso-publico-oferece-vagas-com-salarios-de-ate-6500
-Motivo:  O concurso oferece vaga para Assistente Jurídico, cargo que exige formação em Direito.
+Título:  Prefeitura de Palmares Paulista-SP abre concurso para Fiscal Tributário
+URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-prefeitura-palmares-paulista-sp-fiscal-tributario-89774
+Motivo:  O concurso é para o cargo de Fiscal Tributário, que exige nível superior em Direito, relevante para bacharéis em Direito.
 
-Título:  Prefeitura de Porto Velho - RO publica editais de concursos com salários de até R$ 21,2 mil
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-velho-ro-publica-editais-de-concursos-com-salarios-de-ate-21-2-mil
-Motivo:  Os editais incluem cargos de Auditor e Auditor Fiscal da Receita Municipal, que exigem formação em Direito.
+Título:  Processo Seletivo Prefeitura Dores do Indaiá-MG 2026: Saiu edital
+URL:     https://www.acheconcursos.com.br/concursos-minas-gerais/processo-seletivo-prefeitura-dores-indaia-mg-2026-edital-89772
+Motivo:  O edital inclui vagas para Advogado e Auditor Fiscal, ambos exigindo formação em Direito, o que é relevante para bacharéis em Direito.
 
-Título:  Concurso Porto Velho-RO 2026: Saiu edital na CGM e SEMEC de até R$ 21 mil
-URL:     https://www.acheconcursos.com.br/concursos-rondonia/concurso-porto-velho-ro-2026-saiu-edital-na-cgm-e-semec-de-ate-r-21-mil-89745
-Motivo:  O concurso da Controladoria-Geral do Município (CGM) oferece vagas para Auditor, que exige diploma em Direito, e Auditor Fiscal da Receita Municipal, que também aceita Direito como formação.
+Título:  Prefeitura da capital publica edital de concurso na Secretaria de Economia com salários que chegam a R$ 18.431,04 - Concursos e Empregos - Rondoniagora.com
+URL:     https://www.rondoniagora.com/concursos-e-empregos/prefeitura-da-capital-publica-edital-de-concurso-na-secretaria-de-economia-com-salarios-que-chegam-a-r-18-431-04
+Motivo:  O concurso oferece vaga para Auditor Fiscal da Receita Municipal, que exige graduação em Direito, relevante para bacharéis.
 
-Título:  Prefeitura de Aroeiras - PB retifica concurso público com salários de até R$ 14 mil
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-aroeiras-pb-retifica-concurso-publico-com-salarios-de-ate-14-mil
-Motivo:  O concurso inclui a vaga de Advogado do CREAS, que é um cargo relevante para bacharéis em Direito.
+Título:  SAMAE de Urussanga - SC abre concurso com 12 vagas e cadastro de reserva
+URL:     https://www.pciconcursos.com.br/noticias/samae-de-urussanga-sc-abre-concurso-com-12-vagas-e-cadastro-de-reserva
+Motivo:  O concurso inclui uma vaga para Advogado, cargo que exige formação em Direito.
 
-Título:  UEMS abre seleções para professores em Nova Andradina e Paranaíba
-URL:     https://www.pciconcursos.com.br/noticias/uems-abre-selecoes-para-professores-em-nova-andradina-e-paranaiba
-Motivo:  O conteúdo menciona a abertura de seleção para professores na área de Direito, o que é relevante para bacharéis em Direito.
+Título:  Concurso da Prefeitura de Praia Grande (SP) inscreve para cargos que pagam até R$ 25 mil
+URL:     https://jcconcursos.com.br/noticia/concursos/concurso-prefeitura-praia-grande-sp-inscricao-142178
+Motivo:  O concurso da Prefeitura de Praia Grande inclui uma vaga para procurador, cargo que exige formação em Direito.
 
-Título:  Concurso Prefeitura de Nova Canaã Paulista-SP 2026: Edital e inscrição
-URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-prefeitura-nova-canaa-paulista-sp-2026-edital-inscricao-89755
-Motivo:  O concurso inclui cargos que exigem formação em Direito, como Controle Interno e Oficial Administrativo, relevantes para bacharéis em Direito.
+Título:  DPU divulga resultado preliminar da residência jurídica em Curitiba com bolsa de R$ 3 mil; prova escrita será em maio
+URL:     https://concursonews.com/2026/04/dpu-divulga-resultado-preliminar-da-residencia-juridica-em-curitiba-com-bolsa-de-r-3-mil-prova-escrita-sera-em-maio/
+Motivo:  O conteúdo trata da residência jurídica na Defensoria Pública da União, que é uma oportunidade para graduados em Direito.
 
-Título:  Câmara de Tietê-SP abre concurso público em 2026
-URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-publico-camara-tiete-sp-89753
-Motivo:  O concurso é para o cargo de Analista de Compras e Licitações, que exige curso superior em Direito, relevante para bacharéis em Direito.
+Título:  Concurso da Assembleia de Roraima entra na reta final com 226 vagas | Tudo Rondônia - Independente!
+URL:     https://tudorondonia.com/noticias/concurso-da-assembleia-de-roraima-entra-na-reta-final-com-226-vagas,157209.shtml
+Motivo:  O concurso da Assembleia Legislativa de Roraima oferece vagas para o cargo de Procurador, que exige formação em Direito.
 
-Título:  Concursos no Brasil: confira agenda com mais de quatro mil vagas, e salários de até 39 mil reais - Concursos e Empregos - Folha PE
-URL:     https://www.folhape.com.br/colunistas/blogdosconcursos/concursos-no-brasil-confira-agenda-com-mais-de-quatro-mil-vagas-e/53383/
-Motivo:  O conteúdo menciona vagas para procurador e analista legislativo na Assembleia Legislativa de Roraima, que são cargos relevantes para bacharéis em Direito.
+Título:  Concurso Prefeitura de Colônia Leopoldina AL abre 224 vagas em diversas áreas
+URL:     https://concursosnobrasil.com/concursos/al/2026/04/29/concurso-prefeitura-de-colonia-leopoldina-al-abre-vagas-em-diversas-areas/
+Motivo:  O concurso inclui a vaga de Assessor Jurídico, que requer formação em Direito.
 
-Título:  Alems divulga resultado preliminar do 2º concurso público
-URL:     https://www.campograndenews.com.br/brasil/cidades/alems-publica-lista-de-aprovados-em-prova-objetiva-de-concurso-com-80-vagas
-Motivo:  O concurso da Assembleia Legislativa de Mato Grosso do Sul oferece vagas para analista legislativo, cargo que exige nível superior e é relevante para bacharéis em Direito.
+Título:  Concurso IFRS Campus Osório RS: 1 vaga professor Direito | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-ifrs-campus-osorio-rs-1-vaga-professor-direito
+Motivo:  O conteúdo trata de um concurso para professor substituto na área de Direito, exigindo bacharelado em Direito, o que é relevante para a formação jurídica.
 
-Título:  Prefeitura de Dores do Indaiá - MG abre seleção com salários de até R$ 18,7 mil
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-dores-do-indaia-mg-abre-selecao-com-salarios-de-ate-18-7-mil
-Motivo:  O edital inclui vagas para Advogado e Auditor Fiscal, cargos que exigem formação em Direito.
+Título:  Concursos Estadão · Arujá (SP) abre seleção com 5 vagas e salários até R$ 15,6 mil
+URL:     https://concursos.estadao.com.br/noticias/aruja-sp-abre-selecao-5-vagas-salarios-15-mil-reais/amp/
+Motivo:  O concurso da Câmara de Arujá oferece vaga para Analista Jurídico, cargo que exige formação em Direito.
 
-Título:  Prefeitura de Martinópolis - SP abre concurso público com salários de até R$ 16,2 mil
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-martinopolis-sp-abre-concurso-publico-com-salarios-de-ate-16-2-mil
-Motivo:  O concurso inclui a vaga de Advogado SUAS, que é relevante para bacharéis em Direito.
+Título:  Concurso TJPE: FGV será organizadora para vaga de juiz com salário de R$ 35 mil
+URL:     https://www.terra.com.br/noticias/educacao/carreira/concurso-tjpe-fgv-sera-organizadora-para-vaga-de-juiz-com-salario-de-r-35-mil,028d2bc7beac7af450ae198c57614e2cy4q0eaq0.html
+Motivo:  O conteúdo trata do concurso para o cargo de juiz substituto no TJPE, que exige bacharelado em Direito e experiência jurídica.
 
-Título:  Concurso AL MS divulga resultados da prova objetiva
-URL:     https://www.estrategiaconcursos.com.br/blog/concurso-al-ms-2026-resultado-objetiva/
-Motivo:  O concurso é para cargos de Analista Legislativo – Jurídico e Técnico Legislativo, que exigem formação em Direito.
+Título:  Inscrições para concurso da ALERR terminam no dia 6 de maio; salários chegam a R$ 39,5 mil - portalofato.com.br
+URL:     https://portalofato.com.br/2026/04/29/inscricoes-para-concurso-da-alerr-terminam-no-dia-6-de-maio-salarios-chegam-a-r-395-mil/
+Motivo:  O concurso da Assembleia Legislativa de Roraima (ALERR) oferece vagas para procurador e consultor legislativo, cargos que exigem formação em Direito.
 
-Título:  Procon Alagoas instala comissão e prepara concurso efetivo com 30 vagas de nível superior - Uni10
-URL:     https://uniten.com.br/procon-alagoas-comissao-concurso-30-vagas-nivel-superior/
-Motivo:  O concurso do Procon Alagoas oferece vagas para cargos que exigem diploma de nível superior, como Analista de Proteção e Defesa do Consumidor e Fiscal de Defesa do Consumidor, ambos com relevância jurídica.
+Título:  Câmara de Seropédica - RJ abre concursos com vagas imediatas e cadastro de reserva
+URL:     https://www.pciconcursos.com.br/noticias/camara-de-seropedica-rj-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva
+Motivo:  O concurso da Câmara de Seropédica inclui vagas para o cargo de Procurador, que exige formação em Direito.
 
-Título:  Concurso PGM Caxias do Sul RS: termo de referência é publicado e edital pode sair em breve
-URL:     https://magistrarcursos.com.br/blog/pgm-caxias-do-sul/
-Motivo:  O conteúdo trata do concurso para o cargo de Procurador na Procuradoria-Geral do Município de Caxias do Sul, que exige formação em Direito.
+Título:  IFRS abre processo seletivo para Professor Substituto de Direito no Campus Osório
+URL:     https://www.pciconcursos.com.br/noticias/ifrs-abre-processo-seletivo-para-professor-substituto-de-direito-no-campus-osorio
+Motivo:  O conteúdo trata de um processo seletivo para Professor Substituto de Direito, cargo que exige formação em Direito.
 
-Título:  Inscrições em processo seletivo para estágio de diferentes níveis de ensino terminam segunda | Prefeitura de Porto Alegre
-URL:     https://prefeitura.poa.br/smap/noticias/inscricoes-em-processo-seletivo-para-estagio-de-diferentes-niveis-de-ensino-terminam
-Motivo:  O processo seletivo inclui vagas para estágio em Direito, que é relevante para bacharéis na área.
+Título:  Campinas, Osasco, Praia Grande e mais cidades: concursos abertos em SP pagam até R$ 25 mil
+URL:     https://jcconcursos.com.br/noticia/concursos/campinas-osasco-praia-grande-e-mais-cidades-concursos-abertos-em-sp-pagam-ate-r-25-mil-142214
+Motivo:  O concurso da Prefeitura de Praia Grande inclui vagas para procurador, cargo que exige formação em Direito.
 
-Título:  Provas para Download
-URL:     https://www.pciconcursos.com.br/provas/sad-secretaria-de-estado-de-administracao-do-mato-grosso-do-sul-sed-secretaria-de-estado-de-educacao-abrangente/96
-Motivo:  O conteúdo menciona diversos concursos públicos, incluindo vagas para Assessor Jurídico e Auditor-Fiscal, que exigem formação em Direito.
+Título:  Concursos em Alagoas: 1.635 vagas são oferecidas com salários de até R$ 35.877,28
+URL:     https://www.terra.com.br/noticias/educacao/carreira/concursos-em-alagoas-1635-vagas-sao-oferecidas-com-salarios-de-ate-r-3587728,edf1e848f25b29f15d0bbd60885518caeeodmffs.html
+Motivo:  O concurso da Procuradoria-Geral do Estado de Alagoas oferece vagas para procurador, cargo que exige formação em Direito.
 
-Título:  Concurso Câmara de Ibirá SP oferece salário de R$ 12.900 para Procurador Jurídico
-URL:     https://mdcconcursos.com.br/concurso-camara-de-ibira-sp-2026/
-Motivo:  O concurso oferece vaga para Procurador Jurídico, cargo que exige bacharelado em Direito e inscrição na OAB.
+Título:  Edital Cedro-PE 2026: Concurso é aberto com 142 vagas
+URL:     https://www.acheconcursos.com.br/concursos-pernambuco/edital-cedro-pe-2026-concurso-e-aberto-com-142-vagas-89799
+Motivo:  O concurso da Prefeitura de Cedro-PE inclui a vaga de Assessor Jurídico, que exige formação em Direito.
 
-Título:  Concurso da Prefeitura de Jardinópolis (SP): novo edital oferece quase 100 vagas
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-prefeitura-jardinopolis-sp-edital-142166
-Motivo:  O concurso oferece vagas para advogado e procurador jurídico, cargos que exigem formação em Direito.
+Título:  Concurso MG - Edital n. 01/2005 - EJEF convoca candidatos para requerem inscrição - Recivil
+URL:     https://recivil.com.br/concurso-mg-edital-n-012005-ejef-convoca-candidatos-para-requerem-inscricao/?amp=1
+Motivo:  O edital se refere a um concurso público para a delegação de serviços de tabelionato e registro, que envolve atividades jurídicas relevantes.
 
-Título:  TJTO divulga resultado provisório da Etapa 2 do Programa Residência Jurídica e orienta candidatos(as) sobre prazos para recurso
-URL:     https://www.tjto.jus.br/comunicacao/noticias/tjto-divulga-resultado-provisorio-da-etapa-2-do-programa-residencia-juricia-e-orienta-candidatos-as-sobre-prazos-para-recurso
-Motivo:  O conteúdo trata do Programa de Residência Jurídica do TJTO, que é voltado a bacharéis em Direito e oferece experiência prática no Poder Judiciário.
+Título:  Concurso Prefeitura de Jardinópolis (SP) abre 87 vagas em edital
+URL:     https://concursosnobrasil.com/concursos/sp/2026/04/29/concurso-prefeitura-de-jardinopolis-sp-abre-87-vagas-em-edital/
+Motivo:  O concurso oferece vagas para Advogado do CREAS e Procurador Jurídico, cargos que exigem formação em Direito.
 
-Título:  Ministério Público abre inscrições para estágios renumerados | G1
-URL:     https://g1.globo.com/ma/maranhao/noticia/2026/04/28/ministerio-publico-abre-inscricoes-para-o-1o-processo-seletivo-de-estagio-de-2026.ghtml
-Motivo:  O conteúdo trata de um processo seletivo de estágio no Ministério Público, com vagas exclusivas para estudantes de Direito, proporcionando experiência prática na área.
+Título:  Câmara Municipal de Seropédica RJ abre concurso com 19 vagas imediatas | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/camara-municipal-de-seropedica-rj-abre-concurso-com-19-vagas-imediatas
+Motivo:  O concurso da Câmara Municipal de Seropédica oferece vagas para Procurador Legislativo, cargo que exige bacharelado em Direito e OAB.
 
-Título:  DPU Curitiba divulga lista de inscritos da residência jurídica; análise curricular sai dia 28
-URL:     https://concursonews.com/2026/04/dpu-divulga-lista-provisoria-de-inscritos-na-residencia-juridica-em-curitiba-analise-curricular-sai-dia-28/
-Motivo:  O conteúdo trata da residência jurídica na Defensoria Pública da União, que é uma oportunidade de formação e atuação para bacharéis em Direito.
+Título:  Prefeitura da capital publica edital de concurso na Secretaria de Economia com salários que chegam a R$ 18.431,04
+URL:     https://www.euideal.com/noticia/60234/porto-velho/oportunidades/prefeitura-da-capital-publica-edital-de-concurso-na-secretaria-de-economia-com-salarios-que-chegam-a-r-18-431-04.html
+Motivo:  O edital de concurso da Prefeitura de Porto Velho inclui vagas para Auditor Fiscal da Receita Municipal, que exige graduação em Direito.
 
-Título:  Prefeitura de Porto Velho
-URL:     https://www.portovelho.ro.gov.br/artigo/56084/selecao-prefeitura-lanca-concurso-da-semec-com-salarios-de-ate-r-18-mil
-Motivo:  O concurso oferece vaga para Auditor Fiscal da Receita Municipal, que exige graduação em Direito, além de outros cursos.
+Título:  Concurso Prefeitura de Colônia Leopoldina e COLÔNIAPREV AL abre dezenas de vagas | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-prefeitura-de-colonia-leopoldina-e-coloniaprev-al-abre-dezenas-de-vagas
+Motivo:  O concurso inclui vagas para Assessor Jurídico e Assistente Jurídico, cargos que exigem formação em Direito.
 
-Título:  Fundação FAHECE Florianópolis SC abre processo seletivo para analista de contratos I com 1 vaga | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/fundacao-fahece-florianopolis-sc-abre-processo-seletivo-para-analista-de-contratos-i-com-1-vaga
-Motivo:  O processo seletivo é para analista de contratos I, exigindo graduação em Direito e experiência na área contratual, o que é relevante para bacharéis em Direito.
+Título:  Concurso PROCON AL terá 30 vagas para cargos de Analista e Fiscal
+URL:     https://concursosnobrasil.com/concursos/al/2026/04/29/concurso-procon-al-tera-30-vagas-para-cargos-de-analista-e-fiscal/
+Motivo:  O concurso do PROCON AL oferece vagas para cargos de Analista e Fiscal, que exigem nível superior e envolvem questões de defesa do consumidor, relevantes para o campo jurídico.
 
-Título:  Resultado AL-MS 2026 sai nesta terça (28) para Analista e Técnico
-URL:     https://www.acheconcursos.com.br/noticias/resultado-al-ms-2026-sai-nesta-terca-28-para-analista-e-tecnico-89763
-Motivo:  O concurso da Assembleia Legislativa de Mato Grosso do Sul inclui cargos de Analista Legislativo - Jurídico, que exigem formação em Direito.
+Título:  Concurso Câmara de Manaus AM terá homologação em breve; entenda! | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-camara-de-manaus-am-homologacao-em-breve-2026
+Motivo:  O concurso da Câmara de Manaus oferece vagas para o cargo de procurador, que exige formação em Direito.
 
-Título:  Justiça Federal de Pernambuco abre seleção de estágio com bolsa de R$ 1,2 mil e vagas no interior
-URL:     https://www.terra.com.br/noticias/educacao/carreira/justica-federal-de-pernambuco-abre-selecao-de-estagio-com-bolsa-de-r-12-mil-e-vagas-no-interior,442c937d8b5373f552c1ed75b14e8d39wvahzr4p.html
-Motivo:  O conteúdo trata da abertura de seleção de estágio na Justiça Federal de Pernambuco, com vagas para estudantes de Direito, o que é relevante para bacharéis em Direito.
+Título:  Concurso SEMA BA prevê edital com 110 vagas divididas entre a pasta e o INEMA
+URL:     https://concursosnobrasil.com/concursos/ba/2026/04/29/concurso-sema-ba-preve-edital-com-110-vagas-divididas-entre-a-paste-e-o-inema/
+Motivo:  O concurso da SEMA BA inclui vagas para Especialista em Meio Ambiente, que pode exigir formação em Direito, além de abordar Noções de Direito no conteúdo programático.
 
-Título:  DPE-BA abre seleção para residência jurídica com 40 vagas e bolsa de até R$ 1,8 mil; inscrições vão até 12 de maio
-URL:     https://concursonews.com/2026/04/dpe-ba-abre-selecao-para-residencia-juridica-com-40-vagas-e-bolsa-de-ate-r-18-mil-inscricoes-vao-ate-12-de-maio/
-Motivo:  O conteúdo trata da abertura de seleção para residência jurídica na Defensoria Pública da Bahia, voltada para bacharéis em Direito.
+Título:  Concurso Câmara de Seropédica RJ abre 239 vagas com salários de até R$ 4,2 mil
+URL:     https://mdcconcursos.com.br/concurso-camara-de-seropedica-rj-2026/
+Motivo:  O concurso da Câmara de Seropédica RJ oferece vagas para o cargo de Procurador, que exige formação em Direito e envolve temas jurídicos.
 
-Título:  SP: Prefeitura de Martinópolis anuncia concurso com vagas de até R$ 16 mil
-URL:     https://concursosnobrasil.com/concursos/sp/2026/04/28/sp-prefeitura-de-martinopolis-anuncia-concurso-com-vagas-de-ate-r-16-mil/
-Motivo:  O concurso da Prefeitura de Martinópolis oferece vaga para Advogado, cargo que exige formação em Direito.
+Título:  Residência Jurídica MPMG abre 14 vagas com bolsa de R$ 4.863 em diversas cidades
+URL:     https://mdcconcursos.com.br/residencia-juridica-mpmg-2026-9/
+Motivo:  O conteúdo trata da abertura de vagas para Residência Jurídica no Ministério Público de Minas Gerais, exigindo bacharelado em Direito.
 
-Título:  Vara de Porto Nacional abre inscrições para vaga de assessor jurídico
-URL:     https://www.tjto.jus.br/comunicacao/noticias/vara-de-porto-nacional-abre-inscricoes-para-vaga-de-assessor-juridico
-Motivo:  O conteúdo trata da abertura de inscrições para o cargo de Assessor Jurídico na Vara de Porto Nacional, exigindo formação em Direito.
+Título:  IFRS Campus Osório abre seleção para professor de Direito com inscrições até 7 de maio
+URL:     https://concursonews.com/2026/04/ifrs-campus-osorio-abre-selecao-para-professor-de-direito-com-inscricoes-ate-7-de-maio/
+Motivo:  Seleção para professor substituto na área de Direito, exigindo bacharelado em Direito, relevante para formação jurídica.
 
-Título:  Concurso Indaial SC abre 78 vagas com salários de até R$ 20.671,62
-URL:     https://mdcconcursos.com.br/concurso-indaial-sc-2026/
-Motivo:  O concurso oferece vaga para Procurador Municipal, cargo que exige formação em Direito e é relevante para bacharéis na área.
+Título:  Prefeitura de Colônia Leopoldina e COLÔNIAPREV - AL abrem concursos para diversos cargos
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-colonia-leopoldina-e-coloniaprev-al-abrem-concursos-para-diversos-cargos
+Motivo:  O concurso inclui cargos de Assessor Jurídico e Assistente Jurídico, que exigem formação em Direito.
 
-Título:  MPPI divulga resultado final do 14° seletivo de estagiários de nível superior
-URL:     https://piauihoje.com/noticias/geral/mppi-divulga-resultado-final-do-14-seletivo-de-estagiarios-de-nivel-superior-440466.html
-Motivo:  O conteúdo trata do resultado de um seletivo para estagiários de nível superior no Ministério Público do Piauí, incluindo a área de Direito.
+Título:  FAB está convocando, sem concurso, brasileiros de diferentes profissões para ingresso sem concurso público: saiba todos os detalhes - RSM - Revista Sociedade Militar
+URL:     https://www.sociedademilitar.com.br/2026/04/fab-esta-convocando-sem-concurso-brasileiros-de-diferentes-profissoes-para-ingresso-sem-concurso-publico-amz.html
+Motivo:  O processo seletivo da FAB inclui vagas para oficiais temporários na área de Direito, exigindo formação superior.
 
-Título:  Concurso DETRAN AL oferece salários de até R$ 7.800 para Analista e Assistente de Trânsito
-URL:     https://mdcconcursos.com.br/concurso-detran-al-analista-e-assistente-2026/
-Motivo:  O concurso do DETRAN AL inclui a especialidade Direito para o cargo de Analista, que exige formação em Direito.
+Título:  Concurso Penal Federal tem menos de um mês para expirar; entenda! | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-penal-federal-prazo-validade-2026
+Motivo:  O concurso Penal Federal exige nível superior em Direito e envolve a carreira de policial penal federal, que é relevante para bacharéis em Direito.
 
-Título:  Concurso PGM Caxias do Sul RS: termo de referência publicado! Saiba tudo!
-URL:     https://cj.estrategia.com/portal/concurso-pgm-caxias-do-sul-rs/
-Motivo:  O conteúdo trata do concurso para o cargo de Procurador na Procuradoria-Geral do Município de Caxias do Sul, que exige formação em Direito.
+Título:  Câmara de Seropédica (RJ) abre concurso com 239 vagas e mensais até R$ 4,2 mil
+URL:     https://concursosnobrasil.com/concursos/rj/2026/04/29/camara-de-seropedica-rj-abre-concurso-com-239-vagas-e-mensais-ate-r-42-mil/
+Motivo:  O concurso da Câmara de Seropédica oferece vagas para o cargo de Procurador, que exige formação em Direito.
 
-Título:  Prefeitura de Taubaté SP tem inscrições abertas para seletivo especial
-URL:     https://jcconcursos.com.br/noticia/empregos/prefeitura-de-taubate-sp-tem-inscricoes-abertas-para-seletivo-especial-142186
-Motivo:  O processo seletivo da Prefeitura de Taubaté inclui vagas para estudantes de Direito, o que é relevante para bacharéis na área.
+Título:  MPF recomenda nova avaliação para candidatos com deficiência em concurso da Polícia Federal — Ministério Público Federal
+URL:     https://www.mpf.mp.br/o-mpf/unidades/pr-se/noticias/mpf-recomenda-nova-avaliacao-para-candidatos-com-deficiencia-em-concurso-da-policia-federal
+Motivo:  O conteúdo aborda recomendações do MPF relacionadas ao concurso da Polícia Federal, que envolve questões jurídicas e direitos dos candidatos.
 
-Título:  FHAP (MG) divulga mais um edital de seletivo para temporários
-URL:     https://concursosnobrasil.com/concursos/mg/2026/04/27/fhap-mg-divulga-mais-um-edital-de-seletivo-para-temporarios/
-Motivo:  O edital é para o cargo de Controlador Interno, que exige formação em Direito, relevante para bacharéis em Direito.
+Título:  Concurso TJ AP Juiz: comissão alterada e número de vagas ampliado
+URL:     https://magistrarcursos.com.br/blog/concurso-tj-ap-juiz/
+Motivo:  O conteúdo aborda o concurso para o cargo de Juiz Substituto no Tribunal de Justiça do Amapá, que exige bacharelado em Direito e inclui informações sobre requisitos e etapas do processo seletivo.
 
-Título:  Prazo para inscrição em estágio de pós-graduação do TJPB vai até esta terça-feira (28) - THMais - Você por dentro de tudo
-URL:     https://thmais.com.br/cidades/joao-pessoa/cotidiano-joao-pessoa/prazo-para-inscricao-em-estagio-de-pos-graduacao-do-tjpb-vai-ate-esta-terca-feira-28/
-Motivo:  O conteúdo trata de um processo seletivo para estágio de pós-graduação no Tribunal de Justiça da Paraíba, relevante para bacharéis em Direito.
+Título:  Concurso Câmara de Santa Isabel SP oferece salários de até R$ 10.610,67
+URL:     https://mdcconcursos.com.br/concurso-camara-de-santa-isabel-sp-2026-2/
+Motivo:  O concurso oferece uma vaga para Controlador Interno, que exige graduação em Direito, além de outros cargos que podem ser de interesse para bacharéis.
 
-Título:  FAHECE - SC abre processo seletivo para Analista de Contratos I no SAMU de Florianópolis
-URL:     https://www.pciconcursos.com.br/noticias/fahece-sc-abre-processo-seletivo-para-analista-de-contratos-i-no-samu-de-florianopolis
-Motivo:  O processo seletivo é para o cargo de Analista de Contratos I, que exige graduação em Direito, relevante para bacharéis na área.
+Título:  Concurso em Araraquara SP abre oportunidades para 34 cargos
+URL:     https://jcconcursos.com.br/noticia/concursos/concurso-em-araraquara-sp-abre-oportunidades-para-34-cargos-142174
+Motivo:  O concurso oferece vaga para procurador fundacional, cargo que exige formação em Direito.
 
-Título:  Concurso Prefeitura de Dores do Indaiá MG abre cadastro reserva para 80 cargos | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-prefeitura-de-dores-do-indaia-mg-abre-cadastro-reserva-para-80-cargos
-Motivo:  O edital inclui a vaga de advogado (Procon), que exige formação em Direito e OAB.
+Título:  Prefeitura de Gaspar - SC abre processo seletivo com salários de até R$ 23 mil
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-gaspar-sc-abre-processo-seletivo-com-salarios-de-ate-23-mil
+Motivo:  O processo seletivo inclui a vaga de Procurador Municipal, que é relevante para bacharéis em Direito.
 
-Título:  Prefeitura abre concurso público com 121 vagas imediatas e salários de até R$ 7,1 mil | Jornal Correio
-URL:     https://www.correio24horas.com.br/economia/concursos/prefeitura-abre-concurso-publico-com-121-vagas-imediatas-e-salarios-de-ate-r-71-mil-0426
-Motivo:  O concurso inclui uma vaga para advogado, cargo que exige formação em Direito, e oferece informações sobre o processo seletivo.
+Título:  Concurso Prefeitura de Olímpia (SP) paga até R$ 9,5 mil em edital
+URL:     https://concursosnobrasil.com/concursos/sp/2026/04/29/concurso-prefeitura-de-olimpia-sp-paga-ate-r-95-mil-em-edital/
+Motivo:  O concurso oferece vaga para Procurador Jurídico, cargo que exige formação em Direito.
 
-Título:  Concurso CGM Porto Velho: edital publicado com 36 vagas para Auditor, Contador e Técnico de Controle Interno - Blog Magistrar Educacional
-URL:     https://magistrarcursos.com.br/blog/concurso-cgm-porto-velho-edital-publicado-com-36-vagas-para-auditor-contador-e-tecnico-de-controle-interno/
-Motivo:  O concurso da CGM Porto Velho oferece vaga para Auditor, que exige graduação em Direito, além de outros cargos de nível superior.
+Título:  Processo seletivo Prefeitura de Gaspar SC: salários até R$23.198 e vagas em Saúde | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/processo-seletivo-prefeitura-de-gaspar-sc-salarios-ate-r-23-198-e-vagas-em-saude
+Motivo:  O edital inclui a vaga de procurador municipal, que exige formação em Direito.
 
-Título:  Concurso Sefaz-CE: quem tem direito à isenção da taxa de inscrição e como solicitar
-URL:     https://diariodonordeste.verdesmares.com.br/papo-carreira/quem-pode-pedir-isencao-na-inscricao-do-concurso-da-sefaz-ce-entenda-regras-e-prazo-1.3760316
-Motivo:  O concurso da Sefaz-CE oferece vagas para Auditor Fiscal, cargo que exige formação superior e envolve questões de direito público.
+Título:  Concurso na Controladoria-Geral do Município de Porto Velho oferece salários de até R$ 21.278,80 - Concursos e Empregos - Rondoniagora.com
+URL:     https://www.rondoniagora.com/concursos-e-empregos/concurso-na-controladoria-geral-do-municipio-de-porto-velho-oferece-salarios-de-ate-r-21-278-80
+Motivo:  O concurso na Controladoria-Geral do Município de Porto Velho oferece vagas para Auditor, que exige formação em Direito, além de outras áreas relacionadas ao controle interno.
 
-Título:  DPU divulga lista de inscritos em seleção para residência jurídica em Fortaleza-CE
-URL:     https://concursonews.com/2026/04/dpu-divulga-lista-de-inscritos-em-selecao-para-residencia-juridica-em-fortaleza-ce/
-Motivo:  O conteúdo trata da seleção para residência jurídica na Defensoria Pública da União, que é uma oportunidade relevante para bacharéis em Direito.
+Título:  Concurso Prefeitura de Ibiraçu ES abre 200 vagas em diversas áreas de até R$ 10,8 mil
+URL:     https://concursosnobrasil.com/concursos/es/2026/04/29/concurso-prefeitura-de-ibiracu-es-abre-190-vagas-em-diversas-areas-de-ate-r-108-mil/
+Motivo:  O concurso da Prefeitura de Ibiraçu oferece vaga para Procurador Municipal, cargo que exige formação em Direito.
 
-Título:  Prefeitura de Limeira abre processo seletivo para estágio em níveis médio e superior - Prefeitura de Limeira
-URL:     https://www.limeira.sp.gov.br/imprensa/noticias/administracao/prefeitura-de-limeira-abre-processo-seletivo-para-estagio-em-niveis-medio-e-superior
-Motivo:  O processo seletivo inclui a área de Direito, permitindo que estudantes de Direito participem como estagiários na Prefeitura de Limeira.
+Título:  Prefeitura de Ibiraçu - ES abre concurso público com vagas imediatas e cadastro reserva
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-ibiracu-es-abre-concurso-publico-com-vagas-imediatas-e-cadastro-reserva
+Motivo:  O concurso inclui a vaga de Procurador Municipal, que exige formação em Direito.
 
-Título:  Concurso da Prefeitura de Rio Claro (SP) prorroga inscrições e amplia número de vagas
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-prefeitura-rio-claro-sp-prorroga-inscricoes-e-amplia-numero-de-vagas-142175
-Motivo:  O concurso da Prefeitura de Rio Claro oferece uma vaga para advogado, cargo que exige formação em Direito.
+Título:  Concurso ALMS: saiu o resultado preliminar da prova objetiva!
+URL:     https://blog.grancursosonline.com.br/concurso-alms-resultado-preliminar-prova-objetiva/
+Motivo:  O concurso é para cargos de Analista e Técnico Legislativo na Assembleia Legislativa de Mato Grosso do Sul, que exigem formação superior em Direito.
 
-Título:  Inscrições para vagas no Tribunal de Justiça BA terminam nesta segunda (27)
-URL:     https://jcconcursos.com.br/noticia/empregos/inscricoes-para-vagas-no-tribunal-de-justica-ba-terminam-nesta-segunda-27-142135
-Motivo:  O conteúdo trata de um processo seletivo para estagiários no Tribunal de Justiça da Bahia, incluindo a área de Direito, que é relevante para bacharéis em Direito.
-
-Título:  Câmara de Arujá-SP abre concurso para 13 cargos de até R$ 15.659
-URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-camara-aruja-sp-abre-13-cargos-15-659-89744
-Motivo:  O concurso inclui o cargo de Analista Jurídico, que exige formação em Direito, e oferece um salário significativo.
+Título:  TJAP promove concurso para Cartórios Extrajudiciais do Estado - Recivil
+URL:     https://recivil.com.br/tjap-promove-concurso-para-cartorios-extrajudiciais-do-estado/?amp=1
+Motivo:  O concurso é para cartórios extrajudiciais, exigindo formação em Direito, e é promovido pelo Tribunal de Justiça do Amapá.
 
