@@ -1,31 +1,67 @@
-Verificação: 2026-05-02T14:06:16.141468+00:00
-Links novos encontrados: 16
-  Scraping: 0
-  Alertas:  16
-Removidos da base: 145
-Total na base: 893
+Verificação: 2026-05-02T14:21:17.600833+00:00
+Links novos encontrados: 80
+  Scraping: 13
+  Alertas:  67
+Removidos da base: 77
+Total na base: 739
 ============================================================
+
+── NEW (scraping) ──
+
+Prefeitura de Pedrão-BA abre 73 vagas de R$ 3 mil
+  https://www.acheconcursos.com.br/concursos-bahia/prefeitura-de-pedrao-ba-abre-73-vagas-de-r-3-mil-89834
+
+Prefeitura de Santa Maria de Jetibá-ES 2026 abre vagas de até R$ 10 mil
+  https://www.acheconcursos.com.br/concursos-espirito-santo/prefeitura-de-santa-maria-de-jetiba-es-2026-abre-vagas-de-ate-r-10-mil-89846
+
+Prefeitura do MS abre vagas de R$ 3.242 para Agentes de Saúde
+  https://www.acheconcursos.com.br/concursos-mato-grosso-do-sul/prefeitura-do-ms-abre-vagas-de-r-3-242-para-agentes-de-saude-89848
+
+Prefeitura de Curitiba-PR abre vagas para Engenheiro Civil
+  https://www.acheconcursos.com.br/concursos-parana/c-abre-vagas-para-engenheiro-civil-89844
+
+Concurso Prefeitura de Santa Filomena-PE 2026: Inscrição para 209 vagas
+  https://www.acheconcursos.com.br/concursos-pernambuco/concurso-prefeitura-de-santa-filomena-pe-2026-inscricao-para-209-vagas-89843
+
+Concurso Prefeitura de Morro Reuter-RS 2026: Inscrição aberta
+  https://www.acheconcursos.com.br/concursos-rio-grande-do-sul/concurso-prefeitura-de-morro-reuter-rs-2026-inscricao-aberta-89835
+
+Edital São Vendelino-RS abre 24 vagas de R$ 8.820 via concurso
+  https://www.acheconcursos.com.br/concursos-rio-grande-do-sul/edital-sao-vendelino-rs-abre-24-vagas-de-r-8-820-via-concurso-89838
+
+Edital Prefeitura Gravatal-SC 2026 abre vagas de até R$ 3,5 mil
+  https://www.acheconcursos.com.br/concursos-santa-catarina/edital-prefeitura-gravatal-sc-2026-abre-vagas-de-ate-r-3-5-mil-89849
+
+Edital São Martinho-SC 2026 saiu! Prefeitura abre concurso com salários de até R$ 5,1 mil
+  https://www.acheconcursos.com.br/concursos-santa-catarina/edital-sao-martinho-sc-2026-saiu-prefeitura-abre-concurso-com-salarios-de-ate-r-5-1-mil-89836
+
+Prefeitura catarinense abre vagas de até R$ 23.198 para todos os níveis
+  https://www.acheconcursos.com.br/concursos-santa-catarina/prefeitura-catarinense-abre-vagas-de-ate-r-23-198-para-todos-os-niveis-89837
+
+Prefeitura de Urubici-SC abre vagas em diversas áreas
+  https://www.acheconcursos.com.br/concursos-santa-catarina/prefeitura-de-urubici-sc-abre-vagas-em-diversas-areas-89840
+
+Concurso Prefeitura de Tabapuã-SP 2026: Edital é publicado!
+  https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-prefeitura-de-tabapua-sp-2026-edital-e-publicado-89841
+
+Edital Nantes-SP 2026: Prefeitura abre concurso e paga até R$ 6,7 mil
+  https://www.acheconcursos.com.br/concursos-sao-paulo/edital-nantes-sp-2026-prefeitura-abre-concurso-e-paga-ate-r-6-7-mil-89839
 
 ── NEW (Google Alerts) ──
 
-Term:    seletivo concurso advogado
-Title:   Com 46 mil inscritos, <b>concurso</b> de Senador Canedo se aproxima do fim das inscrições
-URL:     https://www.jornalopcao.com.br/ultimas-noticias/com-46-mil-inscritos-concurso-de-senador-canedo-se-aproxima-do-fim-das-inscricoes-821311/
+Term:    seletivo concurso direito
+Title:   Consórcio CIGA-SC abre seleção para 4 cargos - Ache Concursos
+URL:     https://www.acheconcursos.com.br/concursos-santa-catarina/consorcio-ciga-sc-abre-selecao-para-4-cargos-89847
 Snippet: 
 
 Term:    seletivo concurso residencia juridica
-Title:   Secretaria da Justiça promove seleção com 1.000 vagas de emprego em São Paulo nesta terça (5)
-URL:     https://concursonews.com/2026/05/secretaria-da-justica-promove-selecao-com-1-000-vagas-de-emprego-em-sao-paulo-nesta-terca-5/
+Title:   Processo <b>Seletivo</b> Prefeitura de Imbé-RS 2026 - Edital e Inscrição
+URL:     https://www.acheconcursos.com.br/concursos-rio-grande-do-sul/processo-seletivo-prefeitura-de-imbe-rs-2026-edital-e-inscricao-89845
 Snippet: 
 
-Term:    seletivo concurso advogado
-Title:   Câmara de Rio das Ostras abre <b>concurso</b> público com 38 vagas e salários de até R$ 5,7 mil
-URL:     https://www.guiamuriae.com.br/noticias/brasil/concurso-camara-rio-das-ostras-2026/
-Snippet: 
-
-Term:    seletivo concurso assessor juridico
-Title:   Prefeitura de Cedro lança <b>concurso</b> público com 133 vagas; veja cargos - G1
-URL:     https://g1.globo.com/pe/petrolina-regiao/noticia/2026/04/30/prefeitura-de-cedro-lanca-concurso-publico-com-133-vagas-veja-cargos.ghtml
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> Orindiúva-SP 2026: Prefeitura lança edital e abriu inscrições
+URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-orindiuva-sp-2026-prefeitura-lanca-edital-e-abriu-inscricoes-89842
 Snippet: 
 
 Term:    seletivo concurso advogado
@@ -33,14 +69,119 @@ Title:   Capital nacional do frio abre <b>concurso</b> com salários de até R$ 
 URL:     https://g1.globo.com/sc/santa-catarina/noticia/2026/05/02/capital-nacional-frio-abre-inscricoes-concurso-salarios-ate-20-mil-sc-veja-areas.ghtml
 Snippet: 
 
-Term:    seletivo concurso advogado
-Title:   Edital Processo <b>Seletivo</b> Prefeitura Gravatal-SC 03-2026 - Ache Concursos
-URL:     https://www.acheconcursos.com.br/edital-concurso/edital-gravatal-sc-03-2026
+Term:    seletivo concurso direito
+Title:   MP cita 397 aprovados sem nomeação e cobra Prefeitura de Palmas por convocação
+URL:     https://jornalprimeirapaginato.com/mp-cita-397-aprovados-sem-nomeacao-e-cobra-prefeitura-de-palmas-por-convocacao/
 Snippet: 
 
 Term:    seletivo concurso direito
-Title:   <b>Concurso</b> NAV 2026 disponibiliza 858 vagas com salário de até R$ 10,8 mil
-URL:     https://academiaconcursos.com.br/concurso-nav-2026-oferece-858-vagas-salario-ate-108-mil/
+Title:   Exército mantém inscrições do <b>concurso</b> ESFCEx 2026 e publica retificações e comunicados
+URL:     https://concursonews.com/2026/05/exercito-mantem-inscricoes-do-concurso-esfcex-2026-e-publica-retificacoes-e-comunicados-prazo-vai-ate-12-de-junho/
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   SPPREV abre seleção de estágio com bolsas de até R$ 937,59 em São Paulo e inscrições ...
+URL:     https://concursonews.com/2026/05/spprev-abre-selecao-de-estagio-com-bolsas-de-ate-r-93759-em-sao-paulo-e-inscricoes-ate-28-de-maio/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   Governo de Minas anuncia resultado definitivo e homologação de carreiras do <b>Concurso</b> ...
+URL:     https://www.mg.gov.br/planejamento/noticias/governo-de-minas-anuncia-resultado-definitivo-e-homologacao-de-carreiras-do-concurso-publico-da-educacao
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   Prefeitura de Curitiba anuncia processo <b>seletivo</b> simplificado para a contratação de ...
+URL:     https://www.diarioinduscom.com.br/Noticias/882206/prefeitura_de_curitiba_anuncia_processo_seletivo_simplificado_para_a_contratacao_de_engenheiros_civis
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Petrobras desmente <b>concurso</b> com salários de até R$ 16 mil - Maricá Info
+URL:     https://maricainfo.com/2026/05/01/petrobras-desmente-concurso-com-salarios-de-ate-r-16-mil.html
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Educação convoca candidatos de Processo <b>Seletivo</b> para apresentação de documentos
+URL:     https://noticias.cabofrio.rj.gov.br/educacao-convoca-candidatos-de-processo-seletivo-para-apresentacao-de-documentos-3/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Prefeitura de Anápolis vai realizar <b>concurso</b> público para Saúde e inicia estudo para definir ...
+URL:     https://portal6.com.br/2026/05/01/prefeitura-de-anapolis-vai-realizar-concurso-publico-para-saude-e-inicia-estudo-para-definir-cargos-e-vagas/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> Prefeitura de Tabapuã SP oferece vagas imediatas e cadastro reserva
+URL:     https://folha.qconcursos.com/n/concurso-prefeitura-de-tabapua-sp-oferece-vagas-imediatas-e-cadastro-reserva
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   <b>Concurso</b> PGE MA <b>Procurador</b>: banca em definição! - Blog Gran Cursos Online
+URL:     https://blog.grancursosonline.com.br/concurso-pge-ma-procurador-banca-em-definicao-2026/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> público tem vagas com salário de até R$ 7,5 mil
+URL:     https://primeirapagina.com.br/emprego-e-concursos/concurso-publico-tem-vagas-com-salario-de-ate-r-75-mil/
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   <b>Concurso</b> Advogado Funpresp-JUD: Guia Rápido
+URL:     https://cj.estrategia.com/portal/concurso-advogado-funpresp-jud-guia-rapido/
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   Nota da Funai sobre o Processo <b>Seletivo</b> Simplificado (PSS) da Proteção Territorial
+URL:     https://www.gov.br/funai/pt-br/assuntos/noticias/2026/nota-da-funai-sobre-o-processo-seletivo-simplificado-pss-da-protecao-territorial
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Câmara de Estância de Ibirá abre <b>concurso</b> com vagas e salários atrativos
+URL:     https://www.souenfermagem.com.br/noticias/camara-de-estancia-de-ibira-abre-concurso-com-vagas-e-salarios-atrativos/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   Governo lança edital de <b>concurso</b> da Arsal com 32 vagas para <b>analista</b> - CBN Maceió
+URL:     https://cbnmaceio.com.br/noticia/25652/governo-lanca-edital-de-concurso-da-arsal-com-32-vagas-para-analista
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   Escola Naval abre inscrições: requisitos, etapas e benefícios para quem sonha com a Marinha
+URL:     https://uniten.com.br/escola-naval-inscricoes-concurso-marinha/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   <b>Concurso</b> Câmara Rio das Ostras edital vagas e salários - Sou Enfermagem
+URL:     https://www.souenfermagem.com.br/noticias/concurso-camara-rio-das-ostras-edital-vagas-e-salarios/
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   Prefeitura de Praia Grande abre inscrições para os primeiros concursos públicos de 2026
+URL:     https://www2.praiagrande.sp.gov.br/noticia/prefeitura-de-praia-grande-abre-inscricoes-para-os-primeiros-concursos-publicos-de-2026
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   <b>Concurso</b> Sefaz CE 2026 abre 300 vagas de Auditor Fiscal com salário inicial de R$ 16 mil
+URL:     https://uniten.com.br/concurso-sefaz-ce-2026-abre-300-vagas-de-auditor-fiscal/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> da Prefeitura de Tabapuã (SP) abre 23 vagas de até R$ 7.418
+URL:     https://concursosnobrasil.com/concursos/sp/2026/04/30/concurso-da-prefeitura-de-tabapua-sp-abre-23-vagas-de-ate-r-7-418/
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   Bahia abre seleção com 21 vagas para jornalistas, fotógrafos e cinegrafistas
+URL:     https://www.falavoce.com.br/noticias/6098-2026/05/01/bahia-abre-selecao-com-21-vagas-para-jornalistas-fotografos-e-cinegrafistas
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   Conselho de Técnicos Industriais faz seleção com salários de até R$ 4,9 mil - Folha Vitória
+URL:     https://www.folhavitoria.com.br/trabalho/concursos/conselho-de-tecnicos-industriais-faz-selecao-com-salarios-de-ate-r-49-mil/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Edital Processo <b>Seletivo</b> Prefeitura Gravatal-SC 03-2026 - Ache Concursos
+URL:     https://www.acheconcursos.com.br/edital-concurso/edital-gravatal-sc-03-2026
 Snippet: 
 
 Term:    seletivo concurso procurador
@@ -48,24 +189,24 @@ Title:   Prefeitura de Curitiba anuncia processo <b>seletivo</b> simplificado pa
 URL:     https://www.curitiba.pr.gov.br/noticias/prefeitura-de-curitiba-anuncia-processo-seletivo-simplificado-para-a-contratacao-de-engenheiros-civis/82827
 Snippet: 
 
-Term:    seletivo concurso analista juridico
-Title:   <b>Concurso</b> da JNJ para Chefe da ONPE: Inscrições Abertas - diário do estado
-URL:     https://diariodoestadogo.com.br/concurso-da-jnj-para-chefe-da-onpe-inscricoes-abertas/
+Term:    seletivo concurso procurador
+Title:   <b>Concurso</b> Público nº 04/2025: Divulgação do Resultado Final e Homologação para ...
+URL:     https://www.ilhacomprida.sp.gov.br/servicos/transparencia/concurso-publico-n-042025-divulgacao-do-resultado-final-e-homologacao-para-procurador-juridico
 Snippet: 
 
-Term:    seletivo concurso analista juridico
-Title:   EcoRodovias reúne 117 vagas de emprego em SP, RJ, MG, GO, TO e ES; veja áreas
-URL:     https://concursonews.com/2026/05/ecorodovias-reune-117-vagas-de-emprego-em-sp-rj-mg-go-to-e-es-veja-areas/
+Term:    seletivo concurso assessor juridico
+Title:   Prefeitura de Cedro lança <b>concurso</b> público com 133 vagas; veja cargos - G1
+URL:     https://g1.globo.com/pe/petrolina-regiao/noticia/2026/04/30/prefeitura-de-cedro-lanca-concurso-publico-com-133-vagas-veja-cargos.ghtml
 Snippet: 
 
-Term:    seletivo concurso advogado
-Title:   Edital Processo <b>Seletivo</b> Prefeitura de Imbé-RS 171-2026 - Ache Concursos
-URL:     https://www.acheconcursos.com.br/edital-concurso/edital-imbe-rs-171-2026
+Term:    seletivo concurso procurador
+Title:   Concursos Jurídicos: melhores editais abertos e previstos para maio; até R$ 39,5 mil!
+URL:     https://magistrarcursos.com.br/blog/concursos-juridicos-melhores-editais-abertos-e-previstos-para-maio/
 Snippet: 
 
-Term:    seletivo concurso direito
-Title:   <b>Concurso</b> CGE AL encerra inscrições e confirma provas para 28 de junho
-URL:     https://academiaconcursos.com.br/concurso-cge-al-encerra-inscricoes-provas-28-de-junho/
+Term:    seletivo concurso residencia juridica
+Title:   <b>Residência</b> médica UFRJ: edital 2025, cronograma, vagas e muito mais - Portal Afya
+URL:     https://portal.afya.com.br/carreira/residencia-medica-ufrj-edital-2025-cronograma-vagas-e-muito-mais
 Snippet: 
 
 Term:    seletivo concurso direito
@@ -73,9 +214,74 @@ Title:   Governo da BA abre vagas para Secretaria de Comunicação; veja funçõ
 URL:     https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2026/05/01/governo-da-bahia-abre-vagas-em-processo-seletivo-para-secretaria-de-comunicacao.ghtml
 Snippet: 
 
+Term:    seletivo concurso consultor legislativo
+Title:   <b>Concurso</b> da Assembleia de Roraima oferece 226 vagas com salários de até R$ 39 mil
+URL:     https://tribunadoreconcavo.com/concurso-alerr-2026-vagas-salarios-inscricoes/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   IFAM abre <b>concurso</b> com salários de até R$ 6,4 mil para nível superior - Roraima na Rede
+URL:     https://www.roraimanarede.com.br/concurso/ifam-abre-concurso-com-salarios-de-ate-r-6-4-mil-para-nivel-superior
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Com 46 mil inscritos, <b>concurso</b> de Senador Canedo se aproxima do fim das inscrições
+URL:     https://www.jornalopcao.com.br/ultimas-noticias/com-46-mil-inscritos-concurso-de-senador-canedo-se-aproxima-do-fim-das-inscricoes-821311/
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   Sesab convoca 358 profissionais em novo chamamento do processo <b>seletivo</b> 2025 na Bahia
+URL:     https://tribunadoreconcavo.com/sesab-convoca-358-profissionais-processo-seletivo-2025/
+Snippet: 
+
+Term:    seletivo concurso residencia juridica
+Title:   <b>Residência</b> médica SES-DF: edital 2026, cronograma, vagas e muito mais - Portal Afya
+URL:     https://portal.afya.com.br/carreira/residencia-medica-ses-df-edital-2026-cronograma-vagas-e-muito-mais
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   <b>Concurso</b> do IBGE terá 36 mil vagas temporárias e editais previstos para junho - Portal N10
+URL:     https://portaln10.com.br/processo-seletivo/concurso-do-ibge-tera-36-mil-vagas-temporarias-e-editais-previstos-para-junho-332458/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   <b>Concurso</b> da Marinha: edital prevê 25 vagas e remuneração de quase R$ 10 mil
+URL:     https://portalcorreio.com.br/concurso-da-marinha-edital-preve-25-vagas-e-remuneracao-de-quase-r-10-mil/
+Snippet: 
+
 Term:    seletivo concurso analista juridico
-Title:   Governo lança edital de <b>concurso</b> da Arsal com 32 vagas para <b>analista</b> - CBN Maceió
-URL:     https://cbnmaceio.com.br/noticia/25652/governo-lanca-edital-de-concurso-da-arsal-com-32-vagas-para-analista
+Title:   <b>Concurso</b> da Arsal: publicado edital inédito para analistas com 32 vagas
+URL:     https://jcconcursos.com.br/noticia/concursos/concurso-da-arsal-publicado-edital-inedito-para-analistas-142239
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   Prefeitura de Praia Grande-SP abre <b>concurso</b> com 22 vagas e salários de até R$ 21,8 mil
+URL:     https://www.itatiaia.com.br/emprego-e-concursos/prefeitura-de-praia-grande-sp-abre-concurso-com-22-vagas-e-salarios-de-ate-r-218-mil/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   ALRS divulga novas atualizações do processo <b>seletivo</b> para <b>Analista</b> de TI; veja últimos atos ...
+URL:     https://concursonews.com/2026/04/alrs-divulga-novas-atualizacoes-do-processo-seletivo-para-analista-de-ti-veja-ultimos-atos-publicados/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> da Arsal abre 16 vagas para <b>analista</b> de regulação em Alagoas
+URL:     https://ojornalextra.com.br/noticias/alagoas/2026/04/126289-concurso-da-arsal-abre-16-vagas-para-analista-de-regulacao-em-alagoas
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Edital Processo <b>Seletivo</b> Prefeitura de Imbé-RS 171-2026 - Ache Concursos
+URL:     https://www.acheconcursos.com.br/edital-concurso/edital-imbe-rs-171-2026
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   Classificação final para estágio na <b>Procuradoria</b> do Município é divulgada
+URL:     https://campos.rj.gov.br/exibirNoticia.php?id_noticia=104011
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   <b>Concurso</b> NAV 2026 disponibiliza 858 vagas com salário de até R$ 10,8 mil
+URL:     https://academiaconcursos.com.br/concurso-nav-2026-oferece-858-vagas-salario-ate-108-mil/
 Snippet: 
 
 Term:    seletivo concurso direito
@@ -86,5 +292,95 @@ Snippet:
 Term:    seletivo concurso direito
 Title:   Bahia abre seleção REDA na SECOM com 21 vagas para jornalistas, fotógrafos e ...
 URL:     https://concursonews.com/2026/05/bahia-abre-selecao-reda-na-secom-com-21-vagas-para-jornalistas-fotografos-e-cinegrafistas-em-salvador/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Câmara no interior de MS tem <b>concurso</b> com salários de até R$ 6,7 mil
+URL:     https://primeirapagina.com.br/emprego-e-concursos/camara-no-interior-de-ms-tem-concurso-com-salarios-de-ate-r-67-mil/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   É #FAKE que Petrobras tem <b>concurso</b> aberto ou confirmado em 2026 - G1
+URL:     https://g1.globo.com/fato-ou-fake/noticia/2026/05/01/e-fake-que-petrobras-tem-concurso-aberto-ou-confirmado-em-2026.ghtml
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> do TJ SC encerra inscrições para servidores nesta quinta-feira, às 16h
+URL:     https://jcconcursos.com.br/noticia/concursos/concurso-tj-sc-servidores-encerramento-inscricao-142236
+Snippet: 
+
+Term:    seletivo concurso residencia juridica
+Title:   Secretaria da Justiça promove seleção com 1.000 vagas de emprego em São Paulo nesta terça (5)
+URL:     https://concursonews.com/2026/05/secretaria-da-justica-promove-selecao-com-1-000-vagas-de-emprego-em-sao-paulo-nesta-terca-5/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   Governo de Alagoas Lança <b>Concurso</b> com 32 Vagas para <b>Analista</b> de Regulação da Arsal
+URL:     https://reportermaceio.com.br/alagoas-governo-de-alagoas-lanca-concurso-com-32-vagas-para-analista-de-regulacao-da-arsal/
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   Seropédica (RJ) abre seleção com 19 vagas e salários até R$ 4,2 mil - Concursos Estadão
+URL:     https://concursos.estadao.com.br/concursos/seropedica-rj-selecao-19-vagas-salarios-4-mil-reais/amp/
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   Bahia abre seleção REDA para Secretaria de Comunicação - Jornal Folha do Estado
+URL:     https://www.jornalfolhadoestado.com/concursos-e-empregos/governo-do-estado-abre-selecao-reda-para-secretaria-de-comunicacao/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Concursos com vagas para acs - Agente Comunitário de Saúde ubs Serra do Inácio
+URL:     https://www.pciconcursos.com.br/concursos/vagas/acs-agente-comunitario-de-saude-ubs-serra-do-inacio
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Acordo entre MPBA e Prefeitura de Feira corrige critérios de cotas em <b>concurso</b>
+URL:     https://www.jornalfolhadoestado.com/concursos-e-empregos/acordo-entre-mpba-e-prefeitura-de-feira-corrige-criterios-de-cotas-em-concurso/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Prefeitura de Cabo Frio convoca 7º lote de candidatos do Processo <b>Seletivo</b> da Educação
+URL:     https://noticias.cabofrio.rj.gov.br/prefeitura-de-cabo-frio-convoca-7o-lote-de-candidatos-do-processo-seletivo-da-educacao/
+Snippet: 
+
+Term:    seletivo concurso residencia juridica
+Title:   Defensoria de Canoas abre seleção para estágio em Direito com inscrições até 11 de maio
+URL:     https://concursonews.com/2026/05/defensoria-de-canoas-abre-selecao-para-estagio-em-direito-com-inscricoes-ate-11-de-maio/
+Snippet: 
+
+Term:    seletivo concurso advogado
+Title:   Câmara de Rio das Ostras abre <b>concurso</b> público com 38 vagas e salários de até R$ 5,7 mil
+URL:     https://www.guiamuriae.com.br/noticias/brasil/concurso-camara-rio-das-ostras-2026/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> da JNJ para Chefe da ONPE: Inscrições Abertas - diário do estado
+URL:     https://diariodoestadogo.com.br/concurso-da-jnj-para-chefe-da-onpe-inscricoes-abertas/
+Snippet: 
+
+Term:    seletivo concurso direito
+Title:   <b>Concurso</b> CGE AL encerra inscrições e confirma provas para 28 de junho
+URL:     https://academiaconcursos.com.br/concurso-cge-al-encerra-inscricoes-provas-28-de-junho/
+Snippet: 
+
+Term:    seletivo concurso procurador
+Title:   Prefeitura de Ibiraçu ES abre <b>concurso</b> com mais de 170 vagas | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/prefeitura-de-ibiracu-es-abre-concurso-com-mais-de-170-vagas
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   <b>Concurso</b> da Arsal publica edital com 32 vagas para <b>analista</b> - Portal N10
+URL:     https://portaln10.com.br/concursos/concurso-da-arsal-publica-edital-com-32-vagas-para-analista-331923/
+Snippet: 
+
+Term:    seletivo concurso analista juridico
+Title:   EcoRodovias reúne 117 vagas de emprego em SP, RJ, MG, GO, TO e ES; veja áreas
+URL:     https://concursonews.com/2026/05/ecorodovias-reune-117-vagas-de-emprego-em-sp-rj-mg-go-to-e-es-veja-areas/
+Snippet: 
+
+Term:    seletivo concurso residencia juridica
+Title:   <b>Residência Jurídica</b> MPMG: Ministério Público de MG abre 20 vagas com bolsa de R$ 4,8 mil
+URL:     https://mdcconcursos.com.br/residencia-juridica-mpmg-2026-10/
 Snippet: 
 
