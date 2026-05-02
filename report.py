@@ -397,8 +397,8 @@ def generate_html(
     <header>
         <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
         <h1>🤖 CuradorIA de Carreiras Jurídicas ⚖️</h1>
-        <p>{total_analyzed} artigos analisados nesta rodada</p>
-        <div class="badge">{total_relevant} artigo(s) relevante(s) sobre {len(groups)} certame(s)</div>
+        <p>{total_analyzed} artigos analisados</p>
+        <div class="badge">{total_relevant} artigos relevantes sobre {len(groups)} certames</div>
         {meta_html}
     </header>
     <div class="container">
