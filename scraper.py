@@ -1,163 +1,114 @@
-import json
+"""Orquestração do CuradorIA / CuradorIA orchestration
+
+Este módulo só "amarra" as etapas: coleta de links/alerts, análise via IA,
+geração de relatório. Constantes vivem em config.py, persistência em
+storage.py, parsing/HTTP em extractor.py, IA em ai.py, HTML em report.py.
+
+This module just "wires" the pipeline: link/alert collection, AI analysis,
+report generation. Constants live in config.py, persistence in storage.py,
+parsing/HTTP in extractor.py, AI in ai.py, HTML in report.py.
+"""
+import logging
 import os
-import re
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urljoin, urlparse, parse_qs, unquote
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
-import trafilatura
 
-# Importa a inteligência (ai.py) e o visual (report.py)
 from ai import evaluate_relevance
-from report import group_relevant_items, generate_html
+from config import (
+    API_PAUSE,
+    GOOGLE_ALERTS_FEEDS,
+    HEADERS,
+    HISTORY_DIR,
+    MAX_ABSENCES,
+    OUTPUT_HTML,
+    OUTPUT_NEW_LINKS,
+    OUTPUT_RELEVANT,
+    REPORT_URL,
+    TARGET_URLS,
+)
+from extractor import (
+    extract_page,
+    extract_real_url,
+    is_relevant_url,
+    normalize_url,
+)
+from logger import setup_logging
+from report import generate_html, group_relevant_items
+from storage import (
+    clear_expired_blocks,
+    is_domain_blocked,
+    is_url_in_failure_cooldown,
+    load_database,
+    record_processed,
+    register_403_block,
+    register_url_failure,
+    save_database,
+)
 
-# ─── Configurações gerais ─────────────────────────────────────────────────────
-TARGET_URLS = [
-    "https://www.pciconcursos.com.br/previstos/",
-    "https://www.pciconcursos.com.br/noticias/",
-    "https://www.pciconcursos.com.br/ultimas/",
-    "https://www.acheconcursos.com.br/concursos-atualizados-recentemente",
-    "https://www.acheconcursos.com.br/concursos-previstos",
-    "https://www.acheconcursos.com.br/concursos-abertos",
-]
-
-GOOGLE_ALERTS_FEEDS = [
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/13784085206058947900", "term": "seletivo concurso residencia juridica"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/10699205725319407642", "term": "seletivo concurso procurador"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/15459908627525988139", "term": "seletivo concurso advogado"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/5648081314456116013", "term": "seletivo concurso estagio de pos graduacao direito"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/15126815070692715421", "term": "seletivo concurso analista juridico"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/4736851925661048284", "term": "seletivo concurso assessor juridico"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/2563769251380958392", "term": "seletivo concurso tecnico juridico"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/16659093265726736111", "term": "seletivo concurso consultor legislativo"},
-    {"url": "https://www.google.com/alerts/feeds/05883152892408713569/4996675272987879500", "term": "seletivo concurso direito"},
-]
-
-GITHUB_USER = "paulodantasii"
-GITHUB_REPO = "curadoria-carreiras-juridicas"
-REPORT_URL = f"https://{GITHUB_USER}.github.io/{GITHUB_REPO}/report.html"
-
-DATABASE_FILE = "database.json"
-OUTPUT_NEW_LINKS = "new_links.txt"
-OUTPUT_RELEVANT = "new_relevant.txt"
-OUTPUT_HTML = "report.html"
-
-MAX_ABSENCES = 3
-MAX_PAGE_CHARS = 6000
-API_PAUSE = 2.0
-BLOCK_403_DAYS = 30
-
-HEADERS = {
-    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"),
-    "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-}
-
-TARGET_DOMAINS = {"pciconcursos.com.br", "acheconcursos.com.br"}
-
-RELEVANT_PATTERNS = [r"/concurso", r"/noticia", r"/edital", r"/concursos/", r"/previstos", r"/abertos", r"/autorizados", r"/inscricoes", r"/cronograma", r"/ultimas", r"/noticias", r"/portal/\d{4}/", r"/portal/[a-z0-9-]+/$"]
-IGNORE_PATTERNS = [r"/(login|cadastro|conta|assinar|assine|newsletter)", r"\.(jpg|jpeg|png|gif|pdf|zip|rar|mp4|svg|css|js)$", r"/(tag|autor|author|page|pagina)/", r"#", r"javascript:", r"mailto:", r"whatsapp:"]
+logger = logging.getLogger(__name__)
 
 
-# ─── Utilitários básicos ──────────────────────────────────────────────────────
 def get_brasilia_time() -> datetime:
-    """Retorna a hora atual do servidor ajustada ao fuso horário de Brasília"""
+    """Retorna a hora atual ajustada para Brasília / Returns current time in Brasília time zone"""
     return datetime.now(timezone(timedelta(hours=-3)))
 
-def is_relevant_url(url: str) -> bool:
-    """Checks if the captured link belongs to the allowed domains or patterns."""
-    host = urlparse(url).netloc.replace("www.", "")
-    if not any(d in host for d in TARGET_DOMAINS): return False
-    for p in IGNORE_PATTERNS:
-        if re.search(p, url, re.IGNORECASE): return False
-    for p in RELEVANT_PATTERNS:
-        if re.search(p, url, re.IGNORECASE): return True
-    return False
 
-def normalize_url(url: str) -> str:
-    """Removes anchor fragments (#) from links to avoid duplicate URLs."""
-    url = url.split("#")[0].strip()
-    parsed = urlparse(url)
-    return parsed._replace(fragment="").geturl()
+# Coleta de links / Link collection
+def collect_page_links(url: str, session: requests.Session) -> dict:
+    """Coleta {url: texto_do_link} de uma página de listagem / Collects {url: anchor_text} from a listing page
 
-def extract_real_url(href: str) -> str:
-    """Unwraps URLs provided by Google Alerts that come masked."""
-    parsed = urlparse(href)
-    if "google.com" in parsed.netloc and parsed.path == "/url":
-        qs = parse_qs(parsed.query)
-        if "url" in qs: return unquote(qs["url"][0])
-    return href
-
-# ─── 403 Block Management ─────────────────────────────────────────────────
-def is_domain_blocked(db: dict, url: str) -> bool:
-    """Checks if the domain is currently blocked due to a prior 403 response."""
-    blocks = db.get("_blocks_403", {})
-    d = urlparse(url).netloc.replace("www.", "")
-    if d not in blocks: return False
-    block_date = datetime.fromisoformat(blocks[d])
-    deadline = block_date + timedelta(days=BLOCK_403_DAYS)
-    return datetime.now(timezone.utc) < deadline
-
-def register_403_block(db: dict, url: str) -> None:
-    """Records the domain as blocked in the database after a 403 error."""
-    if "_blocks_403" not in db: db["_blocks_403"] = {}
-    d = urlparse(url).netloc.replace("www.", "")
-    now = datetime.now(timezone.utc).isoformat()
-    db["_blocks_403"][d] = now
-    print(f"    [403 BLOQUEADO] Domínio '{d}' bloqueado por {BLOCK_403_DAYS} dias.")
-
-def clear_expired_blocks(db: dict) -> None:
-    """Removes block records for domains whose block period has expired."""
-    blocks = db.get("_blocks_403", {})
-    now = datetime.now(timezone.utc)
-    expired = [d for d, date_str in blocks.items() if now >= datetime.fromisoformat(date_str) + timedelta(days=BLOCK_403_DAYS)]
-    for d in expired:
-        del blocks[d]
-        print(f"  [403] Bloqueio vencido para '{d}', domínio liberado para novo teste.")
-
-# ─── Web Scraping ─────────────────────────────────────────────────────────
-def collect_page_links(url: str, session: requests.Session) -> set:
-    """Opens a target page and collects all valid news links within it."""
+    O texto do link serve como fallback de título (item 2.5) quando a página
+    de destino não puder ser extraída. / The anchor text doubles as a title
+    fallback when the destination page can't be extracted.
+    """
     try:
         resp = session.get(url, timeout=20, headers=HEADERS)
         resp.raise_for_status()
     except Exception as e:
-        print(f"  [ERRO] {url} → {e}")
-        return set()
+        logger.error("Falha em %s: %s", url, e)
+        return {}
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    links = set()
+    links: dict[str, str] = {}
     for tag in soup.find_all("a", href=True):
         href = tag["href"].strip()
-        absolute = urljoin(url, href)
-        absolute = normalize_url(absolute)
-        if is_relevant_url(absolute):
-            links.add(absolute)
+        absolute = normalize_url(urljoin(url, href))
+        if not is_relevant_url(absolute):
+            continue
+        link_text = tag.get_text(strip=True)
+        # Mantém a primeira ocorrência com texto não-vazio / Keep first occurrence with non-empty text
+        if absolute not in links or (link_text and not links[absolute]):
+            links[absolute] = link_text
 
-    print(f"  [OK] {url} → {len(links)} links")
+    logger.info("OK %s → %d links", url, len(links))
     return links
 
-def collect_all_links() -> set:
-    """Iterates over all target URLs calling the link collection function."""
+
+def collect_all_links() -> dict:
+    """Itera URLs alvo e agrega {url: texto_do_link} / Iterates target URLs and aggregates {url: anchor_text}"""
     session = requests.Session()
-    all_links = set()
+    all_links: dict[str, str] = {}
     for url in TARGET_URLS:
-        links = collect_page_links(url, session)
-        all_links.update(links)
+        for k, v in collect_page_links(url, session).items():
+            if k not in all_links or (v and not all_links[k]):
+                all_links[k] = v
         time.sleep(1.5)
     return all_links
 
-# ─── Google Alerts ────────────────────────────────────────────────────────
+
+# Google Alerts
 def read_alert_feed(feed_url: str, term: str) -> list:
-    """Reads the Google Alerts RSS feed and extracts the links notified by Google."""
+    """Lê um feed RSS do Google Alerts / Reads a Google Alerts RSS feed"""
     try:
         resp = requests.get(feed_url, timeout=15, headers=HEADERS)
         resp.raise_for_status()
     except Exception as e:
-        print(f"  [ERRO feed] {feed_url} → {e}")
+        logger.error("Falha em feed %s: %s", feed_url, e)
         return []
 
     results = []
@@ -170,153 +121,57 @@ def read_alert_feed(feed_url: str, term: str) -> list:
             link_el = entry.find("atom:link", ns)
             href = link_el.attrib.get("href", "") if link_el is not None else ""
             real_url = extract_real_url(href)
+            real_url = normalize_url(real_url) if real_url else ""
             summary_el = entry.find("atom:summary", ns)
             snippet = ""
             if summary_el is not None and summary_el.text:
-                soup = BeautifulSoup(summary_el.text, "html.parser")
-                snippet = soup.get_text(separator=" ").strip()
+                snippet_soup = BeautifulSoup(summary_el.text, "html.parser")
+                snippet = snippet_soup.get_text(separator=" ").strip()
             if real_url:
                 results.append({"url": real_url, "title": title, "snippet": snippet, "term": term})
-        print(f"  [Alerta] '{term}' → {len(results)} resultados")
+        logger.info("Alerta '%s' → %d resultados", term, len(results))
     except Exception as e:
-        print(f"  [ERRO parse] {feed_url} → {e}")
+        logger.error("Erro de parse em feed %s: %s", feed_url, e)
     return results
 
+
 def collect_all_alerts() -> list:
+    """Lê todos os feeds configurados / Reads all configured feeds"""
     all_alerts = []
     for feed in GOOGLE_ALERTS_FEEDS:
-        results = read_alert_feed(feed["url"], feed["term"])
-        all_alerts.extend(results)
+        all_alerts.extend(read_alert_feed(feed["url"], feed["term"]))
         time.sleep(1)
     return all_alerts
 
-# ─── Page Content Extraction ──────────────────────────────────────────────
-def extract_page(url: str, timeout: int = 20) -> tuple:
-    """Extracts only the useful text body from a page, ignoring menus and ads."""
-    try:
-        resp = requests.get(url, timeout=timeout, headers=HEADERS)
-        resp.raise_for_status()
-        html_content = resp.text
 
-        # 1. Pega o Título
-        soup = BeautifulSoup(html_content, "html.parser")
-        title = ""
-        if soup.title and soup.title.string:
-            title = soup.title.string.strip()
-        if not title:
-            h1 = soup.find("h1")
-            if h1: title = h1.get_text(strip=True)
-
-        # 2. Usa a inteligência do trafilatura para isolar o miolo do artigo
-        text = trafilatura.extract(html_content, include_comments=False)
-
-        # 3. Fallback: Se o trafilatura falhar, usa a limpeza manual pelo BeautifulSoup
-        if not text:
-            for tag in soup(["script", "style", "nav", "footer", "header", "aside", "form"]):
-                tag.decompose()
-            text = soup.get_text(separator=" ", strip=True)
-            text = re.sub(r"\s+", " ", text).strip()
-
-        return title, text[:MAX_PAGE_CHARS], ""
-
-    except requests.exceptions.Timeout:
-        print(f"    [TIMEOUT] {url}")
-        return "", "", "timeout"
-    except requests.exceptions.HTTPError as e:
-        if e.response is not None and e.response.status_code == 403:
-            print(f"    [ERRO página] {url} → 403 Client Error: Forbidden")
-            return "", "", "403"
-        print(f"    [ERRO página] {url} → {e}")
-        return "", "", ""
-    except Exception as e:
-        print(f"    [ERRO página] {url} → {e}")
-        return "", "", ""
-
-# ─── JSON Database Management ─────────────────────────────────────────────
-def load_database() -> dict:
-    if not os.path.exists(DATABASE_FILE): return {}
-    with open(DATABASE_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-def save_database(db: dict) -> None:
-    with open(DATABASE_FILE, "w", encoding="utf-8") as f:
-        json.dump(db, f, ensure_ascii=False, indent=2)
-
-# ─── Item Analysis and Validation ─────────────────────────────────────────
-def analyze_item(item: dict, db: dict, relevant_items: list, now_utc: str) -> str:
-    """Extracts and sends the item to the AI for approval/rejection."""
+# Análise / Analysis
+def _run_ai(item: dict, db: dict, relevant_items: list, now_utc: str, timeout: int) -> str:
+    """Núcleo compartilhado entre análise inicial e retry / Shared core for initial analysis and retry"""
     url = item["url"]
-    if is_domain_blocked(db, url):
-        d = urlparse(url).netloc.replace("www.", "")
-        print(f"    [BLOQUEADO] Domínio '{d}' bloqueado por 403. Pulando.")
-        return "blocked"
+    source = item.get("source", "scraping")
 
-    real_title, text, error = extract_page(url)
-
-    if error == "403":
-        register_403_block(db, url)
-        return "403"
-    if error == "timeout":
-        return "timeout"
-    if not text or len(text) < 50:
-        print("    Sem texto extraído, pulando.")
-        return "error"
-
-    title = real_title or item.get("title", "")
-    evaluation = evaluate_relevance(url, title, text)
-    reason = evaluation.get("reason", "")
-    print(f"    → relevante: {evaluation.get('relevant')} | {reason}")
-
-    if reason == "error after 3 attempts":
-        return "ai_error"
-
-    # Marks the URL as already processed in the database
-    db[url] = {
-        "first_seen": now_utc,
-        "last_seen": now_utc,
-        "consecutive_absences": 0,
-        "source": item.get("source", "scraping"),
-    }
-
-    if evaluation.get("relevant"):
-        relevant_items.append({
-            **item,
-            "real_title": real_title,
-            "reason": reason,
-            "status": evaluation.get("status", ""),
-            "group": evaluation.get("group", ""),
-        })
-    return "ok"
-
-def process_retry(item: dict, db: dict, relevant_items: list, now_utc: str, timeout: int, attempt_num: int) -> str:
-    """Retries downloading a page that previously timed out."""
-    url = item["url"]
-    print(f"  [Retry {attempt_num}/3 | {timeout}s] {url}")
     real_title, text, error = extract_page(url, timeout=timeout)
 
     if error == "403":
         register_403_block(db, url)
         return "403"
     if error == "timeout":
+        register_url_failure(db, url, "timeout", source, now_utc)
         return "timeout"
     if not text or len(text) < 50:
-        print("    Sem texto extraído, pulando.")
+        logger.info("Sem texto extraído em %s, pulando.", url)
+        register_url_failure(db, url, "empty", source, now_utc)
         return "error"
 
-    title = real_title or item.get("title", "")
+    title = real_title or item.get("title", "")  # fallback de título da listagem (2.5)
     evaluation = evaluate_relevance(url, title, text)
     reason = evaluation.get("reason", "")
-    print(f"    → relevante: {evaluation.get('relevant')} | {reason}")
+    logger.info("→ relevante=%s | %s", evaluation.get("relevant"), reason)
 
     if reason == "error after 3 attempts":
         return "ai_error"
 
-    db[url] = {
-        "first_seen": now_utc,
-        "last_seen": now_utc,
-        "consecutive_absences": 0,
-        "source": item.get("source", "scraping"),
-    }
+    record_processed(db, url, source, now_utc)
 
     if evaluation.get("relevant"):
         relevant_items.append({
@@ -328,135 +183,333 @@ def process_retry(item: dict, db: dict, relevant_items: list, now_utc: str, time
         })
     return "ok"
 
-# ─── Main Function ────────────────────────────────────────────────────────
+
+def analyze_item(item: dict, db: dict, relevant_items: list, now_utc: str) -> str:
+    """Análise de um item, com checagem prévia de bloqueios e cooldown / Item analysis with upfront block/cooldown checks"""
+    url = item["url"]
+    if is_domain_blocked(db, url):
+        d = urlparse(url).netloc.replace("www.", "")
+        logger.info("Domínio '%s' bloqueado por 403, pulando.", d)
+        return "blocked"
+    if is_url_in_failure_cooldown(db, url):
+        failures = db[url].get("consecutive_failures", 0)
+        logger.info("URL em cooldown (%d falhas), pulando.", failures)
+        return "cooldown"
+    return _run_ai(item, db, relevant_items, now_utc, timeout=20)
+
+
+def process_retry(item: dict, db: dict, relevant_items: list, now_utc: str, timeout: int, attempt_num: int) -> str:
+    """Retry de itens que deram timeout, com timeout reduzido / Retry of items that timed out, with shorter timeout"""
+    logger.info("Retry %d/3 (%ds) em %s", attempt_num, timeout, item["url"])
+    return _run_ai(item, db, relevant_items, now_utc, timeout=timeout)
+
+
+# Identificação de novos itens / New item identification
+def _identify_new_items(all_links: dict, alerts_links: set, alerts_results: list, db: dict, now_utc: str) -> tuple:
+    """Separa URLs em "novas", "para retentar" e atualiza last_seen das conhecidas
+
+    / Splits URLs into "new", "to retry" and updates last_seen on known ones."""
+    new_scraping: list = []
+    new_alerts: list = []
+    retried_after_cooldown = 0
+
+    def _build_alert_item(url: str) -> dict:
+        info = next((r for r in alerts_results if r["url"] == url), None)
+        return info or {"url": url, "title": "", "snippet": "", "term": ""}
+
+    for url, fallback_title in all_links.items():
+        source = "alert" if url in alerts_links else "scraping"
+
+        if url not in db:
+            if source == "alert":
+                new_alerts.append(_build_alert_item(url))
+            else:
+                new_scraping.append({"url": url, "title": fallback_title})
+            continue
+
+        entry = db[url]
+        had_failures = entry.get("consecutive_failures", 0) > 0
+        cooldown_active = is_url_in_failure_cooldown(db, url)
+
+        entry["last_seen"] = now_utc
+        entry["consecutive_absences"] = 0
+        entry["source"] = source
+
+        # URL com falhas anteriores cujo cooldown expirou: retentar / Previously-failed URL whose cooldown expired: retry
+        if had_failures and not cooldown_active:
+            retried_after_cooldown += 1
+            if source == "alert":
+                new_alerts.append(_build_alert_item(url))
+            else:
+                new_scraping.append({"url": url, "title": fallback_title})
+
+    return new_scraping, new_alerts, retried_after_cooldown
+
+
+def _decay_absent_links(db: dict, all_links: dict) -> list:
+    """Incrementa absences para URLs ausentes e remove as que ultrapassaram MAX_ABSENCES / Bumps absences and removes URLs over MAX_ABSENCES"""
+    removed = []
+    for url in list(db.keys()):
+        if url.startswith("_"):
+            continue
+        if url not in all_links:
+            db[url]["consecutive_absences"] += 1
+            if db[url]["consecutive_absences"] >= MAX_ABSENCES:
+                removed.append(url)
+                del db[url]
+    return removed
+
+
+# Saída textual / Text output
+def _write_new_links_file(new_scraping: list, new_alerts: list, removed_count: int, db_size: int, now_utc: str) -> None:
+    """Escreve new_links.txt com listagem dos novos links / Writes new_links.txt"""
+    total_new = len(new_scraping) + len(new_alerts)
+    with open(OUTPUT_NEW_LINKS, "w", encoding="utf-8") as f:
+        f.write(
+            f"Verificação: {now_utc}\n"
+            f"Links novos encontrados: {total_new}\n"
+            f"  Scraping: {len(new_scraping)}\n"
+            f"  Alertas:  {len(new_alerts)}\n"
+            f"Removidos da base: {removed_count}\n"
+            f"Total na base: {db_size}\n"
+        )
+        f.write("=" * 60 + "\n\n")
+        if new_scraping:
+            f.write("── NEW (scraping) ──\n\n")
+            for item in sorted(new_scraping, key=lambda x: x["url"]):
+                if item.get("title"):
+                    f.write(f"{item['title']}\n  {item['url']}\n\n")
+                else:
+                    f.write(f"{item['url']}\n\n")
+        if new_alerts:
+            f.write("── NEW (Google Alerts) ──\n\n")
+            for item in new_alerts:
+                f.write(
+                    f"Term:    {item.get('term', '')}\n"
+                    f"Title:   {item.get('title', '')}\n"
+                    f"URL:     {item.get('url', '')}\n"
+                    f"Snippet: {item.get('snippet', '')}\n\n"
+                )
+
+
+def _write_relevant_file(relevant_items: list, total_new: int, now_utc: str) -> None:
+    """Escreve new_relevant.txt com os itens classificados como relevantes / Writes new_relevant.txt"""
+    with open(OUTPUT_RELEVANT, "w", encoding="utf-8") as f:
+        f.write(
+            f"Verificação: {now_utc}\n"
+            f"Links analisados: {total_new}\n"
+            f"Links relevantes: {len(relevant_items)}\n"
+        )
+        f.write("=" * 60 + "\n\n")
+        for item in relevant_items:
+            title = item.get("real_title") or item.get("title") or "(ver link)"
+            f.write(
+                f"Title:   {title}\n"
+                f"URL:     {item.get('url', '')}\n"
+                f"Status:  {item.get('status', '')}\n"
+                f"Group:   {item.get('group', '')}\n"
+                f"Reason:  {item.get('reason', '')}\n\n"
+            )
+
+
+# Função principal / Main
+def _elapsed(t0: float) -> str:
+    return f"{(time.time() - t0):.1f}s"
+
+
+def _populate_first_run(db: dict, all_links: dict, alerts_links: set, now_utc: str, date_str: str) -> None:
+    """Primeira execução: popula a base e gera relatório vazio / First run: populates DB and emits an empty report"""
+    logger.info("Primeira execução: populando a base de dados.")
+    for url in all_links:
+        db[url] = {
+            "first_seen": now_utc,
+            "last_seen": now_utc,
+            "consecutive_absences": 0,
+            "source": "alert" if url in alerts_links else "scraping",
+        }
+    save_database(db)
+    with open(OUTPUT_NEW_LINKS, "w", encoding="utf-8") as f:
+        f.write(f"Primeira execução em {now_utc}.\nBase criada com {len(db)} links.\nNenhum link 'novo' acusado.\n")
+    with open(OUTPUT_RELEVANT, "w", encoding="utf-8") as f:
+        f.write(f"Primeira execução em {now_utc}.\nNenhum link relevante acusado.\n")
+    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+        f.write(generate_html([], date_str, 0, 0))
+
+
 def main():
+    setup_logging()
+    run_start = time.time()
     now_utc = datetime.now(timezone.utc).isoformat()
     br_time = get_brasilia_time()
     date_str = br_time.strftime("%d/%m/%Y às %Hh%M")
 
-    print(f"\n{'='*60}")
-    print(f"  CuradorIA de Carreiras Jurídicas")
-    print(f"  Execução: {date_str}")
-    print(f"{'='*60}\n")
+    logger.info("=" * 60)
+    logger.info("CuradorIA de Carreiras Jurídicas — Execução: %s", date_str)
+    logger.info("=" * 60)
 
     db = load_database()
+    db_size_start = sum(1 for k in db if not k.startswith("_"))
     first_run = len(db) == 0
+    logger.info("Base de dados: %d URLs conhecidas", db_size_start)
+    blocked_domains = list(db.get("_blocks_403", {}).keys())
+    if blocked_domains:
+        logger.info("Domínios bloqueados (403): %s", ", ".join(blocked_domains))
     clear_expired_blocks(db)
 
-    print("Coletando links das páginas-alvo...")
-    scraping_links = collect_all_links()
-    print(f"Total scraping: {len(scraping_links)}\n")
+    t0 = time.time()
+    logger.info("Coletando links das páginas-alvo...")
+    scraping_titles = collect_all_links()  # dict[url, fallback_title]
+    logger.info("Total scraping: %d (%s)", len(scraping_titles), _elapsed(t0))
 
-    print("Lendo Google Alertas...")
+    t0 = time.time()
+    logger.info("Lendo Google Alerts...")
     alerts_results = collect_all_alerts()
     alerts_links = {r["url"] for r in alerts_results if r["url"]}
-    print(f"Total alertas: {len(alerts_links)}\n")
+    logger.info("Total alertas: %d (%s)", len(alerts_links), _elapsed(t0))
 
-    all_links = scraping_links | alerts_links
+    # Mescla alerts no mesmo dicionário {url: fallback_title} / Merge alerts into the same dict
+    all_links = dict(scraping_titles)
+    for url in alerts_links:
+        if url not in all_links:
+            all_links[url] = ""
 
     if first_run:
-        print("Primeira execução: populando a base de dados.")
-        for url in all_links:
-            db[url] = {
-                "first_seen": now_utc,
-                "last_seen": now_utc,
-                "consecutive_absences": 0,
-                "source": "alert" if url in alerts_links else "scraping",
-            }
-        save_database(db)
-        with open(OUTPUT_NEW_LINKS, "w", encoding="utf-8") as f:
-            f.write(f"Primeira execução em {now_utc}.\nBase criada com {len(db)} links.\nNenhum link 'novo' acusado.\n")
-        with open(OUTPUT_RELEVANT, "w", encoding="utf-8") as f:
-            f.write(f"Primeira execução em {now_utc}.\nNenhum link relevante acusado.\n")
-        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
-            f.write(generate_html([], date_str, 0, 0))
+        _populate_first_run(db, all_links, alerts_links, now_utc, date_str)
         return
 
-    new_scraping = []
-    new_alerts = []
-
-    for url in all_links:
-        source = "alert" if url in alerts_links else "scraping"
-        if url not in db:
-            if source == "alert":
-                info = next((r for r in alerts_results if r["url"] == url), {})
-                new_alerts.append(info if info else {"url": url, "title": "", "snippet": "", "term": ""})
-            else:
-                new_scraping.append(url)
-        else:
-            db[url]["last_seen"] = now_utc
-            db[url]["consecutive_absences"] = 0
-            db[url]["source"] = source
-
-    removed_links = []
-    for url in list(db.keys()):
-        if url.startswith("_"): continue
-        if url not in all_links:
-            db[url]["consecutive_absences"] += 1
-            if db[url]["consecutive_absences"] >= MAX_ABSENCES:
-                removed_links.append(url)
-                del db[url]
+    new_scraping, new_alerts, retried_after_cooldown = _identify_new_items(
+        all_links, alerts_links, alerts_results, db, now_utc
+    )
+    removed_links = _decay_absent_links(db, all_links)
 
     total_new = len(new_scraping) + len(new_alerts)
-    with open(OUTPUT_NEW_LINKS, "w", encoding="utf-8") as f:
-        f.write(f"Verificação: {now_utc}\nLinks novos encontrados: {total_new}\n  Scraping: {len(new_scraping)}\n  Alertas:  {len(new_alerts)}\nRemovidos da base: {len(removed_links)}\nTotal na base: {len(db)}\n")
-        f.write("=" * 60 + "\n\n")
-        if new_scraping:
-            f.write("── NEW (scraping) ──\n\n")
-            for url in sorted(new_scraping): f.write(url + "\n")
-            f.write("\n")
-        if new_alerts:
-            f.write("── NEW (Google Alerts) ──\n\n")
-            for item in new_alerts:
-                f.write(f"Term:    {item.get('term', '')}\nTitle:   {item.get('title', '')}\nURL:     {item.get('url', '')}\nSnippet: {item.get('snippet', '')}\n\n")
+    logger.info("Links novos: %d (%d scraping + %d alertas)", total_new, len(new_scraping), len(new_alerts))
+    if retried_after_cooldown:
+        logger.info("Reincluídos após cooldown expirado: %d", retried_after_cooldown)
+    logger.info("Links removidos da base (ausentes %dx): %d", MAX_ABSENCES, len(removed_links))
+    logger.info("Links já conhecidos (atualizados): %d", len(all_links) - total_new)
 
-    print(f"\nAnalisando {total_new} links novos via IA...\n")
-    relevant_items = []
-    ai_errors = 0
-    timeout_queue = []
+    _write_new_links_file(new_scraping, new_alerts, len(removed_links), len(db), now_utc)
 
-    all_new_items = [{"url": url, "title": "", "source": "scraping"} for url in new_scraping]
+    logger.info("Analisando %d links novos via IA...", total_new)
+    relevant_items: list = []
+    timeout_queue: list = []
+    results_count = {"ok": 0, "blocked": 0, "cooldown": 0, "403": 0, "timeout": 0, "error": 0, "ai_error": 0}
+
+    all_new_items = [
+        {"url": item["url"], "title": item.get("title", ""), "source": "scraping"}
+        for item in new_scraping
+    ]
     all_new_items.extend([{**item, "source": "alert"} for item in new_alerts])
 
+    t0 = time.time()
     for i, item in enumerate(all_new_items, 1):
-        print(f"  [{i}/{total_new}] {item['url']}")
+        source_tag = "alerta" if item.get("source") == "alert" else "scraping"
+        logger.info("[%d/%d] [%s] %s", i, total_new, source_tag, item["url"])
         result = analyze_item(item, db, relevant_items, now_utc)
-        if result == "timeout": timeout_queue.append(item)
-        elif result == "ai_error": ai_errors += 1
-        if result == "ok": time.sleep(API_PAUSE)
+        results_count[result] = results_count.get(result, 0) + 1
+        if result == "timeout":
+            timeout_queue.append(item)
+        if result == "ok":
+            time.sleep(API_PAUSE)
+    logger.info("Análise inicial: %s", _elapsed(t0))
 
     RETRY_TIMEOUTS = [10, 5]
     for i, timeout_sec in enumerate(RETRY_TIMEOUTS):
-        if not timeout_queue: break
+        if not timeout_queue:
+            break
         attempt_num = i + 2
         has_next = i + 1 < len(RETRY_TIMEOUTS)
-        print(f"\nRetentando {len(timeout_queue)} link(s) com timeout ({attempt_num}ª tentativa, {timeout_sec}s)...\n")
+        logger.info("Retentando %d link(s) com timeout (tentativa %d, %ds)...", len(timeout_queue), attempt_num, timeout_sec)
         next_queue = []
         for item in timeout_queue:
             result = process_retry(item, db, relevant_items, now_utc, timeout_sec, attempt_num)
+            results_count[result] = results_count.get(result, 0) + 1
             if result == "timeout":
-                if has_next: next_queue.append(item)
-                else: print(f"    [TIMEOUT DEFINITIVO] {item['url']} — não entra na base.")
-            elif result == "ai_error": ai_errors += 1
-            if result == "ok": time.sleep(API_PAUSE)
+                if has_next:
+                    next_queue.append(item)
+                else:
+                    logger.warning("TIMEOUT DEFINITIVO em %s — registrado para cooldown.", item["url"])
+            if result == "ok":
+                time.sleep(API_PAUSE)
         timeout_queue = next_queue
 
     save_database(db)
+    db_size_end = sum(1 for k in db if not k.startswith("_"))
 
-    with open(OUTPUT_RELEVANT, "w", encoding="utf-8") as f:
-        f.write(f"Verificação: {now_utc}\nLinks analisados: {total_new}\nLinks relevantes: {len(relevant_items)}\n")
-        f.write("=" * 60 + "\n\n")
-        for item in relevant_items:
-            title = item.get("real_title") or item.get("title") or "(ver link)"
-            f.write(f"Title:   {title}\nURL:     {item.get('url', '')}\nStatus:  {item.get('status', '')}\nGroup:   {item.get('group', '')}\nReason:  {item.get('reason', '')}\n\n")
+    _write_relevant_file(relevant_items, total_new, now_utc)
 
     groups = group_relevant_items(relevant_items)
-    print("Gerando relatório HTML...")
-    html = generate_html(groups, date_str, total_new, len(relevant_items))
-    with open(OUTPUT_HTML, "w", encoding="utf-8") as f: f.write(html)
+    logger.info("Gerando relatório HTML...")
+    total_time = time.time() - run_start
 
-    print(f"\nRelevantes: {len(relevant_items)}/{total_new} em {len(groups)} grupo(s)")
-    print(f"Relatório: {REPORT_URL}")
+    today_iso = br_time.strftime("%Y-%m-%d")
+    today_filename = f"report-{today_iso}.html"
+    os.makedirs(HISTORY_DIR, exist_ok=True)
+
+    history_files = sorted(
+        (f for f in os.listdir(HISTORY_DIR) if f.startswith("report-") and f.endswith(".html")),
+        reverse=True,
+    )
+    history_entries = [
+        {
+            "date": f[len("report-"):-len(".html")],
+            "filename": f"{HISTORY_DIR}/{f}",
+            "is_current": False,
+        }
+        for f in history_files
+    ]
+    today_entry = {"date": today_iso, "filename": f"{HISTORY_DIR}/{today_filename}", "is_current": True}
+    history_entries = [
+        e for e in history_entries if e["filename"] != today_entry["filename"]
+    ]
+    history_entries.insert(0, today_entry)
+    history_entries = history_entries[:30]
+
+    # Versão "atual" (report.html na raiz) com índice de histórico / "Current" version with history index
+    html_current = generate_html(
+        groups,
+        date_str,
+        total_new,
+        len(relevant_items),
+        run_seconds=total_time,
+        history=history_entries,
+    )
+    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+        f.write(html_current)
+
+    # Versão arquivada (history/report-YYYY-MM-DD.html) com link de retorno / Archived version with back link
+    html_archived = generate_html(
+        groups,
+        date_str,
+        total_new,
+        len(relevant_items),
+        run_seconds=total_time,
+        archive_link=f"../{OUTPUT_HTML}",
+    )
+    with open(os.path.join(HISTORY_DIR, today_filename), "w", encoding="utf-8") as f:
+        f.write(html_archived)
+
+    logger.info("=" * 60)
+    logger.info("RESUMO DA EXECUÇÃO (%.0fs no total)", total_time)
+    logger.info("=" * 60)
+    logger.info("Links coletados:  %d (%d scraping + %d alertas)", len(all_links), len(scraping_titles), len(alerts_links))
+    logger.info("Links novos:      %d", total_new)
+    logger.info("Links removidos:  %d", len(removed_links))
+    logger.info("Base: %d → %d URLs", db_size_start, db_size_end)
+    logger.info(
+        "IA — OK: %d | bloqueado: %d | cooldown: %d | 403: %d | timeout: %d | erro: %d",
+        results_count.get("ok", 0),
+        results_count.get("blocked", 0),
+        results_count.get("cooldown", 0),
+        results_count.get("403", 0),
+        results_count.get("timeout", 0),
+        results_count.get("error", 0) + results_count.get("ai_error", 0),
+    )
+    logger.info("Relevantes:       %d/%d em %d grupo(s)", len(relevant_items), total_new, len(groups))
+    logger.info("Relatório:        %s", REPORT_URL)
+    logger.info("=" * 60)
+
 
 if __name__ == "__main__":
     main()

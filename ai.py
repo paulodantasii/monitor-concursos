@@ -1,16 +1,21 @@
 import json
+import logging
 import re
 import time
 import unicodedata
 import os
 import requests
 
-# Configurações da API da IA
+from config import STATUS_LABELS
+
+logger = logging.getLogger(__name__)
+
+# Configurações da API da IA / AI API settings
 AI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 AI_MODEL = "gpt-4o-mini"
 AI_URL = "https://api.openai.com/v1/chat/completions"
 
-# Instruções de comportamento da IA
+# Instruções de comportamento da IA / AI behavior instructions
 PROMPT_RELEVANCE = """Sua tarefa é avaliar se o conteúdo abaixo é um artigo de atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, e similares, que sejam relevantes para um bacharel em Direito que estuda para concursos públicos nas seguintes áreas:
 
 RELEVANTE — sempre que o conteúdo tiver:
@@ -54,25 +59,30 @@ REGRAS PARA O CAMPO "reason":
 - Essas conclusões são óbvias; o motivo deve agregar informação nova, não reafirmar o óbvio
 
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevant": true, "reason": "cargo e contexto específico do certame", "status": "registration_open", "group": "orgao-localidade-cargo"}
+{"relevant": true, "reason": "Cargo e contexto específico do certame", "status": "registration_open", "group": "orgao-localidade-cargo"}
 ou
 {"relevant": false, "reason": "explicação em uma linha"}
 
 Conteúdo para avaliar:
 """
 
-# Mapeia os valores de status retornados pela IA para rótulos visuais no relatório HTML
-STATUS_LABELS = {
-    "announced": ("📢 Anunciado", "#6c757d"),
-    "registration_open": ("✅ Inscrição aberta", "#28a745"),
-    "registration_closed": ("⏰ Inscrição encerrada", "#fd7e14"),
-    "exam_taken": ("📝 Prova realizada", "#17a2b8"),
-    "result": ("🏁 Resultado", "#6f42c1"),
-    "closed": ("🔒 Encerrado", "#495057"),
-}
+# Palavras-chave do pré-filtro: se nenhuma aparecer, não chamamos a IA / Pre-filter keywords: if none appear we skip the AI call
+LEGAL_KEYWORDS = (
+    "direito", "juridic", "advogad", "procurad",
+    "advocacia", "procuradoria", "bacharel",
+    "judiciario", "judicial",
+)
+
+def _strip_accents(s: str) -> str:
+    return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+
+def has_legal_keywords(title: str, text: str) -> bool:
+    """Verifica se há indício de matéria jurídica no conteúdo / Checks for any sign of legal subject matter in the content"""
+    combined = _strip_accents(f"{title or ''} {text or ''}").lower()
+    return any(kw in combined for kw in LEGAL_KEYWORDS)
 
 def normalize_group(g: str) -> str:
-    """Normaliza o nome do grupo gerado por IA (remove acentos e espaços)"""
+    """Normaliza o nome do grupo gerado por IA (remove acentos e espaços) / Normalizes the AI-generated group name (removes accents and spaces)"""
     if not g:
         return ""
     g = unicodedata.normalize("NFKD", g).encode("ascii", "ignore").decode("ascii")
@@ -82,12 +92,13 @@ def normalize_group(g: str) -> str:
     return g
 
 def call_ai_api(prompt: str) -> str:
-    """Faz a chamada HTTP para a API da OpenAI com lógica de repetição"""
+    """Faz a chamada HTTP para a API da OpenAI com lógica de repetição / Makes the HTTP call to the OpenAI API with retry logic"""
     payload = {
         "model": AI_MODEL,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0,
         "max_tokens": 400,
+        "response_format": {"type": "json_object"},
     }
     for attempt in range(3):
         try:
@@ -104,17 +115,45 @@ def call_ai_api(prompt: str) -> str:
             data = resp.json()
             return data["choices"][0]["message"]["content"].strip()
         except Exception as e:
-            print(f"    [ERRO OpenAI tentativa {attempt+1}/3] → {e}")
+            logger.error("OpenAI tentativa %d/3 falhou: %s", attempt + 1, e)
             if attempt < 2:
                 time.sleep(10 * (attempt + 1))
     return ""
 
+def _validate_evaluation(data) -> dict:
+    """Valida e normaliza a resposta da IA contra um schema esperado / Validates and normalizes the AI response against an expected schema"""
+    if not isinstance(data, dict):
+        return {"relevant": False, "reason": "response not a json object"}
+
+    relevant = data.get("relevant")
+    if not isinstance(relevant, bool):
+        return {"relevant": False, "reason": "missing or invalid 'relevant' field"}
+
+    reason_raw = data.get("reason", "")
+    reason = reason_raw if isinstance(reason_raw, str) else str(reason_raw or "")
+
+    result = {"relevant": relevant, "reason": reason}
+
+    if relevant:
+        status_raw = data.get("status", "")
+        status = status_raw.strip().lower() if isinstance(status_raw, str) else ""
+        result["status"] = status if status in STATUS_LABELS else ""
+
+        group_raw = data.get("group", "")
+        result["group"] = normalize_group(group_raw if isinstance(group_raw, str) else "")
+
+    return result
+
+
 def evaluate_relevance(url: str, title: str, text: str) -> dict:
-    """Envia o conteúdo da página para a IA e retorna uma avaliação estruturada"""
+    """Envia o conteúdo da página para a IA e retorna uma avaliação validada / Sends page content to the AI and returns a validated evaluation"""
     if not AI_API_KEY:
         return {"relevant": False, "reason": "AI_API_KEY not configured"}
     if not text or len(text) < 50:
         return {"relevant": False, "reason": "insufficient text"}
+
+    if not has_legal_keywords(title, text):
+        return {"relevant": False, "reason": "no legal keywords"}
 
     content = f"URL: {url}\nTítulo: {title}\n\nTexto:\n{text}"
     response = call_ai_api(PROMPT_RELEVANCE + content)
@@ -123,14 +162,8 @@ def evaluate_relevance(url: str, title: str, text: str) -> dict:
         return {"relevant": False, "reason": "error after 3 attempts"}
 
     try:
-        response = re.sub(r"```json|```", "", response).strip()
-        evaluation = json.loads(response)
-
-        if evaluation.get("relevant"):
-            evaluation["group"] = normalize_group(evaluation.get("group", ""))
-            status = (evaluation.get("status") or "").strip().lower()
-            evaluation["status"] = status if status in STATUS_LABELS else ""
-
-        return evaluation
-    except Exception:
+        raw = json.loads(response)
+    except json.JSONDecodeError:
         return {"relevant": False, "reason": "error parsing response"}
+
+    return _validate_evaluation(raw)
