@@ -1,8 +1,11 @@
 """Geração do relatório HTML / HTML report generation"""
+import os
+import re
+from datetime import datetime
 from html import escape
 from urllib.parse import urlparse
 
-from config import STATUS_LABELS, TITLE_SUFFIXES
+from config import HISTORY_DIR, OUTPUT_HTML, OUTPUT_RELEVANT, STATUS_LABELS, TITLE_SUFFIXES
 
 
 def get_site_name(url: str) -> str:
@@ -411,3 +414,78 @@ def generate_html(
     <script>{_JS}</script>
 </body>
 </html>"""
+
+if __name__ == "__main__":
+    def _parse_new_relevant(file_path: str) -> tuple:
+        with open(file_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        date_match = re.search(r"Verificação:\s*(.+)", content)
+        analyzed_match = re.search(r"Links analisados:\s*(\d+)", content)
+        relevant_match = re.search(r"Links relevantes:\s*(\d+)", content)
+        
+        date_str = date_match.group(1) if date_match else datetime.now().isoformat()
+        try:
+            dt = datetime.fromisoformat(date_str)
+            date_str = dt.strftime("%d/%m/%Y às %Hh%M")
+        except:
+            pass
+
+        total_analyzed = int(analyzed_match.group(1)) if analyzed_match else 0
+        
+        items = []
+        blocks = content.split("=" * 60)
+        if len(blocks) > 1:
+            item_blocks = blocks[1].strip().split("\n\n")
+            for block in item_blocks:
+                item = {}
+                for line in block.split("\n"):
+                    if line.startswith("Title:   "):
+                        item["real_title"] = line[len("Title:   "):].strip()
+                    elif line.startswith("URL:     "):
+                        item["url"] = line[len("URL:     "):].strip()
+                    elif line.startswith("Status:  "):
+                        item["status"] = line[len("Status:  "):].strip()
+                    elif line.startswith("Group:   "):
+                        item["group"] = line[len("Group:   "):].strip()
+                    elif line.startswith("Reason:  "):
+                        item["reason"] = line[len("Reason:  "):].strip()
+                if "url" in item:
+                    items.append(item)
+        return items, date_str, total_analyzed
+
+    if not os.path.exists(OUTPUT_RELEVANT):
+        print(f"Arquivo {OUTPUT_RELEVANT} não encontrado.")
+    else:
+        relevant_items, run_date_str, tot_analyzed = _parse_new_relevant(OUTPUT_RELEVANT)
+        grouped = group_relevant_items(relevant_items)
+        
+        os.makedirs(HISTORY_DIR, exist_ok=True)
+        hist_files = sorted(
+            (f for f in os.listdir(HISTORY_DIR) if f.startswith("report-") and f.endswith(".html")),
+            reverse=True,
+        )
+        hist_entries = [
+            {
+                "date": f[len("report-"):-len(".html")],
+                "filename": f"{HISTORY_DIR}/{f}",
+                "is_current": False,
+            }
+            for f in hist_files
+        ]
+        if hist_entries:
+            hist_entries[0]["is_current"] = True
+            
+        generated_html = generate_html(
+            grouped,
+            run_date_str,
+            tot_analyzed,
+            len(relevant_items),
+            run_seconds=None,
+            history=hist_entries,
+        )
+        
+        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+            f.write(generated_html)
+            
+        print(f"HTML regenerado com sucesso em {OUTPUT_HTML} com {len(relevant_items)} itens relevantes!")
