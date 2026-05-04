@@ -1,4 +1,4 @@
-name: Execução diária principal
+name: Executar o processo completo
 
 on:
   schedule:
