@@ -57,7 +57,7 @@ def render_group_card(group: dict) -> str:
     size = group["size"]
 
     highlight_class = " highlight" if size >= 3 else ""
-    sources_badge = f'<div class="sources-badge">📰 {size} fontes</div>' if size > 1 else ""
+    sources_badge = f'<div class="sources-badge">{size} {"fonte" if size == 1 else "fontes"}</div>'
     search_blob = escape(_card_search_blob(items))
 
     slides_html = ""
