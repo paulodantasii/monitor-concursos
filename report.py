@@ -133,8 +133,8 @@ def _render_archive_banner(date_str: str, archive_link: str) -> str:
         return ""
     return f"""
         <div class="archive-banner">
-            📅 Você está vendo a edição arquivada de <strong>{escape(date_str)}</strong>.
-            <a href="{escape(archive_link)}">← Ver versão mais recente</a>
+            Você está vendo a edição arquivada de <strong>{escape(date_str)}</strong>·
+            <a href="{escape(archive_link)}">Ver versão mais recente</a>
         </div>
     """
 
@@ -149,12 +149,12 @@ def _render_history_section(history: list) -> str:
         filename = entry.get("filename", "")
         pretty = escape(_pretty_date(date))
         if entry.get("is_current"):
-            items_html += f'<li class="current">📌 {pretty} (esta edição)</li>'
+            items_html += f'<li class="current">{pretty} (esta edição)</li>'
         else:
             items_html += f'<li><a href="{escape(filename)}">{pretty}</a></li>'
     return f"""
         <details class="history-section">
-            <summary>📚 Edições anteriores ({len(history)})</summary>
+            <summary>Edições anteriores ({len(history)})</summary>
             <ul class="history-list">{items_html}</ul>
         </details>
     """
@@ -208,7 +208,7 @@ _CSS = """
                         border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text);
                         font-size: 0.9rem; outline: none; transition: border-color 0.2s; }
     .search-bar input:focus { border-color: var(--accent); }
-    .search-bar::before { content: '🔍'; position: absolute; left: 0.7rem; top: 50%;
+    .search-bar::before { content: '🔎'; position: absolute; left: 0.7rem; top: 50%;
                           transform: translateY(-50%); font-size: 0.9rem; opacity: 0.6; pointer-events: none; }
     .filter-info { font-size: 0.78rem; color: var(--text-muted); margin: 0.5rem 0 1rem; min-height: 1em; }
     .group-card { background: var(--card-bg); border-radius: 12px; margin-bottom: 1rem;
@@ -390,15 +390,15 @@ def generate_html(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CuradorIA de Carreiras Jurídicas</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
     <style>{_CSS}</style>
 </head>
 <body>
     <header>
         <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
-        <h1>🤖 CuradorIA de Carreiras Jurídicas ⚖️</h1>
-        <p>{total_analyzed} artigos analisados</p>
-        <div class="badge">{total_relevant} artigos relevantes sobre {len(groups)} certames</div>
+        <h1>CuradorIA de Carreiras Jurídicas</h1>
+        <p>Foram analisados {total_analyzed} artigos na última verificação</p>
+        <div class="badge">Encontrados {total_relevant} artigos relevantes sobre {len(groups)} certames</div>
         {meta_html}
     </header>
     <div class="container">
@@ -407,7 +407,7 @@ def generate_html(
         {cards}
         {history_html}
     </div>
-    <footer>Gerado automaticamente · CuradorIA de Carreiras Jurídicas</footer>
+    <footer>Gerado automaticamente · CuradorIA de Carreiras Jurídicas · Todos os créditos reservados aos respectivos autores dos artigos encontrados</footer>
     <script>{_JS}</script>
 </body>
 </html>"""
