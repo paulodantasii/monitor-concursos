@@ -1,4 +1,4 @@
-name: CuradorIA de Carreiras Jurídicas
+name: Execução diária principal
 
 on:
   schedule:
