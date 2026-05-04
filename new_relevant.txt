@@ -1,41 +1,155 @@
-Verificação: 2026-05-03T09:08:19.332474+00:00
-Links analisados: 41
-Links relevantes: 6
+Verificação: 2026-05-04T11:19:48.772536+00:00
+Links analisados: 82
+Links relevantes: 25
 ============================================================
 
-Title:   Concurso Santo Antônio de Pádua-RJ 2026: Inscrições abertas para 420 vagas
-URL:     https://www.acheconcursos.com.br/concursos-rio-de-janeiro/concurso-santo-antonio-padua-rj-2026-prefeitura-lanca-2-editais-420-vagas-87555
+Title:   Concurso Prefeitura de Conselheiro Pena-MG 2026
+URL:     https://www.acheconcursos.com.br/concursos-minas-gerais/concurso-prefeitura-conselheiro-pena-mg-2026-87291
 Status:  registration_open
-Group:   prefeitura-santo-antonio-de-padua-rj-advogado
-Reason:  O concurso da Prefeitura de Santo Antônio de Pádua-RJ oferece vagas para Advogado, cargo que exige formação em Direito e registro na OAB.
+Group:   prefeitura-conselheiro-pena-mg-advogado
+Reason:  O concurso oferece uma vaga para Advogado, com requisitos de formação em Direito e OAB, para a Prefeitura de Conselheiro Pena-MG.
 
-Title:   Veja os 30 melhores editais de concurso pÃºblico publicados em abril; atÃ© R$ 35,8 mil!
-URL:     https://www.direcaoconcursos.com.br/noticias/concurso-publico-editais-publicados-abril-2026
+Title:   2 concursos no DF estão disponíveis; veja como participar - Notícias Concursos
+URL:     https://noticiasconcursos.com.br/2-concursos-no-df-estao-disponiveis-veja-como-participar/
 Status:  registration_open
-Group:   pge-al-procurador
-Reason:  O concurso da Procuradoria-Geral do Estado de Alagoas oferece vagas para o cargo de Procurador, com remuneração de R$ 35.877,28 e inscrições até 18 de maio de 2026.
+Group:   cfbm-brasilia-advogado
+Reason:  O concurso do Conselho Federal de Biomedicina oferece vaga para Advogado, com requisitos de graduação em Direito e registro na OAB.
 
-Title:   Processo seletivo 2026 do TRE RJ está com inscrições abertas
-URL:     https://jcconcursos.com.br/amp/noticia/empregos/processo-seletivo-2026-do-tre-rj-esta-com-inscricoes-abertas-142254
+Title:   AL abre concurso Analista Regulação salários atrativos
+URL:     https://www.souenfermagem.com.br/noticias/al-abre-concurso-analista-regulacao-salarios-atrativos/
 Status:  registration_open
-Group:   tre-rio-de-janeiro-estagio
-Reason:  O processo seletivo do TRE RJ oferece vagas de estágio para estudantes de Direito, permitindo a formação de cadastro reserva para futuras oportunidades no órgão.
+Group:   arsal-al-analista-regulacao
+Reason:  O concurso é para o cargo de Analista de Regulação na área de Direito, com vagas específicas para essa especialização, o que é relevante para profissionais da área jurídica.
 
-Title:   E-books Estratégicos para o Concurso Sefaz CE 2026
-URL:     https://www.estrategiaconcursos.com.br/blog/e-books-estrategicos-concurso-sefaz-ce/amp/
+Title:   Inscrições para concurso da ALE-RR seguem até 06 de maio - Dia a Dia Notícia
+URL:     https://diaadianoticia.com.br/inscricoes-para-concurso-da-ale-rr-seguem-ate-06-de-maio/
 Status:  registration_open
-Group:   sefaz-ce-auditor-fiscal
-Reason:  Concurso para Auditor Fiscal da Receita Estadual na Secretaria da Fazenda do Ceará, com foco em Direito Tributário e outras áreas relevantes para a formação em Direito.
+Group:   ale-rr-procurador
+Reason:  O concurso da Assembleia Legislativa de Roraima inclui cargos de consultor legislativo e procurador, que são relevantes para a formação em Direito.
 
-Title:   Prefeitura abre concurso público com 121 vagas imediatas e salários de até R$ 7,1 mil
-URL:     https://www.onortao.com.br/2026/05/prefeitura-abre-concurso-publico-com.html
+Title:   Chegam ao fim neste domingo (03/05) as inscrições para o concurso MPMS - Notícias Concursos
+URL:     https://noticiasconcursos.com.br/chegam-ao-fim-neste-domingo-03-05-as-inscricoes-para-o-concurso-mpms/
+Status:  registration_closed
+Group:   mp-ms-promotor
+Reason:  Concurso para o cargo de Promotor de Justiça Substituto no Ministério Público do Estado de Mato Grosso do Sul, com requisitos de formação em Direito e diversas etapas de seleção.
+
+Title:   Gabarito SES-MG 2026 sai ainda hoje, 03
+URL:     https://www.acheconcursos.com.br/noticias/gabarito-concurso-ses-mg-2026-veja-quando-sai-89858
+Status:  result
+Group:   ses-mg-especialista
+Reason:  O concurso da Secretaria de Estado de Saúde de Minas Gerais oferece vagas para a carreira de Especialista em Políticas e Gestão da Saúde, incluindo 42 vagas para graduados em Direito, com provas objetivas e discursivas já aplicadas.
+
+Title:   Gabarito extraoficial do concurso CODERN 2026 anima candidatos após provas em Natal - Uni10
+URL:     https://uniten.com.br/gabarito-extraoficial-concurso-codern-2026/
+Status:  exam_taken
+Group:   codern-natal-advogado
+Reason:  O concurso da Companhia Docas do Rio Grande do Norte (CODERN) oferece vaga para Advogado, com provas discursivas específicas para o cargo.
+
+Title:   Quer emprego estável? Confira mais de 3 mil vagas em concursos
+URL:     https://www.folhavitoria.com.br/trabalho/concursos/quer-emprego-estavel-confira-mais-de-3-mil-vagas-em-concursos/
 Status:  registration_open
-Group:   prefeitura-rio-claro-sp-advogado
-Reason:  O concurso oferece uma vaga para o cargo de advogado na Prefeitura de Rio Claro, com provas específicas para a função e salários atrativos.
+Group:   prefeitura-ibiracu-es-procurador
+Reason:  O concurso da Prefeitura de Ibiraçu oferece vagas para procurador, cargo relevante para bacharéis em Direito.
 
-Title:   Como se tornar procurador: etapas e dicas para o concurso - Correio Braziliense - Aqui
-URL:     https://www.correiobraziliense.com.br/aqui/2026/05/02/como-se-tornar-procurador-etapas-e-dicas-para-o-concurso/
+Title:   Confira lista com 81 concursos abertos e 10.052 vagas em todo o paÃ­s
+URL:     https://www.correiobraziliense.com.br/euestudante/concursos/2026/05/amp/7409825-confira-lista-com-81-concursos-abertos-e-10-052-vagas-em-todo-o-pais.html
+Status:  registration_open
+Group:   funprespjud-distrito-federal-advogado
+Reason:  Concurso da FUNPRESP-JUD com vagas para advogado e analista jurídico, relevante para profissionais da área jurídica.
+
+Title:   Ibama e Incra divulgam resultado final de seletivo; parte das vagas segue suspensa em Brasília e Rio
+URL:     https://concursonews.com/2026/05/ibama-e-incra-divulgam-resultado-final-de-seletivo-parte-das-vagas-segue-suspensa-em-brasilia-e-rio/
+Status:  result
+Group:   incra-brasilia-diritto
+Reason:  O certame inclui o cargo de Analista Técnico de Complexidade Intelectual na área de Direito, com resultados homologados e classificação dos candidatos em Brasília/DF.
+
+Title:   Últimos dias para se inscrever em processo seletivo com salários de mais de R$ 4 mil em Trindade - Portal 6
+URL:     https://portal6.com.br/2026/05/03/ultimos-dias-para-se-inscrever-em-processo-seletivo-com-salarios-de-mais-de-r-4-mil-em-trindade/
+Status:  registration_closed
+Group:   prefeitura-trindade-go-advogado
+Reason:  O edital oferece uma vaga para advogado na Prefeitura de Trindade, com seleção por análise curricular e entrevistas.
+
+Title:   Prefeituras abrem inscrições de concursos na 1ª segunda-feira de maio - Notícias Concursos
+URL:     https://noticiasconcursos.com.br/prefeituras-abrem-inscricoes-de-concursos-na-1a-segunda-feira-de-maio/
+Status:  registration_open
+Group:   prefeitura-tabapua-sp-procurador-juridico
+Reason:  O concurso da Prefeitura de Tabapuã-SP oferece vaga para Procurador Jurídico, cargo que exige formação em Direito e envolve atuação na área jurídica do município.
+
+Title:   Gabarito do concurso SES MG 2026 sai hoje; veja horários, vagas e próximos passos - Uni10
+URL:     https://uniten.com.br/gabarito-concurso-ses-mg-2026/
+Status:  exam_taken
+Group:   ses-mg-especialista-em-politicas-e-gestao-da-saude
+Reason:  O concurso da Secretaria de Estado de Saúde de Minas Gerais oferece vagas para a área de Direito, com 47 oportunidades, e envolve questões de legislação e políticas de saúde, relevantes para profissionais da área jurídica.
+
+Title:   Concurso de Senador Canedo é suspenso novamente
+URL:     https://www.jornalopcao.com.br/concurso/concurso-de-senador-canedo-e-suspenso-novamente-821756/
+Status:  registration_closed
+Group:   cgm-senador-canedo-go
+Reason:  Concurso da Câmara Municipal de Senador Canedo, com foco em questões jurídicas relacionadas à isenção de taxa de inscrição e legalidade do edital, impactando candidatos a cargos públicos.
+
+Title:   Concursos no Brasil: confira agenda com mais de três mil vagas, e salários de até 30 mil reais - Concursos e Empregos - Folha PE
+URL:     https://www.folhape.com.br/colunistas/blogdosconcursos/concursos-no-brasil-confira-agenda-com-mais-de-tres-mil-vagas-e-salarios-de-ate-30-mil-reais/53383/
+Status:  registration_open
+Group:   pge-alagoas-procurador
+Reason:  O concurso da Procuradoria-Geral do Estado de Alagoas oferece vagas para procurador, com remuneração elevada, relevante para profissionais da área jurídica.
+
+Title:   Concurso da Câmara de Senador Canedo é suspenso pela Justiça - O Hoje
+URL:     https://ohoje.com/2026/05/03/concurso-da-camara-de-senador-canedo-e-suspenso-pela-justica/
+Status:  registration_closed
+Group:   camara-senador-canedo-go-procurador
+Reason:  O concurso da Câmara Municipal de Senador Canedo oferece vagas para procurador jurídico e analista legislativo na área técnica, com salários que variam de R$ 4.425,53 a R$ 11.903,79.
+
+Title:   Prefeitura de Arcos-MG abre seleção para estágio em Direito, Engenharia Civil e Educação Física; bolsa passa de R$ 1 mil
+URL:     https://concursonews.com/2026/05/prefeitura-de-arcos-mg-abre-selecao-para-estagio-em-direito-engenharia-civil-e-educacao-fisica-bolsa-passa-de-r-1-mil/
+Status:  registration_open
+Group:   prefeitura-arcos-mg-estagio
+Reason:  Seleção para estágio em Direito na Prefeitura de Arcos, com foco na formação de cadastro de reserva e exigências específicas para candidatos.
+
+Title:   Concurso Ibiraçu ES abre edital com 200 vagas - O Capixaba
+URL:     https://ocapixaba.com.br/espirito-santo/2026/05/concurso-ibiracu-es-abre-edital-com-200-vagas/
+Status:  registration_open
+Group:   prefeitura-ibiracu-es-procurador
+Reason:  O certame oferece vaga para Procurador Municipal, com provas específicas e requisitos de formação em Direito.
+
+Title:   Prefeitura de Ponte Nova-MG institui comissão para processo seletivo de estagiários; veja detalhes
+URL:     https://concursonews.com/2026/05/prefeitura-de-ponte-nova-mg-institui-comissao-para-processo-seletivo-de-estagiarios-veja-detalhes/
 Status:  announced
-Group:   pge-estadual-procurador
-Reason:  O texto aborda o concurso para procurador, detalhando as etapas do processo seletivo e os requisitos necessários, como a formação em Direito e a experiência jurídica, que são essenciais para a candidatura.
+Group:   prefeitura-ponte-nova-mg-estagio
+Reason:  Processo seletivo para estagiários na área de direito na Prefeitura de Ponte Nova, com comissão já instituída para organizar o certame.
+
+Title:   Prefeitura de Vila Bela da Santíssima Trindade abre seleção para Procurador com salário de R$ 9,8 mil
+URL:     https://concursonews.com/2026/05/prefeitura-de-vila-bela-da-santissima-trindade-abre-selecao-para-procurador-com-salario-de-r-98-mil/
+Status:  registration_open
+Group:   prefeitura-vila-bela-da-santissima-trindade-mt-procurador
+Reason:  Seleção para Procurador Municipal na Prefeitura de Vila Bela da Santíssima Trindade, com exigência de formação em Direito e registro na OAB, atuando na Procuradoria Municipal.
+
+Title:   Concurso da Câmara Municipal de Senador Canedo é suspenso por decisão judicial - Portal 6
+URL:     https://portal6.com.br/2026/05/03/concurso-da-camara-municipal-de-senador-canedo-e-suspenso-por-decisao-judicial/
+Status:  registration_open
+Group:   cgm-senador-canedo-go-procurador-juridico
+Reason:  Concurso da Câmara Municipal de Senador Canedo oferece vaga para procurador jurídico, com salários de até R$ 11,9 mil e prazos de inscrição reabertos por decisão judicial.
+
+Title:   Inscrições para concurso da Assembleia encerram na quarta-feira, 6; Salários podem chegar até R$ 39 mil - Folha BV
+URL:     https://www.folhabv.com.br/concursos-e-emprego/inscricoes-para-concurso-da-assembleia-encerram-na-quarta-feira-6-salarios-podem-chegar-ate-r-39-mil/
+Status:  registration_open
+Group:   ale-rr-procurador
+Reason:  O concurso da Assembleia Legislativa de Roraima oferece vagas para o cargo de procurador, com salário inicial de R$ 39.589,56, além de outros cargos jurídicos como consultor legislativo e analista legislativo.
+
+Title:   Confira lista com 81 concursos abertos e 10.052 vagas em todo o paÃ­s
+URL:     https://www.correiobraziliense.com.br/euestudante/concursos/2026/05/7409825-confira-lista-com-81-concursos-abertos-e-10-052-vagas-em-todo-o-pais.html
+Status:  registration_open
+Group:   funpresp-jud-distrito-federal-advogado
+Reason:  Concurso da FUNPRESP-JUD oferece vagas para advogado e analista com especialidades que podem incluir áreas jurídicas relevantes.
+
+Title:   Concurso Procurador BACEN: por que este é o "divisor de águas" para sua carreira!
+URL:     https://cj.estrategia.com/portal/concurso-procurador-bacen-por-que-este-e-o-divisor-de-aguas-para-sua-carreira/
+Status:  announced
+Group:   bacen-brasilia-procurador
+Reason:  Concurso para Procurador do Banco Central do Brasil, com exigência de prática forense e foco em Direito Econômico, Financeiro e Administrativo.
+
+Title:   Concurso Alece banca definida Idecan edital 2026
+URL:     https://noticias.focusconcursos.com.br/noticias/concurso-alece-idecan-e-definido-como-banca-e-edital-fica-iminente-com-200-vagas
+Status:  announced
+Group:   alece-ce-analista-legislativo
+Reason:  O concurso da Assembleia Legislativa do Ceará oferece vagas para analista legislativo, cargo que exige formação em Direito, com disciplinas como Direito Constitucional e Direito Administrativo previstas no conteúdo programático.
 
