@@ -19,15 +19,9 @@ AI_URL = "https://api.openai.com/v1/chat/completions"
 PROMPT_RELEVANCE = """Sua tarefa é avaliar se o conteúdo abaixo é um artigo de atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, e similares, que sejam relevantes para um bacharel em Direito que estuda para concursos públicos nas seguintes áreas:
 
 RELEVANTE — sempre que o conteúdo tiver:
-- Procurador ou Advogado em qualquer órgão do executivo ou legislativo: AGU, PGFN, PGF, PGE, PGM, câmaras municipais, assembleias legislativas, TCU, TCE, TCM, agências reguladoras federais como ANATEL, ANEEL, ANVISA, ANAC, ANS, ANA, ANTAQ, ANTT, ANP, CADE, Banco Central (BACEN), conselhos profissionais como OAB, CRM, CREA, CFM, CFBM, CRBM, CONFEA, etc
-- Procurador ou Advogado da Caixa Econômica Federal, Banco do Brasil, Petrobras, BNDES, Correios, EBSERH, Embrapa, Serpro, DATAPREV, autarquias e fundações federais, estaduais e municipais, etc
-- Analista ou Assessor de matéria jurídica ou correlatas em órgãos do executivo federal, estadual ou municipal, secretarias, ministérios, autarquias, agências reguladoras, empresas públicas, etc
-- Analista ou Assessor de matéria jurídica ou correlatas de Tribunal de Contas como TCU, TCE, TCM, etc
-- Cargos que exijam bacharelado em Direito e cujo conteúdo programático envolva direito público, como: administrativo, constitucional, tributário, civil, financeiro, licitações, contratos públicos, execução fiscal, etc
-- Residência Jurídica em qualquer órgão público
-- Estágio de pós-graduação em Direito em qualquer órgão público
-- Programas de formação jurídica remunerada em órgãos públicos
-- Todos os cargos que, por algum dos motivos acima, pareçam necessitar de curso superior (diploma) em Direito mas não estejam incluídos nessa lista
+- Qualquer cargo, carreira, estágio de pós-graduação ou residência que exija formação superior (bacharelado) em Direito.
+- Carreiras jurídicas, legais, judiciais, procuradorias, advocacia, analistas ou assessores de matéria jurídica.
+- Cargos em órgãos públicos, empresas estatais ou autarquias que, pelo contexto, demandem diploma em Direito ou conhecimento jurídico especializado.
 
 NÃO RELEVANTE — se o conteúdo for integralmente apenas sobre:
 - Cargos que NÃO exijam formação (curso superior/bacharelato/diploma) em Direito, como, por exemplo: professores de ensino básico, médicos, engenheiros, enfermeiros, saúde, limpeza, motoristas, técnicos de outras áreas, etc
@@ -66,20 +60,15 @@ ou
 Conteúdo para avaliar:
 """
 
-# Palavras-chave do pré-filtro: se nenhuma aparecer, não chamamos a IA / Pre-filter keywords: if none appear we skip the AI call
-LEGAL_KEYWORDS = (
-    "direito", "juridic", "advogad", "procurad",
-    "advocacia", "procuradoria", "bacharel",
-    "judiciario", "judicial",
-)
+PROMPT_CONSOLIDATION = """Abaixo está uma lista JSON de notícias sobre concursos, cada uma com um 'id', 'title', 'reason' e um 'group' (identificador provisório).
+Sua tarefa é identificar quais notícias falam do mesmo certame/concurso e unificar o campo 'group'.
+Se duas notícias forem sobre o mesmo certame, o 'group' delas deve ser idêntico (escolha um dos identificadores já existentes ou crie um novo padronizado).
+Responda APENAS com um objeto JSON válido, onde as chaves são as strings dos IDs originais e os valores são as strings do novo 'group' unificado.
+Exemplo: Se o ID "1" e "3" falam do TJSP para Juiz, e o ID "2" fala do MPSP, responda:
+{"1": "tjsp-juiz", "3": "tjsp-juiz", "2": "mpsp-promotor"}
 
-def _strip_accents(s: str) -> str:
-    return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
-
-def has_legal_keywords(title: str, text: str) -> bool:
-    """Verifica se há indício de matéria jurídica no conteúdo / Checks for any sign of legal subject matter in the content"""
-    combined = _strip_accents(f"{title or ''} {text or ''}").lower()
-    return any(kw in combined for kw in LEGAL_KEYWORDS)
+Lista de itens:
+"""
 
 def normalize_group(g: str) -> str:
     """Normaliza o nome do grupo gerado por IA (remove acentos e espaços) / Normalizes the AI-generated group name (removes accents and spaces)"""
@@ -152,9 +141,6 @@ def evaluate_relevance(url: str, title: str, text: str) -> dict:
     if not text or len(text) < 50:
         return {"relevant": False, "reason": "insufficient text"}
 
-    if not has_legal_keywords(title, text):
-        return {"relevant": False, "reason": "no legal keywords"}
-
     content = f"URL: {url}\nTítulo: {title}\n\nTexto:\n{text}"
     response = call_ai_api(PROMPT_RELEVANCE + content)
 
@@ -167,3 +153,38 @@ def evaluate_relevance(url: str, title: str, text: str) -> dict:
         return {"relevant": False, "reason": "error parsing response"}
 
     return _validate_evaluation(raw)
+
+
+def consolidate_groups(relevant_items: list) -> None:
+    """Faz um passe de consolidação para unificar os identificadores de grupo de itens que tratam do mesmo certame / Consolidation pass to unify group IDs of items about the same exam"""
+    if not AI_API_KEY or len(relevant_items) <= 1:
+        return
+
+    items_to_send = [
+        {
+            "id": str(i),
+            "title": item.get("real_title") or item.get("title") or "",
+            "reason": item.get("reason", ""),
+            "group": item.get("group", "")
+        }
+        for i, item in enumerate(relevant_items)
+    ]
+
+    content = json.dumps(items_to_send, ensure_ascii=False, indent=2)
+    response = call_ai_api(PROMPT_CONSOLIDATION + content)
+
+    if not response:
+        logger.warning("Falha na consolidação de grupos: sem resposta da IA.")
+        return
+
+    try:
+        mapping = json.loads(response)
+        if isinstance(mapping, dict):
+            for i, item in enumerate(relevant_items):
+                str_i = str(i)
+                if str_i in mapping:
+                    item["group"] = normalize_group(mapping[str_i])
+    except json.JSONDecodeError:
+        logger.warning("Falha na consolidação de grupos: resposta não é JSON.")
+    except Exception as e:
+        logger.warning("Falha na consolidação de grupos: %s", e)

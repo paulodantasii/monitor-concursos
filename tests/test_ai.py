@@ -6,32 +6,9 @@ import pytest
 
 from ai import (
     evaluate_relevance,
-    has_legal_keywords,
     normalize_group,
+    consolidate_groups,
 )
-
-
-class TestHasLegalKeywords:
-    def test_explicit_legal_keyword(self):
-        assert has_legal_keywords("Concurso AGU", "vagas para advogado público") is True
-
-    def test_case_insensitive(self):
-        assert has_legal_keywords("PROCURADOR", "") is True
-
-    def test_handles_accents(self):
-        assert has_legal_keywords("Direito Constitucional", "") is True
-
-    def test_word_in_text_only(self):
-        assert has_legal_keywords("Edital 2026", "vagas para advocacia pública") is True
-
-    def test_unrelated_content_rejected(self):
-        assert has_legal_keywords("Concurso de Matemática", "professor de ensino médio") is False
-
-    def test_empty_input(self):
-        assert has_legal_keywords("", "") is False
-
-    def test_none_input_safe(self):
-        assert has_legal_keywords(None, None) is False
 
 
 class TestNormalizeGroup:
@@ -68,16 +45,6 @@ class TestEvaluateRelevance:
         result = evaluate_relevance("https://x.com", "title", "curto")
         assert result["relevant"] is False
         assert result["reason"] == "insufficient text"
-
-    def test_no_legal_keywords_skips_ai(self, monkeypatch):
-        """Pré-filtro 3.1: economiza chamada à IA quando não há indício jurídico"""
-        monkeypatch.setattr("ai.AI_API_KEY", "fake-key")
-        text = "Concurso para professor de matemática do ensino fundamental " * 5
-        with patch("ai.call_ai_api") as mock_api:
-            result = evaluate_relevance("https://x.com", "Edital", text)
-        mock_api.assert_not_called()
-        assert result["relevant"] is False
-        assert result["reason"] == "no legal keywords"
 
     def test_relevant_response_passthrough(self, monkeypatch):
         monkeypatch.setattr("ai.AI_API_KEY", "fake-key")
@@ -118,3 +85,45 @@ class TestEvaluateRelevance:
             result = evaluate_relevance("https://x.com", "Edital", self.LEGAL_TEXT)
         assert result["relevant"] is False
         assert result["reason"] == "error after 3 attempts"
+
+class TestConsolidateGroups:
+    def test_consolidate_groups_success(self, monkeypatch):
+        monkeypatch.setattr("ai.AI_API_KEY", "fake-key")
+        items = [
+            {"title": "Edital TJSP", "group": "tjsp-juiz"},
+            {"title": "Magistratura SP", "group": "tj-sp-magistratura"},
+            {"title": "MPSP Promotor", "group": "mpsp-promotor"}
+        ]
+        
+        ai_response = json.dumps({
+            "0": "tjsp-juiz",
+            "1": "tjsp-juiz",
+            "2": "mpsp-promotor"
+        })
+        
+        with patch("ai.call_ai_api", return_value=ai_response):
+            consolidate_groups(items)
+            
+        assert items[0]["group"] == "tjsp-juiz"
+        assert items[1]["group"] == "tjsp-juiz"
+        assert items[2]["group"] == "mpsp-promotor"
+
+    def test_consolidate_groups_invalid_json(self, monkeypatch, caplog):
+        monkeypatch.setattr("ai.AI_API_KEY", "fake-key")
+        items = [
+            {"title": "Edital TJSP", "group": "tjsp-juiz"},
+            {"title": "Magistratura SP", "group": "tj-sp-magistratura"},
+        ]
+        
+        with patch("ai.call_ai_api", return_value="not a json"):
+            consolidate_groups(items)
+            
+        assert items[0]["group"] == "tjsp-juiz"
+        assert "Falha na consolidação de grupos" in caplog.text
+
+    def test_consolidate_groups_empty_items(self, monkeypatch):
+        monkeypatch.setattr("ai.AI_API_KEY", "fake-key")
+        items = []
+        with patch("ai.call_ai_api") as mock_api:
+            consolidate_groups(items)
+        mock_api.assert_not_called()

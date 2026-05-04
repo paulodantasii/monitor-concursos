@@ -18,7 +18,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-from ai import evaluate_relevance
+from ai import evaluate_relevance, consolidate_groups
 from config import (
     API_PAUSE,
     GOOGLE_ALERTS_FEEDS,
@@ -436,6 +436,10 @@ def main():
 
     save_database(db)
     db_size_end = sum(1 for k in db if not k.startswith("_"))
+
+    if len(relevant_items) > 1:
+        logger.info("Executando passe de consolidação de grupos via IA...")
+        consolidate_groups(relevant_items)
 
     _write_relevant_file(relevant_items, total_new, now_utc)
 
