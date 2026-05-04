@@ -379,7 +379,7 @@ def generate_html(
 
     search_bar_html = """
         <div class="search-bar">
-            <input id="search" type="search" placeholder="Filtrar por órgão, cargo, status..." aria-label="Buscar">
+            <input id="search" type="search" placeholder="Buscar por órgão, cargo, status..." aria-label="Buscar">
         </div>
         <div class="filter-info" id="filter-info"></div>
     """ if groups else ""
@@ -400,8 +400,8 @@ def generate_html(
     <header>
         <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
         <h1>CuradorIA de Carreiras Jurídicas</h1>
-        <p>Foram analisados {total_analyzed} artigos na última verificação</p>
-        <div class="badge">Encontrados {total_relevant} artigos relevantes sobre {len(groups)} certames</div>
+        <p>Foram analisados {total_analyzed} artigos na última verificação.</p>
+        <div class="badge">Encontrados {total_relevant} artigos relevantes sobre {len(groups)} certames.</div>
         {meta_html}
     </header>
     <div class="container">
@@ -410,7 +410,7 @@ def generate_html(
         {cards}
         {history_html}
     </div>
-    <footer>Gerado automaticamente · CuradorIA de Carreiras Jurídicas · Todos os créditos reservados aos respectivos autores dos artigos encontrados</footer>
+    <footer>Gerado automaticamente · CuradorIA de Carreiras Jurídicas · Todos os créditos reservados aos respectivos autores dos artigos encontrados.</footer>
     <script>{_JS}</script>
 </body>
 </html>"""
