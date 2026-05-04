@@ -136,7 +136,7 @@ def _render_archive_banner(date_str: str, archive_link: str) -> str:
         return ""
     return f"""
         <div class="archive-banner">
-            Você está vendo a edição arquivada de <strong>{escape(date_str)}</strong>·
+            Você está vendo a edição arquivada de <strong>{escape(date_str)}</strong> ·
             <a href="{escape(archive_link)}">Ver versão mais recente</a>
         </div>
     """
