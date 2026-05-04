@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 # Configurações da API da IA / AI API settings
 AI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-AI_MODEL = "gpt-4o-mini"
+AI_MODEL = "gpt-5-nano"
 AI_URL = "https://api.openai.com/v1/chat/completions"
 
 # Instruções de comportamento da IA / AI behavior instructions
@@ -73,13 +73,17 @@ def normalize_group(g: str) -> str:
     g = re.sub(r"-+", "-", g).strip("-")
     return g
 
-def call_ai_api(prompt: str) -> str:
+def call_ai_api(system_prompt: str, user_content: str) -> str:
     """Faz a chamada HTTP para a API da OpenAI com lógica de repetição / Makes the HTTP call to the OpenAI API with retry logic"""
     payload = {
         "model": AI_MODEL,
-        "messages": [{"role": "user", "content": prompt}],
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content}
+        ],
         "temperature": 0.1,
-        "max_tokens": 400,
+        "top_p": 0.1,
+        "max_tokens": 500,
         "response_format": {"type": "json_object"},
     }
     for attempt in range(3):
@@ -135,7 +139,7 @@ def evaluate_relevance(url: str, title: str, text: str) -> dict:
         return {"relevant": False, "reason": "insufficient text"}
 
     content = f"URL: {url}\nTítulo: {title}\n\nTexto:\n{text}"
-    response = call_ai_api(PROMPT_RELEVANCE + content)
+    response = call_ai_api(PROMPT_RELEVANCE, content)
 
     if not response:
         return {"relevant": False, "reason": "error after 3 attempts"}
@@ -164,7 +168,7 @@ def consolidate_groups(relevant_items: list) -> None:
     ]
 
     content = json.dumps(items_to_send, ensure_ascii=False, indent=2)
-    response = call_ai_api(PROMPT_CONSOLIDATION + content)
+    response = call_ai_api(PROMPT_CONSOLIDATION, content)
 
     if not response:
         logger.warning("Falha na consolidação de grupos: sem resposta da IA.")
