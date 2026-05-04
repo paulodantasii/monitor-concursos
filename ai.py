@@ -16,53 +16,46 @@ AI_MODEL = "gpt-4o-mini"
 AI_URL = "https://api.openai.com/v1/chat/completions"
 
 # Instruções de comportamento da IA / AI behavior instructions
-PROMPT_RELEVANCE = """Sua tarefa é avaliar se o conteúdo abaixo é um artigo de atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, e similares, que sejam relevantes para um bacharel em Direito que estuda para concursos públicos nas seguintes áreas:
+PROMPT_RELEVANCE = """Sua tarefa é avaliar se o conteúdo abaixo é uma atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, ou similares, que sejam relevantes para um bacharel em Direito
 
-RELEVANTE — sempre que o conteúdo tiver:
-- Qualquer cargo, carreira, estágio de pós-graduação ou residência que exija formação superior (bacharelado) em Direito.
-- Carreiras jurídicas, legais, judiciais, procuradorias, advocacia, analistas ou assessores de matéria jurídica.
-- Cargos em órgãos públicos, empresas estatais ou autarquias que, pelo contexto, demandem diploma em Direito ou conhecimento jurídico especializado.
+RELEVANTE — sempre que o conteúdo tiver
+Qualquer cargo, carreira, vaga, estágio de pós-graduação ou residência que exija formação superior (bacharelado/diploma) em Direito
+Vagas com atividades jurídicas, judiciais, contratuais, legais, legislativas, procuradorias, advocacias, analistas, assistentes, técnicos, ou assessores, de matéria jurídica, judicial, contratual, legal, ou legislativa
+Cargos em órgãos públicos, empresas públicas ou privadas, ou autarquias que, pelo contexto, demandem diploma em Direito ou conhecimento jurídico especializado
 
-NÃO RELEVANTE — se o conteúdo for integralmente apenas sobre:
-- Cargos que NÃO exijam formação (curso superior/bacharelato/diploma) em Direito, como, por exemplo: professores de ensino básico, médicos, engenheiros, enfermeiros, saúde, limpeza, motoristas, técnicos de outras áreas, etc
-- Cargos de nível médio ou técnico sem relevância jurídica
-- Páginas que sejam apenas listagens de provas para download, índices de banca, ou agregadores de outros concursos sem foco em um certame específico
+NÃO RELEVANTE — se o conteúdo for apenas sobre
+Cargos que NÃO exijam formação (curso superior/bacharelato/diploma) em Direito, como, por exemplo: professores de ensino básico, médicos, engenheiros, enfermeiros, saúde, limpeza, motoristas, técnicos de outras áreas
+Cargos de nível médio ou técnico sem relevância jurídica
+Páginas que sejam apenas listagens de vários concursos, de provas para download, índices de banca, ou agregadores de diversos concursos sem foco em um certame específico
 
-Se for relevante, identifique também:
+Se for relevante, identifique também STATUS do certame, escolhendo UMA das opções
+"announced"; se autorização publicada, comissão formada, banca contratada, edital previsto mas ainda não publicado
+"registration_open"; se edital publicado e inscrições em andamento
+"registration_closed"; se inscrições já fecharam, aguardando prova
+"exam_taken"; se prova aplicada, aguardando gabarito ou resultado preliminar
+"result"; se gabarito divulgado, resultado preliminar, recursos, resultado final
+"closed"; se certame finalizado, convocações, posses, prorrogação de validade
 
-1. STATUS do certame, escolhendo UMA das opções:
-   - "announced" → autorização publicada, comissão formada, banca contratada, edital previsto mas ainda não publicado
-   - "registration_open" → edital publicado e inscrições em andamento
-   - "registration_closed" → inscrições já fecharam, aguardando prova
-   - "exam_taken" → prova aplicada, aguardando gabarito ou resultado preliminar
-   - "result" → gabarito divulgado, resultado preliminar, recursos, resultado final
-   - "closed" → certame finalizado, convocações, posses, prorrogação de validade
-
-2. GROUP no formato "orgao-localidade-cargo" usando apenas letras minúsculas, números e hífens, SEM acentos. Exemplos:
-   - "cgm-porto-velho-ro-auditor"
-   - "prefeitura-martinopolis-sp-advogado"
-   - "sefaz-ce-auditor-fiscal"
-   - "pgm-caxias-do-sul-rs-procurador"
-   - "al-ms-analista-juridico"
-   - "tjto-residencia-juridica"
-   Use o mesmo identificador para notícias que tratem do mesmo concurso, mesmo que escritas de formas diferentes. Se houver dúvida sobre o cargo específico, omita a parte do cargo.
-
-REGRAS PARA O CAMPO "reason":
-- Descreva o cargo e o contexto específico do certame
-- Nunca use frases como "relevante para bacharéis em Direito", "exige formação em Direito" ou similares
-- Essas conclusões são óbvias; o motivo deve agregar informação nova, não reafirmar o óbvio
+Se for relevante, identifique também GROUP no formato "orgao-localidade-cargo" usando apenas letras minúsculas, números e hífens, SEM acentos
+Exemplos
+"cgm-porto-velho-ro-auditor"
+"prefeitura-martinopolis-sp-advogado"
+"sefaz-ce-auditor-fiscal"
+"pgm-caxias-do-sul-rs-procurador"
+"al-ms-analista-juridico"
+"tjto-residencia-juridica"
 
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevant": true, "reason": "Cargo e contexto específico do certame", "status": "registration_open", "group": "orgao-localidade-cargo"}
+{"relevant": true, "reason": "Descreva o cargo e o contexto específico do certame sem usar frases como "relevante para bacharéis em Direito", "exige formação em Direito" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "status": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
 ou
-{"relevant": false, "reason": "explicação em uma linha"}
+{"relevant": false, "reason": "Irrelevante"}
 
 Conteúdo para avaliar:
 """
 
 PROMPT_CONSOLIDATION = """Abaixo está uma lista JSON de notícias sobre concursos, cada uma com um 'id', 'title', 'reason' e um 'group' (identificador provisório).
 Sua tarefa é identificar quais notícias falam do mesmo certame/concurso e unificar o campo 'group'.
-Se duas notícias forem sobre o mesmo certame, o 'group' delas deve ser idêntico (escolha um dos identificadores já existentes ou crie um novo padronizado).
+Se duas notícias forem sobre o mesmo certame, o 'group' delas deve ser idêntico (repita um dos identificadores já existentes ou crie um novo padronizado).
 Responda APENAS com um objeto JSON válido, onde as chaves são as strings dos IDs originais e os valores são as strings do novo 'group' unificado.
 Exemplo: Se o ID "1" e "3" falam do TJSP para Juiz, e o ID "2" fala do MPSP, responda:
 {"1": "tjsp-juiz", "3": "tjsp-juiz", "2": "mpsp-promotor"}
@@ -85,7 +78,7 @@ def call_ai_api(prompt: str) -> str:
     payload = {
         "model": AI_MODEL,
         "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0,
+        "temperature": 0.1,
         "max_tokens": 400,
         "response_format": {"type": "json_object"},
     }
