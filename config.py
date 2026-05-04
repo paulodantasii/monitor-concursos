@@ -106,10 +106,10 @@ TITLE_SUFFIXES = [
 
 # Rótulos visuais para cada status retornado pela IA / Visual labels per AI status value
 STATUS_LABELS = {
-    "announced": ("📢 Anunciado", "#6c757d"),
-    "registration_open": ("✅ Inscrição aberta", "#28a745"),
-    "registration_closed": ("⏰ Inscrição encerrada", "#fd7e14"),
-    "exam_taken": ("📝 Prova realizada", "#17a2b8"),
-    "result": ("🏁 Resultado", "#6f42c1"),
-    "closed": ("🔒 Encerrado", "#495057"),
+    "announced": ("Anunciado", "#6c757d"),
+    "registration_open": ("Inscrição aberta", "#28a745"),
+    "registration_closed": ("Inscrição encerrada", "#fd7e14"),
+    "exam_taken": ("Prova realizada", "#17a2b8"),
+    "result": ("Resultado", "#6f42c1"),
+    "closed": ("Encerrado", "#495057"),
 }
