@@ -1,4 +1,4 @@
-name: Regenerar HTML
+name: Regenerar manualmente o HTML
 
 on:
   workflow_dispatch:  # Permite execução manual / Allows manual execution
