@@ -78,12 +78,10 @@ def call_ai_api(system_prompt: str, user_content: str) -> str:
     payload = {
         "model": AI_MODEL,
         "messages": [
-            {"role": "system", "content": system_prompt},
+            {"role": "developer", "content": system_prompt},
             {"role": "user", "content": user_content}
         ],
-        "temperature": 0.1,
-        "top_p": 0.1,
-        "max_tokens": 500,
+        "max_completion_tokens": 1000,
         "response_format": {"type": "json_object"},
     }
     for attempt in range(3):
