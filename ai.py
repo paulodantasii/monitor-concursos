@@ -81,7 +81,7 @@ def call_ai_api(system_prompt: str, user_content: str) -> str:
             {"role": "developer", "content": system_prompt},
             {"role": "user", "content": user_content}
         ],
-        "max_completion_tokens": 1000,
+        "max_completion_tokens": 5000,
         "verbosity": "low",
         "response_format": {"type": "json_object"},
     }
@@ -98,7 +98,24 @@ def call_ai_api(system_prompt: str, user_content: str) -> str:
             )
             resp.raise_for_status()
             data = resp.json()
-            return data["choices"][0]["message"]["content"].strip()
+            choice = data["choices"][0]
+            content = choice["message"].get("content")
+            finish_reason = choice.get("finish_reason", "unknown")
+            if not content:
+                logger.warning("OpenAI retornou conteúdo vazio (finish_reason=%s) na tentativa %d/3", finish_reason, attempt + 1)
+                if attempt < 2:
+                    time.sleep(10 * (attempt + 1))
+                continue
+            return content.strip()
+        except requests.exceptions.HTTPError as e:
+            body = ""
+            try:
+                body = e.response.text[:500]
+            except Exception:
+                pass
+            logger.error("OpenAI tentativa %d/3 falhou [HTTP %s]: %s | body: %s", attempt + 1, e.response.status_code if e.response is not None else "?", e, body)
+            if attempt < 2:
+                time.sleep(10 * (attempt + 1))
         except Exception as e:
             logger.error("OpenAI tentativa %d/3 falhou: %s", attempt + 1, e)
             if attempt < 2:
@@ -141,7 +158,7 @@ def evaluate_relevance(url: str, title: str, text: str) -> dict:
     response = call_ai_api(PROMPT_RELEVANCE, content)
 
     if not response:
-        return {"relevant": False, "reason": "error after 3 attempts"}
+        return {"relevant": False, "reason": "empty response from AI"}
 
     try:
         raw = json.loads(response)

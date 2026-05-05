@@ -84,7 +84,7 @@ class TestEvaluateRelevance:
         with patch("ai.call_ai_api", return_value=""):
             result = evaluate_relevance("https://x.com", "Edital", self.LEGAL_TEXT)
         assert result["relevant"] is False
-        assert result["reason"] == "error after 3 attempts"
+        assert result["reason"] == "empty response from AI"
 
 class TestConsolidateGroups:
     def test_consolidate_groups_success(self, monkeypatch):

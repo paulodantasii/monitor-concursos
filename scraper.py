@@ -168,7 +168,8 @@ def _run_ai(item: dict, db: dict, relevant_items: list, now_utc: str, timeout: i
     reason = evaluation.get("reason", "")
     logger.info("→ %s", evaluation.get("raw_response", reason))
 
-    if reason == "error after 3 attempts":
+    if reason == "empty response from AI":
+        register_url_failure(db, url, "ai_empty", source, now_utc)
         return "ai_error"
 
     record_processed(db, url, source, now_utc)
