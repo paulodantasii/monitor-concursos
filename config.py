@@ -45,7 +45,7 @@ HISTORY_DIR = "history"  # Pasta de relatórios datados / Datedreports folder
 # Limites e janelas / Limits and windows
 MAX_ABSENCES = 3                # Execuções consecutivas sem ver a URL antes de removê-la
 MAX_PAGE_CHARS = 7000           # Tamanho máximo do texto enviado à IA
-API_PAUSE = 2.0                 # Pausa entre chamadas à OpenAI
+API_PAUSE = 0.1                 # Pausa entre chamadas à OpenAI
 BLOCK_403_DAYS = 30             # Bloqueio de domínio após 403
 MAX_URL_FAILURES = 3            # Falhas consecutivas antes de aplicar cooldown
 URL_COOLDOWN_DAYS = 30          # Duração do cooldown por URL com falhas
