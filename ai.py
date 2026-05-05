@@ -82,6 +82,7 @@ def call_ai_api(system_prompt: str, user_content: str) -> str:
             {"role": "user", "content": user_content}
         ],
         "max_completion_tokens": 1000,
+        "reasoning_effort": "minimal",
         "response_format": {"type": "json_object"},
     }
     for attempt in range(3):
