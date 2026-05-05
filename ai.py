@@ -146,9 +146,11 @@ def evaluate_relevance(url: str, title: str, text: str) -> dict:
     try:
         raw = json.loads(response)
     except json.JSONDecodeError:
-        return {"relevant": False, "reason": "error parsing response"}
+        return {"relevant": False, "reason": "error parsing response", "raw_response": response}
 
-    return _validate_evaluation(raw)
+    result = _validate_evaluation(raw)
+    result["raw_response"] = response
+    return result
 
 
 def consolidate_groups(relevant_items: list) -> None:

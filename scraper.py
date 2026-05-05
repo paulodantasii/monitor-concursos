@@ -166,7 +166,7 @@ def _run_ai(item: dict, db: dict, relevant_items: list, now_utc: str, timeout: i
     title = real_title or item.get("title", "")  # fallback de título da listagem (2.5)
     evaluation = evaluate_relevance(url, title, text)
     reason = evaluation.get("reason", "")
-    logger.info("→ relevante=%s | %s", evaluation.get("relevant"), reason)
+    logger.info("→ %s", evaluation.get("raw_response", reason))
 
     if reason == "error after 3 attempts":
         return "ai_error"
