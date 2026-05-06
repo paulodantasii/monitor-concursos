@@ -81,7 +81,7 @@ def call_ai_api(system_prompt: str, user_content: str) -> str:
             {"role": "developer", "content": system_prompt},
             {"role": "user", "content": user_content}
         ],
-        "max_completion_tokens": 20000,
+        "max_completion_tokens": 50000,
         "verbosity": "low",
         "response_format": {"type": "json_object"},
     }
