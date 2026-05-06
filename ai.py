@@ -16,7 +16,7 @@ AI_MODEL = "gpt-5-nano"
 AI_URL = "https://api.openai.com/v1/chat/completions"
 
 # Instruções de comportamento da IA / AI behavior instructions
-PROMPT_RELEVANCE = """Sua tarefa é avaliar se o conteúdo abaixo é uma atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, ou similares, que sejam relevantes para um bacharel em Direito
+PROMPT_RELEVANCE = """Sua tarefa é avaliar se o conteúdo abaixo é uma atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, ou similares, que sejam relevantes
 
 RELEVANTE — sempre que o conteúdo tiver
 Qualquer cargo, carreira, vaga, estágio de pós-graduação ou residência que exija formação superior (bacharelado/diploma) em Direito
@@ -46,7 +46,7 @@ Exemplos
 "tjto-residencia-juridica"
 
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevant": true, "reason": "Descreva o cargo e o contexto específico do certame sem usar frases como "relevante para bacharéis em Direito", "exige formação em Direito" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "status": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
+{"relevant": true, "reason": "Em um resumo de ~500 caracteres, descreva o cargo e o contexto específico do certame sem usar frases como "relevante para bacharéis em Direito", "exige formação em Direito" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "status": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
 ou
 {"relevant": false, "reason": "Irrelevante"}
 
