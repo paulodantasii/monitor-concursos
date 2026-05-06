@@ -55,7 +55,7 @@ Conteúdo para avaliar:
 
 PROMPT_CONSOLIDATION = """Abaixo está uma lista JSON de notícias sobre concursos, cada uma com um 'id', 'title', 'reason' e um 'group' (identificador provisório).
 Sua tarefa é identificar quais notícias falam do mesmo certame/concurso e unificar o campo 'group'.
-Se duas notícias forem sobre o mesmo certame, o 'group' delas deve ser idêntico (repita um dos identificadores já existentes ou crie um novo padronizado).
+Se duas ou mais notícias falam de um mesmo orgão, provavelmente são do mesmo certame, analise com cuidado, o 'group' delas deve ser idêntico (repita um dos identificadores já existentes ou crie um novo padronizado).
 Responda APENAS com um objeto JSON válido, onde as chaves são as strings dos IDs originais e os valores são as strings do novo 'group' unificado.
 Exemplo: Se o ID "1" e "3" falam do TJSP para Juiz, e o ID "2" fala do MPSP, responda:
 {"1": "tjsp-juiz", "3": "tjsp-juiz", "2": "mpsp-promotor"}
