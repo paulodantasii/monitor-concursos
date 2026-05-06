@@ -39,15 +39,15 @@ Se for relevante, identifique também STATUS do certame, escolhendo UMA das opç
 
 Se for relevante, identifique também GROUP no formato "orgao-localidade-cargo" usando apenas letras minúsculas, números e hífens, SEM acentos
 Exemplos
-"cgm-porto-velho-ro-auditor"
-"prefeitura-martinopolis-sp-advogado"
-"sefaz-ce-auditor-fiscal"
-"pgm-caxias-do-sul-rs-procurador"
-"al-ms-analista-juridico"
-"tjto-residencia-juridica"
+"cgm-porto_velho_ro-auditor"
+"prefeitura-martinopolis_sp-advogado"
+"sefaz-ce-auditor_fiscal"
+"pgm-caxias_do_sul_rs-procurador"
+"al-ms-analista_juridico"
+"tj-to-residencia_juridica"
 
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevant": true, "reason": "Em um resumo de ~500 caracteres, descreva o cargo e o contexto específico do certame sem usar frases como "relevante para bacharéis em Direito", "exige formação em Direito" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "status": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
+{"relevant": true, "reason": "Descreva o cargo e o contexto específico do certame, em ~400 caracteres, sem usar frases como "relevante para bacharéis em Direito", "exige formação em Direito" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "status": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
 ou
 {"relevant": false, "reason": "Irrelevante"}
 
