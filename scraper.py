@@ -179,7 +179,7 @@ def _run_ai(item: dict, db: dict, relevant_items: list, now_utc: str, timeout: i
             **item,
             "real_title": real_title,
             "reason": reason,
-            "status": evaluation.get("status", ""),
+            "career": evaluation.get("career", ""),
             "group": evaluation.get("group", ""),
         })
     return "ok"
@@ -307,7 +307,7 @@ def _write_relevant_file(relevant_items: list, total_new: int, now_utc: str) -> 
             f.write(
                 f"Title:   {title}\n"
                 f"URL:     {item.get('url', '')}\n"
-                f"Status:  {item.get('status', '')}\n"
+                f"Career:   {item.get('career', '')}\n"
                 f"Group:   {item.get('group', '')}\n"
                 f"Reason:  {item.get('reason', '')}\n\n"
             )

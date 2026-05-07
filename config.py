@@ -104,12 +104,13 @@ TITLE_SUFFIXES = [
     " - Portal Piauí Hoje", " - Tribuna Online", " - ND Mais", " | ND Mais",
 ]
 
-# Rótulos visuais para cada status retornado pela IA / Visual labels per AI status value
-STATUS_LABELS = {
-    "announced": ("Anunciado", "#6c757d"),
-    "registration_open": ("Inscrição aberta", "#28a745"),
-    "registration_closed": ("Inscrição encerrada", "#fd7e14"),
-    "exam_taken": ("Prova realizada", "#17a2b8"),
-    "result": ("Resultado", "#6f42c1"),
-    "closed": ("Encerrado", "#495057"),
+# Rótulos visuais para cada carreira jurídica / Visual labels per legal career
+CAREER_LABELS = {
+    "tribunais": ("Tribunais", "#4B0082"),
+    "mp": ("Ministério Público", "#B22222"),
+    "defensoria": ("Defensoria Pública", "#104E8B"),
+    "procuradorias": ("Procuradorias", "#8B4513"),
+    "policiais": ("Carreiras Policiais", "#2F4F4F"),
+    "administrativo": ("Administrativo e Seletivo", "#B8860B"),
+    "estagio": ("Residência e Estágio", "#228B22"),
 }

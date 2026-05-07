@@ -6,7 +6,7 @@ import unicodedata
 import os
 import requests
 
-from config import STATUS_LABELS
+from config import CAREER_LABELS
 
 logger = logging.getLogger(__name__)
 
@@ -29,13 +29,14 @@ Cargos de nível médio ou técnico sem relevância jurídica
 Páginas que sejam apenas listagens ou conjuntos de vários concursos, ou de provas para download, ou de índices de banca, ou agregadores de diversos concursos sem foco em um certame específico
 Páginas que sejam sobre cursos, eventos ou aulas
 
-Se for relevante, identifique também STATUS do certame, escolhendo UMA das opções
-"announced"; se autorização publicada, comissão formada, banca contratada, edital previsto mas ainda não publicado
-"registration_open"; se edital publicado e inscrições em andamento
-"registration_closed"; se inscrições já fecharam, aguardando prova
-"exam_taken"; se prova aplicada, aguardando gabarito ou resultado preliminar
-"result"; se gabarito divulgado, resultado preliminar, recursos, resultado final
-"closed"; se certame finalizado, convocações, posses, prorrogação de validade
+Se for relevante, identifique também a CARREIRA do certame, escolhendo UMA das opções:
+"tribunais"; se Judiciário (Juiz, Analista, Técnico de Tribunais TJ, TRF, TRE, TRT, STJ, STF)
+"mp"; se Ministério Público (Promotor, Procurador de Justiça, Servidor do MP)
+"defensoria"; se Defensoria Pública (Defensor, Servidor da Defensoria)
+"procuradorias"; se Advocacia Pública (PGE, PGM, AGU, Procurador Legislativo)
+"policiais"; se Delegado de Polícia ou carreiras policiais estritamente jurídicas
+"administrativo"; se Analista Jurídico ou cargos jurídicos em Prefeituras, Conselhos, Autarquias ou Empresas Públicas
+"estagio"; se Residência Jurídica ou Estágio de Pós-graduação/Graduação em Direito
 
 Se for relevante, identifique também GROUP no formato "orgao-localidade-cargo" usando apenas letras minúsculas, números e hífens, SEM acentos
 Exemplos
@@ -47,7 +48,7 @@ Exemplos
 "tj-to-residencia_juridica"
 
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevant": true, "reason": "Descreva o cargo e o contexto específico do certame, em ~400 caracteres, sem usar frases como "relevante para bacharéis em Direito", "exige formação em Direito" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "status": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
+{"relevant": true, "reason": "Em um resumo de ~500 caracteres, descreva o cargo e o contexto específico do certame sem usar frases como \"relevante para bacharéis em Direito\", \"exige formação em Direito\" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "career": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
 ou
 {"relevant": false, "reason": "Irrelevante"}
 
@@ -138,9 +139,9 @@ def _validate_evaluation(data) -> dict:
     result = {"relevant": relevant, "reason": reason}
 
     if relevant:
-        status_raw = data.get("status", "")
-        status = status_raw.strip().lower() if isinstance(status_raw, str) else ""
-        result["status"] = status if status in STATUS_LABELS else ""
+        career_raw = data.get("career", "")
+        career = career_raw.strip().lower() if isinstance(career_raw, str) else ""
+        result["career"] = career if career in CAREER_LABELS else "administrativo"
 
         group_raw = data.get("group", "")
         result["group"] = normalize_group(group_raw if isinstance(group_raw, str) else "")

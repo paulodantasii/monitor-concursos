@@ -5,7 +5,7 @@ from datetime import datetime
 from html import escape
 from urllib.parse import urlparse
 
-from config import HISTORY_DIR, OUTPUT_HTML, OUTPUT_RELEVANT, STATUS_LABELS, TITLE_SUFFIXES
+from config import HISTORY_DIR, OUTPUT_HTML, OUTPUT_RELEVANT, CAREER_LABELS, TITLE_SUFFIXES
 
 
 def get_site_name(url: str) -> str:
@@ -46,7 +46,7 @@ def _card_search_blob(items: list) -> str:
         parts.append(item.get("real_title") or item.get("title") or "")
         parts.append(item.get("reason", ""))
         parts.append(item.get("group", ""))
-        parts.append(item.get("status", ""))
+        parts.append(item.get("career", ""))
         parts.append(get_site_name(item.get("url", "")))
     return " ".join(p for p in parts if p).lower()
 
@@ -68,15 +68,15 @@ def render_group_card(group: dict) -> str:
         safe_url = escape(url)
         reason = escape(item.get("reason", ""))
         site = escape(get_site_name(url))
-        status = item.get("status", "")
-        status_label, status_color = STATUS_LABELS.get(status, ("", "#6c757d"))
-        status_html = (
-            f'<span class="status-tag" style="background:{status_color};">{status_label}</span>'
-            if status_label else ""
+        career = item.get("career", "")
+        career_label, career_color = CAREER_LABELS.get(career, ("", "#6c757d"))
+        career_html = (
+            f'<span class="status-tag" style="background:{career_color};">{career_label}</span>'
+            if career_label else ""
         )
         slides_html += f"""
             <div class="slide">
-                {status_html}<span class="site-tag">{site}</span>
+                {career_html}<span class="site-tag">{site}</span>
                 <h2><a href="{safe_url}" target="_blank" rel="noopener noreferrer">{title}</a></h2>
                 <p class="reason">{reason}</p>
                 <a href="{safe_url}" target="_blank" rel="noopener noreferrer" class="btn">Acessar matéria →</a>
@@ -379,7 +379,7 @@ def generate_html(
 
     search_bar_html = """
         <div class="search-bar">
-            <input id="search" type="search" placeholder="Buscar por órgão, cargo, status..." aria-label="Buscar">
+            <input id="search" type="search" placeholder="Buscar por órgão, cargo, carreira..." aria-label="Buscar">
         </div>
         <div class="filter-info" id="filter-info"></div>
     """ if groups else ""
@@ -444,8 +444,8 @@ if __name__ == "__main__":
                         item["real_title"] = line[len("Title:   "):].strip()
                     elif line.startswith("URL:     "):
                         item["url"] = line[len("URL:     "):].strip()
-                    elif line.startswith("Status:  "):
-                        item["status"] = line[len("Status:  "):].strip()
+                    elif line.startswith("Career:  "):
+                        item["career"] = line[len("Career:  "):].strip()
                     elif line.startswith("Group:   "):
                         item["group"] = line[len("Group:   "):].strip()
                     elif line.startswith("Reason:  "):
