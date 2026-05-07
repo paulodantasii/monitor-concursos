@@ -18,25 +18,25 @@ AI_URL = "https://api.openai.com/v1/chat/completions"
 # Instruções de comportamento da IA / AI behavior instructions
 PROMPT_RELEVANCE = """Sua tarefa é avaliar se o conteúdo abaixo é uma atualização, previsão, ou divulgação, de edital, concurso, processo seletivo, certame, ou similares, que sejam relevantes
 
-RELEVANTE — sempre que o conteúdo tiver
-Qualquer cargo, carreira, vaga, estágio de pós-graduação ou residência que exija formação superior (bacharelado/diploma) em Direito
+É RELEVANTE sempre que o conteúdo tiver
+Qualquer cargo, carreira, vaga, estágio de pós-graduação ou residência, que exija ter formação superior (bacharelado/diploma) em Direito
 Vagas com atividades jurídicas, judiciais, contratuais, legais, legislativas, procuradorias, advocacias, analistas, assistentes, técnicos, ou assessores, de matéria jurídica, judicial, contratual, legal, ou legislativa
-Cargos em órgãos públicos, empresas públicas ou privadas, ou autarquias que, pelo contexto, demandem diploma em Direito ou conhecimento jurídico especializado
+Cargos em órgãos públicos, empresas públicas ou privadas, ou autarquias que, pelo contexto, exijam ter diploma em Direito ou conhecimento jurídico, judicial, contratual, legal ou legislativo
 
-NÃO RELEVANTE — se o conteúdo for apenas sobre
+É IRRELEVANTE se o conteúdo for apenas sobre
 Cargos que NÃO exijam formação (curso superior/bacharelato/diploma) em Direito, como, por exemplo: professores de ensino básico, médicos, engenheiros, enfermeiros, saúde, limpeza, motoristas ou técnicos de outras áreas
 Cargos de nível médio ou técnico sem relevância jurídica
 Páginas que sejam apenas listagens ou conjuntos de vários concursos, ou de provas para download, ou de índices de banca, ou agregadores de diversos concursos sem foco em um certame específico
 Páginas que sejam sobre cursos, eventos ou aulas
 
 Se for relevante, identifique também a CARREIRA do certame, escolhendo UMA das opções:
-"tribunais"; se Judiciário (Juiz, Analista, Técnico de Tribunais TJ, TRF, TRE, TRT, STJ, STF)
-"mp"; se Ministério Público (Promotor, Procurador de Justiça, Servidor do MP)
-"defensoria"; se Defensoria Pública (Defensor, Servidor da Defensoria)
-"procuradorias"; se Advocacia Pública (PGE, PGM, AGU, Procurador Legislativo)
+"tribunais"; se Juiz, Analista ou Técnico de Tribunais, TJ, TRF, TRE, TRT, STJ, STF, TSE, TST
+"mp"; se Promotor de Justiça, Analista ou Técnico do Ministério Público
+"defensoria"; se Defensor Público, Analista ou Técnico da Defensoria
+"procuradorias"; se Procurador: Legislativo, de Estado ou Município, Federal, da Fazenda Nacional, ou Advogado: da União, de órgãos ou entidades públicos
 "policiais"; se Delegado de Polícia ou carreiras policiais estritamente jurídicas
-"administrativo"; se Analista Jurídico ou cargos jurídicos em Prefeituras, Conselhos, Autarquias ou Empresas Públicas
-"estagio"; se Residência Jurídica ou Estágio de Pós-graduação/Graduação em Direito
+"administrativo"; se cargos jurídicos em orgãos públicos, Prefeituras, Conselhos, Autarquias ou Empresas Públicas, que não sejam nenhum dos outros acima
+"estagio"; se Residência Jurídica ou Estágio de Pós-graduação em Direito
 
 Se for relevante, identifique também GROUP no formato "orgao-localidade-cargo" usando apenas letras minúsculas, números e hífens, SEM acentos
 Exemplos
@@ -48,7 +48,7 @@ Exemplos
 "tj-to-residencia_juridica"
 
 Responda APENAS no seguinte formato JSON, sem nenhum texto adicional:
-{"relevant": true, "reason": "Em um resumo de ~500 caracteres, descreva o cargo e o contexto específico do certame sem usar frases como \"relevante para bacharéis em Direito\", \"exige formação em Direito\" ou similares, essas conclusões são óbvias; agregue informação relevante, não reafirme o óbvio", "career": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
+{"relevant": true, "reason": "Em um resumo de ~500 caracteres, descreva o cargo e o contexto específico do certame sem usar frases como \"relevante para bacharéis em Direito\", \"exige formação em Direito\" ou similares, essas conclusões são óbvias; agregue informação, não reafirme o óbvio", "career": "...escolha uma das opções...", "group": "orgao-localidade-cargo"}
 ou
 {"relevant": false, "reason": "Irrelevante"}
 
