@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 # Configurações da API da IA / AI API settings
 AI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-AI_MODEL = "gpt-5-nano"
+AI_MODEL = "gpt-5.2"
 AI_URL = "https://api.openai.com/v1/chat/completions"
 
 # Instruções de comportamento da IA / AI behavior instructions
