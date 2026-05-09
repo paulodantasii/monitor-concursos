@@ -30,12 +30,12 @@ Páginas que sejam apenas listagens ou conjuntos de vários concursos, ou de pro
 Páginas que sejam sobre cursos, eventos ou aulas
 
 Se for relevante, identifique também a CARREIRA do certame, escolhendo UMA das opções:
-"tribunais"; se Juiz, Analista ou Técnico de Tribunais, TJ, TRF, TRE, TRT, STJ, STF, TSE, TST
+"tribunais"; se Juiz, Analista ou Técnico de Tribunais de Justiça, TRF, TRE, TRT, STJ, STF, TSE, TST, Tribunal de Contas (TC) não entra aqui
 "mp"; se Promotor de Justiça, Analista ou Técnico do Ministério Público
 "defensoria"; se Defensor Público, Analista ou Técnico da Defensoria
-"procuradorias"; se Procurador: Legislativo, de Estado ou Município, Federal, da Fazenda Nacional, ou Advogado: da União, de órgãos ou entidades públicos
+"procuradorias"; se Procurador Legislativo, de Estado ou Município, Federal, da Fazenda Nacional, ou Advogado da União ou de entidades ou órgãos públicos
 "policiais"; se Delegado de Polícia ou carreiras policiais estritamente jurídicas
-"administrativo"; se cargos jurídicos em orgãos públicos, Prefeituras, Conselhos, Autarquias ou Empresas Públicas, que não sejam nenhum dos outros acima
+"administrativo"; se cargos jurídicos de menor importância em orgãos públicos, Prefeituras, Conselhos, Autarquias ou Empresas Públicas, etc
 "estagio"; se Residência Jurídica ou Estágio de Pós-graduação em Direito
 
 Se for relevante, identifique também GROUP no formato "orgao-localidade-cargo" usando apenas letras minúsculas, números e hífens, SEM acentos
@@ -84,7 +84,7 @@ def call_ai_api(system_prompt: str, user_content: str) -> str:
             {"role": "user", "content": user_content}
         ],
         "max_completion_tokens": 50000,
-        "verbosity": "low",
+        "verbosity": "high",
         "response_format": {"type": "json_object"},
     }
     for attempt in range(3):
