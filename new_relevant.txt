@@ -1,407 +1,209 @@
-Verificação: 2026-05-09T09:03:17.340254+00:00
-Links analisados: 200
-Links relevantes: 67
+Verificação: 2026-05-10T09:17:52.856363+00:00
+Links analisados: 81
+Links relevantes: 34
 ============================================================
 
-Title:   Prefeitura de Campo Alegre - SC publica edital retificado de concurso público para diversos cargos
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-campo-alegre-sc-publica-edital-retificado-de-concurso-publico-para-diversos-cargos
-Career:   administrativo
-Group:   prefeitura-campo-alegre-sc-concurso-2026
-Reason:  Edital retificado de concurso público da Prefeitura de Campo Alegre/SC para provimento e cadastro reserva no quadro permanente, com inscrições de 27/03/2026 a 15/04/2026 e prova objetiva em 17/05/2026. Entre os diversos cargos ofertados consta o de Advogado, além de funções de fiscalização (ex.: Fiscal de Tributos), com vínculo estatutário e validade de 2 anos prorrogável.
-
-Title:   Câmara de Montanha - ES abre concurso com salários de até R$ 6.500,00
-URL:     https://www.pciconcursos.com.br/noticias/camara-de-montanha-es-abre-concurso-com-salarios-de-ate-6500
+Title:   Concurso Pardinho-SP 2026: Edital tem 35 vagas de até R$ 7 mil
+URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-pardinho-sp-2026-edital-tem-35-vagas-de-ate-r-7-mil-90007
 Career:   procuradorias
-Group:   camara-montanha-es-concurso-2026
-Reason:  Concurso público da Câmara Municipal de Montanha/ES para provimento de vagas e cadastro de reserva, incluindo Procurador Legislativo (2 vagas + CR), com jornada de 20h, salário até R$ 6.500, inscrições de 18/05/2026 a 18/06/2026 pelo Instituto Consulplan e provas em 26/07/2026 (objetiva e, para Procurador, também discursiva).
+Group:   prefeitura-pardinho-sp-procurador-juridico
+Reason:  Concurso público da Prefeitura de Pardinho-SP (edital 01/2026, banca INEPAM) para 35 vagas em diversos cargos. Há vaga para Procurador Jurídico (1 + CR), com remuneração de R$ 7.098,00, exigindo OAB e 2 anos de prática forense, além de prova de títulos e prova prático-profissional discursiva. Inscrições de 18/05 a 15/06/2026 e provas objetivas em 12 e 19/07/2026.
 
-Title:   Concurso Câmara de Montanha-ES 2026: Edital abre 53 vagas
-URL:     https://www.acheconcursos.com.br/concursos-espirito-santo/concurso-camara-montanha-es-2026-edital-53-vagas-90003
-Career:   procuradorias
-Group:   camara-montanha-es-concurso-2026
-Reason:  Edital do concurso público da Câmara Municipal de Montanha-ES (2026) com 13 vagas imediatas e 40 em cadastro de reserva. Entre os cargos de nível superior, há 2 vagas + 5 CR para Procurador Legislativo (taxa específica e prova discursiva exclusiva), além de outras funções do Legislativo. Inscrições de 18/05/2026 a 18/06/2026; prova objetiva em 26/07/2026.
-
-Title:   Concurso CRA-MG 2026: Edital sai e abre vagas de até R$ 5 mil
-URL:     https://www.acheconcursos.com.br/concursos-minas-gerais/concurso-cra-mg-2026-saiu-edital-89996
+Title:   Concurso em Altamira do Paraná-PR: Câmara paga até R$ 6,1 mil
+URL:     https://www.acheconcursos.com.br/concursos-parana/concurso-em-altamira-do-parana-pr-camara-paga-ate-r-6-1-mil-90006
 Career:   administrativo
-Group:   cra-mg-concurso-2026
-Reason:  Edital nº 01/2026 do Conselho Regional de Administração de Minas Gerais (CRA-MG) publicado para concurso em Belo Horizonte/MG, com vagas e cadastro reserva. Entre os cargos de nível superior há cadastro reserva para Advogado (200h/mês; salário R$ 4.990,44 + benefícios; exige OAB). Inscrições 18/05 a 16/06/2026, provas previstas para 19/07/2026 (objetiva e discursiva para nível superior).
+Group:   camara-altamira-do-parana-pr-procurador-juridico
+Reason:  Noticia a abertura de concurso público da Câmara Municipal de Altamira do Paraná-PR, com 3 vagas imediatas e cadastro de reserva, inscrições de 12/05 a 09/06/2026 e prova em 21/06/2026. Entre os cargos, há Procurador Jurídico (1 vaga, R$ 5.734,30) com atuação jurídica no legislativo municipal, além de Técnico Legislativo (CR, R$ 6.187,73) com formação superior aceita em várias áreas incluindo Direito.
 
-Title:   Edital ESUDPAM abre vagas em Iranduba/AM para estudantes de Direito
-URL:     https://www.acheconcursos.com.br/concursos-amazonas/edital-esudpam-abre-vagas-em-iranduba-am-para-estudantes-de-direito-89990
+Title:   Secretaria das Mulheres encerra hoje (9) inscrições para 40 vagas imediatas em processo seletivo na Bahia | Jornal Correio
+URL:     https://www.correio24horas.com.br/emprego/secretaria-das-mulheres-encerra-hoje-9-inscricoes-para-40-vagas-imediatas-em-processo-seletivo-na-bahia-0526
+Career:   administrativo
+Group:   spm-ba-ciencias-juridicas
+Reason:  Notícia sobre processo seletivo simplificado (REDA) da Secretaria das Mulheres do Estado da Bahia, com 40 vagas temporárias e inscrições encerrando em 09/05/2026. Há oportunidades de nível superior em diversas áreas, incluindo Ciências Jurídicas, para atuação em Salvador, Irecê, Itabuna e Feira de Santana. Seleção em etapa única por avaliação curricular, com contratos de até 36 meses (renovável uma vez).
+
+Title:   Processo seletivo da Prefeitura de Boituva SP está com inscrições abertas
+URL:     https://jcconcursos.com.br/noticia/empregos/saiu-edital-da-prefeitura-de-boituva-sp-com-vagas-em-diferentes-areas-142443
 Career:   estagio
-Group:   dpe-am-iranduba-estagio-direito-2026
-Reason:  Processo seletivo (edital nº 51/2026) da Escola Superior da Defensoria Pública do Amazonas/ESUDPAM para formar cadastro reserva de estagiário de graduação em Direito na unidade da DPE em Iranduba/AM. Inscrições por e-mail de 07 a 18/05/2026. Prova objetiva e dissertativa em 21/05/2026 e entrevista em 03/06/2026. Bolsa de R$ 1.339,54 + auxílio-transporte de R$ 220, jornada presencial de 30h semanais (8h às 14h).
+Group:   prefeitura-boituva-sp-estagiario
+Reason:  Noticia divulga processo seletivo da Prefeitura de Boituva (SP) para formacao de cadastro reserva de estagiarios de nivel superior, com inscricoes abertas via CIEE e prova online (portugues e conhecimentos gerais). O edital inclui estudantes de Direito entre as areas aceitas, com bolsa-auxilio mensal e jornada de 30h, para eventuais oportunidades na administracao municipal.
 
-Title:   Câmara de Palhoça-SC 2026 abre 9 vagas de até R$ 9,5 mil
-URL:     https://www.acheconcursos.com.br/concursos-santa-catarina/concurso-camara-palhoca-sc-2026-abre-9-vagas-9-5-mil-89984
+Title:   Novo prazo: concurso CRBM-2 mantém vagas abertas com salários de até R$ 6 mil; edital foi retificado
+URL:     https://www.terra.com.br/noticias/educacao/carreira/novo-prazo-concurso-crbm-2-mantem-vagas-abertas-com-salarios-de-ate-r-6-mil-edital-foi-retificado,f946da5c3f4ba07592fa708f8aceb2b5x466iweg.html
 Career:   administrativo
-Group:   camara-palhoca-sc-concurso-2026
-Reason:  Concurso público da Câmara Municipal de Palhoça-SC (2026) para 9 vagas e cadastro de reserva, com inscrições de 07/05 a 05/06/2026 e prova objetiva em 12/07/2026 (Fundatec). Entre os cargos, há 1 vaga para Controlador Interno (30h, R$ 5.236,41), aceitando formação superior em Direito, além de outras funções (TI, contabilidade, jornalismo e técnico legislativo).
+Group:   crbm-2-nordeste-advogado
+Reason:  Noticia sobre retificacao e prorrogacao das inscricoes do concurso do Conselho Regional de Biomedicina da 2a Regiao (CRBM-2), com vagas imediatas e cadastro reserva em capitais do Nordeste. Entre os cargos previstos no edital esta o de advogado (salario informado de R$ 6.500), alem de fiscal biomedico, contador e agente administrativo. Inscricoes ate 21/05, provas objetiva e escrita em 05/07, regime CLT, com alteracao no conteudo programatico (remocao de Lei 8.112/1990).
 
-Title:   Concurso da Câmara de Reserva-PR é aberto para 5 cargos
-URL:     https://www.acheconcursos.com.br/concursos-parana/concurso-camara-reserva-pr-aberto-5-cargos-89977
-Career:   administrativo
-Group:   camara-reserva-pr-concurso-2026
-Reason:  Concurso público da Câmara Municipal de Reserva-PR (inscrições 07/05 a 06/06/2026; banca Instituto Legalle) para 5 vagas e cadastro de reserva. Entre os cargos ofertados, há 1 vaga de Controlador Interno (40h, R$ 8.782,49) com graduação aceita em Administração, Ciências Contábeis, Direito, Economia ou Gestão Pública, com prova objetiva prevista para 21/06.
-
-Title:   Edital da EPC-PB abre 35 vagas de até R$ 3.317; Veja como se inscrever
-URL:     https://www.acheconcursos.com.br/concursos-paraiba/concurso-edital-epc-pb-abre-35-vagas-3-317-veja-como-inscrever-89139
-Career:   administrativo
-Group:   epc-pb-concurso-2026
-Reason:  Edital do concurso da Empresa Paraibana de Comunicação (EPC-PB), com 35 vagas e cadastro de reserva; inclui cargo de Advogado (CR) com remuneração de R$ 3.300,00. Inscrições de 09 a 14/05 pelo Instituto Nosso Rumo; seleção prevê prova objetiva e peça processual exclusiva para Advogado; provas em 28/06/2026 em João Pessoa-PB e validade de 2 anos, prorrogável.
-
-Title:   Câmara de Altamira do Paraná - PR abre concurso com salários de até R$ 6.187,73
-URL:     https://www.pciconcursos.com.br/noticias/camara-de-altamira-do-parana-pr-abre-concurso-com-salarios-de-ate-6187
-Career:   procuradorias
-Group:   camara-altamira-do-parana-pr-concurso-2026
-Reason:  Concurso público da Câmara Municipal de Altamira do Paraná/PR para provimento de vagas efetivas e cadastro de reserva, com inscrições de 12/05/2026 a 09/06/2026 e prova objetiva prevista para 21/06/2026. Entre os cargos ofertados consta Procurador Jurídico (1 vaga), além de Auxiliar Administrativo, Contador, Serviços Gerais e Técnico Legislativo; regime estatutário e remuneração até R$ 6.187,73.
-
-Title:   Prefeitura de Pardinho - SP anuncia concurso público com salários de até R$ 7 mil
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-pardinho-sp-anuncia-concurso-publico-com-salarios-de-ate-7-mil
-Career:   procuradorias
-Group:   prefeitura-pardinho-sp-concurso-2026
-Reason:  Concurso público da Prefeitura de Pardinho/SP com vagas e cadastro de reserva em diversos cargos; há previsão de 1 vaga + CR para Procurador Jurídico, com prova objetiva e prova discursiva específica. Inscrições de 18/05/2026 a 15/06/2026 pelo INEPAM; provas objetivas previstas para 12 e 19/07/2026. Remuneração do certame varia até R$ 7.098,00 + cartão-alimentação.
-
-Title:   CRA-MG abre concurso público com salários de até R$ 5 mil
-URL:     https://www.pciconcursos.com.br/noticias/cra-mg-abre-concurso-publico-com-salarios-de-ate-5-mil
-Career:   administrativo
-Group:   cra-mg-concurso-2026
-Reason:  Noticia de concurso do Conselho Regional de Administracao de Minas Gerais (CRA-MG), organizado pela FUMARC, para vagas e cadastro de reserva. Entre os cargos ofertados ha Advogado (cadastro de reserva), com provas objetiva e discursiva e aplicacao prevista em 19/07/2026 em Belo Horizonte/MG. Inscricoes de 18/05/2026 a 16/06/2026. Regime CLT, validade de 2 anos prorrogavel.
-
-Title:   Processo seletivo UFRJ: Sai edital com 58 vagas para Professores
-URL:     https://www.acheconcursos.com.br/concursos-rio-de-janeiro/processo-seletivo-ufrj-sai-edital-58-vagas-professores-89988
-Career:   administrativo
-Group:   ufrj-edital-466-2026-professor-substituto
-Reason:  Edital nº 466/2026 da UFRJ abre processo seletivo simplificado para 58 vagas temporárias de professor substituto. Há oportunidades na Faculdade Nacional de Direito, incluindo 1 vaga em Direito Processual Civil e Prática Cível e 1 vaga em Teoria do Direito. Inscrições online de 15/05/2026 a 22/05/2026; seleção por análise de currículo, prova didática e prova prática.
-
-Title:   Publicada lista de inscrições deferidas e indeferidas do concurso do MPMS - Concursos - Diário Digital
-URL:     https://amp.diariodigital.com.br/vagas/concursos/publicada-lista-de-inscricoes-deferidas-e-indeferidas-do-concurso-do-mpms
-Career:   mp
-Group:   mpms-xxxi-concurso-promotor-substituto
-Reason:  Noticia divulga edital com a lista de inscricoes deferidas e indeferidas do XXXI Concurso Publico do MPMS para ingresso na carreira de Promotor de Justica Substituto (8 vagas). Informa prazo de recursos (7 a 11/05/2026), e cronograma inicial: prova preambular em 17/05, gabarito em 19/05 e recursos de 20 a 24/05, com demais fases previstas (escritas, oral, titulos etc.).
-
-Title:   UFRJ abre concurso com mais de 50 vagas para professores e salários de até R$ 5 mil | Rádio Itatiaia
-URL:     https://www.itatiaia.com.br/emprego-e-concursos/ufrj-abre-concurso-com-mais-de-50-vagas-para-professores-e-salarios-de-ate-r-5-mil/
-Career:   administrativo
-Group:   ufrj-edital-466-2026-professor-substituto
-Reason:  Notícia sobre processo seletivo da UFRJ para contratação de professores substitutos (Edital nº 466/2026), com 58 vagas temporárias e inscrições de 15 a 22/05/2026 pelo site de concursos da universidade. Entre as áreas citadas há oportunidade em Direito do Estado. Seleção por análise de currículos/títulos, prova didática e, quando aplicável, prova prática; jornada de 20h e salários de R$ 3.198,59 a R$ 5.037,78 + auxílio-alimentação.
-
-Title:   Concurso PGE RJ: novo edital será tema de reunião do Conselho  | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-pge-rj-2026-tema-de-reuniao-do-conselho
-Career:   procuradorias
-Group:   pge-rj-concurso-procurador
-Reason:  Noticia informa que o novo concurso da Procuradoria Geral do Estado do Rio de Janeiro sera discutido em reuniao do Conselho em 12 de maio; certame esta autorizado desde dezembro de 2025 para provimento de cargos de procurador do estado. Menciona requisitos (oab e 3 anos de pratica), ausencia de vagas/remuneracao atuais, e existencia de regulamento com estrutura (provas escritas geral e especificas, oral e titulos) e disciplinas.
-
-Title:   Saiu edital do Superior Tribunal Militar com diversas vagas
-URL:     https://jcconcursos.com.br/noticia/empregos/saiu-edital-do-superior-tribunal-militar-com-diversas-vagas-142435
-Career:   tribunais
-Group:   stm-estagio-2026
-Reason:  Edital 2026 do Superior Tribunal Militar para processo seletivo de estagiários de nível superior, incluindo estudantes de Direito. Inscrições abertas até 17 de maio, prova on-line durante o período de inscrição e etapas de análise curricular e entrevistas. Vagas distribuídas por várias cidades (inclui Brasília/DF, São Paulo/SP, Rio de Janeiro/RJ, entre outras). Bolsa-auxílio de R$ 1.100 + auxílio-transporte, jornada de 20h semanais.
-
-Title:   Seplag-MT abre processo seletivo para bacharel em Direito com salário de R$ 8,2 mil | Fatos de Mato Grosso
-URL:     https://www.fatosdematogrosso.com.br/politica/seplag-mt-abre-processo-seletivo-para-bacharel-em-direito-com-salario-de-r-82-mil/12049
-Career:   administrativo
-Group:   seplag-mt-pss-003-2026-perfil-juridico
-Reason:  Edital nº 003/2026 da Seplag-MT abre Processo Seletivo Simplificado para cadastro de reserva na função de Analista de Desenvolvimento Econômico e Social – Perfil Jurídico, para atuação em Cuiabá/MT. Seleção por avaliação curricular (titulação e experiência), inscrições 13 a 20/05/2026 via seletivo.seplag.mt.gov.br, sem taxa, remuneração R$ 8.269,16 (40h). Atuação com suporte técnico-jurídico em processos, minutas de atos/contratos/textos normativos, sob supervisão de procurador.
-
-Title:   Governo da Bahia divulga processo seletivo com 78 vagas para SJDH
-URL:     https://aratuon.com.br/empregos-concursos/governo-da-bahia-divulga-processo-seletivo-com-78-vagas-para-sjdh/
-Career:   administrativo
-Group:   sjdh-ba-reda-2026
-Reason:  Processo Seletivo Simplificado (REDA) do Governo da Bahia para a Secretaria de Justiça e Direitos Humanos (SJDH), com 78 vagas temporárias (nível médio e superior), inscrições via selecao.ba.gov.br e edital no site da SJDH. Entre as formações citadas está Ciências Jurídicas, indicando vagas de nível superior ligadas à área jurídica; seleção em etapa única por avaliação curricular, resultado final no DOE em 19/06.
-
-Title:   Concurso PC PR: como é a banca FGV e o que estudar? | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-pc-pr-banca-fgv-como-estudar
-Career:   policiais
-Group:   pc-pr-concurso-2026
-Reason:  Materia traz atualizacoes e orientacoes de estudo sobre o novo concurso da Policia Civil do Parana, com a FGV definida como banca. Informa edital previsto para junho e provas em setembro, com cadastro de reserva para delegado, agente de policia judiciaria e papiloscopista; detalha que o cargo de delegado requer bacharelado, alem de citar faixa salarial e disciplinas cobradas.
-
-Title:   Ministra da AGU apoia aprovação do concurso com 1.364 vagas
-URL:     https://piauihoje.com/noticias/concursos/ministra-da-agu-apoia-aprovacao-do-concurso-com-1364-vagas-56405.html
-Career:   procuradorias
-Group:   agu-pedido-concurso-1364-vagas
-Reason:  Notícia sobre possível autorização de concurso na Advocacia-Geral da União analisado pelo Ministério do Planejamento, com pedido de 1.364 vagas e expectativa de seleção no início de 2018. Menciona também o PL 6.788/2017 para criar cargos de apoio à atividade jurídica (analista técnico de apoio à atividade jurídica e técnico de apoio), além de diversas vagas administrativas e de outras áreas.
-
-Title:   Cresol abre 272 vagas de emprego em diversos estados; há oportunidades presenciais, híbridas e remotas
-URL:     https://concursonews.com/2026/05/cresol-abre-272-vagas-de-emprego-em-diversos-estados-ha-oportunidades-presenciais-hibridas-e-remotas/
-Career:   administrativo
-Group:   cresol-vagas-emprego-2026
-Reason:  Noticia abertura de 272 vagas na cooperativa financeira Cresol, em diversos estados, com oportunidades efetivas, estágio, jovem aprendiz e banco de talentos, em modalidades presencial/híbrida/remota. Entre os cargos citados há Analista Jurídico, além de funções administrativas e de negócios; as candidaturas ocorrem pela plataforma de carreiras da instituição, com prazos variando por vaga.
-
-Title:   Defensoria Pública de MG abre seleção para estágio de pós-graduação em Direito em Varginha com bolsa de R$ 2 mil
-URL:     https://concursonews.com/2026/05/defensoria-publica-de-mg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-varginha-com-bolsa-de-r-2-mil/
-Career:   estagio
-Group:   dpmg-varginha-estagio-pos-direito-03-2026
-Reason:  Edital nº 03/2026 da Defensoria Pública do Estado de Minas Gerais abre processo seletivo simplificado para cadastro reserva de estágio de pós-graduação em Direito na unidade de Varginha/MG (bolsa R$ 1.803 + auxílio-transporte R$ 210). Inscrições online de 14/05/2026 a 29/05/2026. Atividades incluem apoio em peças e manifestações processuais, pesquisa doutrinária/jurisprudencial, audiências e atendimento ao público. Seleção por análise curricular (média) e entrevista presencial.
-
-Title:   Estou Preparado
-URL:     https://estoupreparado.com.br/noticias/4295-prefeitura-de-campina-grande-abre-concurso-p-blico-com-1-000-vagas
+Title:   Concurso público Campina Grande PB: terá 4 editais e 1.000 vagas. - Concursos RN
+URL:     https://concursosrn.com.br/concurso-publico-campina-grande-pb-tera-4-editais-e-1-000-vagas/
 Career:   procuradorias
 Group:   prefeitura-campina-grande-pb-concurso-2026
-Reason:  Notícia informa a abertura de concurso da Prefeitura de Campina Grande (PB) com 1.000 vagas, dividido em quatro editais, citando oportunidades na STTP, Guarda Civil Municipal e na Procuradoria Geral do Município. Provas previstas para o fim de agosto e banca IDECAN; detalhes de cargos, requisitos, salários e inscrições serão publicados no Semanário Oficial do Município.
+Reason:  Noticia que o prefeito de Campina Grande/PB confirmou a abertura de concurso com 4 editais e 1.000 vagas, com regras a serem publicadas no semanário oficial e provas objetivas previstas para o fim de agosto. Entre as áreas destacadas está a Procuradoria Geral do Município, indicando oferta de vagas na estrutura jurídica municipal (além de STTP, GCM e outras áreas ainda sem detalhamento).
 
-Title:   TJMG abre seletivo para estágio de pós-graduação em Direito em Arinos com bolsa de R$ 3,7 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-seletivo-para-estagio-de-pos-graduacao-em-direito-em-arinos-com-bolsa-de-r-37-mil/
+Title:   DPMG abre seleção para estágio de pós-graduação em Direito em Ibiraci com bolsa de R$ 2 mil
+URL:     https://concursonews.com/2026/05/dpmg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-ibiraci-com-bolsa-de-r-2-mil/
 Career:   estagio
-Group:   tjmg-arinos-estagio-pos-direito-2026
-Reason:  Selecao publica do TJMG para estagio de pos-graduacao em Direito na Comarca de Arinos/MG, formando cadastro reserva para atuar no gabinete da Vara Unica. Bolsa de R$ 3.392,40 + auxilio-transporte de R$ 359,10 (total R$ 3.751,50), 30h semanais. Inscricoes gratuitas ate 11/05/2026 por e-mail. Etapas: prova dissertativa virtual (13/05/2026) e entrevista tecnica.
+Group:   dpmg-ibiraci-mg-estagio-pos-graduacao
+Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais para cadastro reserva de estagiários de pós-graduação em Direito na unidade de Ibiraci/MG. Bolsa de R$ 1.803 + auxílio-transporte de R$ 210 (25h/semana). Inscrições até 13/05/2026 via sistema da Diretoria de Estágio. Etapas: análise curricular (média mínima 60%) e entrevista virtual em 29/05/2026. Atividades: apoio em peças processuais, pesquisas, audiências, diligências e atendimento.
 
-Title:   TJ MS Juiz Leigo: inscrições abrem na próxima quarta-feira; veja como participar!
-URL:     https://cj.estrategia.com/portal/tj-ms-juiz-leigo-inscricoes/
-Career:   tribunais
-Group:   tjms-juiz-leigo-ii-psu-2026
-Reason:  Edital do II Processo Seletivo Unificado do TJMS para Juiz Leigo, com 21 vagas imediatas e cadastro de reserva, lotação em Campo Grande (6) e demais localidades do MS (15). Inscrições de 13/05 a 11/06 pelo Instituto Consulplan (taxa R$ 150; isenção 13 a 15/05). Exige OAB e 2 anos de prática jurídica. Provas objetiva e discursiva (projeto de sentença civil) em 19/07 e avaliação de títulos.
-
-Title:   Concurso TJ PE: divulgado o resultado preliminar da prova objetiva; confira!
-URL:     https://www.direcaoconcursos.com.br/noticias/concurso-tj-pe-resultado-preliminar-objetiva-tecnico
-Career:   tribunais
-Group:   tjpe-concurso-2026
-Reason:  Noticia do concurso do Tribunal de Justica de Pernambuco (TJ PE) informando a divulgacao do resultado preliminar da prova objetiva para o cargo de Tecnico Judiciario, com prazo de 2 dias uteis para interposicao de recursos. O certame (banca IBFC) tem cadastro de reserva e inclui ainda Analista Judiciario e Oficial de Justica; houve reaplicacao das provas em 12/04/2026 apos anulacao por investigacao da PF (Operacao Chiado).
-
-Title:   NAV Brasil tem concurso com 128 vagas, incluindo advogado
-URL:     https://www.conjur.com.br/2026-mai-08/nav-brasil-tem-concurso-com-128-vagas-incluindo-advogado/
-Career:   administrativo
-Group:   nav-brasil-concurso-2026
-Reason:  Concurso público da NAV Brasil (empresa pública de navegação aérea), com inscrições abertas até 28/05 via FGV Conhecimento, total de 128 vagas. Há cargo de Advogado (nível superior) com 5 vagas + 20 cadastro de reserva, salário de R$ 6.186. Provas objetivas em 02/08/2026 em diversas capitais/cidades; prevê etapas específicas para cotas e PcD.
-
-Title:   Concurso Câmara Municipal de Montanha ES abre 13 vagas imediatas | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-camara-municipal-de-montanha-es-abre-13-vagas-imediatas
-Career:   procuradorias
-Group:   camara-montanha-es-concurso-2026
-Reason:  Edital de concurso público da Câmara Municipal de Montanha/ES (Edital nº 1/2026, banca Consulplan) com 13 vagas + cadastro de reserva. Entre os cargos, há 2 vagas para Procurador Legislativo (20h, R$4.500) com prova objetiva de disciplinas jurídicas e prova discursiva, além de cargo de Controle Interno (R$6.500) com formação em Direito ou Contábeis e Analista Legislativo/Secretaria com formações que incluem Direito. Inscrições 18/05 a 18/06/2026; prova em 26/07/2026.
-
-Title:   TJMG abre seleção para estágio de pós-graduação em Direito em Araguari com bolsa de R$ 3,3 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-araguari-com-bolsa-de-r-33-mil/
-Career:   estagio
-Group:   tjmg-araguari-estagio-pos-direito-2026
-Reason:  Selecao publica do TJMG (Edital 003/2026) para estagio de pos-graduacao em Direito na Comarca de Araguari/MG, com cadastro reserva. Inscricoes presenciais de 05 a 25/05/2026 no Forum Dr. Oswaldo Pieruccetti. Bolsa de R$ 3.392,40 + auxilio-transporte de R$ 359,10, 30h semanais. Provas objetiva (30 questoes) e dissertativa em 29/05/2026 no IMEPAC; areas incluem JEC, Constitucional, Penal, Civil, Proc. Civil e Portugues.
-
-Title:   Prova objetiva do Concurso Detran AL 2026: tudo sobre formato, notas de corte e preparação - Uni10
-URL:     https://uniten.com.br/prova-objetiva-concurso-detran-al-2026-formato-notas-preparacao/
-Career:   administrativo
-Group:   detran-al-concurso-2026
-Reason:  Materia traz orientacoes e atualizacoes sobre a prova objetiva do concurso do Detran Alagoas 2026, organizado pelo Cebraspe, com edital publicado em 6 de maio, inscricoes ate 9 de junho e provas em 2 de agosto. Informa 116 oportunidades (50 imediatas e 66 CR) para cargos de nivel superior: Analista e Assistente de Transito, com conteudos incluindo legislacao de transito, direito administrativo e penalidades.
-
-Title:   Concursos em SP: editais publicados nesta semana somam quase 500 vagas
-URL:     https://jcconcursos.com.br/noticia/concursos/concursos-sp-editais-publicados-nesta-semana-somam-quase-500-vagas-142442
-Career:   administrativo
-Group:   prefeitura-itarare-sp-concurso-2026
-Reason:  Noticia-compilacao de editais/processos seletivos em SP com varios orgaos; inclui cargos de perfil juridico como analista tecnico juridico (Prefeitura de Itarare) e assistente juridico (Consorcio Intermunicipal do Oeste Paulista/Ciop), com informacoes de inscricoes, vagas, salarios e datas de prova. Apesar de listar outras areas, ha oportunidades diretamente ligadas a atividades juridicas em certames municipais/consorcio.
-
-Title:   Itararé SP concurso e processo seletivo salários até R$ 5,1 mil
-URL:     https://www.souenfermagem.com.br/noticias/itarare-sp-concurso-e-processo-seletivo-salarios-ate-r-51-mil/
-Career:   administrativo
-Group:   prefeitura-itarare-sp-concurso-2026
-Reason:  Noticia sobre concurso publico e processo seletivo da Prefeitura de Itarare/SP, com inscricoes de 05 a 29/05/2026 e prova objetiva prevista para 14/06/2026. Entre os cargos de nivel superior listados esta Analista Tecnico Juridico (1 vaga + cadastro reserva), alem de outras funcoes. Remuneracao ate R$ 5.135,27 e jornadas de 30 ou 40 horas; edital menciona taxas e possibilidade de reducao de 50%.
-
-Title:   Defensoria Pública de Minas abre seleção para residência jurídica em Belo Horizonte com bolsa de R$ 4,2 mil
-URL:     https://concursonews.com/2026/05/defensoria-publica-de-minas-abre-selecao-para-residencia-juridica-em-belo-horizonte-com-bolsa-de-r-42-mil/
-Career:   estagio
-Group:   dpmg-bh-residencia-juridica-2026
-Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais (DPMG) para formar cadastro reserva no programa de residência jurídica em Belo Horizonte, para atuação no Setor de Execuções Penais. Bolsa mensal de R$ 4.000 + auxílio-transporte de R$ 210 (total R$ 4.210), jornada presencial de 30h semanais. Inscrições online de 11 a 13/05/2026. Etapas: análise curricular e entrevista presencial; reserva de vagas para PcD e candidatos negros.
-
-Title:   TJMG abre seletivo para estágio de pós-graduação em Direito em Várzea da Palma com bolsa de R$ 3,3 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-seletivo-para-estagio-de-pos-graduacao-em-direito-em-varzea-da-palma-com-bolsa-de-r-33-mil/
-Career:   estagio
-Group:   tjmg-varzea-da-palma-estagio-pos-direito-2026
-Reason:  Selecao publica do TJMG para formacao de cadastro de reserva de estagio de pos-graduacao em Direito na Comarca de Varzea da Palma/MG, com atuacao no Forum e possivelmente no Juizado Especial. Inscricoes presenciais de 11/05/2026 a 21/05/2026, sem taxa. Bolsa de R$ 3.392,40 e auxilio-transporte de R$ 359,10; jornada de 30h semanais. Provas objetiva e dissertativa em 28/05/2026 e possibilidade de entrevista eliminatoria.
-
-Title:   Concursos em SP: editais publicados nesta semana somam quase 500 vagas
-URL:     https://jcconcursos.com.br/amp/noticia/concursos/concursos-sp-editais-publicados-nesta-semana-somam-quase-500-vagas-142442
-Career:   administrativo
-Group:   prefeitura-itarare-sp-concurso-2026
-Reason:  Materia agrega editais e processos seletivos em varios municipios e orgaos de SP; entre os destaques ha vagas com atribuicoes juridicas, como analista tecnico juridico (Prefeitura de Itarare) e assistente juridico (Consorcio Intermunicipal do Oeste Paulista/Ciop), alem de funcoes de fiscalizacao/tributacao citadas em diferentes prefeituras. Texto traz prazos de inscricao, numero de vagas, salarios e datas de prova.
-
-Title:   TJAP encerra nesta sexta, 08, inscrições para residência jurídica com bolsa de R$ 4,8 mil no Amapá
-URL:     https://concursonews.com/2026/05/tjap-encerra-nesta-sexta-08-inscricoes-para-residencia-juridica-com-bolsa-de-r-48-mil-no-amapa/
-Career:   estagio
-Group:   tjap-residencia-juridica-2026
-Reason:  Noticia enceramento das inscricoes (08/05/2026) do processo seletivo do Programa de Residencia Juridica do Tribunal de Justica do Estado do Amapa, organizado pela EJAP, com 30 vagas + cadastro reserva, bolsa de R$ 4.863, atuacao em unidades judiciarias e lotacao em comarcas do estado (prioridade 1o grau). Provas objetiva (50 questoes) e discursiva em 31/05/2026 em Macapa, com cronograma ate homologacao em 15/07/2026.
-
-Title:   Concurso Câmara Municipal de Palhoça SC: 9 vagas e salários até R$9.500 | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-camara-municipal-de-palhoca-sc-9-vagas-e-salarios-ate-r-9-500
-Career:   administrativo
-Group:   camara-palhoca-sc-concurso-2026
-Reason:  Edital nº 01/2026 da Câmara Municipal de Palhoça/SC (Fundatec) com 9 vagas + cadastro de reserva e provas em 12/07/2026. Entre os cargos, há 1 vaga para Controlador Interno (30h; R$ 5.236,41 + benefícios), com requisito de graduação em Direito, Ciências Contábeis ou Administração, atuando com supervisão de processos administrativos, licitações, patrimônio e finanças para conformidade legal.
-
-Title:   TJMG abre seletivo para estágio de pós-graduação em Direito em Carmo de Minas com bolsa de R$ 3,3 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-seletivo-para-estagio-de-pos-graduacao-em-direito-em-carmo-de-minas-com-bolsa-de-r-33-mil/
-Career:   estagio
-Group:   tjmg-carmo-de-minas-estagio-pos-direito-2026
-Reason:  Edital do TJMG para selecao publica de cadastro reserva de estagio de pos-graduacao em Direito na Comarca de Carmo de Minas/MG. Inscricoes de 11 a 18/05/2026 (forum ou e-mail), sem taxa. Bolsa de R$ 3.392,40 + auxilio-transporte de R$ 359,10, jornada de 30h/semana. Prova objetiva e dissertativa em 08/06/2026, com criterios de classificacao, cotas e validade de 2 anos prorrogavel.
-
-Title:   TJMG abre seleção para estágio de pós-graduação em Direito em Nova Lima com bolsa de R$ 3,3 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-nova-lima-com-bolsa-de-r-33-mil/
-Career:   estagio
-Group:   tjmg-nova-lima-estagio-pos-direito-2026
-Reason:  Edital de seleção pública do TJMG para estágio de pós-graduação em Direito na comarca de Nova Lima/MG, com cadastro reserva e convocação conforme surgirem vagas. Bolsa de R$ 3.392,40 e auxílio-transporte de R$ 359,10; inscrições de 11 a 22/05/2026 por e-mail. Provas objetiva (30 questões) e dissertativa em 14/06/2026; atuação em gabinetes de magistrados e apoio jurídico (pesquisa, acompanhamento processual, minutas, atendimento).
-
-Title:   TJMG abre seleção para estágio em Direito na Comarca de Bambuí; inscrições seguem até 15 de maio
-URL:     https://concursonews.com/2026/05/tjmg-abre-selecao-para-estagio-em-direito-na-comarca-de-bambui-inscricoes-seguem-ate-15-de-maio/
-Career:   tribunais
-Group:   tjmg-bambui-estagio-direito-2026
-Reason:  Edital nº 01/2026 do TJMG abre processo seletivo para estágio em Direito (graduação do 2º ao 7º período e pós-graduação jurídica) na Comarca de Bambuí/MG, para cadastro de reserva. Inscrições online e gratuitas até 15/05/2026. Seleção com prova objetiva presencial em 22/05/2026 no Fórum de Bambuí (20 questões) e possibilidade de entrevista eliminatória; jornada de 30h semanais, com bolsa e auxílio-transporte.
-
-Title:   Novo seletivo da Prefeitura de Aparecida SP está com inscrições abertas
-URL:     https://jcconcursos.com.br/noticia/empregos/novo-seletivo-da-prefeitura-de-aparecida-sp-esta-com-inscricoes-abertas-142446
-Career:   estagio
-Group:   prefeitura-aparecida-sp-estagio-2026
-Reason:  Processo seletivo/credenciamento de estagiários da Prefeitura de Aparecida (SP), com inscrições via CIEE até 18/05, para estudantes de cursos técnicos e de nível superior, incluindo universitários de Direito. Seleção por questionário/análise curricular e entrevista, com bolsa-auxílio de R$ 800 (superior) ou R$ 707 (técnico) e 30h semanais.
-
-Title:   Concurso Prefeitura de Guaratinguetá 2026 terá 87 vagas e salários de até R$ 17,6 mil. Veja as vagas - Vale 360 News
-URL:     https://www.vale360news.com.br/concurso-prefeitura-de-guaratingueta-2026-tera-87-vagas-e-salarios-de-ate-r-176-mil-veja-as-vagas/
-Career:   procuradorias
-Group:   prefeitura-guaratingueta-sp-concurso-2026
-Reason:  Noticia concurso da Prefeitura de Guaratingueta (SP) previsto para 2026, em definicao de banca, com 87 vagas imediatas e cadastro reserva (niveis fundamental, medio e superior). Entre os cargos superiores listados ha 1 vaga para procurador municipal (30h, R$ 9.200) e 5 vagas para auxiliar juridico (44h, R$ 3.195,90), alem de outras areas.
-
-Title:   Município de Araras - Prefeitura publica convocação para prova do processo seletivo de estágio
-URL:     https://araras.sp.gov.br/noticias/28962
-Career:   estagio
-Group:   prefeitura-araras-sp-estagio-001-2026
-Reason:  Notícia informa a convocação para a prova do Processo Seletivo de Estágio 001/2026 da Prefeitura de Araras, marcada para 17/05 na EMEF Prof. Júlio Ridolfo, com orientações de horário, documentos e duração (2h30). Entre os inscritos há candidatos do curso de Direito (45), além de Nutrição e Licenciaturas, indicando seleção de estagiários para o município.
-
-Title:   Concurso Câmara de Altamira do Paraná PR abre vagas com salários de até R$ 6,1 mil
-URL:     https://concursosnobrasil.com/concursos/pr/2026/05/08/concurso-camara-de-altamira-do-parana-pr-abre-vagas-com-salarios-de-ate-r-61-mil/
-Career:   procuradorias
-Group:   camara-altamira-do-parana-pr-concurso-2026
-Reason:  Edital 001/2026 da Câmara de Altamira do Paraná (PR) para provimento de 3 vagas efetivas e cadastro de reserva, com inscrições previstas de 12/05 a 09/06/2026 (banca Instituto Unicampo) e prova objetiva em 21/06/2026. Entre os cargos de nível superior, há Procurador Jurídico (além de Contador e Técnico Legislativo), com remuneração podendo chegar a R$ 6.187,73 e jornada de 20 a 40h semanais.
-
-Title:   Prefeitura de Pardinho SP publica concurso com vagas para todos os níveis | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/prefeitura-de-pardinho-sp-publica-concurso-com-vagas-para-todos-os-niveis
-Career:   procuradorias
-Group:   prefeitura-pardinho-sp-concurso-2026
-Reason:  Concurso Publico Edital 001/2026 da Prefeitura de Pardinho-SP (banca Inepam), com vagas e cadastro reserva para varios niveis. Entre os cargos de nivel superior ha 1 vaga + CR para Procurador Juridico (20h, R$ 7.098), com prova objetiva e etapa discursiva exclusiva para o cargo, alem de titulos apos convocacao. Inscricoes de 18/05 a 15/06/2026 e provas objetivas em 12 e 19/07/2026.
-
-Title:   UEMA | EDITAL N.º 188/2026-GR/UEMA
-URL:     https://www.uema.br/2026/05/edital-n-o-188-2026-gr-uema/
-Career:   administrativo
-Group:   uema-codo-ma-concurso-professor-direito-2026
-Reason:  Edital 188/2026-GR/UEMA comunica a suspensao, ate ulterior deliberacao, da homologacao e publicacao do resultado final de concurso publico para o Campus Codo (Curso de Direito Bacharelado), area/subarea Ciencias Sociais Aplicadas/Direito: Teoria do Direito, cargo de Professor Adjunto, 1 vaga, 40h, referente aos editais 06/2026 e 48/2026 e atos correlatos, por necessidade de apuracao administrativa (Processo SEI 2026.24201.12817).
-
-Title:   Concurso PGE-RJ: novo edital para carreira de Procurador será pauta na próxima semana
-URL:     https://ceisc.com.br/blog/post/concurso-pge-rj-novo-edital-para-carreira-de-procurador-sera-pauta-na-proxima-semana
-Career:   procuradorias
-Group:   pge-rj-concurso-procurador
-Reason:  Noticia que informa que o Conselho da Procuradoria-Geral do Estado do Rio de Janeiro (PGE-RJ) pautara na proxima reuniao (12 de maio) a discussao sobre a realizacao de um novo concurso para o cargo de Procurador do Estado, ainda sem data definida. Menciona ainda aval para provimento de 30 cargos de Analista (nivel superior) do quadro de apoio e relembra o ultimo edital de Procurador, publicado em 2020.
-
-Title:   Concurso Cartórios MS: resultado definitivo da prova objetiva publicado - Blog Magistrar Educacional
-URL:     https://magistrarcursos.com.br/blog/concurso-cartorios-ms-resultado-definitivo-da-prova-objetiva-publicado/
-Career:   tribunais
-Group:   tjms-cartorios-vi-concurso-2026
-Reason:  Atualização do VI Concurso Público para Outorga de Delegações de Serviços Notariais e Registrais (Cartórios) do Mato Grosso do Sul (TJMS/FGV): publicado o resultado definitivo e gabarito definitivo da prova objetiva, com 9 questões anuladas e 1 com gabarito alterado. Próxima fase: prova escrita e prática em 18/05/2026, em Campo Grande, seguida de prova oral, títulos e outorga. Oferta 42 serventias (28 provimento e 14 remoção).
-
-Title:   Defensoria do Ceará abre seleção para estágio de pós-graduação em Direito em Boa Viagem com bolsa de R$ 2 mil
-URL:     https://concursonews.com/2026/05/defensoria-do-ceara-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-boa-viagem-com-bolsa-de-r-2-mil/
-Career:   estagio
-Group:   dpce-boa-viagem-estagio-pos-direito-241-2026
-Reason:  Processo seletivo simplificado da Defensoria Pública Geral do Estado do Ceará (Edital nº 241/2026) para 1 vaga de estágio de pós-graduação em Direito na Defensoria Cível da comarca de Boa Viagem/CE, com bolsa de R$ 2.000 e auxílio-transporte. Inscrições de 06/05 a 13/05/2026 por e-mail, sem taxa; exige matrícula em pós-graduação conveniada. Seleção prevê prova objetiva (data/local a divulgar), resultado no DOE eletrônico e canal de concursos/estágios da DPGE-CE.
-
-Title:   Câmara de Montanha (ES) lança concurso com salários até R$ 6.500,00
-URL:     https://concursosnobrasil.com/concursos/es/2026/05/08/camara-de-montanha-es-lanca-concurso-com-salarios-ate-r-6-50000/
-Career:   procuradorias
-Group:   camara-montanha-es-concurso-2026
-Reason:  Edital de concurso publico 01/2026 da Camara Municipal de Montanha-ES (Instituto Consulplan) com 53 vagas + cadastro de reserva, incluindo 2 vagas imediatas para Procurador Legislativo (20h, vencimento R$ 4.500,00) e prova objetiva e discursiva; inscricoes previstas de 18/05 a 18/06/2026 e prova em 26/07/2026.
-
-Title:   DPMG abre seletivo para estágio de pós-graduação em Direito em Alfenas com bolsa de R$ 2 mil
-URL:     https://concursonews.com/2026/05/dpmg-abre-seletivo-para-estagio-de-pos-graduacao-em-direito-em-alfenas-com-bolsa-de-r-2-mil/
-Career:   estagio
-Group:   dpmg-alfenas-estagio-pos-direito-02-2026
-Reason:  Processo seletivo simplificado (Edital 02/2026) da Defensoria Pública do Estado de Minas Gerais para formar cadastro reserva de estagio de pos-graduacao em Direito na unidade de Alfenas/MG. Inscricoes online de 11/05 a 01/06/2026; etapas por analise da media academica e entrevista presencial em 26/06/2026. Bolsa de R$ 1.803 + auxilio-transporte de R$ 210 (total R$ 2.013), jornada de 25h semanais, atuacao presencial com atividades como apoio em pecas e rotinas processuais e atendimento.
-
-Title:   Concurso da Câmara abre inscrições com salários de até R$ 15,6 mil; veja cargos | Jornal Correio
-URL:     https://www.correio24horas.com.br/economia/concursos/concurso-da-camara-abre-inscricoes-com-salarios-de-ate-r-156-mil-veja-cargos-0526
-Career:   administrativo
-Group:   camara-aruja-sp-concurso-2026
-Reason:  Noticia sobre concurso publico da Camara Municipal de Aruja (SP), com 5 vagas imediatas e cadastro reserva; inclui cargo de analista juridico (CR) com prova objetiva e discursiva. Inscricoes ate 13/07 no site da banca IGECS; provas previstas para 30/08. Ha outros cargos administrativos (compras, contratos, licitacao e tecnicos legislativos) e salarios ate R$ 15.659,70, com beneficios.
-
-Title:   CRA MG divulga edital de concurso para o nível técnico e superior
-URL:     https://concursosnobrasil.com/concursos/mg/2026/05/08/cra-mg-divulga-edital-de-concurso-para-o-nivel-tecnico-e-superior/
-Career:   administrativo
-Group:   cra-mg-concurso-2026
-Reason:  Edital 01/2026 do Conselho Regional de Administração de Minas Gerais (CRA-MG) para 9 vagas imediatas + cadastro reserva, regime CLT, provas em 19/07/2026 em Belo Horizonte. Entre os cargos de nível superior ofertados está o de Advogado, além de Administrador, Analista de Sistemas, tecnólogos e outros; inscrições pela FUMARC de 18/05 a 16/06/2026.
-
-Title:   Concurso Câmara de Seropédica RJ 2026 libera 239 vagas e remunerações de até R$ 4,2 mil - Uni10
-URL:     https://uniten.com.br/concurso-camara-seropedica-rj-2026-vagas-e-salarios/
-Career:   administrativo
-Group:   camara-seropedica-rj-concurso-2026
-Reason:  Noticia edital do concurso da Camara Municipal de Seropedica/RJ (2026), com 239 vagas (19 imediatas e 220 CR), inscricoes 29/04 a 29/05/2026 pela Consulpam e provas em 01 e 02/08/2026. Entre os cargos de nivel superior ha Procurador Municipal (prova discursiva com peca processual) e Advogado (OAB e 2 anos de pratica), alem de disciplinas de Direito Constitucional e Administrativo no nucleo comum.
-
-Title:   TJMG abre seleção para estágio de pós-graduação em Direito em Ervália com bolsa de R$ 3,3 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-ervalia-com-bolsa-de-r-33-mil/
-Career:   estagio
-Group:   tjmg-ervalia-estagio-pos-direito-2026
-Reason:  Seleção pública do Tribunal de Justiça de Minas Gerais para estágio de pós-graduação em Direito na Vara Única da Comarca de Ervália/MG, com formação de cadastro de reserva. Bolsa de R$ 3.392,40 e auxílio-transporte de R$ 359,10; jornada de 30h semanais. Inscrições on-line de 04/05 a 13/05/2026. Etapas: prova dissertativa (14/05/2026, no fórum local, com questões discursivas e peça) e prova oral em data posterior; validade de 6 meses, prorrogável.
-
-Title:   Concurso PGE RJ procurador será discutido em reunião na terça, dia 12 - Degrau Cultural
-URL:     https://degraucultural.com.br/noticia/concurso-pge-rj-procurador-sera-discutido-em-reuniao-na-terca-dia-12
-Career:   procuradorias
-Group:   pge-rj-concurso-procurador
-Reason:  Notícia informa que, conforme aviso no Diário Oficial, o concurso para Procurador da Procuradoria Geral do Estado do Rio de Janeiro (PGE RJ) será pautado para discussão na próxima reunião do Conselho da Procuradoria, marcada para o dia 12, sinalizando andamento/planejamento do certame.
-
-Title:   TJMG abre seletivo para estágio em Direito na comarca de Baependi com bolsa de R$ 2,6 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-seletivo-para-estagio-em-direito-na-comarca-de-baependi-com-bolsa-de-r-26-mil/
-Career:   tribunais
-Group:   tjmg-baependi-estagio-direito-2026
-Reason:  Edital nº 001/2026 do Tribunal de Justiça de Minas Gerais para seleção pública de estagiário de graduação em Direito na comarca de Baependi/MG, com 1 vaga imediata e cadastro reserva para atuação no fórum (Juizados Especiais e CEJUSC). Inscrições presenciais de 11 a 29/05/2026. Provas objetiva e dissertativa em 03/06/2026. Bolsa de R$ 2.674,32 + auxílio-transporte de R$ 359,10, jornada de 30h semanais.
-
-Title:   Câmara de Montanha abre concurso com salário de até R$ 6,5 mil
-URL:     https://www.agazeta.com.br/concursos-e-empregos/camara-de-montanha-abre-concurso-com-salario-de-ate-r-6-5-mil-0526
-Career:   procuradorias
-Group:   camara-montanha-es-concurso-2026
-Reason:  Concurso da Camara Municipal de Montanha (ES) para 13 vagas efetivas e 40 cadastro de reserva, banca Instituto Consulplan, inscricoes de 18/05 a 18/06. Entre os cargos, ha Procurador Legislativo (taxa R$ 162,50) e Analista Legislativo. Selecao com prova objetiva para todos e, para Procurador Legislativo, tambem prova discursiva. Provas previstas para 26/07/2026.
-
-Title:   Comarca de Batayporã abre inscrições para estágio em Direito
-URL:     https://matogrossodosulnoticias.com.br/destaques/comarca-de-bataypora-abre-inscricoes-para-estagio-em-direito/
-Career:   tribunais
-Group:   tjms-bataypora-estagio-direito-2026
-Reason:  Noticia abertura de inscricoes para processo seletivo de estagio em Direito na comarca de Bataypora (TJMS), para cadastro de reserva. Inscricoes ate 3 de junho na secretaria do foro; prova objetiva em 28 de junho (12 questoes de nocoes de Direito e 8 de lingua portuguesa) na Escola Estadual Jan Antonin Bata. Divulgacao de gabarito em ate 48h e resultado final a partir de 30 de junho; jornada de 5h/dia, duracao de 1 ano, bolsa e auxilio-transporte.
-
-Title:   TJMG abre seleção para estágio de pós-graduação em Direito em Buenópolis com bolsa de R$ 3,3 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-buenopolis-com-bolsa-de-r-33-mil/
-Career:   estagio
-Group:   tjmg-buenopolis-estagio-pos-direito-2026
-Reason:  TJMG abriu processo seletivo para estágio de pós-graduação em Direito na Vara Única da Comarca de Buenópolis/MG, para formar cadastro de reserva conforme surgimento de vagas. Bolsa de R$ 3.392,40 e auxílio-transporte de R$ 359,10; carga de 30h semanais, com possibilidade de trabalho presencial ou virtual. Inscrições de 18 a 25/05/2026. Etapas: prova discursiva (09/06/2026) e entrevista (16/06/2026).
-
-Title:   Concurso Câmara Municipal de Altamira do Paraná PR abre vagas imediatas e cadastro | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-camara-municipal-de-altamira-do-parana-pr-abre-vagas-imediatas-e-cadastro
-Career:   administrativo
-Group:   camara-altamira-do-parana-pr-concurso-2026
-Reason:  Noticia resume edital do concurso da Camara Municipal de Altamira do Parana/PR (banca Instituto Unicampo), com inscricoes de 12/05 a 09/06/2026 e prova objetiva em 21/06/2026. Ha 1 vaga imediata para Procurador Juridico (20h, R$ 5.734,30) com requisitos de bacharelado e OAB, alem de cadastro/ outras vagas (ex.: tecnico legislativo com conteudos de Direito).
-
-Title:   DPMG abre seletivo de estágio em Direito com bolsa de R$ 1,4 mil em Sete Lagoas
-URL:     https://concursonews.com/2026/05/dpmg-abre-seletivo-de-estagio-em-direito-com-bolsa-de-r-14-mil-em-sete-lagoas/
+Title:   Defensoria Pública de MG abre seleção para estágio de pós-graduação em Direito em Araçuaí com bolsa de R$ 2 mil
+URL:     https://concursonews.com/2026/05/defensoria-publica-de-mg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-aracuai-com-bolsa-de-r-2-mil/
 Career:   defensoria
-Group:   dpmg-sete-lagoas-estagio-direito-2026
-Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais para cadastro reserva de estágio remunerado em Direito na unidade de Sete Lagoas/MG. Inscrições online de 11 a 26/05/2026; bolsa de R$ 1.274 + auxílio-transporte de R$ 210 (20h semanais). Seleção em duas etapas (prova teórica em 12/06/2026 e entrevista em 03/07/2026), com atividades de apoio processual, pesquisas jurídicas, audiências e atendimento.
+Group:   dpmg-aracuai-mg-estagio-pos-graduacao
+Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais (DPMG) para formar cadastro reserva de estágio de pós-graduação em Direito na unidade de Araçuaí/MG. Atuação presencial (25h semanais) com bolsa de R$ 1.803 e auxílio-transporte de R$ 210. Inscrições de 05/05/2026 a 19/05/2026; seleção por análise de média acadêmica (mín. 60%) e entrevista virtual prevista para 03/06/2026. Atividades incluem acompanhamento processual, elaboração de manifestações, pesquisas, atendimento e apoio em audiências/diligências.
 
-Title:   Concurso PGE RJ: seleção de procurador será discutida pelo conselho na terça-feira (12)
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-pge-rj-selecao-de-procurador-sera-discutida-pelo-conselho-na-terca-feira-12-142448
-Career:   procuradorias
-Group:   pge-rj-concurso-procurador
-Reason:  Noticia atualiza o andamento do proximo concurso da Procuradoria Geral do Estado do Rio de Janeiro para o cargo de Procurador do Estado: pauta do conselho de 12/05 tratara da selecao, que esta na fase de escolha/contratacao da banca. Lei complementar criou 30 vagas na carreira; ultimo concurso foi em 2020. Menciona requisitos (3 anos de atividade juridica), taxa prevista (R$ 300), remuneracao anterior (R$ 15.700) e etapas (provas escritas, oral e titulos).
-
-Title:   Concurso MP SP: avança projeto que cria 292 vagas para servidores
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-mp-sp-avanca-projeto-que-cria-292-vagas-para-servidores-142441
-Career:   mp
-Group:   mpsp-servidores-reestruturacao-2026
-Reason:  Noticia sobre o avanço do PLC 4/2026 na Alesp, parte de pacote de reestruturação do Ministério Público de São Paulo que cria vagas e pode viabilizar novo concurso. O texto menciona criação de 292 vagas (265 para provimento via seleções) e outros projetos que somam 321 oportunidades, além de revisão remuneratória para analista jurídico e criação de vagas para promotor substituto; cita cargos de servidores como oficial de promotoria e analistas.
-
-Title:   Concurso CRA-MG abre vagas técnicas e superiores em Belo Horizonte MG | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-cra-mg-abre-vagas-tecnicas-e-superiores-em-belo-horizonte-mg
+Title:   Bahia lança processo seletivo REDA com 78 vagas e salários de até R$ 3,8 mil - Fala Você Notícias
+URL:     https://www.falavoce.com.br/noticias/6320-2026/05/09/bahia-lanca-processo-seletivo-reda-com-78-vagas-e-salarios-de-ate-r-3-8-mil
 Career:   administrativo
-Group:   cra-mg-concurso-2026
-Reason:  Concurso público do Conselho Regional de Administração de Minas Gerais (Edital 01/2026), organizado pela FUMARC, com provas em 19/07/2026 em Belo Horizonte. Entre os cargos de nível superior há vaga em cadastro de reserva para Advogado, com remuneração de R$ 4.990,44, além de outros cargos (administração, TI, jornalismo) e vagas técnicas. Inscrições de 18/05 a 16/06/2026.
+Group:   sjdh-ba-ciencias-juridicas
+Reason:  Notícia informa publicação no DOE do edital nº 0001/2026 de processo seletivo simplificado (REDA) da Secretaria de Justiça e Direitos Humanos da Bahia, com 78 vagas temporárias para níveis médio e superior, inscrições de 12 a 16/05 e seleção por avaliação curricular. Entre as áreas/cargos citados há oportunidades para Ciências Jurídicas, vinculadas à atuação do órgão na área de justiça e direitos humanos, com salários até R$ 3,8 mil e contrato de 36 meses renovável.
 
-Title:   Concurso MPS: confirmado envio de novo pedido de autorização ao Ministério da Gestão
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-mps-confirmado-envio-de-novo-pedido-de-autorizacao-ao-ministerio-da-gestao-142431
-Career:   administrativo
-Group:   mps-pedido-autorizacao-concurso-corregedoria
-Reason:  Notícia de atualização sobre novo pedido de autorização de concurso do Ministério da Previdência Social (MPS) para a Corregedoria, com 15 vagas previstas: analista técnico administrativo (administração) 4, analista técnico administrativo (técnico-administrativa) 2 e agente administrativo 9. Entre as atribuições, o analista técnico-administrativo atua com juízos de admissibilidade, condução de processos correcionais, assessoria ao gabinete, notas técnicas e pareceres.
-
-Title:   TJMG abre seleção para estágio de pós-graduação em Direito em Machado com bolsa de R$ 3,3 mil
-URL:     https://concursonews.com/2026/05/tjmg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-machado-com-bolsa-de-r-33-mil/
+Title:   DPMG abre seleção para residência jurídica em Muriaé com bolsa de R$ 4,2 mil
+URL:     https://concursonews.com/2026/05/dpmg-abre-selecao-para-residencia-juridica-em-muriae-com-bolsa-de-r-42-mil/
 Career:   estagio
-Group:   tjmg-machado-estagio-pos-direito-2026
-Reason:  TJMG abriu selecao publica para estagio de pos-graduacao em Direito na Comarca de Machado/MG, para cadastro reserva, com bolsa de R$ 3.392,40 e auxilio-transporte de R$ 359,10, jornada de 30h semanais e possibilidade de atividades remotas. Inscricoes presenciais de 4 a 22/05/2026 no forum. Provas objetiva e discursiva em 29/05/2026 (Civil, Proc. Civil, Penal, Proc. Penal). Resultado ate 12/06 e homologacao em 19/06.
+Group:   dpmg-muriae-mg-residencia-juridica
+Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais (DPMG) para cadastro reserva no Programa de Residência Jurídica da unidade de Muriaé/MG (Edital de Residência nº 01/2026). Atuação presencial, 30h semanais, bolsa de R$ 4.000 + auxílio-transporte de R$ 210. Inscrições de 18/05 a 22/05/2026 via portal da Diretoria de Estágio, Residência e Serviço Voluntário. Seleção por análise curricular (média e títulos/experiência) e entrevista presencial.
+
+Title:   Concurso Campina Grande PB: terá 4 editais e 1.000 vagas
+URL:     https://blog.grancursosonline.com.br/concurso-campina-grande-pb-editais-anunciados-hoje-2026/
+Career:   procuradorias
+Group:   prefeitura-campina-grande-pb-concurso-2026
+Reason:  Notícia informa que a Prefeitura de Campina Grande/PB assinou documentos e aguarda publicação de 4 editais do concurso (banca Idecan), com previsão de provas no fim de agosto e total anunciado de 1.000 vagas. Entre as áreas confirmadas está a Procuradoria Geral, citada como destinada à área jurídica do município; demais cargos, requisitos, número de vagas por edital e remuneração ainda serão detalhados no semanário oficial.
+
+Title:   Prazo de inscrições para concurso da ALE com 226 vagas e salários de até R$ 39 mil encerra neste domingo (10) - Folha BV
+URL:     https://www.folhabv.com.br/concursos-e-emprego/prazo-de-inscricoes-para-concurso-da-ale-com-226-vagas-e-salarios-de-ate-r-39-mil-encerra-neste-domingo-10/
+Career:   procuradorias
+Group:   alerr-rr-concurso-2026
+Reason:  Notícia sobre prazo final de inscrições do concurso público da Assembleia Legislativa de Roraima (ALERR), organizado pela FCC, com 226 vagas em 36 cargos e salários iniciais de até R$ 39.589,56. O certame abrange carreiras como procurador e consultor legislativo (além de analista/técnicos), com inscrições até 10 de maio, pagamento até 11 de maio e provas objetiva e discursiva previstas para 28 de junho.
+
+Title:   Prefeitura de Campina Grande lança editais de novos concursos públicos, oferecendo este ano mil vagas para várias categorias do Município | Prefeitura de Campina Grande - PB
+URL:     https://campinagrande.pb.gov.br/prefeitura-de-campina-grande-lanca-editais-de-novos-concursos-publicos-oferecendo-este-ano-mil-vagas-para-varias-categorias-do-municipio/
+Career:   procuradorias
+Group:   prefeitura-campina-grande-pb-concurso-2026
+Reason:  Notícia informa que a Prefeitura de Campina Grande assinou e publicará editais de concursos públicos com 1.000 vagas para diversas categorias do município, com cronograma do certame geral (prova objetiva e resultado final até 26/11). O texto menciona que o concurso geral abrange a estrutura administrativa, incluindo a Procuradoria Geral do Município, além de secretarias (Educação, Saúde e Administração). Banca organizadora: Idecan.
+
+Title:   Saiu novo edital da Prefeitura de Santa Bárbara d'Oeste SP com várias vagas
+URL:     https://jcconcursos.com.br/noticia/empregos/saiu-novo-edital-da-prefeitura-de-santa-barbara-doeste-sp-com-varias-vagas-142447
+Career:   administrativo
+Group:   prefeitura-santa-barbara-doeste-sp-estagiario
+Reason:  Notícia divulga edital/processo seletivo de estágio da Prefeitura de Santa Bárbara d’Oeste (SP), organizado pelo CIEE, para credenciar estudantes e formar cadastro para eventuais oportunidades na administração municipal. Entre os cursos aceitos no nível superior está Direito (além de outras áreas) e no nível técnico há Serviços Jurídicos. Inscrições até 15 de maio via plataforma do CIEE; seleção com prova objetiva (português e conhecimentos gerais) e bolsa-auxílio + auxílio-transporte, 30h semanais.
+
+Title:   Concurso Campina Grande abre caminho para mil vagas; editais podem sair a qualquer momento - Uni10
+URL:     https://uniten.com.br/concurso-campina-grande-mil-vagas-iminentes/
+Career:   procuradorias
+Group:   prefeitura-campina-grande-pb-concurso-2026
+Reason:  Notícia sobre o concurso da Prefeitura de Campina Grande (PB) para 2026: quatro editais já assinados, totalizando cerca de mil vagas, com banca Idecan contratada e publicação iminente no Semanário Oficial; provas objetivas previstas para o fim de agosto. O certame abrange quadro geral, STTP, Guarda Civil Municipal e inclui a Procuradoria Geral, mencionada como contemplando cargos jurídicos.
+
+Title:   Processo seletivo da SJDH oferta 78 vagas com salários de até R$ 4,7 mil
+URL:     https://agenciasertao.com/2026/05/09/processo-seletivo-da-sjdh-oferta-78-vagas-com-salarios-de-ate-r-47-mil/
+Career:   administrativo
+Group:   sjdh-ba-ciencias-juridicas
+Reason:  Processo Seletivo Simplificado (REDA) da Secretaria de Justiça e Direitos Humanos da Bahia (SJDH), para atuação em Salvador, com 78 vagas temporárias. Entre as áreas de nível superior ofertadas está Ciências Jurídicas, além de outras (Administração, Contabilidade, TI etc.). Edital publicado no DOE/BA em 07/05 e errata em 08/05 ajustando distribuição de vagas. Inscrições 12 a 16/05 no selecao.ba.gov.br; seleção por avaliação curricular.
+
+Title:   TJMG encerra inscrições para estágio de pós-graduação em Direito em Varginha
+URL:     https://concursonews.com/2026/05/tjmg-encerra-inscricoes-para-estagio-de-pos-graduacao-em-direito-em-varginha/
+Career:   estagio
+Group:   tjmg-varginha-mg-estagio-pos-graduacao-direito
+Reason:  Notícia sobre encerramento das inscrições do processo seletivo do TJMG para estágio de pós-graduação em Direito na Comarca de Varginha/MG, com formação de cadastro de reserva. Informa prazo final (18/05/2026), bolsa de R$ 3.392,40 + auxílio-transporte, 30h semanais, inscrição online com envio de documentos e prova objetiva presencial em 21/05/2026 (50 questões: Civil, Proc. Civil, Penal/Proc. Penal, Juizados, Constitucional e Português), além de regras de validade e divulgação de resultados.
+
+Title:   DPMG abre seleção de estágio de pós-graduação em Direito para Governador Valadares com bolsa de R$ 2 mil
+URL:     https://concursonews.com/2026/05/dpmg-abre-selecao-de-estagio-de-pos-graduacao-em-direito-para-governador-valadares-com-bolsa-de-r-2-mil/
+Career:   estagio
+Group:   dpmg-governador-valadares-mg-estagio-pos-graduacao
+Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais (DPMG) para cadastro reserva de estágio de pós-graduação em Direito na unidade de Governador Valadares/MG. Atuação majoritariamente presencial, 25h semanais, bolsa de R$ 1.803 + auxílio-transporte de R$ 210. Inscrições on-line de 08/05/2026 a 22/05/2026. Seleção por prova teórica presencial (objetiva e discursiva) com conteúdos de Constitucional, Civil/Proc. Civil, Penal/Proc. Penal, Execução Penal e ECA, além de regras de cotas e validade de 12 meses prorrogável.
+
+Title:   Defensoria Pública de MG abre seleção para estágio de pós-graduação em Direito em Santa Luzia
+URL:     https://concursonews.com/2026/05/defensoria-publica-de-mg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-santa-luzia/
+Career:   estagio
+Group:   dpmg-santa-luzia-mg-estagio-pos-graduacao
+Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais (Edital de Estágio nº 04/2026) para formar cadastro reserva de estágio de pós-graduação em Direito na unidade de Santa Luzia/MG. Bolsa de R$ 1.803 + auxílio-transporte de R$ 210 (total R$ 2.013), jornada de 25h semanais, atuação presencial/híbrida/remota. Seleção por prova teórica discursiva em 02/06/2026 com conteúdo de Constitucional, Civil, Proc. Civil, Penal, Proc. Penal e Execução Penal.
+
+Title:   MPAM anuncia locais de provas para exame de estágio de direito, na capital e interior
+URL:     https://portalmazemourao.com.br/amazonas/mpam-anuncia-locais-de-provas-para-exame-de-estagio-de-direito-na-capital-e-interior/
+Career:   mp
+Group:   mpam-am-estagiario-direito-27-exame
+Reason:  Notícia informa atualização do 27º Exame de Seleção do Ministério Público do Amazonas com divulgação dos locais/ensalamento e data/horário das provas (17/05, 8h–12h) para credenciamento de estagiários de Direito. Descreve municípios atendidos (Manaus e interior: Eirunepé, Manacapuru, Manicoré, Parintins, Presidente Figueiredo e Tefé), número de vagas (16 imediatas + cadastro reserva), orientações de comparecimento e formato da avaliação (50 questões objetivas + redação discursiva).
+
+Title:   Estou Preparado
+URL:     https://estoupreparado.com.br/noticias/4298-prefeitura-de-campina-grande-lan-a-concurso-com-925-vagas-e-sal-rios-de-at-r-8-8-mil
+Career:   administrativo
+Group:   prefeitura-campina-grande-pb-concurso-2026
+Reason:  Noticia a publicacao do edital 01/2026 da Prefeitura de Campina Grande (09/05/2026), concurso publico com 925 vagas imediatas para diversos cargos de niveis medio, tecnico e superior, com inscricoes de 14/05 a 15/06/2026 pela banca IDECAN e provas em 30/08/2026. Entre os cargos de nivel superior citados esta Auditor Fiscal da Receita Municipal (R$ 8.816,66), com conteudos incluindo legislacao e etica no servico publico.
+
+Title:   Edital CRA MG SAIU! Iniciais de R$ 6,8 mil e 9 vagas; VEJA
+URL:     https://blog.grancursosonline.com.br/concurso-cra-mg-edital-publicado-2026/
+Career:   administrativo
+Group:   cra-mg-belo-horizonte-advogado
+Reason:  Matéria informa a publicação do edital do concurso do Conselho Regional de Administração de Minas Gerais (CRA-MG), banca FUMARC, com 9 vagas imediatas e cadastro de reserva para atuação em Belo Horizonte/MG. Entre os cargos, há vaga em cadastro de reserva para Advogado, com atribuições de consultoria jurídica, elaboração de pareceres, contratos e petições e assessoria em licitações; inscrições de 18/05 a 16/06/2026 e prova em 19/07/2026.
+
+Title:   MPAL reforça segurança para evitar fraudes em concurso público
+URL:     https://www.alagoas24horas.com.br/1737517/mpal-aciona-orgaos-de-inteligencia-para-blindar-concurso-publico-contra-fraudes/
+Career:   mp
+Group:   mpal-al-concurso-2026-analista-tecnico
+Reason:  Notícia informa medidas de segurança adotadas pelo Ministério Público do Estado de Alagoas (MPAL) para o próximo concurso público (prova em 17 de maio), organizado pela FCC, com vagas imediatas e cadastro de reserva para cargos de Analista (nível superior) e Técnico (nível médio), com remuneração inicial mencionada até R$ 6.243,37 e jornada de 40h. Trata-se de certame do MP, envolvendo cargos de analista que podem incluir atribuições de apoio jurídico/área fim.
+
+Title:   TJMG abre seleções de estágio em Direito e pós-graduação com bolsas de até R$ 3,3 mil em Esmeraldas
+URL:     https://concursonews.com/2026/05/tjmg-abre-selecoes-de-estagio-em-direito-e-pos-graduacao-com-bolsas-de-ate-r-33-mil-em-esmeraldas/
+Career:   estagio
+Group:   tjmg-esmeraldas-mg-estagio-direito
+Reason:  O TJMG abriu dois processos seletivos para formar cadastro reserva de estagiários na Comarca de Esmeraldas (Fórum e CEJUSC): um para graduação em Direito (3º ao 8º período) e outro para pós-graduação em Direito. Inscrições online até 15/05/2026, sem taxa. Bolsas de R$ 2.674,32 (graduação) e R$ 3.392,40 (pós) + auxílio-transporte. Prova discursiva em 20/05/2026 com conteúdos de Constitucional, Civil, Penal e Processos.
+
+Title:   Casa Civil da Bahia abriu processo seletivo com 20 vagas e salário de R$ 3,8 mil
+URL:     https://agenciasertao.com/2026/05/09/casa-civil-da-bahia-abriu-processo-seletivo-com-20-vagas-e-salario-de-r-38-mil/
+Career:   administrativo
+Group:   casa-civil-ba-salvador-tecnico-nivel-superior-ciencias-juridicas
+Reason:  Processo Seletivo Simplificado (REDA) da Casa Civil do Governo da Bahia/CGCFOME para contratação temporária em Salvador, com 20 vagas de Técnico de Nível Superior em várias áreas; há 2 vagas na área de Ciências Jurídicas. Seleção em etapa única por avaliação curricular (experiência e cursos), inscrições de 12 a 19/05 no selecao.ba.gov.br, remuneração de R$ 3.810,40 e jornada de 40h. Atuação ligada a monitoramento e avaliação de políticas públicas (combate à fome), elaboração de relatórios e documentos técnicos.
+
+Title:   Defensoria Pública de MG abre seleção para estágio de pós-graduação em Direito em Santos Dumont com bolsa de R$ 2 mil
+URL:     https://concursonews.com/2026/05/defensoria-publica-de-mg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-em-santos-dumont-com-bolsa-de-r-2-mil/
+Career:   estagio
+Group:   dpmg-santos-dumont-mg-estagio-pos-graduacao
+Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais (DPMG) para formar cadastro reserva de estágio de pós-graduação em Direito na unidade de Santos Dumont/MG. Bolsa de R$ 1.803 + auxílio-transporte de R$ 210 (total R$ 2.013), jornada de 5h/dia (25h/semana), atuação presencial. Inscrições de 08/05 a 22/05/2026. Seleção por análise curricular (média global da graduação) e entrevista presencial (prevista 11/06/2026).
+
+Title:   Sudesb abriu processo seletivo com 36 vagas
+URL:     https://agenciasertao.com/2026/05/09/sudesb-abriu-processo-seletivo-com-36-vagas/
+Career:   administrativo
+Group:   sudesb-salvador-ba-tecnico-de-nivel-superior-ciencias-juridicas
+Reason:  Processo Seletivo Simplificado (REDA) da Superintendência dos Desportos do Estado da Bahia (Sudesb) para contratação temporária em Salvador, com 36 vagas de Técnico de Nível Superior em diversas áreas. O edital inclui 7 vagas na área de Ciências Jurídicas, com seleção por avaliação curricular (experiência e títulos), inscrições online até 13/05 e cronograma com resultado final/homologação previsto para 01/07.
+
+Title:   Prefeitura disponibiliza editais do concurso geral e o da Guarda Civil Municipal | Prefeitura de Campina Grande - PB
+URL:     https://campinagrande.pb.gov.br/prefeitura-disponibiliza-editais-do-concurso-geral-e-o-da-guarda-civil-municipal/
+Career:   procuradorias
+Group:   prefeitura-campina-grande-pb-concurso-2026
+Reason:  Noticia a publicacao dos primeiros editais do concurso publico 2026 da Prefeitura de Campina Grande-PB (concurso geral com mais de 80 cargos) e do certame da Guarda Civil Municipal, somando 955 vagas. Informa ainda que o Idecan disponibilizara edital especifico com regras para o cargo de procurador do municipio, com 5 vagas, em publicacao prevista ate domingo.
+
+Title:   DPE-MG abre seletivo de estágio em Direito para cadastro reserva em Brasília de Minas
+URL:     https://concursonews.com/2026/05/dpe-mg-abre-seletivo-de-estagio-em-direito-para-cadastro-reserva-em-brasilia-de-minas/
+Career:   defensoria
+Group:   dpe-mg-brasilia-de-minas-estagio-direito
+Reason:  Publicação do Edital de Estágio nº 01/2026 da Defensoria Pública do Estado de Minas Gerais para formar cadastro reserva de estagiários de Direito na unidade de Brasília de Minas/MG (estágio não obrigatório remunerado). Inscrições online de 12/05/2026 a 03/06/2026; seleção por análise curricular e entrevista presencial (25/06/2026). Bolsa de R$ 1.274 + auxílio-transporte de R$ 210, 20h semanais, com atividades de apoio processual, pesquisa e atendimento.
+
+Title:   Publicada lista de inscrições deferidas e indeferidas do concurso do MPMS - Concursos - Diário Digital
+URL:     https://www.diariodigital.com.br/vagas/concursos/publicada-lista-de-inscricoes-deferidas-e-indeferidas-do-concurso-do-mpms
+Career:   mp
+Group:   mpms-ms-promotor-de-justica-substituto-31-concurso
+Reason:  Notícia informa a publicação do edital com a relação de inscrições deferidas e indeferidas do XXXI Concurso Público do Ministério Público de Mato Grosso do Sul (MPMS) para ingresso na carreira, no cargo de Promotor de Justiça Substituto. Detalha quantitativo de candidatos (1.364) e inscrições em cotas (negros, PcD e indígenas), além do prazo para recursos (7 a 11/05/2026) via Área do Candidato/Fapec. Indica cronograma: prova preambular em 17/05, gabarito em 19/05 e recursos de 20 a 24/05, com 8 vagas e sete fases.
+
+Title:   Defensoria Pública de MG abre seleção para estágio de pós-graduação em Direito no Barreiro, em Belo Horizonte
+URL:     https://concursonews.com/2026/05/defensoria-publica-de-mg-abre-selecao-para-estagio-de-pos-graduacao-em-direito-no-barreiro-em-belo-horizonte/
+Career:   estagio
+Group:   dpmg-belo-horizonte-mg-estagio-pos-graduacao
+Reason:  Processo seletivo simplificado da Defensoria Pública do Estado de Minas Gerais (DPMG) para cadastro reserva de estágio de pós-graduação em Direito na unidade Barreiro, em Belo Horizonte/MG. Regime híbrido, 25h semanais, bolsa de R$ 1.803 + auxílio-transporte de R$ 210. Inscrições de 07/05/2026 a 21/05/2026 via portal da DPMG. Seleção por análise de média acadêmica e entrevista presencial em 12/06/2026.
+
+Title:   TJMG abre estágio em Direito com bolsa de R$ 2,6 mil em Nova Serrana
+URL:     https://concursonews.com/2026/05/tjmg-abre-estagio-em-direito-com-bolsa-de-r-26-mil-em-nova-serrana/
+Career:   estagio
+Group:   tjmg-nova-serrana-mg-estagio-direito
+Reason:  Selecao publica do Tribunal de Justica de Minas Gerais para estagio de graduacao em Direito na Comarca de Nova Serrana, com 1 vaga imediata e cadastro reserva para atuacao em secretarias judiciais, gabinetes, varas civeis e criminais, juizados e cejusc. Inscricoes presenciais ate 19/05/2026 no forum; prova objetiva de 30 questoes em 21/05/2026; bolsa de r$ 2.674,32 mais auxilio-transporte.
+
+Title:   Concurso ALERJ: resultado definitivo para especialista legislativo é divulgado – Portal N10
+URL:     https://portaln10.com.br/concursos/resultado-do-concurso-alerj-e-publicado-candidatos-ja-podem-consultar-notas-334592/
+Career:   procuradorias
+Group:   alerj-rj-concurso-2021-2024
+Reason:  Notícia informa a divulgação do resultado definitivo das provas discursivas do concurso da Assembleia Legislativa do RJ (ALERJ), organizado pela FGV, e menciona o edital com 101 vagas. Apesar do foco no cargo de Especialista Legislativo IV, o texto destaca que o certame reserva 3 vagas para Procurador Legislativo, com prova discursiva própria, exigindo OAB e experiência jurídica, e remuneração inicial de R$ 44.008,52, além de detalhar critérios e nota mínima de aprovação na discursiva.
+
+Title:   Defensoria Pública MG abre seletivo para estágio de pós-graduação em Direito em Teófilo Otoni com bolsa de R$ 2 mil
+URL:     https://concursonews.com/2026/05/defensoria-publica-mg-abre-seletivo-para-estagio-de-pos-graduacao-em-direito-em-teofilo-otoni-com-bolsa-de-r-2-mil/
+Career:   estagio
+Group:   dpmg-teofilo-otoni-mg-estagio-pos-graduacao-direito
+Reason:  Processo seletivo simplificado (edital 01/2026) da Defensoria Pública do Estado de Minas Gerais para formar cadastro reserva de estágio de pós-graduação em Direito na unidade de Teófilo Otoni/MG. Bolsa de R$ 1.803 + auxílio-transporte de R$ 210 (total R$ 2.013), jornada de 25h semanais, atuação predominantemente presencial com supervisão de defensor. Classificação pela média global acadêmica (mín. 60%), com critérios de desempate e possibilidade de verificação de vida pregressa; atividades incluem apoio em manifestações processuais, pesquisas, audiências e atendimento.
 
