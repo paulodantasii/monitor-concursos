@@ -1,203 +1,293 @@
-Verificação: 2026-05-11T14:01:41.673388+00:00
-Links analisados: 99
-Links relevantes: 33
+Verificação: 2026-05-12T11:32:53.961662+00:00
+Links analisados: 162
+Links relevantes: 48
 ============================================================
 
-Title:   Concurso Alece: edital iminente com 600 vagas para níveis médio e superior
-URL:     https://www.pciconcursos.com.br/previstos/concurso-alece-edital-iminente-com-600-vagas-para-niveis-medio-e-superior
+Title:   Prefeitura de Arroio Trinta - SC abre seleção com salários de até R$ 11.160,35
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-arroio-trinta-sc-abre-selecao-com-salarios-de-ate-11160
 Career:   administrativo
-Group:   alece-ceara-ce
-Reason:  Atualização/previsão de concurso da Assembleia Legislativa do Ceará (Alece) com edital iminente (banca Idecan contratada), total de 600 oportunidades (200 imediatas e 400 CR) para técnico legislativo e analista legislativo. Entre as especialidades de analista há opção em Direito com 20 vagas imediatas e 40 em cadastro de reserva. Seleção prevista por provas objetiva e discursiva em turnos distintos; níveis superior com remuneração básica informada de R$ 6.083,30.
+Group:   prefeitura-arroio-trinta-sc-advogado
+Reason:  Processo Seletivo da Prefeitura de Arroio Trinta/SC para contratação temporária (regime estatutário), com 1 vaga imediata e cadastro de reserva para cargos de nível superior. O edital inclui a função de Advogado (cadastro de reserva), além de outras áreas (fonoaudiologia, nutrição, professor de educação física e psicólogo). Inscrições de 11 a 29/05/2026 no site do Instituto DOM; prova objetiva prevista para 21/06/2026 e avaliação de títulos.
 
-Title:   Câmara de Arujá - SP abre concurso público com salários de até R$ 15,6 mil
-URL:     https://www.pciconcursos.com.br/noticias/camara-de-aruja-sp-abre-concurso-publico-com-salarios-de-ate-15-6-mil
+Title:   UFRRJ abre vagas em processo seletivo para professores substitutos
+URL:     https://www.pciconcursos.com.br/noticias/ufrrj-abre-vagas-em-processo-seletivo-para-professores-substitutos
 Career:   administrativo
-Group:   camara-aruja-sp
-Reason:  Notícia informa edital de concurso público da Câmara Municipal de Arujá/SP para vagas e cadastro de reserva em cargos de níveis médio e superior, com destaque para Analista Jurídico (CR) e funções ligadas a contratos, licitação e compras (coordenadores e técnicos). Inscrições de 27/04/2026 a 13/07/2026 no IGECS; provas objetivas em 30/08/2026, com discursiva para Analista Jurídico. Regime CLT, 40h semanais, salários até R$ 15.659,70.
+Group:   ufrrj-rj-professor-substituto-direito
+Reason:  Processo Seletivo Simplificado da Universidade Federal Rural do Rio de Janeiro (UFRRJ) para 5 vagas de Professor Substituto (20h). Entre as áreas ofertadas há 1 vaga específica para Professor Substituto em Direito Público e Direito Privado, com remuneração variando conforme titulação. Inscrições de 11/05/2026 a 15/05/2026 via site da UFRRJ; etapas incluem prova (didática/escrita/prática) e avaliação de títulos/entrevista.
 
-Title:   Prefeitura de São Leopoldo - RS retifica concurso público com salários de até R$ 7,2 mil
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-leopoldo-rs-retifica-concurso-publico-com-salarios-de-ate-7-2-mil
+Title:   Prefeitura de Palmares Paulista - SP retifica concurso para Fiscal Tributário
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-palmares-paulista-sp-retifica-concurso-para-fiscal-tributario
+Career:   administrativo
+Group:   prefeitura-palmares-paulista-sp-fiscal-tributario
+Reason:  Notícia informa retificações em concurso da Prefeitura de Palmares Paulista/SP para preencher 1 vaga de Fiscal Tributário. Houve alteração do requisito de habilitação (de CNH AB para CNH B) e prorrogação das inscrições até 19/05/2026, com prova objetiva prevista para 07/06/2026. Cargo com jornada de 35h semanais, remuneração de R$ 2.993,47 + vale-alimentação de R$ 700, taxa R$ 60; exige nível superior em Direito ou Ciências Contábeis.
+
+Title:   Prefeitura de Praia Grande - SP abre concursos públicos com salários de até R$ 21,8 mil
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-concursos-publicos-com-salarios-de-ate-21-8-mil
 Career:   procuradorias
-Group:   prefeitura-sao-leopoldo-rs
-Reason:  Noticia informa retificacao do Edital do Concurso Publico 02/2026 da Prefeitura de Sao Leopoldo/RS, com ajustes no conteudo programatico e regras de convocacao para provas discursivas, incluindo alteracoes especificas para o cargo de Procurador do Municipio (cadastro reserva). O certame preve prova objetiva para todos os cargos e, para Procurador, provas discursivas e de titulos; inscricoes de 07/04/2026 a 06/05/2026 e prova objetiva prevista para 05/07/2026.
+Group:   prefeitura-praia-grande-sp-procurador
+Reason:  Notícia sobre os editais de Concurso Público nº 001/2026 e nº 002/2026 da Prefeitura de Praia Grande/SP (banca IBAM), com retificação em 05/05/2026 e vagas em diversas áreas, incluindo 1 vaga para Procurador de Nível I (categoria inicial). Inscrições de 25/04/2026 a 20/05/2026; provas objetivas em 14/06/2026 para todos os cargos e, para Procurador, também prova prático-profissional e avaliação de títulos; regime estatutário.
 
-Title:   Edital Campina Grande-PB 2026 Saiu! Prefeitura abre concursos com 925 vagas
-URL:     https://www.acheconcursos.com.br/concursos-paraiba/concursos-edital-campina-grande-pb-2026-saiu-prefeitura-925-vagas-90016
+Title:   Prefeitura paraibana abre concurso com quase 1.000 vagas de R$ 8,8 mil
+URL:     https://www.acheconcursos.com.br/concursos-paraiba/prefeitura-paraibana-abre-concurso-com-quase-1-000-vagas-de-r-8-8-mil-90043
 Career:   administrativo
-Group:   prefeitura-campina-grande-pb-concurso-01-2026
-Reason:  Noticia edital 01/2026 de concurso da Prefeitura de Campina Grande-PB (IDECAN), com 925 vagas e CR em diversos cargos. Entre as oportunidades com interface jurídica estão Auditor Fiscal da Receita Municipal (SEFIN) com formação superior em Direito/Economia/Administração/Contábeis (4 vagas, R$ 8.816,66) e Analista de Planejamento e Orçamento (SAD) aceitando Direito entre as formações (2 vagas, R$ 4.942,15), com inscrições previstas de 14/05 a 15/06/2026.
+Group:   prefeitura-campina-grande-pb-auditor-fiscal
+Reason:  Notícia sobre abertura de concurso público da Prefeitura de Campina Grande-PB (edital publicado, banca IDECAN), com 925 vagas em cargos de níveis médio/técnico/superior e cronograma de inscrições (14/05/2026 a 15/06/2026) e provas (30/08/2026). Entre os cargos listados há função com atribuições típicas de área legal/tributária: Auditor Fiscal da Receita Municipal (4 vagas, remuneração até R$ 8.816,66), com cobrança de legislação e conhecimentos específicos.
 
-Title:   UFRRJ abre seleção com 5 vagas para Professor Substituto
-URL:     https://www.acheconcursos.com.br/concursos-rio-de-janeiro/processo-seletivo-ufrrj-selecao-5-vagas-professores-substitutos-90022
+Title:   Câmara de Colíder-MT abre concurso público para 9 cargos
+URL:     https://www.acheconcursos.com.br/concursos-mato-grosso/camara-de-colider-mt-abre-concurso-publico-para-9-cargos-89377
 Career:   administrativo
-Group:   ufrrj-professor-substituto-direito
-Reason:  Processo seletivo da Universidade Federal Rural do Rio de Janeiro (UFRRJ) para 5 vagas de Professor Substituto nos campi Seropédica, Três Rios e Nova Iguaçu (20h/semana), com seleção por prova escrita/didática/entrevista. Há 1 vaga no departamento de Direito (Três Rios) na área de Direito Público e Direito Privado, com formação exigida em Direito. Inscrições online via SIGRH, taxa de R$ 77, e contratação temporária por até 6 meses prorrogáveis.
+Group:   camara-colider-mt-advogado-publico
+Reason:  Noticia a publicacao do edital 001/2026 da Camara Municipal de Colider-MT para provimento de cargos efetivos. Ha 1 vaga imediata para Advogado Publico (20h semanais, R$ 4.000,00), com graduacao em Direito e inscricao na OAB, alem de cadastro reserva para outras funcoes administrativas. Inscricoes de 12/05 a 12/06/2026; prova objetiva em 12/07/2026; resultado em 05/08/2026 e homologacao em 20/08/2026.
 
-Title:   Concurso CONTER 2026: Edital sai e abre 310 vagas de até R$ 7,5 mil
-URL:     https://www.acheconcursos.com.br/concursos-distrito-federal/concurso-edital-conter-2026-saiu-310-vagas-90017
+Title:   NAV BRASIL retifica concurso público com salários de até R$ 10.868,68
+URL:     https://www.pciconcursos.com.br/noticias/nav-brasil-retifica-concurso-publico-com-salarios-de-ate-10868
 Career:   administrativo
-Group:   conter-brasilia-df
-Reason:  Noticia a publicacao do edital do concurso CONTER 2026 (Conselho Nacional de Tecnicos em Radiologia), com lotacao em Brasilia/DF, 7 vagas imediatas e cadastro reserva ate 303, regime CLT. Entre os cargos de nivel superior ha Analista Tecnico/Advogado (1 vaga + CR), salario base de R$ 7.520,56 + beneficios. Inscricoes ate 22/06/2026 no site do Instituto Quadrix; provas em 16/08/2026 com objetiva e discursiva (superior) e titulos.
+Group:   nav-brasil-nacional-advogado
+Reason:  Noticia informa a 2ª retificacao (08/05/2026) do edital do concurso da NAV Brasil Servicos de Navegacao Aerea S.A., com vagas imediatas e cadastro de reserva em varios cargos, incluindo Advogado (3 AC, 1 N, 1 PCD). Concurso com inscricoes de 27/04/2026 a 28/05/2026 no site da FGV, prova objetiva prevista para 02/08/2026 em diversas capitais/cidades, contratacao via CLT e validade de 2 anos prorrogavel.
 
-Title:   CRA-MG publica edital completo de concurso com vagas para técnicos, tecnólogos e nível superior em Minas Gerais
-URL:     https://concursonews.com/2026/05/cra-mg-publica-edital-completo-de-concurso-com-vagas-para-tecnicos-tecnologos-e-nivel-superior-em-minas-gerais/
+Title:   UNIOESTE - PR abre processo seletivo para o cargo de agente universitário
+URL:     https://www.pciconcursos.com.br/noticias/unioeste-pr-abre-processo-seletivo-para-o-cargo-de-agente-universitario
 Career:   administrativo
-Group:   cra-mg
-Reason:  Noticia a publicacao do edital do concurso publico 2026 do Conselho Regional de Administracao de Minas Gerais (CRA-MG), com vagas imediatas e cadastro reserva sob regime CLT, provas em 19/07/2026 em Belo Horizonte e inscricoes de 18/05 a 16/06 via FUMARC. Entre os cargos de nivel superior ha cadastro reserva para Advogado, com salario-base de R$ 4.990,44 e requisitos de graduacao em Direito e registro ativo na OAB, alem de outros cargos administrativos e de TI.
+Group:   unioeste-pr-advogado
+Reason:  Processo Seletivo Simplificado da Universidade Estadual do Oeste do Paraná (UNIOESTE/PR) para contratação temporária de agente universitário, com formação de cadastro de reserva. Entre os cargos de nível superior previstos no edital há vaga para Advogado, com jornada de 40h semanais e remuneração de R$ 7.616,88. Inscrições de 13/05/2026 a 01/06/2026; prova objetiva para todos os cargos em 14/06/2026 (prova prática apenas para Intérprete de Libras). Contrato inicial de 6 meses, prorrogável até 2 anos; validade de 1 ano prorrogável.
 
-Title:   Concurso CONTER 2026: Edital sai e abre 310 vagas de até R$ 7,5 mil
-URL:     https://www.acheconcursos.com.br/concursos-distrito-federal/concurso-edital-conter-2026-saiu-310-vagas-90017.amp
-Career:   administrativo
-Group:   conter-brasilia-df
-Reason:  Noticia a publicacao do edital do concurso do Conselho Nacional de Tecnicos em Radiologia (CONTER) para atuar em Brasilia/DF, com 7 vagas imediatas e cadastro reserva totalizando 310 oportunidades, regime CLT. Entre os cargos de nivel superior ha "Analista Tecnico/Advogado" (1 vaga imediata e CR ate 40 no total), alem de outros analistas. Inscricoes ate 22/06/2026 no site da Quadrix; provas em 16/08/2026 com objetiva para todos e discursiva/titulos para nivel superior.
-
-Title:   Prefeitura de Osório-RS abre inscrições de seletivo para estágio com bolsas de até R$ 1,1 mil
-URL:     https://concursonews.com/2026/05/prefeitura-de-osorio-rs-abre-inscricoes-de-seletivo-para-estagio-com-bolsas-de-ate-r-11-mil/
-Career:   estagio
-Group:   prefeitura-osorio-rs-estagio
-Reason:  Processo seletivo de estágio remunerado da Prefeitura de Osório/RS (Edital nº 261/2026), em parceria com o CIEE-RS, para formação de cadastro reserva. Contempla diversos cursos, incluindo estudantes de Direito, com inscrições online de 12/05/2026 a 11/07/2026, sem taxa. Classificação por ordem de inscrição (data e hora), sem prova objetiva; bolsas no superior até R$ 1.100 (30h) e auxílio-transporte de R$ 100.
-
-Title:   Últimos dias de inscrições para processo seletivo 2026 da AGU
-URL:     https://jcconcursos.com.br/noticia/empregos/ultimos-dias-de-inscricoes-para-processo-seletivo-2026-da-agu-142466
-Career:   estagio
-Group:   agu-estagio-2026
-Reason:  Notícia sobre os últimos dias de inscrição do processo seletivo de estágio 2026 da Advocacia-Geral da União (AGU), com formação de cadastro reserva e vagas em diversas cidades. As inscrições vão até 12 de maio pelo CIEE, com prova on-line durante o período de inscrição. Há oportunidades para estudantes de ensino médio e universitários, incluindo a área de Direito, com bolsa-auxílio entre R$ 651,31 e R$ 1.508,42 e auxílio-transporte de R$ 13,40/dia, jornada de 20 a 30 horas semanais.
-
-Title:   Concurso TCE RJ: edital para nível superior segue em definição de nova banca
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-tce-rj-edital-para-nivel-superior-segue-em-definicao-de-nova-banca-142458
-Career:   tribunais
-Group:   tce-rj
-Reason:  Noticia informa andamento do novo concurso do Tribunal de Contas do Estado do Rio de Janeiro (TCE RJ), com previsao de 40 vagas de nivel superior para a carreira de analista/controle externo, em diversas areas, e cadastro reserva. O certame esta em revisao da oferta e definicao de nova banca apos rescisao com o IBFC no fim de 2025; para analista de controle externo menciona exigencia de 2 anos de pratica profissional. Retoma que o ultimo concurso (2020) foi organizado pelo Cebraspe.
-
-Title:   Concurso do Conter tem edital publicado para 310 vagas em Brasília
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-conter-edital-142456
-Career:   administrativo
-Group:   conter-brasilia-df
-Reason:  Notícia informa publicação de edital do concurso do Conter (Conselho Nacional de Técnicos em Radiologia) com 310 vagas (7 imediatas e 303 CR) para Brasília/DF, sob regime celetista, inscrições até 22/6 e provas em 16/8, banca Quadrix. Entre os cargos/áreas anunciados há funções de atuação "judiciária/jurídica" e nível superior (ex.: analista), com salários até R$ 7.520,56, além de etapas como discursiva e análise de títulos.
-
-Title:   Tribunal de Justiça abre concurso público de nível médio com 1.200 vagas
-URL:     https://www.portaltemponovo.com.br/tribunal-de-justica-abre-concurso-publico-de-nivel-medio-com-1-200-vagas/
-Career:   tribunais
-Group:   tjce
-Reason:  Notícia sobre concurso do Tribunal de Justiça do Ceará (TJCE), com até 1.200 convocações (400 vagas imediatas + cadastro de reserva) para Técnico Judiciário e Analista Judiciário. Para Analista, menciona áreas como Área Judiciária, além de TI, engenharia, psicologia, serviço social e contabilidade. Informa banca FCC, remunerações (técnico ~R$ 5,3 mil; analista ~R$ 10 mil) e etapas previstas (prova objetiva, discursiva e títulos para nível superior), com edital e inscrições a serem publicados.
-
-Title:   Conselho da Comunidade de Francisco Beltrão abre seleção para estágio em Direito com bolsa de R$ 1,8 mil
-URL:     https://concursonews.com/2026/05/conselho-da-comunidade-de-francisco-beltrao-abre-selecao-para-estagio-em-direito-com-bolsa-de-r-18-mil/
-Career:   estagio
-Group:   conselho-da-comunidade-francisco-beltrao-pr-estagio-direito
-Reason:  Processo seletivo aberto pelo Conselho da Comunidade da Comarca de Francisco Beltrão (PR) para 1 vaga de estágio em Direito (4º ano) e cadastro de reserva, com atuação no Conselho e no Núcleo de Justiça Restaurativa (NUJUR/UNIOESTE/CCCFB). Inscrições por e-mail de 7 a 11/05/2026; seleção em etapa única por entrevista técnica e pessoal em 14/05/2026 no Fórum da Comarca. Bolsa-auxílio de R$ 1.576,26 + auxílio-transporte (total R$ 1.840,26) e 4h diárias presenciais.
-
-Title:   Concurso Campina Grande PB: edital publicado com vaga de Auditor Fiscal - Blog Magistrar Educacional
-URL:     https://magistrarcursos.com.br/blog/concurso-campina-grande-pb-edital-publicado-com-vaga-de-auditor-fiscal/
-Career:   administrativo
-Group:   prefeitura-campina-grande-pb-concurso-01-2026
-Reason:  Notícia de edital publicado de concurso da Prefeitura de Campina Grande/PB (SEFIN) com foco no cargo de Auditor Fiscal da Receita Municipal: 4 vagas, salário inicial de R$ 8.816,66 (40h). Requisitos incluem graduação em Direito, Economia, Administração ou Ciências Contábeis. Inscrições de 14/05 a 15/06/2026 (IDECAN) e prova objetiva única em 30/08/2026, com disciplinas incluindo legislação/ética e conhecimentos específicos.
-
-Title:   Prefeitura de Arroio Trinta (SC) divulga oportunidades de até R$ 11 mil
-URL:     https://concursosnobrasil.com/concursos/sc/2026/05/11/prefeitura-de-arroio-trinta-sc-divulga-oportunidades-de-ate-r-11-mil/
-Career:   administrativo
-Group:   prefeitura-arroio-trinta-sc
-Reason:  Processo seletivo da Prefeitura de Arroio Trinta/SC (edital 001/2026) com vagas imediatas e cadastro reserva para nível superior, incluindo o cargo de Advogado (além de outras áreas). Inscrições de 11 a 29/05/2026 via Instituto DOM, taxa R$ 120 com hipóteses de isenção (CadÚnico e doadores de medula). Seleção por prova objetiva (prevista 21/06/2026) e análise de títulos; remuneração do Advogado pode chegar a R$ 11.160,35 para 20–40h.
-
-Title:   Concurso da Câmara de Ivinhema encerra inscrições no dia 14 com salários de até R$ 6,7 mil
-URL:     https://www.enfoquems.com.br/concurso-da-camara-de-ivinhema-encerra-inscricoes-no-dia-14-com-salarios-de-ate-r-67-mil/
-Career:   administrativo
-Group:   camara-ivinhema-ms
-Reason:  Notícia sobre concurso da Câmara Municipal de Ivinhema (MS) com 14 vagas imediatas e cadastro de reserva, inscrições até dia 14. Entre os cargos, há funções diretamente ligadas a compras públicas e gestão contratual: assistente de compras, licitação e contratos e analista de licitação e contratos, além de assistente/analista em áreas administrativas e legislativas. Regime estatutário, 40h semanais, salários de R$ 3.393,86 a R$ 6.713,77; prova objetiva (21/6) e títulos para nível superior.
-
-Title:   CONTER - DF abre concurso público com salários de até R$ 7.520,56
-URL:     https://www.pciconcursos.com.br/noticias/conter-df-abre-concurso-publico-com-salarios-de-ate-7520
-Career:   administrativo
-Group:   conter-brasilia-df
-Reason:  Notícia de concurso público do CONTER (Brasília/DF) com vagas e cadastro de reserva, incluindo o cargo de Analista Técnico/Advogado (1 vaga). Edital prevê inscrições de 11/05/2026 a 22/06/2026 (banca Quadrix), prova objetiva para todos, além de prova discursiva e títulos para nível superior; provas em 16/08/2026. Regime CLT e remuneração informada até R$ 7.520,56, com benefícios.
-
-Title:   Concurso Cofen: edital para cargos de nível superior segue em ajustes finais
-URL:     https://jcconcursos.com.br/amp/noticia/concursos/concurso-cofen-edital-para-cargos-de-nivel-superior-segue-em-ajustes-finais-142457
-Career:   administrativo
-Group:   cofen-df
-Reason:  Notícia informa que o edital do concurso do Conselho Federal de Enfermagem (Cofen) está em ajustes finais e deve ser publicado nas próximas semanas. O certame prevê 16 vagas imediatas e cadastro reserva, com remuneração inicial de R$ 18.959,52, lotação no Distrito Federal e organização pelo Instituto Quadrix. Entre os cargos anunciados há 4 vagas para advogado (além de CR), com etapas de prova objetiva, discursiva e títulos.
-
-Title:   Últimas horas para inscrição no concurso ALE RR 2026: salários de até R$ 39,5 mil - Uni10
-URL:     https://uniten.com.br/ultimas-horas-inscricao-concurso-ale-rr-2026/
-Career:   administrativo
-Group:   ale-rr
-Reason:  Notícia sobre o último dia de inscrição do concurso da Assembleia Legislativa de Roraima (ALE RR 2026), com 226 vagas + cadastro de reserva, banca FCC e inscrições on-line. O texto cita cargos como Consultor Legislativo, Analista Legislativo e, especialmente, Procurador da ALE, com remuneração informada de até R$ 39.589,56, exigindo OAB e etapas como prova objetiva e discursiva (e títulos para algumas especialidades).
-
-Title:   Detran-BA abre processo seletivo com 170 vagas e salários de até R$ 3.800,00 em Porto Seguro, Eunápolis e outras cidades - Bahia Sul News
-URL:     https://www.bahiasulnews.com.br/noticia/detran-ba-abre-processo-seletivo-com-170-vagas-e-salarios-de-ate-r-3-800-00-em-porto-seguro-eunapolis-e-outras-cidades
-Career:   administrativo
-Group:   detran-ba-pss-01-2026
-Reason:  Notícia sobre o Processo Seletivo Simplificado nº 01/2026 do Detran-BA (REDA), com 170 vagas temporárias para níveis médio e superior. Entre as 58 vagas de nível superior em Salvador, há oportunidade na área de Ciências Jurídicas, além de outras formações (Administração, Contábeis, Jornalismo, Engenharias, Psicologia etc.). Inscrições on-line de 11 a 15 de maio no selecao.ba.gov.br; seleção em etapa única por avaliação curricular, com cronograma de resultados até 1º de julho.
-
-Title:   Prefeitura de Campina Grande publica primeiros editais do concurso público 2026 com 955 vagas - Blog do Fabio Kamoto
-URL:     https://fabiokamoto.com.br/prefeitura-de-campina-grande-publica-primeiros-editais-do-concurso-publico-2026-com-955-vagas/
+Title:   Câmara de Correntina - BA abre concurso público com salários de até R$ 7.000,00
+URL:     https://www.pciconcursos.com.br/noticias/camara-de-correntina-ba-abre-concurso-publico-com-salarios-de-ate-7000
 Career:   procuradorias
-Group:   prefeitura-campina-grande-pb-concurso-2026
-Reason:  Notícia informa a publicação dos dois primeiros editais do Concurso Público 2026 da Prefeitura de Campina Grande (concurso geral e Guarda Civil Municipal), organizado pela banca Idecan, totalizando 955 vagas. Também comunica que deverá ser disponibilizado edital específico para Procurador do Município, com regras próprias e previsão de 5 vagas na área jurídica da administração municipal.
+Group:   camara-correntina-ba-procurador
+Reason:  Noticia de concurso publico da Camara Municipal de Correntina/BA para provimento de vagas e cadastro reserva em cargos de niveis fundamental, medio e superior. O edital inclui cargos juridicos como Procurador (1 vaga), Analista Juridico (CR), Analista Juridico Parlamentar (CR) e Assistente de Procuradoria (1 vaga), com regime estatutario, jornada de 40h e salarios ate R$ 7.000. Inscricoes de 11/05/2026 a 25/05/2026 e prova objetiva prevista para 05/07/2026, com prova discursiva para cargos especificos.
 
-Title:   Detran abre seleção com 170 vagas na BA; salários chegam a R$3,8 mil | G1
-URL:     https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2026/05/11/vagas-detran-bahia.ghtml
+Title:   Prefeitura de Esperança Nova - PR retifica concurso público com salários de até R$ 13,2 mil
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-esperanca-nova-pr-retifica-concurso-publico-com-salarios-de-ate-13-2-mil
 Career:   administrativo
-Group:   detran-ba-pss-01-2026
-Reason:  Notícia informa edital de processo seletivo simplificado (REDA) do Detran-BA para contratação temporária, com 170 vagas de níveis médio e superior e inscrições até 15/05. Entre as áreas de nível superior listadas está Ciências Jurídicas, além de outras (Administração, Contábeis etc.), com remuneração aproximada de R$ 3,1 mil a R$ 3,8 mil e lotação em diversos municípios da Bahia; resultado final previsto para 01/07 no DOE.
+Group:   prefeitura-esperanca-nova-pr-advogado
+Reason:  Notícia informa retificação (errata) de concurso público da Prefeitura de Esperança Nova/PR para provimento de vagas e cadastro de reserva em vários cargos, incluindo Advogado (cadastro de reserva), com prova objetiva e prova discursiva específica para Advogado; inscrições de 30/04/2026 a 20/05/2026 pelo Instituto Univida e prova objetiva prevista para 14/06/2026, regime estatutário e validade de 2 anos prorrogável.
 
-Title:   Salário de até R$ 35 mil e mais: concursos públicos têm 1.207 vagas de emprego; veja lista completa
-URL:     https://www.atribuna.com.br/noticias/concurso-e-emprego/salario-de-ate-r-35-mil-e-mais-concursos-publicos-tem-1-207-vagas-de-emprego-veja-lista-completa-1.513338
+Title:   Último dia: inscrições para mais de 100 vagas de estágio na Defensoria da Bahia terminam amanhã (12)
+URL:     https://concursonews.com/2026/05/ultimo-dia-inscricoes-para-mais-de-100-vagas-de-estagio-na-defensoria-da-bahia-terminam-amanha-12/
+Career:   defensoria
+Group:   dpe-ba-salvador-estagio-residencia-juridica
+Reason:  Noticia a reta final das inscricoes do processo seletivo simplificado unificado da Defensoria Publica do Estado da Bahia (DPE/BA), com vagas de estagio juridico (45) para estudantes de Direito e 40 vagas para o Programa de Residencia Juridica voltado a bachareis em Direito na pos-graduacao. Informa cronograma (inscricoes ate 12/05/2026, prova em 24/05 em Salvador e resultado em 17/06), taxas, etapas (objetiva, discursiva e titulos na residencia) e valores de bolsa.
+
+Title:   Edital para carreira de Procurador da PGE-AL tem retificação publicada
+URL:     https://ceisc.com.br/blog/post/edital-para-carreira-de-procurador-da-pge-al-tem-retificacao-publicada
 Career:   procuradorias
 Group:   pge-al-procurador
-Reason:  Matéria reúne diversos concursos/processos seletivos com cargos de perfil jurídico, incluindo Procuradoria-Geral de Alagoas com 10 vagas + CR para procurador (salário R$ 35.877,28, prova em 11/7, inscrição até 18/5), Prefeitura de Praia Grande com 1 vaga para procurador (salário até R$ 25 mil), NAV Brasil com vagas para advogado, e CAU-SP com cargo de analista técnico II (jurídico).
+Reason:  Notícia sobre retificação do edital do concurso da Procuradoria-Geral do Estado de Alagoas (PGE-AL) para o cargo de Procurador do Estado. Informa 10 vagas imediatas + 10 em cadastro reserva, salário inicial de R$ 35.877,28, banca Cebraspe, inscrições de 13/04 a 18/05 e provas em 11 e 12/07. A retificação (07/05) ajusta regras/procedimentos das etapas, normas de avaliação, conteúdos programáticos e critérios de fases (provas escritas/preambulares, oral e títulos).
 
-Title:   Concurso Prefeitura Buriticupu (MA) abre mais de 3.300 vagas em editais
-URL:     https://concursosnobrasil.com/concursos/ma/2026/05/11/concurso-prefeitura-buriticupu-ma-abre-mais-de-3-300-vagas-em-editais/
-Career:   procuradorias
-Group:   prefeitura-buriticupu-ma-concurso-2026
-Reason:  Noticia a divulgacao de tres editais do concurso da Prefeitura de Buriticupu/MA (banca FSADU) com 3.322 vagas. Entre os cargos, o edital 002/2026 traz vagas de Procurador Municipal e Analista de Procuradoria (nivel superior), alem de citar cargo de Tecnico de Procuradoria no edital 001/2026. Inscricoes de 12/05 a 01/06/2026 e provas objetivas em 04 e/ou 05/07/2026; ha etapas adicionais conforme o cargo.
-
-Title:   Prefeitura de Campina Grande - PB divulga concurso público com 925 vagas e remuneração de até R$ 8.816,66. - Concursos RN
-URL:     https://concursosrn.com.br/prefeitura-de-campina-grande-pb-divulga-concurso-publico-com-925-vagas-e-remuneracao-de-ate-r-8-81666/
-Career:   administrativo
-Group:   prefeitura-campina-grande-pb-concurso-01-2026
-Reason:  Notícia sobre o edital nº 01/2026 da Prefeitura de Campina Grande/PB para concurso público com 925 vagas imediatas (níveis médio, técnico e superior), banca IDECAN, inscrições de 14/05 a 15/06/2026 e prova objetiva prevista para 30/08/2026. Entre os cargos de nível superior citados está Auditor Fiscal da Receita Municipal (maior remuneração base anunciada, R$ 8.816,66), além de outras funções; etapas incluem prova objetiva para todos e títulos apenas para Professor.
-
-Title:   Concurso ISS Campina Grande PB: salários, vagas e etapas
-URL:     https://magistrarcursos.com.br/blog/concurso-iss-campina-grande/
-Career:   administrativo
-Group:   prefeitura-campina-grande-pb-concurso-01-2026
-Reason:  Concurso público da Prefeitura de Campina Grande/PB (SEFIN) com edital publicado para o cargo de Auditor Fiscal da Receita Municipal (ISS), com 4 vagas e remuneração inicial de R$ 8.816,66 (40h). Inscrições de 14/05 a 15/06/2026 e prova objetiva em 30/08/2026. Requisito de graduação inclui Direito (entre outras áreas) e as atribuições envolvem fiscalização e aplicação da legislação tributária municipal, autos de infração e análise/julgamento de processos administrativos tributários.
-
-Title:   Prefeitura de Buriticupu-MA abre concurso para Procurador e Analista com salários de até R$ 7 mil
-URL:     https://concursonews.com/2026/05/prefeitura-de-buriticupu-ma-abre-concurso-para-procurador-e-analista-com-salarios-de-ate-r-7-mil/
-Career:   procuradorias
-Group:   prefeitura-buriticupu-ma-concurso-002-2026-procuradoria
-Reason:  Edital do Concurso Público nº 002/2026 da Prefeitura de Buriticupu/MA para a Procuradoria Municipal, com vagas imediatas e cadastro reserva para Procurador Municipal (3+1 CR, R$ 7.000, 20h) e Analista de Procuradoria (3+1 CR, R$ 5.000, 20h). Inscrições 12/05 a 01/06/2026 via FSADU. Etapas: prova objetiva (04/05-07), prova prática (dissertação para Analista; peça/parecer para Procurador) e títulos; resultado final até 15/09/2026; regime estatutário.
-
-Title:   Concurso CONTER DF abre 310 vagas de níveis médio, técnico e superior
-URL:     https://concursosnobrasil.com/concursos/df/2026/05/11/concurso-conter-df-abre-vagas-de-niveis-medio-tecnico-e-superior/
-Career:   administrativo
-Group:   conter-brasilia-df
-Reason:  Edital n.º 1/2026 do CONTER (Conselho Nacional de Técnicos em Radiologia), com sede no Distrito Federal, para 310 vagas (imediatas e cadastro reserva) sob regime CLT, banca Instituto Quadrix. Entre os cargos ofertados há Analista Técnico – Advogado (nível superior), além de outras funções administrativas e técnicas. Inscrições online até 22/06/2026; provas objetivas em 16/08/2026, com prova discursiva e títulos para nível superior, etapas em Brasília/DF.
-
-Title:   Concurso Prefeitura de Pardinho (SP) oferta iniciais de até R$ 7 mil
-URL:     https://concursosnobrasil.com/concursos/sp/2026/05/11/concurso-prefeitura-de-pardinho-sp-oferta-iniciais-de-ate-r-7-mil/
-Career:   procuradorias
-Group:   prefeitura-pardinho-sp
-Reason:  Noticia a publicacao do edital do concurso da Prefeitura de Pardinho/SP (nº 001/2026), com 29 vagas e cadastro reserva para varios niveis. Entre os cargos de nivel superior consta Procurador Juridico, com prova objetivo e etapa pratico-profissional discursiva especifica para o cargo, alem de prova de titulos. Inscricoes online pelo INEPAM de 18/05 a 15/06/2026 e prova objetiva prevista para 12/07/2026.
-
-Title:   Concurso Cofen: edital para cargos de nível superior segue em ajustes finais
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-cofen-edital-para-cargos-de-nivel-superior-segue-em-ajustes-finais-142457
-Career:   administrativo
-Group:   cofen-df
-Reason:  Notícia informa que o edital do próximo concurso do Cofen (Conselho Federal de Enfermagem) está em ajustes finais e deve ser publicado nas próximas semanas. O certame prevê 16 vagas imediatas + cadastro reserva, com lotação no Distrito Federal e banca Instituto Quadrix. Entre os cargos de nível superior há 4 vagas para Advogado (além de CR), com etapas de prova objetiva, discursiva e títulos, além de procedimentos de heteroidentificação e análise documental.
-
-Title:   Concurso PM MS: comandante anuncia estudos para novo edital!
-URL:     https://blog.grancursosonline.com.br/concurso-pm-ms-edital-em-estudos-2026/
-Career:   policiais
-Group:   pm-ms
-Reason:  Noticia que a PM de Mato Grosso do Sul iniciou estudos técnicos para solicitar ao Governo um novo concurso, citando possibilidade de novo edital após conclusão da viabilidade. Menciona os cargos do último certame (2022/IDECAN) e requisitos: Soldado com nível superior em qualquer área e Oficial com bacharelado em Direito, com formação na Academia de Polícia Militar; vagas e banca do próximo ainda indefinidas.
-
-Title:   AGU e CIEE abrem vagas de estágio com bolsas de até R$ 1,5 mil em Goiás - O Hoje
-URL:     https://ohoje.com/2026/05/10/agu-e-ciee-abrem-vagas-de-estagio-com-bolsas-de-ate-r-15-mil-em-goias/
+Title:   MPMG abre seleção para Residência Jurídica em João Pinheiro com bolsa de R$ 4,8 mil - Sputnik Voz do Povo
+URL:     https://sputnikvozdopovo.com.br/2026/05/11/mpmg-abre-selecao-para-residencia-juridica-em-joao-pinheiro-com-bolsa-de-r-48-mil/
 Career:   estagio
-Group:   agu-estagio-2026
-Reason:  Notícia divulga processo seletivo de estágio da Advocacia-Geral da União (AGU) em parceria com o CIEE, com inscrições online até 12 de maio (12h), para estudantes de ensino médio e ensino superior em vários estados, incluindo Goiás. Entre os cursos contemplados no estágio está Direito, com bolsa de até R$ 1.508,42 e auxílio-transporte diário. Também menciona vagas de estágio do CIEE em Goiás, incluindo oportunidades para estudantes de Direito.
+Group:   mpmg-joao-pinheiro-mg-residencia-juridica
+Reason:  Noticia a abertura do edital nº 0747/2026 do Ministério Público de Minas Gerais para Residência Jurídica nas 1ª e 2ª Promotorias de Justiça da comarca de João Pinheiro/MG. Oferece 2 vagas (1 por promotoria) e cadastro reserva, com inscrições online de 11 a 17/05/2026. Jornada presencial de 30h semanais, bolsa de R$ 4.863 e auxílio-transporte. Seleção por prova escrita (21/05/2026) e entrevista (01/06/2026), com conteúdos de Penal/Processo Penal, Civil/Processo Civil, Constitucional/Administrativo, Difusos/Coletivos e legislação especial.
+
+Title:   Governo da Bahia abre seleção para Secretaria de Justiça com 78 vagas; salários de até R$ 3,8 mil | Empregos na Bahia
+URL:     https://empregosnabahia.com.br/governo-da-bahia-abre-reda-sjdh-78-vagas-salvador/
+Career:   administrativo
+Group:   sjdh-ba-salvador-ciencias-juridicas
+Reason:  Processo Seletivo Simplificado (REDA) do Governo da Bahia/SJDH, edital nº 0001/2026, com 78 vagas em Salvador/BA (níveis médio e superior), contratação temporária por 36 meses. Entre as formações do nível superior há graduação em Ciências Jurídicas, além de outras áreas. Seleção em etapa única por avaliação curricular (títulos e experiência), com inscrições de 12 a 16/05/2026 e resultado final previsto em 19/06/2026.
+
+Title:   Concurso da Prefeitura de Buriticupu MA: editais abrem mais de 3 mil vagas
+URL:     https://jcconcursos.com.br/noticia/concursos/concurso-da-prefeitura-de-buriticupu-ma-editais-142477
+Career:   procuradorias
+Group:   prefeitura-buriticupu-ma-procurador-municipal
+Reason:  Notícia informa publicação de três editais do concurso da Prefeitura de Buriticupu/MA (editais 01/2026, 02/2026 e 03/2026), totalizando 3.121 vagas + cadastro reserva. O edital 02/2026 traz cargos da área jurídica no município, incluindo procurador municipal e analista de procuradoria, com inscrições online (12/05 a 01/06/2026) e prova objetiva prevista para 04 e 05/07/2026, organização da Fundação Sousândrade (FSADU).
+
+Title:   Petrobras lança Programa de Estágio 2026 com 150 vagas em 12 estados
+URL:     https://agencia.petrobras.com.br/w/institucional/petrobras-lança-programa-de-estágio-2026-com-150-vagas-em-12-estados
+Career:   estagio
+Group:   petrobras-brasil-estagio
+Reason:  Notícia institucional divulga o Programa de Estágio de Estudantes Petrobras 2026, com publicação do edital em 11/05 e inscrições de 21/05 a 03/06/2026, prevendo prova objetiva online. São cerca de 150 vagas de estágio de nível superior em 12 estados e diversos municípios, incluindo oportunidades na trilha de Advocacia, com bolsa-auxílio de R$ 1.825 e jornada de 20h semanais.
+
+Title:   Concurso Banco Central: novo pedido prevê 560 vagas - Correio Braziliense - Aqui
+URL:     https://www.correiobraziliense.com.br/aqui/2026/05/11/concurso-banco-central-novo-pedido-preve-560-vagas/
+Career:   procuradorias
+Group:   banco-central-brasilia-df-procurador
+Reason:  Notícia informa solicitação de novo concurso do Banco Central com pedido de 560 vagas: Analista (410), Técnico (110) e Procurador (40). O pedido aguarda autorização do MGI e o texto cita requisitos e remunerações, destacando Procurador com prática forense e formação jurídica. Também menciona o último certame (2024/Cebraspe) como referência de estudos e lista disciplinas como direito constitucional e administrativo.
+
+Title:   Concurso PC PR: contrato com banca revela etapas do novo edital  | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-pc-pr-etapas-contrato-2026
+Career:   policiais
+Group:   pc-pr-delegado
+Reason:  Notícia sobre o novo concurso da Polícia Civil do Paraná com banca FGV já contratada e etapas definidas em contrato, ainda sem edital. Prevê cadastro de reserva para delegado, agente de polícia judiciária e papiloscopista. Detalha fases (objetiva para todos; discursiva, oral e títulos para delegado; além de saúde, TAF, psicológica e investigação social), estrutura e temas da discursiva/peça prático-profissional do delegado (Penal, Proc. Penal, legislação extravagante e Constitucional), além de informações de salários e taxas.
+
+Title:   Inscrições para processo seletivo da Defensoria Pública da Bahia terminam nesta terça - Destaque1
+URL:     https://destaque1.com/inscricoes-para-processo-seletivo-da-defensoria-publica-da-bahia-terminam-nesta-terca/
+Career:   defensoria
+Group:   dpe-ba-salvador-estagio-residencia-juridica
+Reason:  Notícia informa o fim das inscrições do processo seletivo simplificado unificado da Defensoria Pública do Estado da Bahia (DPE/BA), com vagas para estágio jurídico (45 vagas para estudantes de Direito do 5º ao 9º semestre) e Programa de Residência Jurídica (40 vagas para bacharéis matriculados em pós-graduação). Inscrições via Fundação Cefet Bahia; provas em 24/05 em Salvador; seleção inclui provas objetiva/discursiva e, na residência, também títulos; bolsas e auxílio-transporte.
+
+Title:   Faculdade de Direito USP SP abre processo seletivo para professor com 1 vaga | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/faculdade-de-direito-usp-sp-abre-processo-seletivo-para-professor-com-1-vaga
+Career:   administrativo
+Group:   usp-sao-paulo-sp-professor-contratado-iii
+Reason:  Processo seletivo simplificado da Faculdade de Direito da USP (Edital 09/2026) para 1 vaga de professor contratado III no Departamento de Filosofia e Teoria Geral do Direito, com atuação em Filosofia do Direito e disciplinas como Introdução ao Estudo do Direito e Instituições de Direito. Exige título de doutor, jornada de 12h semanais e remuneração de R$ 2.834,62. Seleção presencial no Largo São Francisco (SP) com prova escrita e prova didática.
+
+Title:   Detran-BA abre concurso para 170 vagas e salários de até R$ 3,8 mil
+URL:     https://atarde.com.br/concursos/detran-ba-abre-concurso-para-170-vagas-e-salarios-de-ate-r-38-mil-1388514
+Career:   administrativo
+Group:   detran-ba-ciencias-juridicas
+Reason:  Processo seletivo simplificado (REDA) do Detran-BA para contratação temporária, com 170 vagas em Salvador e municípios do interior, inscrições de 11 a 15/05/2026 e seleção por avaliação curricular. Entre os cargos de nível superior há 20 vagas para Técnico de Nível Superior – Ciências Jurídicas, além de outras áreas. Jornada de 30 a 40h e remuneração de R$ 3.170,32 a R$ 3.810, com benefícios.
+
+Title:   Loanda abre processo seletivo para residentes jurídicos
+URL:     https://loanda.portaldacidade.com/noticias/cidade/loanda-abre-processo-seletivo-para-residentes-juridicos-0056
+Career:   estagio
+Group:   mppr-loanda-pr-residencia-juridica
+Reason:  Notícia informa que a Promotoria de Justiça da Comarca de Loanda (MPPR) abriu processo seletivo para residentes jurídicos. Inscrições mediante solicitação de ficha via WhatsApp até a próxima terça-feira (19). Público-alvo: graduados em Direito matriculados em pós-graduação (lato/stricto sensu) ou pós-doutorado na área jurídica. Jornada de 6h diárias (vespertino), bolsa de R$ 4.000 e auxílio-transporte de R$ 264.
+
+Title:   Governo do Estado abre 170 vagas para o Detran | detran - Departamento Estadual de Trânsito da Bahia
+URL:     https://www.ba.gov.br/detran/noticias/2026-05/7636/governo-do-estado-abre-170-vagas-para-o-detran
+Career:   administrativo
+Group:   detran-ba-ciencias-juridicas
+Reason:  Notícia de abertura de edital (processo seletivo simplificado/REDA) do Detran-BA com 170 vagas distribuídas na capital e interior (87 municípios), inscrições de 11 a 15/05 via selecao.ba.gov.br. Entre os cargos de nível superior listados estão áreas como Administração, Ciências Jurídicas e outras; há também vagas de nível médio para atendente. Remete ao Edital REDA nº 01/2026 com regras, salários e prazo contratual de 3 anos renovável.
+
+Title:   Câmara Municipal abriu concurso com salários de até R$ 7 mil na Bahia
+URL:     https://agenciasertao.com/2026/05/11/camara-municipal-abriu-concurso-com-salarios-de-ate-r-7-mil-na-bahia/
+Career:   procuradorias
+Group:   camara-correntina-ba-procurador
+Reason:  Notícia sobre abertura de concurso público da Câmara Municipal de Correntina (BA), edital 001/2026, com 10 vagas imediatas e 25 em cadastro de reserva. Há cargo jurídico de Procurador (1 vaga, R$ 7.000) e cargos de Analista Jurídico e Analista Jurídico Parlamentar (CR, R$ 5.000), com provas objetiva e discursiva/questões subjetivas. Inscrições de 11 a 25/05/2026 e prova prevista para 05/07/2026.
+
+Title:   Detran abre processo seletivo com 170 vagas e salários de até R$ 3,8 mil na Bahia | Jornal Correio
+URL:     https://www.correio24horas.com.br/economia/empregos/detran-abre-processo-seletivo-com-170-vagas-e-salarios-de-ate-r-38-mil-na-bahia-0526
+Career:   administrativo
+Group:   detran-ba-ciencias-juridicas
+Reason:  Notícia informa abertura de processo seletivo simplificado (REDA) do Detran-BA para contratação temporária, com 170 vagas em Salvador e municípios do interior. Entre as funções de nível superior há “Técnico de Nível Superior – Ciências Jurídicas”, além de outras áreas (Administração, Contábeis etc.) e nível médio (Atendente). Inscrições on-line de 11 a 15/05/2026 no selecao.ba.gov.br; seleção em etapa única por avaliação curricular, com cronograma até homologação em 01/07/2026.
+
+Title:   É AMANHÃ (11): concurso da Câmara com salários acima de R$ 4 mil abre inscrições - Notícias Concursos
+URL:     https://noticiasconcursos.com.br/e-amanha-11-concurso-da-camara-com-salarios-acima-de-r-4-mil-abre-inscricoes/
+Career:   administrativo
+Group:   camara-colider-mt-advogado-publico
+Reason:  Notícia sobre o edital 001/2026 do concurso da Câmara Municipal de Colíder/MT, com inscrições de 12/05 a 12/06/2026 (banca CAP Concursos), prova objetiva em 12/07/2026 e resultado final previsto para 05/08/2026. Há vaga de nível superior para Advogado Público (1 vaga, 20h, R$ 4.000, com OAB), além de outros cargos em cadastro reserva.
+
+Title:   Defensoria da BA oferece vagas de estágio com bolsas de até R$ 1,8 mil | G1
+URL:     https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2026/05/11/vagas-na-bahia.ghtml
+Career:   estagio
+Group:   dpe-ba-salvador-estagio-residencia-juridica
+Reason:  Notícia informa inscrições abertas na Defensoria Pública da Bahia para processo seletivo com mais de 100 vagas, incluindo estágio jurídico para estudantes de Direito (5º ao 9º semestre) e Programa de Residência Jurídica com 40 vagas para bacharéis em Direito matriculados em pós-graduação. Seleção organizada pela Fundação Cefet Bahia, com provas em 24/05/2026 em Salvador e resultado final previsto para 17/06/2026, bolsas até R$ 1,8 mil.
+
+Title:   Último dia: inscrições para mais de 100 vagas de estágio na Defensoria da Bahia terminam amanhã (12) - conectadonews.com.br
+URL:     https://conectadonews.com.br/ultimo-dia-inscricoes-para-mais-de-100-vagas-de-estagio-na-defensoria-da-bahia-terminam-amanha-12/
+Career:   defensoria
+Group:   dpe-ba-salvador-estagio-residencia-juridica
+Reason:  Notícia sobre o processo seletivo simplificado unificado da Defensoria Pública do Estado da Bahia (DPE/BA), com inscrições encerrando em 12/05, oferecendo 45 vagas de estágio jurídico para estudantes de Direito (5º ao 9º semestre) e 40 vagas no Programa de Residência Jurídica para bacharéis matriculados em pós-graduação. Informa banca/organizadora (Fundação Cefet Bahia), taxas, bolsas, etapas e cronograma com provas em 24/05/2026 em Salvador e resultado final em 17/06/2026.
+
+Title:   Processo seletivo da SJDH abre inscrições nesta terça-feira
+URL:     https://agenciasertao.com/2026/05/11/processo-seletivo-da-sjdh-abre-inscricoes-nesta-terca-feira/
+Career:   administrativo
+Group:   sjdh-ba-salvador-ciencias-juridicas
+Reason:  Notícia divulga processo seletivo simplificado (REDA) da Secretaria de Justiça e Direitos Humanos da Bahia (SJDH), com 78 vagas temporárias para atuação em Salvador, inscrições de 12 a 16/05 via selecao.ba.gov.br. Entre as funções de nível superior previstas no edital/errata há área de Ciências Jurídicas, além de outras formações, com seleção por avaliação curricular e cronograma de recursos e homologação.
+
+Title:   Concurso Cartórios MA: salários, vagas e etapas
+URL:     https://magistrarcursos.com.br/blog/concurso-cartorios-ma/
+Career:   tribunais
+Group:   tjma-sao-luis-ma-titular-de-cartorio
+Reason:  Notícia/atualização do Concurso Público do TJMA para Outorga das Delegações de Serviços Extrajudiciais (Cartórios), Edital nº 001/2023. Relata retomada após suspensão no STF, retificação do resultado final em 06/03/2026 e a sessão pública de escolha das serventias em 30/04/2026. O certame ofertou 88 delegações (57 provimento e 31 remoção), com etapas objetiva, escrita/prática, comprovação de requisitos, oral e títulos, e aguarda atos de outorga, posse e início do exercício.
+
+Title:   Machado Meyer abre inscrições de seletivo para estágio de férias jurídico e administrativo até 19 de maio
+URL:     https://concursonews.com/2026/05/machado-meyer-abre-inscricoes-de-seletivo-para-estagio-de-ferias-juridico-e-administrativo-ate-19-de-maio/
+Career:   estagio
+Group:   machado-meyer-estagio-de-ferias-julho-2026-estagio-juridico
+Reason:  Notícia informa abertura de inscrições (até 19/05/2026) para o programa de estágio de férias “#APróximaGeração” do escritório Machado Meyer, com oportunidades em trilha jurídica e administrativa. Há vaga específica de Estágio de Férias Jurídico (julho/2026) para estudantes de Direito, com formato híbrido e jornada de seg. a sex. das 10h às 17h30; candidatura via plataforma Gupy. Não há divulgação de número de vagas, cidades ou benefícios.
+
+Title:   Concurso Câmara Municipal de Correntina BA abre 10 vagas imediatas | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-camara-municipal-de-correntina-ba-abre-10-vagas-imediatas
+Career:   procuradorias
+Group:   camara-correntina-ba-procurador
+Reason:  Concurso público da Câmara Municipal de Correntina/BA (Edital 001/2026), com 10 vagas imediatas e 25 CR. No nível superior há 1 vaga para Procurador (R$ 7.000) e cadastro de reserva para Analista Jurídico e Analista Jurídico Parlamentar (R$ 5.000), com prova discursiva específica para os cargos jurídicos. Inscrições de 11 a 25/05/2026 e provas em 05/07/2026.
+
+Title:   Prefeitura de Campina Grande publica edital do concurso para vagas na Procuradoria Geral do Município | Prefeitura de Campina Grande - PB
+URL:     https://campinagrande.pb.gov.br/prefeitura-de-campina-grande-publica-edital-do-concurso-para-vagas-na-procuradoria-geral-do-municipio/
+Career:   procuradorias
+Group:   prefeitura-campina-grande-pb-procurador-municipal
+Reason:  Notícia informa a publicação, no Semanário Oficial do Município, do edital do concurso da Prefeitura de Campina Grande (PB) para a Procuradoria Geral do Município, com contratação de Procurador Municipal. São 5 vagas (1 reservada para PCD), remuneração inicial de R$ 9.652,80, inscrição de R$ 230,00, período de inscrições de 14/05 a 15/06 e provas a partir de 30/08, com etapas: objetiva, teórico-prática e títulos.
+
+Title:   Concurso Arsal 2026 oferece 32 oportunidades para Analista de Regulação em Alagoas - Uni10
+URL:     https://uniten.com.br/concurso-arsal-2026-analista-regulacao-alagoas/
+Career:   administrativo
+Group:   arsal-maceio-al-analista-de-regulacao
+Reason:  Notícia de edital do concurso da Agência Reguladora de Serviços Públicos do Estado de Alagoas (Arsal) para o cargo de Analista de Regulação, com 16 vagas imediatas e 16 em cadastro de reserva, lotação em Maceió, banca Cebraspe, inscrições até 15/06/2026 e provas em 09/08/2026. Entre as especialidades, há cota específica para Direito (2 vagas + 2 CR), além de outras áreas de nível superior.
+
+Title:   MP do Ceará obtém decisão judicial para que Prefeitura de Itaitinga suspenda contratos com escritório de advocacia e garanta nomeação de concursados - MPCE
+URL:     https://mpce.mp.br/mp-do-ceara-obtem-decisao-judicial-para-que-prefeitura-de-itaitinga-suspenda-contratos-com-escritorio-de-advocacia-e-garanta-nomeacao-de-concursados/
+Career:   procuradorias
+Group:   prefeitura-itaitinga-ce-procurador-municipal
+Reason:  Notícia do MPCE informa decisão judicial que obriga a Prefeitura de Itaitinga a suspender renovações/novos contratos com escritórios de advocacia e priorizar a nomeação de aprovados em concurso vigente para Procurador Municipal. Cita o Edital nº 002/2025 com 5 vagas imediatas para a Procuradoria; apenas 2 nomeados e 3 vagas ainda abertas, com aprovados aguardando convocação, sob alegação de preterição.
+
+Title:   MPMS divulga resultado de recursos e convoca candidatos para etapa de heteroidentificação do III Processo Seletivo para Estagiários e Residentes - MPMS
+URL:     https://www.mpms.mp.br/noticias/2026/05/mpms-divulga-resultado-de-recursos-e-convoca-candidatos-para-etapa-de-heteroidentificacao-do-iii-processo-seletivo-para-estagiarios-e-residentes
+Career:   estagio
+Group:   mpms-ms-estagiarios-e-residentes
+Reason:  Notícia do MPMS sobre o III Processo Seletivo de Estagiários e Residentes: publicação de dois editais com (1) resultado definitivo da análise de recursos administrativos contra o resultado preliminar e (2) convocação de candidatos autodeclarados pretos, pardos ou indígenas para etapa on-line de heteroidentificação, com envio de foto, vídeo e/ou documento de comprovação de etnia no prazo de 11/05/2026 9h a 13/05/2026 9h (MS), via área do candidato da FAPEC.
+
+Title:   Concurso Campina Grande PB: saem editais com quase mil vagas | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-campina-grande-pb-2026-editais
+Career:   procuradorias
+Group:   prefeitura-campina-grande-pb-procurador-municipal
+Reason:  Noticia informa que a Prefeitura de Campina Grande/PB publicou editais de concurso com 955 vagas e menciona novo edital a ser publicado para Procurador do Município, com 5 vagas. Traz banca (Idecan), período de inscrições (14/5 a 15/6), prova objetiva (30/8) e etapas. Há referência a conteúdo jurídico nas provas (Direito Administrativo, Constitucional, Direitos Humanos, Penal e Processo Penal) para guarda municipal, e prevê certame específico para procuradoria municipal.
+
+Title:   Concurso Ibiraçu ES: edital publicado com 200 vagas - O Capixaba
+URL:     https://ocapixaba.com.br/espirito-santo/2026/05/concurso-ibiracu-es-edital-publicado-com-200-vagas/
+Career:   procuradorias
+Group:   prefeitura-ibiracu-es-procurador-municipal
+Reason:  Notícia sobre edital de concurso público da Prefeitura de Ibiraçu/ES (banca IDCAP) com 200 vagas + cadastro reserva e inscrições de 8 a 28/05, prova objetiva em 28/06/2026. Entre os cargos de nível superior há 1 vaga para Procurador Municipal, com remuneração de R$ 10.805,88, taxa específica (R$ 140) e etapas próprias, incluindo prova discursiva com peça profissional além da objetiva.
+
+Title:   MPGO lança concurso público para servidores e residência juridica
+URL:     https://ciberjornal.com.br/justica-e-direito/mpgo-lanca-concurso-publico-para-servidores-e-residencia-juridica/300552/
+Career:   estagio
+Group:   mpgo-go-residencia-juridica
+Reason:  Notícia informa a publicação de dois editais do Ministério Público do Estado de Goiás (MPGO), organizados pelo Instituto AOCP, com inscrições de 11/05 a 10/06/2026. Um deles é processo seletivo do Programa de Residência Jurídica 2026, com 67 vagas imediatas e CR em comarcas do estado, bolsa de R$ 3.336,32, 30h semanais, duração até 36 meses e prova objetiva (Direitos Constitucional/Administrativo, Penal/Processual Penal, Civil/Processual Civil, legislação do MP e português) em 12/07/2026.
+
+Title:   Processo seletivo Arroio Trinta SC abre 1 vaga e cadastro reserva nível superior | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/processo-seletivo-arroio-trinta-sc-abre-1-vaga-e-cadastro-reserva-nivel-superior
+Career:   administrativo
+Group:   prefeitura-arroio-trinta-sc-advogado
+Reason:  Edital de processo seletivo da Prefeitura de Arroio Trinta/SC para contratação temporária e cadastro reserva em cargos de nivel superior, com inscricoes de 11 a 29/05/2026 no Instituto DOM. Ha cadastro reserva para Advogado (40h, R$ 11.160,35), com atribuicoes de elaboracao de minutas e pareceres, assessoramento juridico e atuacao em demandas do municipio; prova objetiva em 21/06/2026 e avaliacao de titulos.
+
+Title:   Último dia: inscrições para mais de 100 vagas de estágio na Defensoria da Bahia terminam amanhã (12) | Jornal Correio
+URL:     https://www.correio24horas.com.br/economia/empregos/ultimo-dia-inscricoes-para-mais-de-100-vagas-de-estagio-na-defensoria-da-bahia-terminam-amanha-12-0526
+Career:   defensoria
+Group:   dpe-ba-salvador-estagio-residencia-juridica
+Reason:  Notícia informa que termina em 12/05/2026 a inscrição do processo seletivo simplificado unificado da Defensoria Pública do Estado da Bahia (DPE-BA), com vagas para estágio jurídico (45) destinado a estudantes de Direito do 5º ao 9º semestre e Programa de Residência Jurídica (40) para bacharéis em Direito em pós-graduação. Indica taxas (R$ 45 e R$ 60), prova em 24/05/2026 em Salvador e previsão de resultado em 17/06/2026, além de bolsas e etapas (objetiva, discursiva e títulos na residência).
+
+Title:   Concurso PGM Manaus: Termo de Referência publicado! Edital terá 6 vagas e salário de R$ 29 mil
+URL:     https://magistrarcursos.com.br/blog/concurso-pgm-manaus-termo-de-referencia-publicado-edital-tera-6-vagas-e-salario-de-29-mil/
+Career:   procuradorias
+Group:   pgm-manaus-am-procurador
+Reason:  Atualização sobre o concurso da Procuradoria-Geral do Município de Manaus (PGM Manaus): Termo de Referência publicado para contratação/execução do certame (banca FCC já definida) e comissão organizadora alterada. Previstas 6 vagas imediatas + cadastro reserva para Procurador do Município de 3ª Classe, com remuneração inicial de R$ 29.009,10. Etapas indicadas: prova objetiva, discursiva, oral, pesquisa de vida pregressa e avaliação biopsicossocial; provas em Manaus/AM.
+
+Title:   Concurso AGU: órgão prepara novo pedido de autorização de vagas | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-agu-2026-prepara-novo-pedido
+Career:   procuradorias
+Group:   agu-brasilia-df-advogado-da-uniao
+Reason:  Notícia informa que a Advocacia-Geral da União está preparando novo pedido de autorização ao MGI para concurso, a ser enviado até 31 de maio. O texto relembra o último pedido (668 vagas), incluindo carreiras jurídicas com 265 oportunidades: advogado da União (81), procurador federal (125) e procurador da Fazenda Nacional (59), além de mencionar validade do concurso jurídico de 2022 (Cebraspe) e possibilidade de convocar cadastro de reserva.
+
+Title:   Concurso Conter tem edital publicado com 310 vagas; veja! | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-conter-brasilia-df-vagas-imediatas-e-cadastro-de-reserva
+Career:   administrativo
+Group:   conter-brasilia-df-advogado
+Reason:  Noticia de edital publicado do concurso do Conselho Nacional de Técnicos em Radiologia (Conter), com 310 vagas (7 imediatas e 303 CR) e provas em Brasília/DF. Entre os cargos de nível superior há vaga para Advogado (1 imediata + 39 CR), além de outras áreas. Inscrições até 22/06 no Instituto Quadrix; prova objetiva e discursiva em 16/08, com etapas de prova objetiva, discursiva e títulos para nível superior.
+
+Title:   Mais de 5 mil vagas: concursos policiais que ainda podem sair no primeiro semestre de 2026 - Blog Magistrar Educacional
+URL:     https://magistrarcursos.com.br/blog/quais-concursos-policiais-ainda-podem-sair-no-primeiro-semestre-de-2026/
+Career:   policiais
+Group:   pc-ba-delegado
+Reason:  Matéria traz panorama e previsões de editais policiais para o 1º semestre de 2026, incluindo cargos jurídicos de Delegado. Destaca PC-BA (Delegado: 100 vagas, banca AOCP, edital previsto no 1º semestre), e PC-RJ (Delegado 3ª classe: 85 vagas, banca Cesgranrio definida, edital iminente, remuneração inicial informada e taxa). Também cita outros concursos (escrivão/investigador, agente de custódia, policiais penais, PMs), mas o foco relevante é Delegado.
+
+Title:   Concurso MP-MT: publicada lista preliminar de inscritos em edital para Promotor
+URL:     https://ceisc.com.br/blog/post/concurso-mp-mt-publicada-lista-preliminar-de-inscritos-em-edital-para-promotor
+Career:   mp
+Group:   mp-mt-mt-promotor-de-justica-substituto
+Reason:  Notícia de andamento do concurso do Ministério Público do Estado do Mato Grosso (MP-MT) para Promotor de Justiça Substituto: publicação da lista preliminar de inscritos pela banca FGV. Edital prevê 8 vagas imediatas + cadastro reserva, remuneração inicial em torno de R$ 37,7 mil; inscrições encerradas (até 21/04) e provas objetivas em 14/06, com fase discursiva prevista para 16 e 17/08.
+
+Title:   Câmara abre concurso com 53 vagas e salários de até R$ 6,5 mil
+URL:     https://www.folhavitoria.com.br/trabalho/concursos/camara-do-es-abre-concurso-com-53-vagas-e-salarios-de-ate-r-65-mil/
+Career:   procuradorias
+Group:   camara-montanha-es-procurador-legislativo
+Reason:  Noticia a abertura de concurso da Camara Municipal de Montanha/ES, com edital para 53 vagas entre imediatas e cadastro de reserva, com inscricoes de 18/05 a 18/06 e banca Instituto Consulplan. Entre os cargos listados ha Procurador Legislativo (2 vagas + CR, com prova objetiva e discursiva), carreira tipicamente ligada a atuacao legislativa e juridica no ambito do Legislativo municipal.
+
+Title:   Inscrições para o REDA da SJDH iniciam nesta terça-feira (12) | SECOM - Secretaria de Comunicação Social
+URL:     https://www.ba.gov.br/comunicacao/noticias/2026-05/381619/inscricoes-para-o-reda-da-sjdh-iniciam-nesta-terca-feira-12
+Career:   administrativo
+Group:   sjdh-ba-salvador-ciencias-juridicas
+Reason:  Notícia informa abertura de inscrições para processo seletivo simplificado REDA da Secretaria de Justiça e Direitos Humanos da Bahia (SJDH), com 78 vagas temporárias (53 nível superior) e seleção por avaliação curricular. Entre as formações contempladas está Ciências Jurídicas, com contratação por 36 meses (prorrogável) e divulgação de resultado no DOE; edital disponível no site da SJDH.
 
