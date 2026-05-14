@@ -1,371 +1,335 @@
-Verificação: 2026-05-13T11:51:43.037019+00:00
-Links analisados: 194
-Links relevantes: 61
+Verificação: 2026-05-14T11:26:50.974781+00:00
+Links analisados: 179
+Links relevantes: 55
 ============================================================
 
-Title:   Prefeitura de Cruz Machado - PR abre concurso público com salários de até R$ 17.483,16
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-cruz-machado-pr-abre-concurso-publico-com-salarios-de-ate-17483
+Title:   Prefeitura de Campina Grande - PB abre concurso público com salários de até R$ 8,8 mil
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-campina-grande-pb-abre-concurso-publico-com-salarios-de-ate-8-8-mil
 Career:   administrativo
-Group:   prefeitura-cruz-machado-pr-concurso-2026
-Reason:  Notícia divulga concurso público da Prefeitura de Cruz Machado/PR para provimento de vagas e cadastro de reserva em diversos níveis. Entre os cargos listados consta Advogado (2 vagas + CR), com inscrições de 18/05/2026 a 18/06/2026 via Fundação FAFIPA e prova objetiva prevista para 19/07/2026. Regime estatutário, validade de 2 anos prorrogável.
+Group:   prefeitura-campina-grande-pb-auditor-fiscal
+Reason:  Notícia de abertura de concurso público da Prefeitura de Campina Grande/PB (edital divulgado) para diversos cargos e formação de cadastro de reserva, com inscrições de 14/05/2026 a 15/06/2026 via IDECAN e prova objetiva prevista para 30/08/2026. Entre as vagas listadas há Auditor Fiscal da Receita Municipal (SEFIN, 4 vagas), carreira típica com atribuições de fiscalização e julgamento administrativo-tributário, usualmente com conteúdo jurídico (direito tributário/administrativo).
 
-Title:   Prefeitura de Pindorama - SP abre concurso e processo seletivo com diversas vagas e cadastro de reserva
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-pindorama-sp-abre-concurso-e-processo-seletivo-com-diversas-vagas-e-cadastro-de-reserva
+Title:   Câmara de Três Barras - SC abre concurso para Controlador Interno
+URL:     https://www.pciconcursos.com.br/noticias/camara-de-tres-barras-sc-abre-concurso-para-controlador-interno
 Career:   administrativo
-Group:   prefeitura-pindorama-sp-concurso-2026
-Reason:  Notícia informa abertura de Concurso Público e Processo Seletivo da Prefeitura de Pindorama/SP (banca Instituto Consulpam) com vagas e cadastro de reserva em vários níveis. Entre os cargos, há área com atuação em contratações públicas, como Analista de Licitações e Contratos e Técnico de Licitações e Contratos (CR), vinculados a rotinas de elaboração/análise de editais, contratos, compras e conformidade administrativa. Inscrições 12/05/2026 a 11/06/2026; prova objetiva em 05/07/2026.
+Group:   camara-tres-barras-sc-controlador-interno
+Reason:  Notícia divulga edital de concurso público da Câmara Municipal de Três Barras/SC para formação de cadastro de reserva no cargo de Controlador Interno. O posto admite graduação em Direito, Administração ou Ciências Contábeis e prevê 10h semanais, remuneração de R$ 1.789,60 + auxílio-alimentação. Inscrições de 18/05/2026 a 18/06/2026 (Fundação FAFIPA), prova objetiva em 12/07/2026 e prova de títulos; regime estatutário e validade de 2 anos prorrogável.
 
-Title:   Prefeitura de Santa Filomena - PE retifica concurso público com vagas para todos os níveis
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-filomena-pe-retifica-concurso-publico-com-vagas-para-todos-os-niveis
-Career:   administrativo
-Group:   prefeitura-santa-filomena-pe-concurso-2026
-Reason:  Concurso público da Prefeitura de Santa Filomena/PE com retificação do edital, abrangendo vagas para níveis fundamental, médio e superior, com prova objetiva (todos), prova de títulos (nível superior) e curso de formação (ACS/ACE). Entre os cargos listados há Técnico de Controle Interno (nível superior) e diversas funções administrativas e de fiscalização, com inscrições de 07/05/2026 a 08/06/2026 e prova prevista para 12/07/2026.
-
-Title:   Prefeitura de Água Doce do Norte - ES abre concurso público com vagas imediatas e cadastro de reserva
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-doce-do-norte-es-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva
+Title:   Edital em Água Doce do Norte-ES abre concurso com mais de 200 vagas de todos os níveis
+URL:     https://www.acheconcursos.com.br/concursos-espirito-santo/edital-em-agua-doce-do-norte-es-abre-concurso-com-mais-de-200-vagas-de-todos-os-niveis-90105
 Career:   procuradorias
-Group:   prefeitura-agua-doce-do-norte-es-concurso-2026
-Reason:  Notícia de edital de concurso público da Prefeitura de Água Doce do Norte/ES (regime estatutário) com vagas imediatas e cadastro de reserva para diversos níveis. Entre os cargos de nível superior consta Procurador Municipal (1 vaga + CR), com etapa específica de prova discursiva, além de prova objetiva (todos) e títulos (nível superior). Inscrições online em idesg.org.br de 26/05/2026 a 26/06/2026; prova objetiva prevista para 18/10/2026.
+Group:   prefeitura-agua-doce-do-norte-es-procurador-municipal
+Reason:  Concurso público municipal 2026 da Prefeitura de Água Doce do Norte/ES (IDESG), com 250 vagas imediatas + cadastro reserva em 121 cargos e salários de R$ 1.621,00 a R$ 5.190,46. Entre as oportunidades de nível superior há Procurador Municipal (01+CR) e Assistente de Procuradoria (01+CR), funções ligadas à atuação jurídica/representação e apoio em atividades da procuradoria, além de etapas como prova objetiva para todos os cargos.
 
-Title:   Prefeitura de Guaíra - PR abre concurso público com salários de até R$ 6.547,64
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-guaira-pr-abre-concurso-publico-com-salarios-de-ate-6547
+Title:   Edital UNIOESTE 2026 para Agentes Universitários tem vagas de até R$ 7 mil
+URL:     https://www.acheconcursos.com.br/concursos-parana/edital-unioeste-2026-para-agentes-universitarios-tem-vagas-de-ate-r-7-mil-90103
 Career:   administrativo
-Group:   prefeitura-guaira-pr-concurso-2026
-Reason:  Concurso público da Prefeitura Municipal de Guaíra/PR com inscrições de 19/05/2026 a 22/06/2026 para cargos diversos, incluindo Auditor Fiscal de Tributos Municipais (1 vaga + CR), com prova objetiva para todos em 02/08/2026 e, para auditor, também prova discursiva e avaliação de títulos. Regime estatutário e salários até R$ 6.547,64.
+Group:   unioeste-cascavel-pr-advogado
+Reason:  Processo seletivo temporário UNIOESTE (PS 03/2026) para Agente Universitário, com cadastro reserva e vagas distribuídas em campi do PR (ex.: Cascavel, Foz do Iguaçu, Toledo, Marechal C. Rondon, Francisco Beltrão). Entre os cargos de nível superior há vaga para Advogado (Cascavel), com remuneração indicada de R$ 7.616,88, além de prova objetiva em 14/06/2026 e inscrições de 13/05 a 01/06/2026.
 
-Title:   DETRAN-BA abre seleção para profissionais de nível médio e superior
-URL:     https://www.pciconcursos.com.br/noticias/detran-ba-abre-selecao-para-profissionais-de-nivel-medio-e-superior
+Title:   Concurso da Câmara de Cianorte-PR é aberto para 5 cargos
+URL:     https://www.acheconcursos.com.br/concursos-parana/concurso-camara-cianorte-pr-aberto-5-cargos-90096
 Career:   administrativo
-Group:   detran-ba-reda-2026
-Reason:  Notícia de Processo Seletivo Simplificado (REDA) do DETRAN-BA para contratação temporária, com vagas de nível superior e médio. Entre os cargos ofertados consta Técnico de Nível Superior – Ciências Jurídicas (20 vagas), com seleção por avaliação curricular, inscrições no selecao.ba.gov.br (11 a 15/05/2026), jornada de 30 a 40h e remuneração entre R$ 3.170,32 e R$ 3.810,40, além de auxílios; contrato até 36 meses prorrogável e validade de 1 ano.
+Group:   camara-cianorte-pr-advogado
+Reason:  Concurso público da Câmara Municipal de Cianorte-PR (banca FAFIPA), com inscrições de 14/05 a 14/06/2026, para preencher vagas e cadastro de reserva no regime estatutário. Entre os cargos ofertados há Advogado (1 vaga, R$ 9.247,24, prova objetiva, discursiva e títulos) e Analista Legislativo – Gestão e Processos (1 vaga, área de atuação em gestão/processos no legislativo, prova objetiva, discursiva e títulos), além de demais cargos administrativos.
 
-Title:   Edital Guaíra-PR 2026: Prefeitura lança novo concurso com inicial de R$ 6,5 mil
-URL:     https://www.acheconcursos.com.br/concursos-parana/concurso-guaira-pr-2026-prefeitura-6-5-mil-90073
+Title:   Câmara de Três Barras-SC abre concurso para Controlador Interno
+URL:     https://www.acheconcursos.com.br/concursos-santa-catarina/concurso-camara-tres-barras-sc-controlador-interno-90094
 Career:   administrativo
-Group:   prefeitura-guaira-pr-concurso-2026
-Reason:  Edital de concurso público da Prefeitura de Guaíra-PR (inscrições 19/05 a 22/06/2026) com vagas e CR em diversos níveis. Entre os cargos, há Auditor Fiscal de Tributos Municipais (1 vaga + CR, R$ 6.547,64, 40h) com requisito de graduação incluindo Direito, além de registro no órgão de classe e CNH AB. Seleção prevê prova objetiva para todos e prova discursiva e títulos para Auditor Fiscal; provas em 02/08/2026.
+Group:   camara-tres-barras-sc-controlador-interno
+Reason:  Edital 01/2016 da Camara Municipal de Tres Barras-SC abre concurso publico para provimento/cadastro de reserva no cargo de Controlador Interno, com remuneracao de R$ 1.789,60 + vale-alimentacao (R$ 480) para 10h semanais. As inscricoes ocorrem de 18/05/2026 a 18/06/2026 pela fundacaofafipa.org.br. Selecao por prova objetiva e prova de titulos, com aplicacao da objetiva em 12/07/2026.
 
-Title:   Prefeitura de Rio das Antas-SC lança 4 editais e paga até R$ 19 mil
-URL:     https://www.acheconcursos.com.br/concursos-santa-catarina/prefeitura-de-rio-das-antas-sc-lanca-4-editais-e-paga-ate-r-19-mil-90071
+Title:   Concurso Prefeitura de Cruz Machado-PR 2026 - Inscrição
+URL:     https://www.acheconcursos.com.br/concursos-parana/concurso-prefeitura-cruz-machado-pr-2026-inscricao-90092
 Career:   administrativo
-Group:   prefeitura-rio-das-antas-sc-processo-seletivo-2026
-Reason:  Processo seletivo simplificado da Prefeitura de Rio das Antas-SC (editais 01 a 04/2026, banca Legalle) para cadastro reserva em diversas áreas. No Edital 01/2026 há cargo de nível superior para Advogado, além de outros cargos de administração e serviços; inscrições de 12 a 26/05/2026 e prova objetiva prevista para 20/06/2026, com questões incluindo Legislação e conhecimentos específicos.
+Group:   prefeitura-cruz-machado-pr-advogado
+Reason:  Edital de concurso público da Prefeitura de Cruz Machado-PR (banca Fundação FAFIPA) para 89 vagas + cadastro reserva em diversos cargos. Entre as funções ofertadas há Advogado (02+CR, R$ 4.045,20, inscrição OAB) e cargos que aceitam formação em Direito como Assistente Administrativo e Auditor Fiscal da Receita Municipal, além de Fiscal de Tributos (todos de nível superior com possibilidades de graduação em Direito). Inscrições 18/05 a 18/06/2026 e prova objetiva prevista para 19/07/2026.
 
-Title:   Câmara de Correntina-BA 2026 abre 10 vagas de até R$ 7 mil
-URL:     https://www.acheconcursos.com.br/concursos-bahia/camara-de-correntina-ba-2026-abre-10-vagas-de-ate-r-7-mil-90060
+Title:   Câmara de Água Doce do Norte-ES abre concurso para níveis fundamental e superior
+URL:     https://www.acheconcursos.com.br/concursos-espirito-santo/concurso-camara-agua-doce-norte-es-niveis-fundamental-superior-90095
 Career:   procuradorias
-Group:   camara-correntina-ba-concurso-2026
-Reason:  Concurso público da Câmara Municipal de Correntina-BA (2026) para preencher vagas e formar cadastro de reserva. Edital traz cargos jurídicos como Procurador (1 vaga, R$ 7.000) e Analista Jurídico/Analista Jurídico Parlamentar (cadastro de reserva), com inscrição na OAB-BA. Inscrições de 11 a 25/05/2026 e prova objetiva em 05/07/2026, com questões discursivas para os cargos jurídicos.
+Group:   camara-agua-doce-do-norte-es-procurador
+Reason:  Edital de concurso público da Câmara Municipal de Água Doce do Norte/ES para 8 vagas + cadastro de reserva, com inscrições de 26/05 a 26/06/2026 e prova objetiva em 11/10/2026. Entre os cargos ofertados há 1 vaga + CR para Procurador (40h, R$ 3.100, prova objetiva e discursiva, além de títulos), com atuação típica de consultoria e representação jurídica do Legislativo municipal.
 
-Title:   Concurso Polícia Penal (PP-RS) 2026: Saiu edital para nível médio e superior
-URL:     https://www.acheconcursos.com.br/concursos-rio-grande-do-sul/concurso-policia-penal-rs-2026-edital-inscricao-90052
+Title:   Concurso IPE Prev RS 2026: Edital é publicado e tem vagas de R$ 10 mil
+URL:     https://www.acheconcursos.com.br/concursos-rio-grande-do-sul/concurso-ipe-prev-rs-2026-edital-inscricao-90081
 Career:   administrativo
-Group:   policia-penal-rs-concurso-2026
-Reason:  Notícia de edital publicado do concurso da Polícia Penal do Rio Grande do Sul (Fundatec), com inscrições de 12/05 a 12/06/2026 e provas previstas para 09/08. O certame oferece 213 vagas para Técnico Administrativo (nível médio), Policial Penal (nível superior em qualquer área) e cargos de Analista da Polícia Penal em diversas áreas, incluindo a especialidade Analista da Polícia Penal – Direito (25 vagas). Prevê prova objetiva, discursiva para Analistas, TAF para Policial Penal, avaliação psicológica e sindicância social.
+Group:   ipe-prev-rs-analista-em-previdencia-direito
+Reason:  Noticia a publicacao do edital do concurso do IPE Prev/RS (Instituto de Previdencia do Rio Grande do Sul) para 2026, com inscricoes de 13/05 a 11/06/2026 e provas em 26/07 e 02/08 em Porto Alegre. Entre 121 vagas em 14 cargos, ha 26 vagas para Analista em Previdencia – Direito (ciencias juridicas e sociais), com salario de R$ 9.000, alem de etapas de prova objetiva e discursiva para a carreira de analista/especialista.
 
-Title:   Prefeitura de Nova Alvorada do Sul - MS abre concurso público com salários de até R$ 13.483,20
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-alvorada-do-sul-ms-abre-concurso-publico-com-salarios-de-ate-13483
+Title:   Prefeitura de Olímpia - SP retifica concurso público com salários de até R$ 9 mil
+URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-olimpia-sp-retifica-concurso-publico-com-salarios-de-ate-9-mil
 Career:   procuradorias
-Group:   prefeitura-nova-alvorada-do-sul-ms-concurso-2026
-Reason:  Concurso público da Prefeitura de Nova Alvorada do Sul/MS com vagas e cadastro de reserva; inclui 1 vaga para Procurador do Município (40h, remuneração de R$ 13.483,20, regime estatutário). Inscrições online de 12/05/2026 a 01/06/2026 (taxa R$ 90 nível superior). Seleção por prova objetiva (prevista 14/06/2026) e, para Procurador, também prova de títulos. Validade de 2 anos, prorrogável.
+Group:   prefeitura-olimpia-sp-procurador-juridico
+Reason:  Noticia de retificacao (Retificacao nº 01, de 05/05/2026) do concurso da Prefeitura da Estancia Turistica de Olimpia/SP, com alteracao do cronograma (inscricoes ate 23/07/2026 e provas em 23/08/2026) e ajustes em conteudos programaticos. Entre diversos cargos, ha 1 vaga para Procurador Juridico, com etapa de peca processual e avaliacao de titulos, alem de prova objetiva.
 
-Title:   Prefeitura de Rio das Antas - SC abre quatro processos seletivos para diferentes cargos
-URL:     https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-das-antas-sc-abre-quatro-processos-seletivos-para-diferentes-cargos
+Title:   Câmara de Itabirinha - MG abre concurso público com salários de até R$ 6.200,00
+URL:     https://www.pciconcursos.com.br/noticias/camara-de-itabirinha-mg-abre-concurso-publico-com-salarios-de-ate-6200
 Career:   administrativo
-Group:   prefeitura-rio-das-antas-sc-processo-seletivo-2026
-Reason:  Notícia informa abertura de quatro editais de processo seletivo da Prefeitura de Rio das Antas/SC com inscrições de 12 a 26/05/2026 (site legalleconcursos.com.br), prova objetiva em 20/06/2026 e validade de 1 ano. Entre diversos cargos, há vaga para Advogado, além de outras funções de níveis fundamental a superior, com jornadas de 20 a 40h e remuneração de R$ 1.070,16 a R$ 19.794,40; etapas podem incluir prova prática e títulos conforme o cargo.
+Group:   camara-itabirinha-mg-advogado
+Reason:  Noticia divulga abertura de concurso publico da Camara Municipal de Itabirinha/MG para 5 vagas, incluindo 1 vaga para o cargo de Advogado, com jornada de 30h semanais e remuneracao ate R$ 6.200,00. Inscricoes de 13/07/2026 a 11/08/2026 (presencial e online no Instituto Ideap), com prova objetiva para todos e prova de titulos para nivel superior; prova prevista para 13/09/2026. Regime estatutario e validade de 2 anos prorrogavel.
 
-Title:   Polícia Penal - RS publica edital de concurso com vagas para nível médio e superior
-URL:     https://www.pciconcursos.com.br/noticias/policia-penal-rs-publica-edital-de-concurso-com-vagas-para-nivel-medio-e-superior
-Career:   policiais
-Group:   policia-penal-rs-concurso-2026
-Reason:  Notícia informa a publicação do edital do Concurso Público nº 01/2026 da Polícia Penal do Estado do Rio Grande do Sul, com inscrições de 12/05/2026 a 12/06/2026 (Fundatec) e provas previstas para 09/08/2026. Entre os cargos ofertados há Analista da Polícia Penal – Direito (25 vagas), com etapas incluindo prova objetiva e discursiva (para Analista), além de demais fases do certame.
-
-Title:   Câmara de Água Doce do Norte - ES abre concurso com vagas imediatas e cadastro de reserva
-URL:     https://www.pciconcursos.com.br/noticias/camara-de-agua-doce-do-norte-es-abre-concurso-com-vagas-imediatas-e-cadastro-de-reserva
-Career:   procuradorias
-Group:   camara-agua-doce-do-norte-es-concurso-2026
-Reason:  Edital de concurso público da Câmara Municipal de Água Doce do Norte/ES para 8 vagas imediatas e cadastro de reserva, incluindo 1 vaga + CR para Procurador. Prevê inscrições de 26/05/2026 a 26/06/2026 no site do IDESG, provas objetivas em 11/10/2026 e prova discursiva específica para Procurador, além de títulos para cargos de nível superior. Regime estatutário e validade de 2 anos prorrogável.
-
-Title:   Câmara de Cianorte - PR abre concurso público com salários de até R$ 9.247,24
-URL:     https://www.pciconcursos.com.br/noticias/camara-de-cianorte-pr-abre-concurso-publico-com-salarios-de-ate-9247
+Title:   UFOP - MG abre processo seletivo para Professor Substituto na área de Direito
+URL:     https://www.pciconcursos.com.br/noticias/ufop-mg-abre-processo-seletivo-para-professor-substituto-na-area-de-direito
 Career:   administrativo
-Group:   camara-cianorte-pr-concurso-2026
-Reason:  Notícia sobre edital de concurso público da Câmara Municipal de Cianorte/PR (Fundação FAFIPA), para provimento de vagas e cadastro de reserva no quadro efetivo do Legislativo municipal, com regime estatutário. Entre os cargos ofertados há 1 vaga para Advogado, com etapas específicas (prova objetiva, discursiva e títulos) e provas previstas para 05/07/2026 em Cianorte-PR.
+Group:   ufop-ipatinga-mg-professor-substituto-direito
+Reason:  Processo seletivo simplificado da Universidade Federal de Ouro Preto (UFOP/MG) para 1 vaga de Professor Substituto no Instituto de Saúde e Humanidades (ISH), campus Ipatinga, para lecionar Introdução ao Estudo do Direito/Sociologia Jurídica/Filosofia do Direito. Regime de 40h semanais, remuneração de R$ 5.949,07 a R$ 8.058,29 + auxílio-alimentação. Inscrições por e-mail de 13 a 18/05/2026, com prova didática, entrevista e análise de currículo.
 
-Title:   Câmara de Senador Canedo - GO suspende concurso público para diversos cargos
-URL:     https://www.pciconcursos.com.br/noticias/camara-de-senador-canedo-go-suspende-concurso-publico-para-diversos-cargos
+Title:   Edital Pindorama-SP 2026: Prefeitura abre 31 vagas de até R$ 7.913
+URL:     https://www.acheconcursos.com.br/concursos-sao-paulo/concurso-aberto-prefeitura-pindorama-sp-90079
 Career:   administrativo
-Group:   camara-senador-canedo-go-concurso-2026
-Reason:  Comunicado de 11/05/2026 da Câmara Municipal de Senador Canedo/GO informando a suspensão temporária das inscrições e das demais fases do concurso público (Instituto Consulpam) para cargos de níveis médio e superior. Entre as vagas previstas estavam Procurador Jurídico (1) e Analista Legislativo Técnico Jurídico (1), além de outros cargos administrativos e técnicos. Suspensão por tempo indeterminado até ulterior deliberação, com futuras atualizações nos canais oficiais da Câmara e da banca.
+Group:   prefeitura-pindorama-sp-analista-de-licitacoes-e-contratos
+Reason:  Editais 001/2026 da Prefeitura de Pindorama-SP (concurso público e processo seletivo) para 31 vagas e cadastro de reserva em vários cargos. Há vaga/cadastro para Analista de Licitações e Contratos (superior em Direito) e também Técnico de Licitações e Contratos (superior em Direito ou Gestão Pública), com atuação em licitações e gestão/controle contratual na administração municipal.
 
-Title:   Prefeitura de Caraguatatuba abre inscrições de processo seletivo on-line para contratação de estagiários de 37 cursos – Prefeitura de Caraguatatuba
-URL:     https://www.caraguatatuba.sp.gov.br/pmc/2026/05/prefeitura-de-caraguatatuba-abre-inscricoes-de-processo-seletivo-on-line-para-contratacao-de-estagiarios-de-37-cursos/
-Career:   estagio
-Group:   prefeitura-caraguatatuba-sp-estagio-2026
-Reason:  Noticia a abertura de inscrições do Processo Seletivo (Edital 01/2026) da Prefeitura de Caraguatatuba, via CIEE, para formação de cadastro reserva e contratação de estagiários, com prova on-line. Entre os 37 cursos contemplados no nível superior há vagas para estudantes de Direito (1º ao 4º semestre e a partir do 5º). Informa prazos (12/5 a 27/5), gabarito, recursos e classificação final, além de bolsa-auxílio e carga horária.
-
-Title:   FAB lança processo seletivo para serviço militar temporário em diversas áreas - Portal 6
-URL:     https://portal6.com.br/2026/05/12/fab-lanca-processo-seletivo-para-servico-militar-temporario-em-diversas-areas/
-Career:   administrativo
-Group:   fab-qocon-2026-2027
-Reason:  Notícia informa abertura de inscrições da Força Aérea Brasileira para o processo seletivo do Quadro de Oficiais da Reserva de 2ª Classe Convocados (QOCON) 2026/2027, para prestação de serviço militar temporário em Organizações Militares no país. Seleção sem prova escrita, com avaliação curricular, seguida de inspeção médica, avaliação psicológica e teste físico. Há vagas em diversas áreas, incluindo Direito, para profissionais com diploma superior e até 41 anos na incorporação.
-
-Title:   Inscrições para estágio na Defensoria Pública da Bahia com bolsa de R$ 1,8 mil encerram hoje
-URL:     https://www.estadodabahia.com.br/noticia/49186/inscricoes-para-estagio-na-defensoria-publica-da-bahia-com-bolsa-de-r-1-8-mil-encerram-hoje
-Career:   estagio
-Group:   dpe-ba-estagio-direito-2026
-Reason:  Notícia informa o encerramento das inscrições do processo seletivo de estágio da Defensoria Pública do Estado da Bahia (DPE-BA) voltado a estudantes de Direito, com vagas imediatas e formação de cadastro reserva em unidades da Defensoria no estado. Menciona bolsa de até R$ 1.840,00 para estudantes de pós-graduação, além de auxílio-transporte, com inscrição via Fundação Cefet Bahia.
-
-Title:   PR-MA convoca candidato aprovado no processo seletivo de estágio em Direito (Graduação) — Ministério Público Federal
-URL:     https://www.mpf.mp.br/o-mpf/unidades/pr-ma/noticias/pr-ma-convoca-candidato-aprovado-no-processo-seletivo-de-estagio-em-direito-graduacao-3
-Career:   estagio
-Group:   mpf-pr-ma-estagio-direito-2025
-Reason:  Notícia da Procuradoria da República no Maranhão (MPF/PR-MA) convocando candidato aprovado no processo seletivo de estágio em Direito (graduação) realizado em 2025. Informa prazo para envio de documentação (13 a 19/05/2026) via peticionamento eletrônico e lista de documentos exigidos para formalização do vínculo. Trata-se de convocação/andamento do certame para estágio em Direito, turno vespertino.
-
-Title:   Câmara Municipal de Senador Canedo GO suspende concurso com 22 vagas | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/camara-municipal-de-senador-canedo-go-suspende-concurso-com-22-vagas
-Career:   administrativo
-Group:   camara-senador-canedo-go-concurso-2026
-Reason:  Notícia informa a suspensão judicial temporária das inscrições e de todas as etapas do concurso da Câmara Municipal de Senador Canedo/GO (banca Consulpam), por decisão cautelar no processo 5261575-66.2026.8.09.0174. O edital prevê 22 vagas + CR, com provas que seriam em 18/07/2026 (procurador jurídico) e 19/07/2026 (demais cargos). Entre os cargos há procurador jurídico e analista legislativo – técnico jurídico, com etapas discursivas/práticas e conteúdos de Direito.
-
-Title:   Petrobras abre processo seletivo com vagas de estágio e bolsa de R$ 1.825
-URL:     https://www.portaltemponovo.com.br/petrobras-abre-processo-seletivo-com-vagas-de-estagio-e-bolsa-de-1-825/
-Career:   estagio
-Group:   petrobras-estagio-2026
-Reason:  Notícia sobre o Processo Seletivo do Programa de Estágio Petrobras 2026, com bolsa de R$ 1.825 e benefícios (vale-transporte, seguro, recesso, cursos). Inscrições de 21/05 a 03/06/2026 e prova objetiva online (60 questões) realizada no período de inscrição. Público-alvo: estudantes de graduação, incluindo área de Advocacia/Direito, com vagas em diversas cidades (RJ, SP, DF, RS, BA, MG, PE, PR, SE, CE, AM, ES).
-
-Title:   Concurso ALECE: PL reestrutura carreiras; edital iminente
-URL:     https://www.estrategiaconcursos.com.br/blog/concurso-alece-pl-reestrutura-carreiras/
-Career:   administrativo
-Group:   alece-concurso-analista-tecnico-2026
-Reason:  Noticia atualizacao do concurso da Assembleia Legislativa do Estado do Ceara (ALECE): projeto de lei reestrutura o plano de cargos e cria 426 cargos (344 Analista Legislativo e 82 Tecnico Legislativo), com previsao de edital em maio e banca IDECAN ja contratada. O edital deve ofertar 200 vagas imediatas (170 para Analista Legislativo, nivel superior por especialidade, e 30 para Tecnico, nivel medio) e 400 em cadastro de reserva, com provas objetiva e discursiva e titulos para analista.
-
-Title:   Câmara de Cianorte/PR abre concurso com salários de até R$ 9,2 mil
-URL:     https://concursossc.com.br/camara-de-cianorte-pr-abre-concurso-com-salarios-de-ate-r-92-mil/
-Career:   administrativo
-Group:   camara-cianorte-pr-concurso-2026
-Reason:  Concurso Público da Câmara Municipal de Cianorte/PR (edital 001/2026), organizado pela Fundação FAFIPA, para provimento de vagas efetivas e cadastro reserva. Entre os cargos ofertados há 1 vaga para Advogado (salário inicial de R$ 9.247,24 + auxílio-saúde), com etapas incluindo prova objetiva, prova discursiva e prova de títulos. Inscrições de 14/05/2026 a 14/06/2026.
-
-Title:   Concurso AGU; novo pedido de autorização deve ser encaminhado nos próximos dias
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-agu-novo-pedido-de-autorizacao-deve-ser-encaminhado-nos-proximos-dias-142498
-Career:   procuradorias
-Group:   agu-concurso-solicitacao-2026-2027
-Reason:  Notícia informa que a Advocacia-Geral da União deve encaminhar ao Ministério da Gestão e da Inovação um novo pedido de autorização para concurso, com prazo até 31 de maio para constar no orçamento federal de 2027. Ainda não há definição de quantitativo de vagas ou cargos, mas menciona pedido anterior (jun/2025) de 403 vagas de nível superior e referência a seleções recentes (CNU 2024 e concurso 2023 com 300 vagas).
-
-Title:   Assembleia Legislativa do Ceará abre inscrições para estagiários | G1
-URL:     https://g1.globo.com/ce/ceara/suachance/noticia/2026/05/12/assembleia-legislativa-abre-selecao-para-estagiarios-de-niveis-superior-medio-e-profissionalizantes-veja-como-participar.ghtml
-Career:   estagio
-Group:   alece-estagio-2026
-Reason:  Notícia informa que a Assembleia Legislativa do Estado do Ceará (Alece) abriu processos seletivos para estagiários com vagas imediatas e cadastro de reserva, incluindo nível superior (graduação e pós-graduação). Entre as áreas, há vagas específicas vinculadas ao curso de Direito para atuação em direitos humanos e assessoria jurídica popular. Inscrições gratuitas de 12 a 24/05, seleção pela Universidade Patativa do Assaré (UPA) com prova objetiva online em 31/05 e resultado previsto para 05/06.
-
-Title:   Câmara de Água Doce do Norte (ES) abre novo concurso público
-URL:     https://concursosnobrasil.com/concursos/es/2026/05/12/camara-de-agua-doce-do-norte-es-abre-novo-concurso-publico/
-Career:   procuradorias
-Group:   camara-agua-doce-do-norte-es-concurso-2026
-Reason:  Notícia divulga o regulamento nº 001/2026 de concurso público da Câmara Municipal (Água Doce do Norte/ES), organizado pelo IDESG, com 8 vagas + cadastro de reserva. Entre os cargos de nível superior há Procurador, com salário de R$ 3.100 e exigência de registro na OAB; seleção inclui prova objetiva, discursiva específica para Procurador e prova de títulos. Inscrições de 26/05 a 26/06/2026 e prova objetiva prevista para 11/10/2026.
-
-Title:   Petrobras abre 150 vagas de estágio com salário gigante para estudantes de vários cursos
-URL:     https://www.tnh1.com.br/variedades/petrobras-abre-150-vagas-de-estagio-com-salario-gigante-para-estudantes-de-varios-cursos/
-Career:   estagio
-Group:   petrobras-estagio-2026
-Reason:  Notícia informa abertura de inscrições para o programa de estágio 2026 da Petrobras no RJ, com 150 vagas e bolsa de R$ 1.825, atuação em cidades como Rio de Janeiro, Macaé, Duque de Caxias e Itaboraí, carga de 20h semanais e benefícios. Processo seletivo inclui prova online objetiva após a inscrição, com português, matemática e temas da companhia. Entre os cursos contemplados está Direito, além de outras áreas.
-
-Title:   Câmara de Vereadores abre concurso público para todos os níveis de escolaridade
-URL:     https://www.portaltemponovo.com.br/camara-de-vereadores-abre-concurso-publico-para-todos-os-niveis-de-escolaridade/
-Career:   procuradorias
-Group:   camara-montanha-es-concurso-2026
-Reason:  Notícia sobre concurso público da Câmara Municipal de Montanha/ES (banca Consulplan), com vagas imediatas e cadastro de reserva. Entre os cargos de nível superior listados está Procurador Legislativo, com jornada de 20h semanais, salário inicial de R$ 4.500 e etapa de prova discursiva exclusiva para essa função. Inscrições on-line de 18/05 a 18/06/2026; provas no município de Montanha/ES.
-
-Title:   Câmara Municipal de Água Doce do Norte ES abre concurso com 8 vagas | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/camara-municipal-de-agua-doce-do-norte-es-abre-concurso-com-8-vagas
-Career:   procuradorias
-Group:   camara-agua-doce-do-norte-es-concurso-2026
-Reason:  Notícia sobre o Concurso Público 001/2026 da Câmara Municipal de Água Doce do Norte/ES (banca IDESG), com 8 vagas + CR e regime estatutário. Entre os cargos ofertados há 1 vaga + CR para Procurador, com atuação em assessoramento jurídico, representação judicial e extrajudicial, emissão de pareceres e elaboração de minutas normativas; etapas incluem prova objetiva, discursiva (peça prático-profissional) e títulos. Inscrições de 26/05 a 26/06/2026 e provas em 11/10/2026.
-
-Title:   Petrobras abre vagas de estágio na Grande Curitiba; veja como se inscrever
-URL:     https://www.bemparana.com.br/noticias/petrobras-abre-vagas-de-estagio-na-grande-curitiba-veja-como-se-inscrever/
-Career:   estagio
-Group:   petrobras-estagio-2026
-Reason:  Notícia divulga processo seletivo de estágio da Petrobras com 150 vagas no país e inscrições de 21/05 a 03/06, com prova objetiva on-line. Entre as áreas contempladas em outras regiões está advocacia, além de outras graduações. Informa locais (inclui Araucária e São Mateus do Sul/PR), carga horária de 20h semanais, possibilidade de regime híbrido/teletrabalho para PCD e benefícios (bolsa R$ 1.825, VT, seguro, recesso).
-
-Title:   TJSE publica edital para seleção de estagiários de nível superior
-URL:     https://agencia.tjse.jus.br/noticias/item/16594-tjse-publica-edital-para-selecao-de-estagiarios-de-nivel-superior
+Title:   Concurso TJ CE terá novas nomeações e edital nesta sexta, 15  | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-tj-ce-2026-oficiais-convocacao
 Career:   tribunais
-Group:   tjse-estagio-2026
-Reason:  Notícia informa publicação de edital do TJSE para processo seletivo de estágio de nível superior, com vagas e cadastro reserva em diversas áreas, destacando grande quantitativo para estudantes de Direito. Detalha distribuição de vagas (ex.: Aracaju 40; Nossa Senhora do Socorro 6; Itabaiana/Lagarto/São Cristóvão 3), período de inscrições (13/05 a 05/06/2026), taxa (R$ 20), prova objetiva em 17/06/2026 em Aracaju, prazos de gabaritos/recursos, bolsa (R$ 800 + R$ 180) e carga horária (20h/semana).
+Group:   tj-ce-oficial-de-justica
+Reason:  Notícia sobre o concurso do Tribunal de Justiça do Ceará com novo edital previsto para sexta-feira (dia 15) e novas nomeações/convocação de 14 aprovados do concurso de 2022 para Oficial de Justiça. Informa banca definida (FCC), etapas (objetiva, discursiva e títulos para nível superior), locais de prova (Fortaleza, Juazeiro do Norte e Sobral) e cargos previstos, incluindo Analista Judiciário – área Judiciária e Oficial de Justiça (além de técnico e outras especialidades).
 
-Title:   Concurso Polícia Penal RS abre 213 vagas com salários de até R$ 9,7 mil
-URL:     https://concursosnobrasil.com/concursos/rs/2026/05/12/concurso-policia-penal-rs-abre-213-vagas-com-salarios-de-ate-r-97-mil/
+Title:   Concursos do DER e PGE/AL encerram inscrições nos próximos dias; veja prazos e salários
+URL:     https://www.cadaminuto.com.br/noticia/2026/05/13/concursos-do-der-e-pge-al-encerram-inscricoes-nos-proximos-dias-veja-prazos-e-salarios
+Career:   procuradorias
+Group:   pge-al-procurador-do-estado
+Reason:  Notícia informa o fim das inscrições de dois certames em Alagoas, destacando o concurso da PGE/AL para 20 vagas de Procurador do Estado (10 imediatas e 10 cadastro de reserva), com salário inicial acima de R$ 35 mil e requisito de inscrição na OAB; inscrições até 18/05 e edital no Cebraspe. Também cita concurso do DER/AL para Assessor Técnico Rodoviário (Engenharia Civil), sem foco jurídico.
+
+Title:   Após decisão da Justiça, Prefeitura de Itaitinga deve convocar aprovados no concurso da Procuradoria
+URL:     https://anoticiadoceara.com.br/apos-decisao-da-justica-prefeitura-de-itaitinga-deve-convocar-aprovados-no-concurso-da-procuradoria/
+Career:   procuradorias
+Group:   prefeitura-itaitinga-ce-procurador-municipal
+Reason:  Notícia informa decisão judicial após ação do MPCE determinando que a Prefeitura de Itaitinga interrompa contratos temporários com escritórios de advocacia e, como consequência, convoque aprovados do concurso da Procuradoria Municipal. O certame (Edital nº 002/2025) ofertou 5 vagas imediatas; apenas 2 nomeações ocorreram e restam 3 vagas a preencher, com possibilidade de novas convocações para atuar na Procuradoria do Município.
+
+Title:   Cade abre processo seletivo de estágio para estudantes de Direito e Economia — Conselho Administrativo de Defesa Econômica
+URL:     https://www.gov.br/cade/pt-br/assuntos/noticias/cade-abre-processo-seletivo-de-estagio-para-estudantes-de-direito-e-economia
+Career:   estagio
+Group:   cade-brasilia-df-estagio
+Reason:  Notícia do CADE (Coordenação-Geral de Análise Antitruste 5) divulgando processo seletivo de estágio para estudantes de graduação ou pós-graduação em Direito (também Economia), com envio de currículo até 17 de maio. Atividades incluem acompanhamento e instrução processual, pesquisa jurisprudencial e doutrinária, análise de casos e apoio na elaboração de pareceres, além de apoio a eventos e análises de dados. Bolsa de R$ 1.508,42 (graduação) ou R$ 2.231,39 (pós) + auxílio-transporte.
+
+Title:   EDITAL divulga notas IRA e IGC dos aprovados 2026.docx - MPF
+URL:     https://www.mpf.mp.br/o-mpf/unidades/pr-go/estagio/processos-seletivos-2026/docs-2026/edital-divulga-notas-ira-e-igc-dos-aprovados-2026-assinado.pdf
+Career:   mp
+Group:   mpf-goias-estagio
+Reason:  PDF do MPF (unidade PR-GO) referente a processo seletivo de estágio 2026, com edital que divulga as notas de IRA e IGC dos aprovados. Trata-se de publicação oficial de resultado/atualização do certame na página de processos seletivos de estágio do Ministério Público Federal em Goiás.
+
+Title:   Nova Alvorada do Sul abre concurso com salÃ¡rios de atÃ© R$ 13,4 mil - RCN67
+URL:     https://www.rcn67.com.br/campo-grande/concurso-nova-alvorada-do-sul-salarios-13-mil/
+Career:   procuradorias
+Group:   prefeitura-nova-alvorada-do-sul-ms-procurador
+Reason:  Notícia informa concurso público da Prefeitura de Nova Alvorada do Sul (MS), com inscrições até 1º de junho, prova objetiva prevista para 14/06/2026 e validade de 2 anos. Entre os cargos, destaca Procurador do Município, com remuneração de R$ 13.483,20 e etapa adicional de avaliação de títulos (especialização, mestrado e doutorado). Também menciona outros cargos de nível médio (fiscal de tributos; fiscal de obras e posturas).
+
+Title:   Concurso CÃ¢mara dos Deputados 2023 tem validade prorrogada para oito cargos
+URL:     https://www.direcaoconcursos.com.br/noticias/concurso-camara-dos-deputados-prorrogacao-2023
 Career:   administrativo
-Group:   policia-penal-rs-concurso-2026
-Reason:  Divulgação de concurso da Polícia Penal do Rio Grande do Sul (banca Fundatec) com 213 vagas para Policial Penal, Técnico Administrativo e Analista da Polícia Penal em diversas especialidades, incluindo Analista – Direito. Inscrições de 12/05 a 12/06/2026, provas (objetiva e discursiva para Analista) previstas para 09/08/2026, além de TAF, avaliação psicológica e investigação social. Salários iniciais de R$ 5.159,25 a R$ 9.745,26 e curso de formação obrigatório.
+Group:   camara-dos-deputados-2023-analista-legislativo-consultoria
+Reason:  Noticia sobre edital de prorrogacao da validade do concurso da Camara dos Deputados (2023), para a carreira de Analista Legislativo, abrangendo oito especialidades, incluindo Consultoria (Consultor Legislativo). O texto tambem menciona outros certames em andamento e previstos, mas o fato central e a prorrogacao do concurso de 2023 organizada pela FGV, com vagas e remuneracao informadas.
 
-Title:   Concurso Polícia Penal RS: edital é publicado com 213 vagas | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-policia-penal-rs-edital-2026
+Title:   Câmara Municipal de Itabirinha MG abre concurso com 5 vagas em 2026 | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/camara-municipal-de-itabirinha-mg-abre-concurso-com-5-vagas-em-2026
 Career:   administrativo
-Group:   policia-penal-rs-concurso-2026
-Reason:  Notícia informa a publicação do edital do concurso da Polícia Penal do Rio Grande do Sul (banca Fundatec), com 213 vagas. Entre os cargos, há Analista da Polícia Penal com especialidade em Direito (25 vagas), além de etapas como prova objetiva, prova discursiva (apenas para analista), avaliação psicológica e outras. O conteúdo detalha inscrições (12/05 a 12/06), taxas, remuneração e disciplinas incluindo legislação aplicada/direito.
+Group:   camara-itabirinha-mg-advogado
+Reason:  Concurso Publico nº 01/2026 da Camara Municipal de Itabirinha/MG (regime estatutario) com 5 vagas; inclui 1 vaga para Advogado (30h, salario R$ 6.200), com atribuicoes de representacao judicial da Camara, emissao de pareceres, atuacao em contratos e assessoramento juridico do Legislativo. Inscricoes de 13/07 a 11/08/2026, prova objetiva em 13/09/2026 e titulos para nivel superior.
 
-Title:   Último dia de inscrição: Defensoria da Bahia oferece 100 vagas de estágio com bolsa de quase R$2 mil - Farol da Bahia
-URL:     https://www.faroldabahia.com.br/noticia/ultimo-dia-de-inscricao-defensoria-da-bahia-oferece-100-vagas-de-estagio-com-bolsa-de-quase-rusd2-mil
-Career:   estagio
-Group:   dpe-ba-estagio-residencia-2026
-Reason:  Notícia informa último dia de inscrição de processo seletivo da Defensoria Pública do Estado da Bahia para estágios e programa de residência, incluindo estágio jurídico para estudantes de Direito (5º ao 9º semestre) e Residência Jurídica para bacharéis matriculados em pós-graduação. Menciona cerca de 100+ vagas no total, com provas em 24/05/2026 em Salvador, etapas (objetiva, discursiva e, na residência, títulos) e bolsas de até R$ 1.850.
-
-Title:   PJM Belém/PA divulga o resultado definitivo das provas objetivas do Programa de Residência Jurídica – MINISTÉRIO PÚBLICO MILITAR
-URL:     https://www.mpm.mp.br/arquivos/72500
-Career:   estagio
-Group:   mpm-pjm-belem-pa-residencia-juridica-2026
-Reason:  Publicação do Ministério Público Militar informando o resultado definitivo das provas objetivas do 2º Processo Público de Seleção de Residentes da Procuradoria de Justiça Militar em Belém/PA (Programa de Residência Jurídica). O comunicado traz critérios de aprovação (mínimo de 50%/15 pontos), classificação por pontuação e desempate por maior idade, além de link para acesso à lista de aprovados.
-
-Title:   Alece abre seleção com 500 vagas de estágio e bolsa de até R$ 2,1 mil - Papo Carreira - Diário do Nordeste
-URL:     https://diariodonordeste.verdesmares.com.br/papo-carreira/alece-abre-selecao-com-500-vagas-de-estagio-e-bolsa-de-ate-r-21-mil-1.3763671
-Career:   estagio
-Group:   alece-estagio-2026
-Reason:  Notícia informa que a Assembleia Legislativa do Estado do Ceará (Alece) abriu processo seletivo de estágio remunerado com 500 vagas (imediatas e cadastro de reserva) para níveis superior (graduação e pós-graduação), além de médio e técnico. Há previsão de vagas específicas ligadas ao curso de Direito, incluindo atuação em direitos humanos e assessoria jurídica popular/assessoria jurídica. Inscrições até 24/05 no site da Universidade Patativa do Assaré; prova objetiva online em 31/05.
-
-Title:   Prefeitura de Cláudio (MG) publica edital de seletivo para Procurador Municipal
-URL:     https://concursosnobrasil.com/concursos/mg/2026/05/12/prefeitura-de-claudio-mg-publica-edital-de-seletivo-para-procurador-municipal/
+Title:   Concurso público em MS tem salários de até R$ 13 mil; confira o edital
+URL:     https://primeirapagina.com.br/emprego-e-concursos/concurso-publico-em-ms-tem-salarios-de-ate-r-13-mil-confira-o-edital/
 Career:   procuradorias
-Group:   prefeitura-claudio-mg-processo-seletivo-2026
-Reason:  Processo seletivo simplificado 019/2026/DRH da Prefeitura de Cláudio/MG para contratação temporária de 1 Procurador Municipal (40h, R$ 6.420,73), lotado na Advocacia Geral do Município. Atuação envolve representação judicial e extrajudicial do município, elaboração de pareceres, acompanhamento processual, licitações e contratos administrativos, cobrança judicial de créditos tributários e atos normativos. Seleção por análise curricular e entrevista; inscrições online gratuitas em 19-20/05/2026.
+Group:   prefeitura-nova-alvorada-do-sul-ms-procurador
+Reason:  Notícia divulga edital de concurso da Prefeitura de Nova Alvorada do Sul (MS) com vagas imediatas e cadastro reserva, incluindo 1 vaga para Procurador do Município. Seleção por prova objetiva (todos os cargos) em 14/06 e prova de títulos adicional para procurador. Jornada de 40h; remuneração do procurador indicada em R$ 13.483,20. Inscrições online até 01/06/2026.
 
-Title:   ALECE - Alece abre seleção para estagiários de níveis superior, médio e profissionalizantes
-URL:     https://www.al.ce.gov.br/noticias/52993-alece-abre-selecao-para-estagiarios-de-niveis-superior-medio-e-profissionalizantes
-Career:   estagio
-Group:   alece-estagio-2026
-Reason:  Notícia informa abertura de processos seletivos da Assembleia Legislativa do Estado do Ceará (Alece) para estágio com vagas imediatas e cadastro de reserva, com edital publicado no Doalece e execução pela Universidade Patativa do Assaré. Entre as áreas contempladas há vagas específicas no curso de Direito, incluindo atuação em direitos humanos e assessoria jurídica popular. Inscrições gratuitas de 12 a 24/05; prova objetiva on-line em 31/05 e resultado previsto para 05/06.
-
-Title:   DPE: inscrições para estágio com bolsa de até R$ 1,8 mil vão até hoje
-URL:     https://www.ibahia.com/empregos-e-concursos/dpe-inscricoes-para-estagio-com-bolsa-de-ate-r-18-mil-vao-ate-hoje-365875
-Career:   defensoria
-Group:   dpe-ba-estagio-residencia-2026
-Reason:  Notícia sobre processo seletivo da Defensoria Pública do Estado da Bahia (DPE-BA), com inscrições até 12/05, para estágio jurídico (graduandos de Direito do 5º ao 9º semestre) e Programa de Residência Jurídica (40 vagas para bacharéis matriculados em pós-graduação). Provas em 24/05/2026 em Salvador, com etapas objetiva, discursiva (e títulos na residência). Bolsas informadas até R$ 1.850 em junho/2026.
-
-Title:   Estou Preparado
-URL:     https://estoupreparado.com.br/noticias/4308-comiss-o-para-cargos-de-procurador-e-auditor-formada-em-goiana
-Career:   procuradorias
-Group:   prefeitura-goiana-pe-concurso-anunciado-2026
-Reason:  Notícia informa a criação, por Portaria nº 1.234/2026, de Comissão Especial Organizadora para planejar e supervisionar próximo concurso da Prefeitura de Goiana (Poder Executivo municipal). O texto indica que o certame deverá contemplar cargos como Procurador Municipal (além de Auditor-Fiscal e Contador), e descreve atribuições da comissão: definir quantitativo de vagas, elaborar termo de referência para contratação da banca, analisar edital e julgar recursos até a homologação final.
-
-Title:   Defensoria da Bahia abre 100 vagas de estágio com bolsas de R$ 1,8 mil
-URL:     https://atarde.com.br/concursos/defensoria-da-bahia-abre-100-vagas-de-estagio-com-bolsas-de-r-18-mil-1388589
-Career:   estagio
-Group:   dpe-ba-estagio-residencia-2026
-Reason:  Notícia sobre processo seletivo da Defensoria Pública do Estado da Bahia (DPE-BA) para mais de 100 vagas de estágio, incluindo oportunidades para estudantes de Direito (entre 5º e 9º semestre) com prova objetiva e questão discursiva, bolsa em torno de R$ 1.030 (reajuste previsto) e auxílio-transporte. Também divulga seleção de Residência Jurídica com 40 vagas, com prova objetiva, discursiva e títulos, destinada a graduados em Direito matriculados em pós-graduação, 30h semanais, bolsa de R$ 1.550 com reajuste para R$ 1.850.
-
-Title:   Concurso Prefeitura de Água Doce do Norte ES abre 221 vagas em 2026 | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/concurso-prefeitura-de-agua-doce-do-norte-es-abre-221-vagas-em-2026
-Career:   procuradorias
-Group:   prefeitura-agua-doce-do-norte-es-concurso-2026
-Reason:  Notícia de edital de concurso público da Prefeitura de Água Doce do Norte/ES (banca IDESG), com 221 vagas imediatas e cadastro de reserva para diversos cargos e níveis. Entre as funções ofertadas está Procurador Municipal (1+CR), com etapa de prova discursiva específica, além de Assistente de Procuradoria (1+CR) no nível superior. Inscrições de 26/05 a 26/06/2026 e prova objetiva em 18/10/2026, regime estatutário.
-
-Title:   Concurso PGM Manaus AM: definida banca para nova seleção de procurador
-URL:     https://jcconcursos.com.br/noticia/concursos/concurso-pgm-manaus-am-definida-banca-para-nova-selecao-de-procurador-142502
-Career:   procuradorias
-Group:   pgm-manaus-am-procurador-concurso-2026
-Reason:  Notícia informa atualização do próximo concurso da Procuradoria Geral do Município de Manaus/AM: banca organizadora definida (FCC) e contratação em vias de assinatura, com comissão formada desde nov/2025. Previsão de 6 vagas imediatas para Procurador do Município, remuneração inicial de R$ 29.009,10 e taxa estimada de R$ 380. Etapas previstas: prova objetiva (100 questões) e duas provas dissertativas com peça processual e questões discursivas.
-
-Title:   Maranhão: concurso em Buriticupu oferece 3.120 vagas e salários de até R$ 12 mil
-URL:     https://www.terra.com.br/noticias/educacao/carreira/maranhao-concurso-em-buriticupu-oferece-3120-vagas-e-salarios-de-ate-r-12-mil,777e3828d3a388c98df1a68259bd70ccy8ajb0b8.html
-Career:   procuradorias
-Group:   prefeitura-buriticupu-ma-concurso-2026
-Reason:  Notícia informa a publicação do edital do concurso público da Prefeitura de Buriticupu/MA (banca FSADU), com 3.120 vagas imediatas e cronograma de inscrições e provas (4 e 5/7/2026). Entre os cargos citados, há Procurador Municipal e Analista com prova prática (dissertação), além de menção a requisito de registro na OAB conforme o cargo, caracterizando seleção com vagas de atuação jurídica no âmbito municipal.
-
-Title:   Concurso Polícia Penal RS oferece 213 vagas e salários de até R$ 9,7 mil
-URL:     https://concursossc.com.br/concurso-policia-penal-rs-oferece-213-vagas-e-salarios-de-ate-r-97-mil/
+Title:   Concurso Polícia Penal RS 2026: 213 vagas para níveis médio e superior com salários de até R$ 9,7 mil - Uni10
+URL:     https://uniten.com.br/concurso-policia-penal-rs-2026-213-vagas-salarios-2/
 Career:   policiais
-Group:   policia-penal-rs-concurso-2026
-Reason:  Edital publicado no RS para concurso da Policia Penal com 213 vagas: Analista da Policia Penal (nivel superior por area, incluindo 25 vagas na especialidade Direito, com prova objetiva e discursiva), Policial Penal (84 vagas, nivel superior em qualquer area, com prova objetiva, TAF e etapas de avaliacao) e Tecnico Administrativo (8 vagas, nivel medio). Conteudo inclui cobranca de Legislacao Aplicada/Direito e cronograma de inscricoes e provas.
+Group:   policia-penal-rs-analista-direito
+Reason:  Noticia sobre edital do concurso da Polícia Penal do Rio Grande do Sul (Fundatec) com 213 vagas para Policial Penal, Técnico Administrativo e Analista da Polícia Penal. Entre as especialidades de Analista há área de Direito, com prova objetiva e discursiva (para Analista), além de etapas como TAF/avaliação psicológica (para Policial Penal e Técnico) e curso de formação. Informa período de inscrição e remuneração até R$ 9.745,26.
 
-Title:   Concurso Advogado Câmara de Cianorte PR: SAIU EDITAL! Até R$ 9,2 mil!
-URL:     https://cj.estrategia.com/portal/concurso-advogado-camara-de-cianorte-pr/
+Title:   Concurso ALECE: PL de cargos será votado; edital iminente!
+URL:     https://blog.grancursosonline.com.br/concurso-alece-pl-cargos-2026/
 Career:   administrativo
-Group:   camara-cianorte-pr-concurso-2026
-Reason:  Edital publicado pela Camara Municipal de Cianorte/PR para concurso publico no cargo de Advogado, com 1 vaga e cadastro de reserva, banca FAFIPA. Remuneracao inicial de R$ 9.247,24 + auxilio-saude de R$ 712,12, jornada de 40h. Inscricoes de 14/05 a 14/06/2026 (taxa R$ 100; isencao 14 a 18/05). Provas objetiva e discursiva em 05/07/2026 e prova de titulos classificatoria.
+Group:   alece-ce-analista-legislativo
+Reason:  Notícia sobre o concurso da Assembleia Legislativa do Estado do Ceará (ALECE): PL de criação de cargos será votado e há contrato/extrato com a banca IDECAN, indicando edital próximo. O termo de referência menciona 200 vagas imediatas e 400 em cadastro de reserva para Analista Legislativo (diversas especialidades, nível superior) e Técnico Legislativo (nível médio), com lotação no Ceará e remuneração inicial divulgada.
 
-Title:   Com bolsa de R$ 1.825, Petrobras abre processo seletivo com vagas de estágio na Bahia | Alô Alô Bahia
-URL:     https://aloalobahia.com/noticias/2026/05/12/com-bolsa-de-r-1-825-petrobras-abre-processo-seletivo-com-vagas-de-estagio-na-bahia/
-Career:   estagio
-Group:   petrobras-estagio-2026
-Reason:  Notícia sobre edital de processo seletivo de estágio da Petrobras com 160 vagas, com oportunidades em Salvador e Camaçari/BA, jornada de 20h semanais e bolsa de R$ 1.825, além de vale-transporte, seguro e recesso. O programa contempla estudantes de cursos como advocacia e formações em ciências jurídicas (entre outras áreas de engenharia). Seleção por prova objetiva online com 60 questões; inscrições de 21/05 a 03/06 no site da empresa.
+Title:   Concurso TCE MA: regulamento aprovado; banca em definição
+URL:     https://www.estrategiaconcursos.com.br/blog/concurso-tce-ma-regulamento-aprovado-2026/amp/
+Career:   procuradorias
+Group:   tce-ma-sao-luis-ma-procurador
+Reason:  Notícia sobre avanço oficial do Concurso do Tribunal de Contas do Estado do Maranhão (TCE MA) com publicação da Resolução nº 442/2026 aprovando o regulamento: inscrições online, provas objetivas e discursivas, reserva de vagas (PcD e candidatos negros), validade de até 2 anos prorrogável e concurso em fase de definição da banca (FGV, Cebraspe, AOCP, IDECAN). Menciona expectativa de vagas incluindo Procurador, além de auditor/técnico/analista.
 
-Title:   Alece abre seleção para estagiários com bolsas que ultrapassam R$ 2 mil
-URL:     https://anoticiadoceara.com.br/alece-abre-selecao-para-estagiarios-com-bolsas-que-ultrapassam-r-2-mil/
-Career:   estagio
-Group:   alece-estagio-2026
-Reason:  A Assembleia Legislativa do Estado do Ceará (Alece) publicou edital de seleção pública para contratação de estagiários remunerados e formação de cadastro de reserva, com até 500 vagas em diversas áreas. O texto menciona vagas específicas para estudantes de Direito, voltadas à atuação em direitos humanos e assessoria jurídica popular. Inscrições gratuitas de 12 a 24/05 via Universidade Patativa do Assaré; prova objetiva on-line em 31/05 e resultado final previsto para 05/06.
+Title:   Mato Grosso tem seletivos que pagam até R$ 28 mil; veja | Gazeta Digital
+URL:     https://www.gazetadigital.com.br/editorias/economia/central-de-emprego/mato-grosso-tem-seletivos-que-pagam-ate-r-28-mil-veja/846563
+Career:   procuradorias
+Group:   camara-colider-mt-advogado-publico
+Reason:  Matéria reúne seletivos/concursos em Mato Grosso e inclui o certame da Câmara de Colíder-MT com vaga de Advogado Público (além de outros cargos administrativos), com inscrições de 12/05/2026 a 12/06/2026 e remuneração anunciada até R$ 4.582,86. Os demais itens citados são de prefeituras e instituições de ensino com cargos variados, mas o destaque jurídico específico é o cargo de advogado no Legislativo municipal.
 
-Title:   DEFENSORIA PÚBLICA DA BAHIA ABRE MAIS DE 100 VAGAS DE ESTÁGIO PARA TODOS OS NÍVEIS; CONFIRA - Bahia Economica
-URL:     https://bahiaeconomica.com.br/wp/2026/05/12/defensoria-publica-da-bahia-abre-mais-de-100-vagas-de-estagio-para-todos-os-niveis-confira/
-Career:   estagio
-Group:   dpe-ba-estagio-residencia-2026
-Reason:  Noticia abertura de processo seletivo da Defensoria Publica do Estado da Bahia com mais de 100 vagas de estagio (inclui estagio em Direito para alunos do 5º ao 9º semestre, com prova objetiva e redacao) e selecao de residencia juridica (40 vagas) com prova objetiva, discursiva e avaliacao de titulos, destinada a graduados em Direito matriculados em pos-graduacao, com bolsa e carga horaria definidas e prazo de inscricao/taxa.
+Title:   Olímpia prorroga inscrições de concurso com 70 vagas e salários de até R$ 9,5 mil - Uni10
+URL:     https://uniten.com.br/concurso-olimpia-sp-prorroga-inscricoes-70-vagas/
+Career:   procuradorias
+Group:   prefeitura-olimpia-sp-procurador-juridico
+Reason:  Notícia informa a prorrogação das inscrições do concurso público da Prefeitura de Olímpia (SP), com prazo até 23/07/2026 e 70 vagas em diversos níveis. Entre os cargos listados está Procurador Jurídico, com remuneração de R$ 9.581,64 (mais benefícios), além de etapa específica com prova objetiva, produção de peça processual e análise de títulos; provas objetivas marcadas para 23/08/2026.
 
-Title:   Portal do Servidor - Alece abre seleção para estagiários de níveis superior, médio e profissionalizantes
-URL:     https://portaldoservidor.al.ce.gov.br/noticias/alece-abre-selecao-para-estagiarios-de-niveis-superior-medio-e-profissionalizantes
-Career:   estagio
-Group:   alece-estagio-2026
-Reason:  Notícia informa publicação de edital e abertura de processos seletivos da Assembleia Legislativa do Estado do Ceará (Alece), organizados pela Universidade Patativa do Assaré, para vagas imediatas e cadastro de reserva de estágio (graduação e pós-graduação), incluindo oportunidades específicas para estudantes do curso de Direito com atuação em direitos humanos e assessoria jurídica popular; inscrições 12 a 24/05 e prova objetiva on-line em 31/05.
-
-Title:   Inscrições para Programa de Residência Jurídica do MPGO oferecem 67 vagas - Instituto AOCP
-URL:     https://noticias.institutoaocp.org.br/blog/inscricoes-para-programa-de-residencia-juridica-do-mpgo-oferecem-67-vagas/
-Career:   estagio
-Group:   mpgo-residencia-juridica-2026
-Reason:  Notícia sobre inscrições abertas para o Processo Seletivo do Programa de Residência Jurídica do Ministério Público do Estado de Goiás (MPGO), organizado pelo Instituto AOCP, com 67 vagas e cadastro de reserva para atuação em diversas comarcas goianas. Seleção voltada a bacharéis, com bolsa de R$ 3.336,32 e auxílio-transporte (30h/semana). Provas em 10 cidades (incluindo Goiânia, Anápolis e Rio Verde) e inscrição até 10 de junho.
-
-Title:   Polícia Penal do RS abre concurso com salários de até R$ 9,7 mil | Jornal Noroeste
-URL:     https://www.jornalnoroeste.com.br/noticia/policia/policia-penal-do-rs-abre-concurso-com-salarios-de-ate-r-9-7-mil
+Title:   Concurso IPE Prev RS: sai edital com 121 vagas; até R$10 mil | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-ipe-prev-rs-2026-edital
 Career:   administrativo
-Group:   policia-penal-rs-concurso-2026
-Reason:  Notícia informa a publicação do edital do concurso da Polícia Penal do Rio Grande do Sul com 213 vagas para policial penal, analista e técnico administrativo, banca Fundatec, inscrições de 12/05 a 12/06/2026 e provas em 09/08/2026. Entre as especialidades do cargo de analista há áreas de formação como Direito, além de outras (Psicologia, Serviço Social etc.), com etapas de prova teórica, avaliação psicológica e investigação social.
+Group:   ipe-prev-rs-analista-em-previdencia-direito
+Reason:  Noticia a publicacao do edital do concurso do Instituto de Previdencia do Estado do Rio Grande do Sul (IPE Prev RS), com 121 vagas e organizacao da Fundatec. Ha cargo especifico de nivel superior para analista em previdencia na area de Direito (26 vagas), com inscricoes de 13/05 a 11/06 e provas em Porto Alegre (26/07 para analista/especialista/perito). Etapas incluem prova objetiva e discursiva para analista/especialista.
 
-Title:   Advocacia Geral da União: inscrições para seletivo terminam nesta terça-feira (12)
-URL:     https://jcconcursos.com.br/noticia/empregos/advocacia-geral-da-uniao-inscricoes-para-seletivo-terminam-nesta-terca-feira-12-142515
-Career:   estagio
-Group:   agu-estagio-2026
-Reason:  Notícia sobre processo seletivo 2026 da Advocacia-Geral da União (AGU), com inscrições via CIEE e formação de cadastro reserva para estágio em diversas cidades (ex.: São Paulo, Brasília, Curitiba, Recife, Porto Alegre, Niterói). O edital contempla estudantes do ensino médio e universitários, incluindo a área de Direito, com bolsa-auxílio de R$ 651,31 a R$ 1.508,42, auxílio-transporte e jornada de 20 a 30 horas semanais; prova on-line durante o período de inscrições.
-
-Title:   Concurso ALECE: PL reestrutura carreiras; edital iminente
-URL:     https://www.estrategiaconcursos.com.br/blog/concurso-alece-pl-reestrutura-carreiras/amp/
+Title:   Concurso do Conter: inscrições abertas para 310 vagas com salários de até R$ 7 mil
+URL:     https://jcconcursos.com.br/noticia/concursos/concurso-conter-inscricoes-abertas-para-310-vagas-com-salarios-de-ate-r-7-mil-142555
 Career:   administrativo
-Group:   alece-concurso-analista-tecnico-2026
-Reason:  Notícia sobre o concurso da Assembleia Legislativa do Estado do Ceará (ALECE), com PL reestruturando o quadro e indicando edital iminente (previsão de maio). Prevê criação de 426 cargos (344 Analista Legislativo e 82 Técnico Legislativo) e edital com 200 vagas imediatas + 400 em cadastro de reserva; IDECAN já contratado como banca. As especialidades incluem áreas típicas de atuação legislativa, com possibilidade de vagas vinculadas a atribuições jurídicas no âmbito de analista.
+Group:   conter-brasilia-df-analista
+Reason:  Notícia de inscrições abertas para concurso do Conter (Conselho Nacional de Técnicos em Radiologia), em Brasília/DF, com 310 vagas (7 imediatas e 303 CR) para níveis médio, técnico e superior, regime celetista, organizado pelo Instituto Quadrix. A matéria indica cargos de Analista e Assistente e área de atuação “Judiciária/Jurídica”, com salários até R$ 7.520,56, além de provas objetiva e discursiva em 16/08 e títulos para nível superior.
 
-Title:   Unioeste (PR) abre seletivo com 77 vagas e salário até R$ 7,6 mil
-URL:     https://concursosnobrasil.com/concursos/pr/2026/05/12/unioeste-pr-abre-seletivo-com-77-vagas-e-salario-ate-r-76-mil/
-Career:   administrativo
-Group:   unioeste-pr-pss-agente-universitario-2026
-Reason:  Processo seletivo simplificado da Universidade Estadual do Oeste do Paraná (Unioeste), edital 096/2026-GRE, para contratação temporária na carreira de Agente Universitário, com 77 vagas (níveis médio e superior) e lotação em Cascavel/Reitoria, Foz do Iguaçu, Marechal C. Rondon, Toledo e Francisco Beltrão. Entre as funções de nível superior há vaga para Advogado, com inscrições de 13/05 a 01/06/2026 e prova objetiva prevista para 14/06/2026.
-
-Title:   Polícia Penal abre concurso com 213 vagas
-URL:     https://ocorreio.com.br/policia-penal-abre-concurso-com-213-vagas/
-Career:   administrativo
-Group:   policia-penal-rs-concurso-2026
-Reason:  Notícia informa publicação de edital do concurso da Polícia Penal do Rio Grande do Sul, organizado pela Fundatec, com 213 vagas (policial penal, analista e técnico administrativo) e provas em 09/08. Entre as vagas de nível superior para Analista da Polícia Penal há área específica de Direito com 25 vagas, além de outras formações; inscrições de 12/05 a 12/06/2026 e previsão de etapas como prova teórica, avaliação psicológica e investigação social/vida pregressa.
-
-Title:   Comissão formada para novo concurso DPE RO Defensor!
-URL:     https://magistrarcursos.com.br/blog/comissao-formada-para-novo-concurso-dpe-ro-defensor/
+Title:   DPU abre seleção para residência jurídica em Ribeirão Preto com bolsa de R$ 3 mil
+URL:     https://concursonews.com/2026/05/dpu-abre-selecao-para-residencia-juridica-em-ribeirao-preto-com-bolsa-de-r-3-mil/
 Career:   defensoria
-Group:   dpe-ro-defensor-concurso-vi
-Reason:  Notícia informa avanço nos preparativos do VI Concurso Público da Defensoria Pública do Estado de Rondônia com publicação de portaria criando a Comissão Organizadora para o cargo de Defensor Público Substituto. Relata que ainda não há edital, vagas ou banca definidos, mas a seleção integra o planejamento de contratações para 2026. Menciona concurso anterior (2022, Cebraspe, 5 vagas) vigente até 2027 e remuneração inicial de R$ 28.581,00.
+Group:   dpu-ribeirao-preto-sp-residencia-juridica
+Reason:  Seleção pública da Defensoria Pública da União (unidade de Ribeirão Preto/SP) para formação de cadastro reserva no Programa de Residência Jurídica, com bolsa de R$ 3.000 e auxílio-transporte. Inscrições por e-mail de 14 a 25/05/2026; seleção simplificada por análise curricular, com possibilidade de entrevista/avaliações complementares. Duração máxima de 36 meses, até 30h semanais, atividades presenciais ou remotas, exigindo matrícula em pós-graduação jurídica (mín. 360h) e apresentação de diploma e demais documentos na convocação.
 
-Title:   Prefeitura de Nova Alvorada do Sul MS abre concurso com 4 vagas | Folha Dirigida
-URL:     https://folha.qconcursos.com/n/prefeitura-de-nova-alvorada-do-sul-ms-abre-concurso-com-4-vagas
-Career:   procuradorias
-Group:   prefeitura-nova-alvorada-do-sul-ms-concurso-2026
-Reason:  Noticia a publicacao do edital 001/2026 da Prefeitura de Nova Alvorada do Sul/MS para concurso com 4 vagas imediatas + cadastro de reserva, banca AB Concursos, regime estatutario. Entre os cargos, ha 1 vaga + CR para procurador do municipio (40h, R$ 13.483,20), com atribuicoes de pareceres juridicos, analise de contratos, representacao judicial e consultoria normativa; prova objetiva em 14/06/2026 e prova de titulos para o cargo.
+Title:   IPE Prev abre concurso público com 121 vagas e salários de até R$ 10,6 mil em Porto Alegre
+URL:     https://concursonews.com/2026/05/ipe-prev-abre-concurso-publico-com-121-vagas-e-salarios-de-ate-r-106-mil-em-porto-alegre/
+Career:   administrativo
+Group:   ipe-prev-rs-analista-em-previdencia-direito
+Reason:  Noticia a publicacao do edital do concurso IPE Prev (RS) 01/2026, com 121 vagas sob regime estatutario e lotacao em Porto Alegre, organizado pela FUNDATEC. Entre as carreiras ofertadas ha Especialista em Previdencia com 26 vagas na area de Direito, alem de outras areas e cargos. Inscricoes de 13/05 a 11/06/2026; provas objetivas e discursivas/redacao conforme o cargo, com aplicacao prevista para julho/agosto de 2026.
 
-Title:   Petrobras lança edital para estágio com bolsa de R$ 1,8 mil em Manaus | No Ar!
-URL:     https://noarportal.com.br/petrobras-lanca-edital-para-estagio-com-bolsa-de-r-18-mil-em-manaus/
+Title:   Concurso de Cruz Machado (PR) oferece salário de até R$ 17,4 mil
+URL:     https://concursosnobrasil.com/concursos/pr/2026/05/13/concurso-de-cruz-machado-pr-oferece-salario-de-ate-r-174-mil/
+Career:   administrativo
+Group:   prefeitura-cruz-machado-pr-advogado
+Reason:  Noticia a abertura do concurso público da Prefeitura de Cruz Machado/PR (edital 01.004/2025, banca FAFIPA) para 95 vagas imediatas e cadastro de reserva, com inscrições de 18/05/2026 a 18/06/2026 e prova objetiva prevista para 19/07/2026. Entre os cargos de nível superior está o de Advogado, além de outros (ex.: auditor fiscal, contador).
+
+Title:   TV Jangadeiro
+URL:     https://www.jangadeiro.com.br/jornal-jangadeiro/alece-oferta-mais-de-500-vagas-de-estagio-com-bolsas-de-ate-r-2144/
 Career:   estagio
-Group:   petrobras-estagio-2026
-Reason:  Notícia sobre o edital do Programa de Estágio de Estudantes 2026 da Petrobras, com inscrições de 21/05 a 03/06 e bolsa-auxílio de R$ 1.825, além de benefícios. O programa prevê vagas em Manaus (AM) e diversas outras cidades, com seleção por prova objetiva online (60 questões). Entre os cursos contemplados está Direito, indicando vagas de estágio para estudantes dessa graduação.
+Group:   alece-ceara-estagio-direito
+Reason:  Noticia processo seletivo de estágio remunerado da Assembleia Legislativa do Estado do Ceará (Alece), com 500 vagas (imediatas e cadastro reserva) para estudantes de diversos níveis; há oportunidades específicas para atuação em direitos humanos e em assessoria jurídica popular voltadas a estudantes de Direito. Inscrições gratuitas até 24/05 via Universidade Patativa do Assaré, com prova objetiva on-line em 31/05 e resultado previsto para 05/06.
 
-Title:   Prefeitura de Campina Grande abre concurso para procurador com salário de R$ 9,6 mil - Polêmica Paraíba
-URL:     https://www.polemicaparaiba.com.br/cidades/prefeitura-de-campina-grande-abre-concurso-para-procurador-com-salario-de-r-96-mil/
+Title:   Concurso ALECE: PL de cargos será votado; edital iminente!
+URL:     https://blog.grancursosonline.com.br/concurso-alece-pl-cargos-2026/amp
+Career:   administrativo
+Group:   alece-ce-analista-legislativo
+Reason:  Notícia de atualização do Concurso da Assembleia Legislativa do Estado do Ceará (ALECE): votação de Projeto de Lei para criação de 200 cargos (170 Analista Legislativo e 30 Técnico Legislativo), com indicação de edital iminente. Informa banca definida (IDECAN) e termo de referência prevendo 200 vagas imediatas e 400 em cadastro de reserva para Analista em diversas especialidades e Técnico, com lotação no Ceará e remuneração inicial estimada entre R$ 2,8 mil e R$ 5,7 mil.
+
+Title:   Concurso IPE Prev (RS) oferta 121 vagas com iniciais de até R$ 10 mil
+URL:     https://concursosnobrasil.com/concursos/rs/2026/05/13/concurso-ipe-prev-rs-oferta-121-vagas-com-iniciais-de-ate-r-10-mil/
+Career:   administrativo
+Group:   ipe-prev-rs-analista-em-previdencia-direito
+Reason:  Noticia a abertura do concurso do IPE Prev/RS (autarquia previdenciária estadual) com 121 vagas e cadastro de reserva, inscrições previstas de 13/05 a 11/06/2026 (Fundatec). Há cargos de nível superior como Analista/Especialista em Previdência (diversas especialidades), além de Perito e Auditor Médico, com provas objetiva e discursiva e conteúdos incluindo direito administrativo e legislação. Lotação em Porto Alegre/RS e regime estatutário.
+
+Title:   UFOP abre seleção para professor substituto em Direito com salário de até R$ 8 mil em Ipatinga
+URL:     https://concursonews.com/2026/05/ufop-abre-selecao-para-professor-substituto-em-direito-com-salario-de-ate-r-8-mil-em-ipatinga/
+Career:   administrativo
+Group:   ufop-ipatinga-mg-professor-substituto-direito
+Reason:  Processo seletivo simplificado da Universidade Federal de Ouro Preto (UFOP) para contratação temporária de 1 professor substituto na área de Direito, com atuação no Instituto de Saúde e Humanidades (ISH) em Ipatinga/MG. Docência em disciplinas como Introdução ao Estudo do Direito, Sociologia Jurídica e Filosofia do Direito; regime de 40h. Inscrições por e-mail de 13 a 18/05/2026, taxa R$ 85, etapas com prova didática, entrevista e análise curricular; remuneração até R$ 8.058,29 + auxílio-alimentação.
+
+Title:   Concurso Alece: conheça o perfil do Idecan em provas | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-alece-perfil-provas-idecan
+Career:   administrativo
+Group:   alece-ce-analista-legislativo
+Reason:  Noticia atualizacao do concurso da Assembleia Legislativa do Ceara (Alece) com banca Idecan contratada e edital em fase final. O certame preve 600 vagas (200 imediatas e 400 CR) para tecnico legislativo e analista legislativo, incluindo especialidade Analista Legislativo – Direito (20 vagas imediatas e 40 CR). Informa etapas (provas objetiva e discursiva), turnos e perfil de cobranca da banca em disciplinas como Constitucional e Administrativo.
+
+Title:   Inscrições para concurso da PGE de Alagoas seguem abertas até segunda-feira - Jornal Extra de Alagoas
+URL:     https://ojornalextra.com.br/noticias/alagoas/2026/05/126794-inscricoes-para-concurso-da-pge-de-alagoas-seguem-abertas-ate-segunda-feira
 Career:   procuradorias
-Group:   prefeitura-campina-grande-pb-procurador-concurso-2026
-Reason:  Notícia informa a publicação do edital do concurso público da Prefeitura de Campina Grande (PB) para a Procuradoria-Geral do Município, com 5 vagas para Procurador Municipal (1 reservada a PcD) e remuneração de R$ 9,6 mil. Inscrições de 14/05 a 15/06, taxa de R$ 230, provas previstas a partir de 30/08. Seleção em três etapas: objetiva, teórico-prática e títulos.
+Group:   pge-al-procurador-do-estado
+Reason:  Notícia informa que seguem abertas até 18/05 as inscrições do concurso público da Procuradoria-Geral do Estado de Alagoas (PGE/AL), organizado pelo Cebraspe. O certame oferece 20 vagas para Procurador do Estado (10 imediatas e 10 em cadastro de reserva), com remuneração inicial acima de R$ 35 mil, com acesso mediante graduação e OAB.
+
+Title:   JMD - Governo do Estado publica edital de concurso da Polícia Penal com 213 vagas
+URL:     https://www.jornalmanchetedigital.com.br/noticias/capital/1699637-governo-do-estado-publica-edital-de-concurso-da-polcia-penal-com-213-vagas
+Career:   administrativo
+Group:   policia-penal-rs-analista
+Reason:  Notícia informa a publicação do edital do concurso público da Polícia Penal do Rio Grande do Sul (Fundatec), com 213 vagas e provas em 09/08/2026. Entre os cargos, há 121 vagas para Analista da Polícia Penal em diversas formações de nível superior, incluindo Direito, além de 84 vagas para Policial Penal (nível superior em qualquer área) e 8 para Técnico Administrativo (nível médio). Inscrições de 12/05 a 12/06/2026.
+
+Title:   Concurso Câmara dos Deputados 2023: prorrogação para 8 cargos
+URL:     https://blog.grancursosonline.com.br/concurso-camara-dos-deputados-2023-prorrogado/
+Career:   administrativo
+Group:   camara-dos-deputados-2023-analista-legislativo-consultoria
+Reason:  Notícia sobre a prorrogação do prazo de validade do Concurso Câmara dos Deputados 2023 para 8 especialidades do cargo de Analista Legislativo, incluindo a área de Consultoria. O texto informa que o certame foi homologado em maio/2024, teria validade até maio/2026 e, com a prorrogação, passa a valer até maio/2028, ampliando chances de nomeação de aprovados em cadastro de reserva. Menciona ainda editais 2025/2026 e expectativa de novo edital para Analista.
+
+Title:   Edital TJ MS Juiz Leigo SAIU: inscrições abertas! Paga R$ 17,5 mil
+URL:     https://blog.grancursosonline.com.br/concurso-tj-ms-juiz-leigo-edital-publicado-2026/amp
+Career:   tribunais
+Group:   tj-ms-juiz-leigo
+Reason:  Publicação informa edital do processo seletivo do Tribunal de Justiça de Mato Grosso do Sul para Juiz Leigo, com 21 vagas imediatas e cadastro reserva para atuação auxiliar nos Juizados Especiais. Traz período de inscrições (13/05 a 11/06/2026), banca Consulplan, provas objetiva e discursiva em 19/07/2026 (inclui projeto de sentença), taxa de R$ 150 e remuneração variável por ato com teto de R$ 17.554,49, com distribuição de vagas em Campo Grande e demais localidades do MS.
+
+Title:   Concurso da Câmara de Saquarema RJ: últimos dias de inscrição para 28 vagas
+URL:     https://jcconcursos.com.br/noticia/concursos/concurso-da-camara-de-saquarema-rj-ultimos-dias-de-inscricao-para-28-vagas-142559
+Career:   procuradorias
+Group:   camara-saquarema-rj-procurador-legislativo
+Reason:  Notícia sobre o concurso público da Câmara Municipal de Saquarema/RJ, com inscrições nos últimos dias (até 20/05) para 28 vagas em cargos efetivos. Entre as funções de nível superior consta Procurador Legislativo (1 vaga), com remuneração de R$ 8.000, além de outros cargos (contador, auditor, controlador, arquivista). Prova prevista para 21/06/2026, banca Instituto Ação.
+
+Title:   Concurso Alece: criação de vagas será votada nesta quinta, 14 | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-alece-vagas-criacao-2026
+Career:   administrativo
+Group:   alece-ce-analista-legislativo
+Reason:  Notícia sobre o novo concurso da Assembleia Legislativa do Ceará (Alece), com votação de projeto de lei para criação de 200 cargos (170 analistas e 30 técnicos) e previsão de edital ainda em maio. Entre as especialidades de Analista Legislativo (nível superior) há 20 vagas imediatas + 40 em cadastro de reserva para a área de Direito, além de outras áreas. O texto também cita etapas (provas objetiva e discursiva) e salários.
+
+Title:   Concursos do DER e PGE de Alagoas encerram inscrições esta semana
+URL:     https://www.alagoas24horas.com.br/1738463/concursos-do-der-e-pge-de-alagoas-encerram-inscricoes-nos-proximos-dias-salarios-chegam-a-r-35-mil/
+Career:   procuradorias
+Group:   pge-al-procurador-do-estado
+Reason:  Notícia informa o encerramento das inscrições dos concursos do DER e da PGE/AL. Embora o DER tenha vagas para Assessor Técnico Rodoviário (Engenharia Civil), o texto destaca o certame da Procuradoria-Geral do Estado de Alagoas para Procurador do Estado, com 20 vagas (10 imediatas e 10 cadastro de reserva), salário inicial acima de R$ 35 mil, inscrições até segunda (18) e banca Cebraspe; requer registro na OAB.
+
+Title:   Nova Alvorada do Sul abre concurso com salários de até R$ 13,4 mil | G1
+URL:     https://g1.globo.com/google/amp/ms/mato-grosso-do-sul/noticia/2026/05/13/nova-alvorada-do-sul-abre-concurso-com-salarios-de-ate-r-134-mil-veja-como-se-inscrever.ghtml
+Career:   procuradorias
+Group:   prefeitura-nova-alvorada-do-sul-ms-procurador
+Reason:  Notícia informa abertura de concurso da Prefeitura de Nova Alvorada do Sul (MS) com inscrições até 01/06/2026 e prova escrita em 14/06/2026. Entre os cargos, há vaga para Procurador do Município (40h, remuneração de R$ 13.483,20) com exigência de OAB; prevê 2ª fase para o cargo com avaliação de títulos (especialização, mestrado e doutorado). Concurso com validade de 2 anos, prorrogável por mais 2.
+
+Title:   Última semana de inscrições para concurso da Câmara Municipal de Presidente Prudente, com salários de até R$ 22 mil – Blog do Amarildo
+URL:     https://blogdoamarildo.com.br/ultima-semana-de-inscricoes-para-concurso-da-camara-municipal-de-presidente-prudente-com-salarios-de-ate-r-22-mil/
+Career:   administrativo
+Group:   camara-presidente-prudente-sp-controlador-interno
+Reason:  Notícia informa a última semana de inscrições do concurso público da Câmara Municipal de Presidente Prudente (SP), organizado pela FCC, com 4 vagas imediatas e cadastro de reserva. Entre os cargos, há 1 vaga de nível superior para Controlador Interno (salário de R$ 22.010,63), aceitando formação em Direito, Administração ou Ciências Contábeis e registro no conselho. Inscrições até 21 de maio; provas objetivas em 12 de julho.
+
+Title:   Concurso Prefeitura de Olímpia SP: inscrições prorrogadas e salários até R$9.581 | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-prefeitura-de-olimpia-sp-inscricoes-prorrogadas-e-salarios-ate-r-9-581
+Career:   procuradorias
+Group:   prefeitura-olimpia-sp-procurador-juridico
+Reason:  Notícia de retificação do Concurso Público 01/2026 da Prefeitura da Estância Turística de Olímpia (SP), com prorrogação das inscrições até 23/07/2026 e provas em 23/08/2026. Entre diversos cargos, há 1 vaga para procurador jurídico, com etapas específicas incluindo prova objetiva e peça processual, além de avaliação de títulos. Regime estatutário, salários informados até R$ 9.581,64 e benefícios; banca Instituto Nosso Rumo.
+
+Title:   MPT lança edital para seleção de estagiários para cidades do Piauí e Timon (MA) - Portal Parlamento Piauí
+URL:     https://www.parlamentopiaui.com.br/noticia/mpt-lanca-edital-para-selecao-de-estagiarios-para-cidades-do-piaui-e-timon-ma
+Career:   mp
+Group:   mpt-pi-estagiario-direito
+Reason:  Notícia informa lançamento de edital de processo seletivo do Ministério Público do Trabalho (PRT 22ª Região) para estagiários, com vagas imediatas e cadastro de reserva. Há oportunidades para estudantes de Direito em Teresina (junto com outras áreas) e vagas exclusivamente para Direito nas unidades de Picos, Bom Jesus e Timon (MA). Inscrições de 14 a 25/05, seleção com provas objetiva e discursiva previstas para 21/06/2026, bolsa de R$ 1.027,82 e auxílio-transporte.
+
+Title:   Trabalhe na Petrobras e tenha direito a bolsa de R$ 1.825, vale-transporte, seguro e cursos exclusivos: estatal abre 150 vagas de estágio em 12 estados com prova online e reserva inédita de 30% das oportunidades para mulheres - CPG Click Petróleo e Gás
+URL:     https://clickpetroleoegas.com.br/trabalhe-na-petrobras-e-tenha-direito-a-bolsa-de-r-1-825-vale-transporte-seguro-e-cursos-exclusivos-estatal-abre-150-vagas-de-estagio-em-12-estados-com-prova-online-e-reserva-inedita-de-afch/
+Career:   estagio
+Group:   petrobras-brasil-estagio
+Reason:  Notícia de divulgação do Programa de Estágio de Estudantes 2026 da Petrobras, com cerca de 150 vagas em 12 estados e DF, inscrições de 21/05 a 03/06/2026, bolsa de R$ 1.825 e prova objetiva online (60 questões). O texto cita entre os cursos contemplados “Advocacia”, indicando oportunidade para estudantes da área jurídica dentro do programa de estágio da estatal, com unidades em diversas cidades (ex.: RJ, SP, ES, RS, BA, MG, PR, PE, SE, CE, AM e DF).
+
+Title:   Alece abre seleção com até 500 vagas para estagiários no Ceará; inscrições seguem até 24 de maio – News Cariri
+URL:     https://www.newscariri.com.br/2026/05/alece-abre-selecao-com-ate-500-vagas-para-estagiarios-no-ceara-inscricoes-seguem-ate-24-de-maio
+Career:   estagio
+Group:   alece-ceara-estagio-direito
+Reason:  Notícia sobre processo seletivo de estágio na Assembleia Legislativa do Estado do Ceará (Alece), com até 500 vagas remuneradas e cadastro de reserva, organizado pela Universidade Patativa do Assaré. O edital contempla estudantes de diversos cursos, incluindo vagas específicas na área de Direito voltadas para direitos humanos e assessoria jurídica popular. Inscrições online gratuitas até 24/05; prova objetiva online em 31/05 e resultado previsto para 05/06.
+
+Title:   Concurso Prefeitura de Nova Alvorada do Sul (MS) paga até R$ 13,4 mil
+URL:     https://concursosnobrasil.com/concursos/ms/2026/05/13/concurso-prefeitura-de-nova-alvorada-do-sul-ms-paga-ate-r-134-mil/
+Career:   procuradorias
+Group:   prefeitura-nova-alvorada-do-sul-ms-procurador
+Reason:  Concurso público da Prefeitura de Nova Alvorada do Sul/MS (edital 001/2026), com 4 vagas imediatas e cadastro reserva, organizado pela ABCP e regime estatutário. Entre os cargos ofertados está Procurador do Município (com registro na OAB), com remuneração até R$ 13.483,20/40h. Inscrições de 12/05 a 01/06/2026; prova objetiva prevista para 14/06/2026 e prova de títulos apenas para Procurador.
+
+Title:   Edital TJ MS Juiz Leigo SAIU: inscrições abertas! Paga R$ 17,5 mil
+URL:     https://blog.grancursosonline.com.br/concurso-tj-ms-juiz-leigo-edital-publicado-2026/
+Career:   tribunais
+Group:   tj-ms-juiz-leigo
+Reason:  Edital publicado do TJMS para processo seletivo de Juiz Leigo, com atuação auxiliar nos Juizados Especiais Cíveis e Criminais (presidir audiências, conduzir instrução, elaborar projeto de sentença/decisão para homologação por juiz togado). Oferta 21 vagas imediatas + cadastro reserva, inscrições 13/05 a 11/06/2026, provas objetiva e discursiva em 19/07/2026, banca Consulplan, remuneração variável até R$ 17.554,49.
+
+Title:   Petrobras abre 150 vagas de estágio com bolsas de R$ 1.825 e benefícios; inscrições começam dia 21 - Folha BV
+URL:     https://www.folhabv.com.br/concursos-e-emprego/petrobras-abre-150-vagas-de-estagio-com-bolsas-de-r-1-825-e-beneficios-inscricoes-comecam-dia-21/
+Career:   estagio
+Group:   petrobras-brasil-estagio
+Reason:  Notícia informa abertura de inscrições do programa de estágio Petrobras 2026 com 150 vagas, bolsa de R$ 1.825, benefícios e políticas de cotas. Seleção por prova objetiva online (60 questões) após inscrição, com inscrições de 21/05 a 03/06. O texto cita oportunidades para diversos cursos de graduação, incluindo Direito, com jornada de 20h semanais e possibilidade de regime híbrido, em cidades de 12 estados (inclui DF; Manaus no Norte).
+
+Title:   Concurso UFOP oferece 1 vaga para professor substituto em Ipatinga MG | Folha Dirigida
+URL:     https://folha.qconcursos.com/n/concurso-ufop-oferece-1-vaga-para-professor-substituto-em-ipatinga-mg
+Career:   administrativo
+Group:   ufop-ipatinga-mg-professor-substituto-direito
+Reason:  Edital nº 15/2026 da UFOP para contratação temporária de 1 professor substituto na área de Direito (Introdução ao Estudo do Direito, Sociologia Jurídica e Filosofia do Direito), com lotação no Instituto de Saúde e Humanidades (ISH) em Ipatinga/MG. Regime de 40h, contrato inicial de até 6 meses (prorrogável), inscrições por e-mail de 13 a 18/05/2026, taxa R$ 85, etapas com prova didática, possível entrevista e análise de currículo, remuneração conforme titulação.
+
+Title:   Nova Alvorada do Sul abre concurso com salários de até R$ 13,4 mil | G1
+URL:     https://g1.globo.com/ms/mato-grosso-do-sul/noticia/2026/05/13/nova-alvorada-do-sul-abre-concurso-com-salarios-de-ate-r-134-mil-veja-como-se-inscrever.ghtml
+Career:   procuradorias
+Group:   prefeitura-nova-alvorada-do-sul-ms-procurador
+Reason:  Noticia informa abertura de concurso da Prefeitura de Nova Alvorada do Sul (MS), com inscricoes ate 01/06 e prova objetiva em 14/06/2026. Ha vaga para procurador do municipio, jornada de 40h, remuneracao de R$ 13.483,20 e segunda fase de avaliacao de titulos (especializacao, mestrado e doutorado pontuam). Tambem cita cargos de fiscal de tributos e fiscal de obras e posturas (nivel medio) e regras de taxa/pagamento.
 
